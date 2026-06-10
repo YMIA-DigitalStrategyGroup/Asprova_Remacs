@@ -1,0 +1,82 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_m_seisan_kouteiname",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 11,
+        "ColumnCount": 31,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteiname",
+        "ColumnName": "工程コード",
+        "GUID": "97d3b0f6-010c-40d6-88bb-fc3a574fb606"
+      }
+    },
+    "2,5": {
+      "NameUsedInJavaScript": "工程名",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteiname",
+        "ColumnName": "工程名",
+        "GUID": "5d5a7daa-7647-4d35-b1f8-5e1fbbd971ce"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,1,9,31",
+    "1,1,1,4",
+    "2,1,1,4",
+    "1,5,1,4",
+    "2,5,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//o4PubczIG5GMSb3I+0GjUQyCGXu1ORS36QsZDpBR7SKV/SRmCkffyLk1lYhrBCWzVjHCWqL7q2k4CUiMOLkruCMdmSm3PCiO58NDC08+T8OBvZ+/5z9ykTpCz82dfLmO5jzA3olOXSVs+uWGc5xWDYLAUsoU0OxxS5Bde/znAeHzc9zQtGDDKqQVcHOt05r0B1nnDgrXSDJdmtMvLvwyhVcdfbpJUME/HlUcPRkAuyHjPxGELuy31Pnm2o80tjCnQoe4uyFnYvQueuxGo8jS3TOekPj66giR+X0bspxdho0Vd7ilGcciit29mkC73ZTVJQvKXhSvY2rvJnTl+cNO1aFETxVswgmTlL8byRjEZ8JUXzgAiEg4XEEGkkdDsH4hXcX8evMUYLi86e+KxTctD5pREx82+TuEDTcMOczvpxyoOJYCe3quhXenN244stijxbS6J730fnh1xaZtsj9lgY3ZH0eGhtnGijT0SU6kknVjHmfT4DLwPsGFHP5/gyGBOjqFaIxeqW+tDeosPFIRDXLo3TOd+7VcuU3NV3hP0zBamfZyJWcWxBTJzzLSldaiep6LR26egh7nw+wAGefZa2DiYkIvNUYKMRWnVMtj3mKHTcKBRZhep4n1Oz3HkDmD9Zu1wydpFi31bm6fa2aZ9G8r/RcFPHe9cqtsVQGbCcD4GTWXDbO1OP71vL53ED0TZz3oOzAZxF+gNIT1MiADC40DeOXXq/4Y7Ioox4sEHGWadO5JprWWIdbHjRdOo3vnAYuKwFeRLXWPRADMhJel+6kiRm6/fH0FC3Tsy9E4CT687M2pE9LhVQNeg73xFb60xNQZKBXOoSZm3ad8UxEw1PVGMfLuTB8j6FgfszXAiZ202fDFdxbZSt68bWiLbjCpS6KfdRn7s3kEUMRyvg8vlQ==|920

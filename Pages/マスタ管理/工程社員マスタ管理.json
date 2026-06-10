@@ -6,12 +6,16 @@
     "Count": 35
   },
   "Cols": {
+    "InLogicalVisibleIndexes": [
+      15,
+      16
+    ],
     "Count": 27
   },
   "Values": {
     "1,1": "設定内容を確認",
-    "4,20": "係数",
-    "5,20": "表示",
+    "4,17": "係数",
+    "5,17": "表示",
     "31,1": "更新"
   },
   "AttachInfos": {
@@ -61,60 +65,12 @@
         "CommitType": 1
       }
     },
-    "5,2": {
-      "NameUsedInJavaScript": "工程コード",
-      "BindingInfo": {
-        "TableName": "ymia_m_seisan_kouteishain",
-        "ColumnName": "工程コード",
-        "GUID": "2c70d234-d713-4323-acce-226f66502704"
-      },
-      "CellType": {
-        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
-        "IsBounding": true,
-        "DataSource": "mkoteiname",
-        "ValueColumnBindingInfo": {
-          "TableName": "mkoteiname",
-          "ColumnName": "KOTEI_CODE",
-          "GUID": "58f75742-ab27-4008-b987-275516ff5951"
-        },
-        "DisplayColumnBindingInfo": {
-          "TableName": "mkoteiname",
-          "ColumnName": "KOTEI_NAME",
-          "GUID": "786e65f5-88be-47f3-a2c9-36d89ff8db31"
-        },
-        "DropDownSubItems": [
-          {
-            "GUID": "7e407caf97a841ff9077331e16d54a7b",
-            "BindingInfo": {
-              "TableName": "mkoteiname",
-              "ColumnName": "KOTEI_CODE",
-              "GUID": "ebc21e61-3c04-4b84-998d-805a4ec1cdf5"
-            },
-            "ColumnName": "工程コード",
-            "Alignment": 1
-          },
-          {
-            "GUID": "ccc4ebd686a645d48a742cb6479b09d8",
-            "BindingInfo": {
-              "TableName": "mkoteiname",
-              "ColumnName": "KOTEI_NAME",
-              "GUID": "d90dc59c-a93d-40b0-84a7-594217ec6e77"
-            },
-            "ColumnName": "工程名",
-            "Alignment": 1
-          }
-        ]
-      },
-      "DataValidationInfo": {
-        "IgnoreBlank": false
-      }
-    },
-    "5,9": {
+    "5,1": {
       "NameUsedInJavaScript": "社員コード",
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain",
         "ColumnName": "社員コード",
-        "GUID": "d9258964-14d3-4af2-8ab3-5c73b17bf9e8"
+        "GUID": "4b825a87-4164-421c-85a8-62f0b9c07eeb"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -125,14 +81,68 @@
         "IgnoreBlank": false
       }
     },
-    "5,16": {
+    "5,7": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "工程コード",
+        "GUID": "4d55000a-775e-4b5d-8ca9-ebbfa1264172"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "ymia_m_seisan_kouteiname",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteiname",
+          "ColumnName": "工程コード",
+          "GUID": "d02b9e2a-9ba4-4601-9451-52ad45ca4024"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteiname",
+          "ColumnName": "工程名",
+          "GUID": "e8c35966-c39d-4d8c-9224-4e494041a425"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "750f6242696e4b0e87f2e1a2dad3f441",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteiname",
+              "ColumnName": "工程コード",
+              "GUID": "fb2b9c54-da90-4cb0-b620-382fddefca88"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "04fd3ded813f4167804126968d803c2d",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteiname",
+              "ColumnName": "工程名",
+              "GUID": "a1e1a949-37c4-47b3-b358-0d4b871af125"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "5,12": {
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain",
         "ColumnName": "代表者",
         "GUID": "1c3e8160-7691-4bb1-a424-699dea476c23"
       }
     },
-    "5,20": {
+    "5,15": {
+      "NameUsedInJavaScript": "係数",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "係数",
+        "GUID": "e9cfc113-b7ea-4086-8aa0-a7753f896723"
+      }
+    },
+    "5,17": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -143,7 +153,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=工程社員マスタ管理!J6"
+                  "SerializeProperty": "=工程社員マスタ管理!B6"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=社員係数マスタ管理!C4"
@@ -178,7 +188,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "8a666735-7ffd-4ef2-90f9-f468c96a92d8"
+                "ID": "a23ca731-0a91-44e0-9f92-ad91397984b0"
               }
             ]
           }
@@ -191,13 +201,16 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontFamily": 0,
+        "FontFamily": 0
+      },
+      {
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
       },
       {
+        "FontFamily": 0,
         "HorizontalAlignment": 1
       }
     ],
@@ -208,9 +221,18 @@
       ]
     },
     "CellStyles": {
-      "5,2": 0,
-      "5,9": 0,
-      "5,16": 1
+      "4,1": 0,
+      "4,12": 0,
+      "4,17": 0,
+      "4,23": 1,
+      "4,24": 1,
+      "5,1": 0,
+      "5,7": 0,
+      "5,12": 2,
+      "5,15": 0,
+      "5,17": 0,
+      "5,23": 1,
+      "5,24": 1
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -221,17 +243,19 @@
     }
   },
   "Spans": [
-    "5,2,1,7",
-    "5,9,1,7",
-    "6,1,24,24",
     "31,1,2,5",
-    "5,16,1,4",
-    "5,20,1,3",
-    "4,2,1,7",
-    "4,9,1,7",
-    "4,16,1,4",
-    "4,20,1,3",
-    "1,1,2,8"
+    "1,1,2,8",
+    "6,1,24,24",
+    "4,1,1,6",
+    "5,1,1,6",
+    "5,7,1,5",
+    "4,7,1,5",
+    "5,12,1,3",
+    "4,12,1,3",
+    "5,15,1,2",
+    "4,15,1,2",
+    "4,17,1,2",
+    "5,17,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -257,4 +281,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//TNE5ovMm+0VEqZDKNJzjuCvho4gkWNlST1KQsK9FFGEtk2xCvoEU8zaVsMlWtmt6Md6XQsTI38iSqCOGUyL5DEqf3N75oZ0KU6JPa0G8Otv+R4ctMFUPuO3T7xfjcEPJ8TDNPEy2kbZgTufDFRSXfGyNVKAer4Mn3dR14NCY0mjTLeXEfRgfdEyg8CDFOkcJPr7z9J0fDrTLI7B+89ktppPpUD1dHNO3CH7v3tgaCEO2pzyjcX6105OeBu+NYaEAbqCQjSSJ0ZE95NOjbyqFu+QTOXGPUuhLDuNKau0HelL+VGZUpgRC9RoQDNpe5Az+db8236rTF73Dx2q99ywPc6FtuiiHm9zFN0wYxodixUCTMg5klQwUa4Iv/plfOoVHyFIcZBLWjaLigqHGEKXmOIS/WsKdJ8/+JtiKwrfkD5APaK44BjrBxn/ANIfb/nnWDHgurwPUFE0OWHyL72xVGeqB44qMN2GqJScdXtDQAFY5ATfVRdrWn1MaGU4RmSow/je2MN6+r8SnbCcU9mJY5Fjy5TmyTYKMaxGF5df/DMdPPWk1MapTL/gJQBDwrIExekmS60oZHZ5Z/WoOgwoE4SBg/zGWiwwDH87/mNulcjaGEKEX/1bY635QrhMTK0FG5aWAWQ6j94e8yzBuODa1Owu9V7BKglS6+73CgWyUZrn3Mz7TEBOPmfjTXLquPNa7krwwg4SI0Sgu+k/H03Rq4boCRDXGijZCwK0Yc38dCUOc1I7T5bVBy+GQf61Z1kYcbxB5ccuVcSH00km1eTvK/EIwlrQMHWv+d84uhZYhDgriFN4vuXU1unRVXctqpy/95QSTYrMYFBzhhUuoBiTi/0kW5oQwUFZDJnIaHHrszhgHtwbFSGbjwvcalwayVm+oLskvpMgymJWlo51EPk1LHA==|920
+}//6hQ4r6VbVro6/c41GdihBWj8btCmuJxNE2aNJQOsYnA12DqpleJZwMF277H29rGTCN6Co/NwVLDoChioYMVzdffG7fqKmotFFiKRcQqBZouDcZVdhXgjueMgNcRQr7Phu674nluUx1eK0RvK8VkUVGtz0TnC4dc5drrpJGwQMcJL8GNivR+8KFvZC/ElfjpgPrIORBaRgN+4Awt2LhvKqoSM2zip41YaorVcfWQeUszfuIxGk+CE1361qtH1zUp1e+nt4+5WI29fnHha7n8+E+89JlC4xilx+l1Mc6zEH41d0YJBADP4JIoa5ipDNEjwNsl56XMbXj4DJQpdCatPnRMft5Mx/tstXSkEsOzapff43QWk1g7sO2IZeyNj8OEi2I1mOhParqkDGmoNNMh4XKhPUjKDmSUBCB4y24vf/Q3BovqV6+YFI4KjaREhf1bnbnvJyeeRorm4W/8r62LP21Kuy3/kyBe30rljEH7frY1mDBIDf8ZZ7AVzF9IGynyPnbc8gasUtl3zgBCCgMl0MsSXI7paK1B9blEJGww2nbLQpVmLmLiqQai0zp4iziQIHo0XX2xV0+I+biSAPbRfMGRWHP5E1ItlRGjh1H8DJgejQr6FSUcZdhJk6WBDzb6eshBV9rBL5mJMRICY2J2WeV1FBIjxWq1ORTXr2f9n6U9XBihSvlRRc6v5N6lYsi0hs+aGDrIEKPC0UK66r0eUSs+Chwz+65GGTfosU23A9ITj9Q/VIKRM0pFP3FJvtx8lgwH/U/2ruv00f1rUh7zVM4v/ijP+vfLF0VLPrKvE2lv2Izgt232E4wefjzh403e5V0oMIOleVkuqbCOpbeFAAhlm5yaKCRHgUF9DyZ/72wtiMIBftz9DuWrvQ/pX0PBCftfdrg5vksrIo+qoschC9g==|920
