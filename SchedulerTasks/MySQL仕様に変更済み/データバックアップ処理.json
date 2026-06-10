@@ -1,0 +1,186 @@
+{
+  "Name": "データバックアップ処理",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.DailyScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 45999.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_t_seisan_jissekidt_bk",
+      "ID": "781e8cb0368348bb8ab5e1db194ad105",
+      "Comments": "作業実績情報　バックアップ側の削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_t_seisan_jissekikaiyo_bk",
+      "ID": "ab728ab552a34952831326098d34e521",
+      "Comments": "作業実績情報　海洋せんすいくん　バックアップ側の削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_t_seisan_jissekielse_bk",
+      "ID": "0909ffc20764449fb1d972f14b178073",
+      "Comments": "作業実績情報　その他時間　バックアップ側の削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_t_seisan_jissekikouji_bk",
+      "ID": "887b260e57c343d5bbabc3340bd6dee9",
+      "Comments": "作業実績情報　特殊工事　バックアップ側の削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_t_seisan_jissekifiltertank_bk",
+      "ID": "a9fddd96521a45d89fe3efdaf8795d0a",
+      "Comments": "作業実績情報　濾過槽詳細　バックアップ側の削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_t_seisan_jissekidt_bk\r\nselect * from ymia_t_seisan_jissekidt",
+      "ID": "2beb16714f8e49fea0131f344a4380d1",
+      "Comments": "作業実績バックアップ"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_t_seisan_jissekikaiyo_bk\r\nselect * from ymia_t_seisan_jissekikaiyo",
+      "ID": "d2fc05daecf8400a8adbdfbf47547cac",
+      "Comments": "作業実績バックアップ（海洋せんすいくん）"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_t_seisan_jissekielse_bk\r\nselect * from ymia_t_seisan_jissekielse",
+      "ID": "f34d6f61103340a5b57cd6d985e4bd33",
+      "Comments": "作業実績バックアップ（その他実績時間）"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_t_seisan_jissekikouji_bk\r\nselect * from ymia_t_seisan_jissekikouji",
+      "ID": "8825d0f51d8e4b1a8d0adbd854c3b079",
+      "Comments": "作業実績バックアップ（特殊工事）"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_t_seisan_jissekifiltertank_bk\r\nselect * from ymia_t_seisan_jissekifiltertank",
+      "ID": "319068d15f2541598d2b1580010fe48a",
+      "Comments": "作業実績バックアップ（濾過槽詳細）"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE [ymia_t_seisan_jissekidt_bk]",
+      "ReturnsName": "",
+      "ID": "61aa73078ff94f0ead23a7ae69d5740d",
+      "Comments": "作業実績情報　バックアップ側の削除",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE [ymia_t_seisan_jissekikaiyo_bk]",
+      "ID": "562347adefbf4d4b9fb69130f384695b",
+      "Comments": "作業実績情報　海洋せんすいくん　バックアップ側の削除",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE [ymia_t_seisan_jissekielse_bk]",
+      "ReturnsName": "",
+      "ID": "2e2e8085a65f4935a21430fa24fe8035",
+      "Comments": "作業実績情報 その他時間　バックアップ側の削除",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE [ymia_t_seisan_jissekikouji_bk]",
+      "ReturnsName": "",
+      "ID": "f9abefa7a38f44ad86d9271840e52d9e",
+      "Comments": "作業実績情報　特殊工事　バックアップ側の削除",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE [ymia_t_seisan_jissekifiltertank_bk]",
+      "ID": "fdc623e0306f403bb539dc0f11167c1e",
+      "Comments": "作業実績情報　濾過槽詳細　バックアップ側の削除",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO [ymia_t_seisan_jissekidt_bk] \r\nselect * from [ymia_t_seisan_jissekidt]",
+      "ID": "7e35658e29b44be08561f7265343ea79",
+      "Comments": "作業実績バックアップ",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO [ymia_t_seisan_jissekikaiyo_bk] \r\nselect * from [ymia_t_seisan_jissekikaiyo]",
+      "ID": "aff5d72eb5ed41a8876c92c6e40eccab",
+      "Comments": "作業実績バックアップ（海洋せんすいくん）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO [ymia_t_seisan_jissekielse_bk]\r\nselect * from [ymia_t_seisan_jissekielse]",
+      "ID": "0b5f7adbb56248af9aea7922e7baf9d0",
+      "Comments": "作業実績バックアップ（その他実績時間）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO [ymia_t_seisan_jissekikouji_bk]\r\nselect * from [ymia_t_seisan_jissekikouji]",
+      "ID": "be69daeb5a074b68957277cfad8f459c",
+      "Comments": "作業実績バックアップ（特殊工事）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": "INSERT INTO [ymia_t_seisan_jissekifiltertank_bk]\r\nselect * from [ymia_t_seisan_jissekifiltertank]",
+      "ID": "43a24254ce444f149cd97300b1dd6d06",
+      "Comments": "作業実績バックアップ（濾過槽詳細）",
+      "Disabled": true
+    }
+  ]
+}

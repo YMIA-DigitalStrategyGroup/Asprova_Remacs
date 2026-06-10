@@ -1,0 +1,88 @@
+{
+  "Name": "投入計画取込",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "投入計画設定日",
+          "DataValidationInfo": {},
+          "TestData": "2025/1/1"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": " TRUNCATE TABLE [ymia_t_seisan_schedule]",
+      "ID": "6b534b352f264884b7f1212801eab52c"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {
+        "投入計画設定日": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=投入計画設定日"
+          },
+          "Item2": 22
+        }
+      },
+      "SqlStatement": "insert into ymia_t_seisan_schedule\r\nselect distinct 艇種, 艇番 from 生産統括部.dbo.投入計画管理 where 積層投入 >= @投入計画設定日  and \r\n(艇種 is not null and 艇番 is not null)\r\norder by 艇種, 艇番",
+      "ReturnsName": "エラー値",
+      "ID": "7ecacd65e4704ba7a3a833168c97e7c6"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {},
+      "SqlStatement": " TRUNCATE TABLE [ymia_t_seisan_schedule_kaiyo]",
+      "ID": "be02f54340a4443c869a562362959ba4"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {
+        "投入計画設定日": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=投入計画設定日"
+          },
+          "Item2": 22
+        }
+      },
+      "SqlStatement": "insert into ymia_t_seisan_schedule_kaiyo\r\nselect distinct 艇種, 艇番 from 生産統括部.dbo.投入計画管理_海洋 where 積層投入 >= @投入計画設定日  and \r\n(艇種 is not null and 艇番 is not null)\r\norder by 艇種, 艇番",
+      "ReturnsName": "エラー値",
+      "ID": "8275a227443f469e8a6951587e60f767"
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "戻り値1"
+    }
+  ]
+}

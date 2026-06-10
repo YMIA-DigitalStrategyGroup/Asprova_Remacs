@@ -1,0 +1,11 @@
+{
+  "Name": "82d6a276-44a9-4596-a8ed-a8d9c8b6410f",
+  "Enabled": false,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 45999.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ]
+}

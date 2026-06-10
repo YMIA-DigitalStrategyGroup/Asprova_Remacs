@@ -1,0 +1,42 @@
+{
+  "Name": "V投入計画_最新日付艇種艇番",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "艇種",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": -1,
+      "Name": "艇番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "積層投入",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "生産統括部情報SQLServer",
+    "SourceTableName": "V投入計画_最新日付艇種艇番",
+    "SourceTableSchema": "dbo",
+    "CreateViewSql": "(\r\nselect 艇種, 艇番, 積層投入 from 投入計画管理 where (艇種 is not null and 艇番 is not null) and 設定日付 = (select 設定日付 from V投入計画_最新日付)\r\n)\r\n\r\n/*\r\nselect distinct 艇種, 艇番 from 投入計画管理 where 積層投入 > '2025/8/20' and \r\n(艇種 is not null and 艇番 is not null)\r\norder by 艇種, 艇番\r\n*/",
+    "ViewInfo": {
+      "ViewName": "V投入計画_最新日付艇種艇番",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "艇種",
+        "艇番"
+      ]
+    }
+  },
+  "Indexes": []
+}

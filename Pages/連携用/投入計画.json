@@ -1,0 +1,1706 @@
+{
+  "Rows": {
+    "Count": 6,
+    "DefaultSize": 19.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 160.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 160.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 160.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 118.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 122.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 81.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 129.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 104.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 129.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 104.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 114.0
+        }
+      }
+    },
+    "Count": 127,
+    "DefaultSize": 72.0
+  },
+  "Values": {
+    "0,0": "投入計画",
+    "1,5": "担当（YMS拠点）",
+    "1,10": "積層投入枠1枠/2枠",
+    "1,11": "大型/小型/個別",
+    "1,17": "出図（部品表）発行",
+    "2,0": 2025.0,
+    "2,1": "EX38A",
+    "2,2": "0001",
+    "2,3": "1",
+    "2,4": "4TNE98",
+    "2,5": "拠点",
+    "2,6": "充当先",
+    "2,7": 2.0,
+    "2,8": "大分",
+    "2,9": "Ａライン",
+    "2,10": "1枠",
+    "2,11": "大型",
+    "2,12": "済",
+    "2,13": "済",
+    "2,15": 1.0,
+    "2,16": "済",
+    "2,17": "済",
+    "2,37": 100.0,
+    "2,38": "工程1",
+    "2,40": 101.0,
+    "2,41": "工程2"
+  },
+  "DateValues": {
+    "2,18": "2026-01-20T00:00:00",
+    "2,19": "2026-01-20T00:00:00",
+    "2,20": "2026-01-20T00:00:00",
+    "2,21": "2026-01-20T00:00:00",
+    "2,22": "2026-01-20T00:00:00",
+    "2,23": "2026-01-20T00:00:00",
+    "2,24": "2026-01-20T00:00:00",
+    "2,25": "2026-01-20T00:00:00",
+    "2,26": "2026-01-20T00:00:00",
+    "2,27": "2026-01-20T00:00:00",
+    "2,28": "2026-01-21T00:00:00",
+    "2,29": "2026-01-21T00:00:00",
+    "2,30": "2026-01-21T00:00:00",
+    "2,31": "2026-01-21T00:00:00",
+    "2,32": "2026-01-21T00:00:00",
+    "2,33": "2026-01-21T00:00:00",
+    "2,34": "2026-01-21T00:00:00",
+    "2,35": "2026-01-21T00:00:00",
+    "2,36": "2026-01-21T00:00:00",
+    "2,39": "2026-01-31T00:00:00",
+    "2,42": "2026-01-31T00:00:00"
+  },
+  "AttachInfos": {
+    "1,0": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_asprova_keikaku",
+        "RowIndex": 1,
+        "RowCount": 5,
+        "ColumnCount": 127,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,0": {
+      "NameUsedInJavaScript": "YMIA枠年度",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "YMIA枠年度",
+        "GUID": "cf96ecb8-417e-42c4-a9ca-b019a395b073"
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "機種",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "機種",
+        "GUID": "0c5d7db1-02f8-42ea-8b16-90e916baa794"
+      }
+    },
+    "2,2": {
+      "NameUsedInJavaScript": "機番",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "機番",
+        "GUID": "f9d61236-df4d-4f64-a9be-a81ab73862e5"
+      }
+    },
+    "2,3": {
+      "NameUsedInJavaScript": "引合管理No",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "引合管理No",
+        "GUID": "a9d4b34f-4980-4409-ab36-4ad9c54072a5"
+      }
+    },
+    "2,4": {
+      "NameUsedInJavaScript": "エンジン",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン",
+        "GUID": "00c82936-8d59-4219-a661-21c837f1e307"
+      }
+    },
+    "2,5": {
+      "NameUsedInJavaScript": "担当_YMS拠点_",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "担当_YMS拠点",
+        "GUID": "460e8cf6-0a25-499d-9378-aa1c8eb5c1dc"
+      }
+    },
+    "2,6": {
+      "NameUsedInJavaScript": "充当先",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "充当先",
+        "GUID": "65c85e66-bd55-4cb1-a4f4-d050656b9da3"
+      }
+    },
+    "2,7": {
+      "NameUsedInJavaScript": "枠数",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "枠数",
+        "GUID": "ba084cb3-864c-4f0e-8557-60dd7a302dbb"
+      }
+    },
+    "2,8": {
+      "NameUsedInJavaScript": "工場",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "工場",
+        "GUID": "cf981688-3a1b-4a11-b473-310cb1ceb81c"
+      }
+    },
+    "2,9": {
+      "NameUsedInJavaScript": "ライン",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "ライン",
+        "GUID": "09151fbc-86e7-4468-b98b-b33e3b455fa2"
+      }
+    },
+    "2,10": {
+      "NameUsedInJavaScript": "積層投入枠1枠_2枠",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "積層投入枠1枠_2枠",
+        "GUID": "6023881f-2e78-4fc8-9603-1469ff4e5f7a"
+      }
+    },
+    "2,11": {
+      "NameUsedInJavaScript": "大型_小型_個別",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "大型_小型_個別",
+        "GUID": "efb93c9c-6527-4b96-9d3e-e8f26d26238c"
+      }
+    },
+    "2,12": {
+      "NameUsedInJavaScript": "受注確定",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "受注確定",
+        "GUID": "a509bb75-647b-419a-8b79-f2b7e2aec393"
+      }
+    },
+    "2,13": {
+      "NameUsedInJavaScript": "エンジン発注",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン発注",
+        "GUID": "e7615ce0-31cc-4ae1-884a-4c1f32c7c030"
+      }
+    },
+    "2,14": {
+      "NameUsedInJavaScript": "エンジン仕様変更_発行日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン仕様変更_発行日",
+        "GUID": "2a85bf50-c140-4866-a907-0b57fe3d7a91"
+      }
+    },
+    "2,15": {
+      "NameUsedInJavaScript": "エンジン仕様変更_発行数",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン仕様変更_発行数",
+        "GUID": "f449d589-2f19-4aa5-b851-20e2c811e519"
+      }
+    },
+    "2,16": {
+      "NameUsedInJavaScript": "工事指令書発行",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "工事指令書発行",
+        "GUID": "459267df-1881-469a-868b-324a64299061"
+      }
+    },
+    "2,17": {
+      "NameUsedInJavaScript": "出図_部品表_発行",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "出図_部品表_発行",
+        "GUID": "40fee111-20bd-4aae-9acd-306f6dd3d79d"
+      }
+    },
+    "2,18": {
+      "NameUsedInJavaScript": "資材展開",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "資材展開",
+        "GUID": "d7d011b8-0541-41e0-9a0b-279355795031"
+      }
+    },
+    "2,19": {
+      "NameUsedInJavaScript": "積層買い入れ品納入状況",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "積層買い入れ品納入状況",
+        "GUID": "cd2bfc11-512e-4647-a855-47c4502824f8"
+      }
+    },
+    "2,20": {
+      "NameUsedInJavaScript": "組立買い入れ品納入状況",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "組立買い入れ品納入状況",
+        "GUID": "2af4c9f6-b1ee-4c7e-8e26-6645a1aab753"
+      }
+    },
+    "2,21": {
+      "NameUsedInJavaScript": "据付買い入れ品納入状況",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "据付買い入れ品納入状況",
+        "GUID": "6972ec6d-62a9-4278-a7a6-6cd98b397989"
+      }
+    },
+    "2,22": {
+      "NameUsedInJavaScript": "ドライブ納入予定日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "ドライブ納入予定日",
+        "GUID": "3ea599df-f309-429d-853e-1bcc9be2b2d1"
+      }
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "エンジン納入予定日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン納入予定日",
+        "GUID": "f3b78fe3-9f13-483e-a959-25c31de254d8"
+      }
+    },
+    "2,24": {
+      "NameUsedInJavaScript": "HINNo確定",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "HINNo確定",
+        "GUID": "7e0cb525-f4ea-4f6c-89ff-575748041c49"
+      }
+    },
+    "2,25": {
+      "NameUsedInJavaScript": "銘板作成",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "銘板作成",
+        "GUID": "79e1a48f-a802-496b-96c7-ac2279dc3e61"
+      }
+    },
+    "2,26": {
+      "NameUsedInJavaScript": "積層投入_開始日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "積層投入_開始日",
+        "GUID": "383e4726-07b5-4add-8bfa-e9f494a8b8a7"
+      }
+    },
+    "2,27": {
+      "NameUsedInJavaScript": "積層投入_終了日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "積層投入_終了日",
+        "GUID": "4ce0ae3f-818c-4e5e-b439-34f389d6ccf8"
+      }
+    },
+    "2,28": {
+      "NameUsedInJavaScript": "組立投入_開始日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "組立投入_開始日",
+        "GUID": "a5a3996b-897e-4e35-a777-20b129cd1cff"
+      }
+    },
+    "2,29": {
+      "NameUsedInJavaScript": "組立投入_終了日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "組立投入_終了日",
+        "GUID": "4ae5d775-5ce9-4511-9f2b-9539f6464d65"
+      }
+    },
+    "2,30": {
+      "NameUsedInJavaScript": "据付投入_開始日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "据付投入_開始日",
+        "GUID": "1a95c202-d00f-4c72-b23a-5b5feb11a131"
+      }
+    },
+    "2,31": {
+      "NameUsedInJavaScript": "据付投入_終了日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "据付投入_終了日",
+        "GUID": "4535b86c-6625-4fb6-b840-3439c7cdea4a"
+      }
+    },
+    "2,32": {
+      "NameUsedInJavaScript": "仕上工程_開始日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "仕上工程_開始日",
+        "GUID": "5145c0d9-66b5-4e56-a5ad-4e8f7e53b759"
+      }
+    },
+    "2,33": {
+      "NameUsedInJavaScript": "仕上工程_終了日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "仕上工程_終了日",
+        "GUID": "fed8275d-3d52-4e55-940f-fc1c9855bae4"
+      }
+    },
+    "2,34": {
+      "NameUsedInJavaScript": "LO予定日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "LO予定日",
+        "GUID": "4554b17f-a5e1-44af-83be-aa5c8e289fd8"
+      }
+    },
+    "2,35": {
+      "NameUsedInJavaScript": "JCI",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "JCI",
+        "GUID": "f54b0a62-509f-4f1c-9858-2076c3d8b9ad"
+      }
+    },
+    "2,36": {
+      "NameUsedInJavaScript": "完成予定日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "完成予定日",
+        "GUID": "d011eb80-997b-4c33-a4e7-f0a91fae28c9"
+      }
+    },
+    "2,37": {
+      "NameUsedInJavaScript": "倉出し1_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し1_倉出し番号",
+        "GUID": "98447734-f0d4-4ce1-baa7-a19b7bfd1a72"
+      }
+    },
+    "2,38": {
+      "NameUsedInJavaScript": "倉出し1_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し1_工程名",
+        "GUID": "46a6576c-266d-42b5-9a31-59a52cb23332"
+      }
+    },
+    "2,39": {
+      "NameUsedInJavaScript": "倉出し1_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し1_倉出し日",
+        "GUID": "415efaca-2e04-4039-b1ee-678cf32cf949"
+      }
+    },
+    "2,40": {
+      "NameUsedInJavaScript": "倉出し2_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し2_倉出し番号",
+        "GUID": "146256df-4299-479d-8517-44dedece8047"
+      }
+    },
+    "2,41": {
+      "NameUsedInJavaScript": "倉出し2_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し2_工程名",
+        "GUID": "9e2b9370-b36e-46a9-bac2-cf9bbea38423"
+      }
+    },
+    "2,42": {
+      "NameUsedInJavaScript": "倉出し2_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し2_倉出し日",
+        "GUID": "cb481a9d-a916-482a-ae41-5d4303183ffd"
+      }
+    },
+    "2,43": {
+      "NameUsedInJavaScript": "倉出し3_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し3_倉出し番号",
+        "GUID": "a4de921e-3857-4600-b2f3-2191b5e98550"
+      }
+    },
+    "2,44": {
+      "NameUsedInJavaScript": "倉出し3_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し3_工程名",
+        "GUID": "2ff18509-1376-44d8-b716-38b58c41d929"
+      }
+    },
+    "2,45": {
+      "NameUsedInJavaScript": "倉出し3_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し3_倉出し日",
+        "GUID": "1d2bc712-8325-4548-a340-78ab5844ac5b"
+      }
+    },
+    "2,46": {
+      "NameUsedInJavaScript": "倉出し4_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し4_倉出し番号",
+        "GUID": "4854de39-f5ac-42a0-9d75-81d87381781f"
+      }
+    },
+    "2,47": {
+      "NameUsedInJavaScript": "倉出し4_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し4_工程名",
+        "GUID": "18936432-99f3-4088-b074-913837b7681f"
+      }
+    },
+    "2,48": {
+      "NameUsedInJavaScript": "倉出し4_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し4_倉出し日",
+        "GUID": "942c0b45-9fc3-4af1-bc62-9e8fd7406e18"
+      }
+    },
+    "2,49": {
+      "NameUsedInJavaScript": "倉出し5_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し5_倉出し番号",
+        "GUID": "97328eef-adec-412b-95ed-0fa97a4e847a"
+      }
+    },
+    "2,50": {
+      "NameUsedInJavaScript": "倉出し5_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し5_工程名",
+        "GUID": "6117e73c-e748-4d36-ae37-0ecab20506f6"
+      }
+    },
+    "2,51": {
+      "NameUsedInJavaScript": "倉出し5_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し5_倉出し日",
+        "GUID": "239207b1-aa15-4ff0-91ee-b381893a8166"
+      }
+    },
+    "2,52": {
+      "NameUsedInJavaScript": "倉出し6_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し6_倉出し番号",
+        "GUID": "100bd02e-93c6-4a0f-8e71-c8e5171b6a4b"
+      }
+    },
+    "2,53": {
+      "NameUsedInJavaScript": "倉出し6_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し6_工程名",
+        "GUID": "f8112c70-8aa8-4df7-85ba-27bdeac3f1ff"
+      }
+    },
+    "2,54": {
+      "NameUsedInJavaScript": "倉出し6_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し6_倉出し日",
+        "GUID": "d8510ab5-ecd5-43a9-9be1-13e3546e7581"
+      }
+    },
+    "2,55": {
+      "NameUsedInJavaScript": "倉出し7_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し7_倉出し番号",
+        "GUID": "21c99868-844d-428a-9994-41d77605499b"
+      }
+    },
+    "2,56": {
+      "NameUsedInJavaScript": "倉出し7_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し7_工程名",
+        "GUID": "112572a9-0a0f-467a-a923-dcc07a1172fb"
+      }
+    },
+    "2,57": {
+      "NameUsedInJavaScript": "倉出し7_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し7_倉出し日",
+        "GUID": "908fd3b1-db80-43fa-94f9-3ac07bcc94e0"
+      }
+    },
+    "2,58": {
+      "NameUsedInJavaScript": "倉出し8_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し8_倉出し番号",
+        "GUID": "142d6602-b225-464f-909f-b9a82cd459cc"
+      }
+    },
+    "2,59": {
+      "NameUsedInJavaScript": "倉出し8_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し8_工程名",
+        "GUID": "38679021-a7f7-4d12-bc35-e05e7c6ccfc4"
+      }
+    },
+    "2,60": {
+      "NameUsedInJavaScript": "倉出し8_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し8_倉出し日",
+        "GUID": "7b200a85-71d6-4931-a958-008f762ab401"
+      }
+    },
+    "2,61": {
+      "NameUsedInJavaScript": "倉出し9_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し9_倉出し番号",
+        "GUID": "9ded8388-dfcd-46f1-aeb8-03a1eaa7a2d9"
+      }
+    },
+    "2,62": {
+      "NameUsedInJavaScript": "倉出し9_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し9_工程名",
+        "GUID": "1144bd3c-e9bf-4c2f-8f62-b42b2129d2ff"
+      }
+    },
+    "2,63": {
+      "NameUsedInJavaScript": "倉出し9_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し9_倉出し日",
+        "GUID": "5d118f13-ba9a-4205-ba04-3d05fbac92f9"
+      }
+    },
+    "2,64": {
+      "NameUsedInJavaScript": "倉出し10_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し10_倉出し番号",
+        "GUID": "0ddeb904-f3bd-4989-a3b3-79ec20680c7a"
+      }
+    },
+    "2,65": {
+      "NameUsedInJavaScript": "倉出し10_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し10_工程名",
+        "GUID": "d0a95e85-ae70-4d42-b2e5-bfc42abdf758"
+      }
+    },
+    "2,66": {
+      "NameUsedInJavaScript": "倉出し10_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し10_倉出し日",
+        "GUID": "a63d0713-2e15-48ae-9c90-f8c981bc23fc"
+      }
+    },
+    "2,67": {
+      "NameUsedInJavaScript": "倉出し11_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し11_倉出し番号",
+        "GUID": "736059f8-e2b5-45b1-9c37-7edd7cb42061"
+      }
+    },
+    "2,68": {
+      "NameUsedInJavaScript": "倉出し11_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し11_工程名",
+        "GUID": "c27a0f16-9676-49cb-bb93-cac15d627dcc"
+      }
+    },
+    "2,69": {
+      "NameUsedInJavaScript": "倉出し11_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し11_倉出し日",
+        "GUID": "eaafcd51-7cd0-4274-844e-bbf2b6869cc1"
+      }
+    },
+    "2,70": {
+      "NameUsedInJavaScript": "倉出し12_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し12_倉出し番号",
+        "GUID": "19f461bd-5d31-4ade-89ff-ed0ef8b45c28"
+      }
+    },
+    "2,71": {
+      "NameUsedInJavaScript": "倉出し12_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し12_工程名",
+        "GUID": "19a9e0fc-cba9-4114-8243-d764d7846b1e"
+      }
+    },
+    "2,72": {
+      "NameUsedInJavaScript": "倉出し12_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し12_倉出し日",
+        "GUID": "558d1dce-af8e-48c5-a24a-38b5d2d237f9"
+      }
+    },
+    "2,73": {
+      "NameUsedInJavaScript": "倉出し13_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し13_倉出し番号",
+        "GUID": "e8761221-c871-45bb-b689-682a94a0df14"
+      }
+    },
+    "2,74": {
+      "NameUsedInJavaScript": "倉出し13_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し13_工程名",
+        "GUID": "96f09e0f-0a0c-476c-9257-54b6577cf590"
+      }
+    },
+    "2,75": {
+      "NameUsedInJavaScript": "倉出し13_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し13_倉出し日",
+        "GUID": "118a3532-17e7-45be-b9c6-f2ac79add9ba"
+      }
+    },
+    "2,76": {
+      "NameUsedInJavaScript": "倉出し14_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し14_倉出し番号",
+        "GUID": "bf6d1a06-ef47-4d19-86df-0f0a623da82f"
+      }
+    },
+    "2,77": {
+      "NameUsedInJavaScript": "倉出し14_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し14_工程名",
+        "GUID": "9e80b0c6-6e29-40ea-bf4f-30aa343e7dc6"
+      }
+    },
+    "2,78": {
+      "NameUsedInJavaScript": "倉出し14_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し14_倉出し日",
+        "GUID": "0426134b-ad05-4ff2-92bd-acdd6b4b926a"
+      }
+    },
+    "2,79": {
+      "NameUsedInJavaScript": "倉出し15_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し15_倉出し番号",
+        "GUID": "3fd6b928-3c45-476c-b8eb-40d2547d3eed"
+      }
+    },
+    "2,80": {
+      "NameUsedInJavaScript": "倉出し15_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し15_工程名",
+        "GUID": "d95a7710-1264-4e7b-a2cc-607aa7881ba5"
+      }
+    },
+    "2,81": {
+      "NameUsedInJavaScript": "倉出し15_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し15_倉出し日",
+        "GUID": "787d89ac-37fb-4caf-bc89-6f2e85302a32"
+      }
+    },
+    "2,82": {
+      "NameUsedInJavaScript": "倉出し16_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し16_倉出し番号",
+        "GUID": "c9c64ec9-1b2b-461a-9ee9-bf66266509eb"
+      }
+    },
+    "2,83": {
+      "NameUsedInJavaScript": "倉出し16_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し16_工程名",
+        "GUID": "f301198b-bbdc-4fc2-81dd-e3e5ec069a90"
+      }
+    },
+    "2,84": {
+      "NameUsedInJavaScript": "倉出し16_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し16_倉出し日",
+        "GUID": "697e73ec-b2c2-408b-82fe-7aba1cc0dec8"
+      }
+    },
+    "2,85": {
+      "NameUsedInJavaScript": "倉出し17_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し17_倉出し番号",
+        "GUID": "3e6da8e8-3df6-4bf5-92ab-0d17f9a0e521"
+      }
+    },
+    "2,86": {
+      "NameUsedInJavaScript": "倉出し17_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し17_工程名",
+        "GUID": "b61015fd-5d3b-453d-a31f-4ea966abf2a9"
+      }
+    },
+    "2,87": {
+      "NameUsedInJavaScript": "倉出し17_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し17_倉出し日",
+        "GUID": "2654f978-ce06-45ab-bead-896c7a899ab4"
+      }
+    },
+    "2,88": {
+      "NameUsedInJavaScript": "倉出し18_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し18_倉出し番号",
+        "GUID": "f8ae79e9-9851-4245-8170-5bf5e4aed78c"
+      }
+    },
+    "2,89": {
+      "NameUsedInJavaScript": "倉出し18_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し18_工程名",
+        "GUID": "d1eedeb5-7143-49bb-9d1d-017b494298c5"
+      }
+    },
+    "2,90": {
+      "NameUsedInJavaScript": "倉出し18_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し18_倉出し日",
+        "GUID": "4ea594d0-68e8-4d4d-b951-c2e4767e4c89"
+      }
+    },
+    "2,91": {
+      "NameUsedInJavaScript": "倉出し19_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し19_倉出し番号",
+        "GUID": "9e224fb9-e79e-40b7-aac6-df0f481ae45f"
+      }
+    },
+    "2,92": {
+      "NameUsedInJavaScript": "倉出し19_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し19_工程名",
+        "GUID": "0f96fbcb-5a2e-4f9a-8558-db26442b2a22"
+      }
+    },
+    "2,93": {
+      "NameUsedInJavaScript": "倉出し19_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し19_倉出し日",
+        "GUID": "09629a0c-446c-4998-92ba-cd1d1cd0f793"
+      }
+    },
+    "2,94": {
+      "NameUsedInJavaScript": "倉出し20_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し20_倉出し番号",
+        "GUID": "2ece2fb4-fdfe-443d-8f43-59f2b84ea68d"
+      }
+    },
+    "2,95": {
+      "NameUsedInJavaScript": "倉出し20_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し20_工程名",
+        "GUID": "60456d50-eeeb-4939-a5da-1ef94ae28b3f"
+      }
+    },
+    "2,96": {
+      "NameUsedInJavaScript": "倉出し20_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し20_倉出し日",
+        "GUID": "5d791e30-2870-4208-b2e5-6d7cd5ad21c4"
+      }
+    },
+    "2,97": {
+      "NameUsedInJavaScript": "倉出し21_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し21_倉出し番号",
+        "GUID": "fc2a49fa-d4d8-42cd-8ec4-56efb1799a46"
+      }
+    },
+    "2,98": {
+      "NameUsedInJavaScript": "倉出し21_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し21_工程名",
+        "GUID": "00c699aa-24a3-4e1e-9587-8183b1b3ac5b"
+      }
+    },
+    "2,99": {
+      "NameUsedInJavaScript": "倉出し21_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し21_倉出し日",
+        "GUID": "67ba9ef3-6696-49e6-b87f-73ccfe3be0f1"
+      }
+    },
+    "2,100": {
+      "NameUsedInJavaScript": "倉出し22_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し22_倉出し番号",
+        "GUID": "0da856a0-bd4f-4e15-9171-4b1d9b683dcd"
+      }
+    },
+    "2,101": {
+      "NameUsedInJavaScript": "倉出し22_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し22_工程名",
+        "GUID": "44291072-f43a-4923-89b5-5193396c262d"
+      }
+    },
+    "2,102": {
+      "NameUsedInJavaScript": "倉出し22_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し22_倉出し日",
+        "GUID": "8baa1373-3322-40af-be13-3e7811d01ca5"
+      }
+    },
+    "2,103": {
+      "NameUsedInJavaScript": "倉出し23_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し23_倉出し番号",
+        "GUID": "753893c0-8c1f-4c9a-b437-bd914a2876a6"
+      }
+    },
+    "2,104": {
+      "NameUsedInJavaScript": "倉出し23_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し23_工程名",
+        "GUID": "449d41b7-747f-4870-9d0b-d479aa9333ea"
+      }
+    },
+    "2,105": {
+      "NameUsedInJavaScript": "倉出し23_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し23_倉出し日",
+        "GUID": "51492919-06fd-4c77-a233-7e604a0d651d"
+      }
+    },
+    "2,106": {
+      "NameUsedInJavaScript": "倉出し24_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し24_倉出し番号",
+        "GUID": "3936d977-fc1c-4154-ab0a-e0b11f0a38b4"
+      }
+    },
+    "2,107": {
+      "NameUsedInJavaScript": "倉出し24_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し24_工程名",
+        "GUID": "547a4065-e9d6-4670-a428-24b17eab0472"
+      }
+    },
+    "2,108": {
+      "NameUsedInJavaScript": "倉出し24_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し24_倉出し日",
+        "GUID": "b5dd1924-4501-473e-87dc-d7146cf46658"
+      }
+    },
+    "2,109": {
+      "NameUsedInJavaScript": "倉出し25_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し25_倉出し番号",
+        "GUID": "8c297813-dd85-4c1b-93ac-aec98a5ac5a3"
+      }
+    },
+    "2,110": {
+      "NameUsedInJavaScript": "倉出し25_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し25_工程名",
+        "GUID": "34ddcbbe-3a8b-4094-93c2-ec0530163f0c"
+      }
+    },
+    "2,111": {
+      "NameUsedInJavaScript": "倉出し25_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し25_倉出し日",
+        "GUID": "c2a9add6-a235-4661-ac3f-abfa2ed7819d"
+      }
+    },
+    "2,112": {
+      "NameUsedInJavaScript": "倉出し26_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し26_倉出し番号",
+        "GUID": "f998584d-bdf9-49ca-958c-c9cabcc59e6d"
+      }
+    },
+    "2,113": {
+      "NameUsedInJavaScript": "倉出し26_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し26_工程名",
+        "GUID": "85dd95a9-836e-4d40-8638-003cd0344972"
+      }
+    },
+    "2,114": {
+      "NameUsedInJavaScript": "倉出し26_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し26_倉出し日",
+        "GUID": "f202f780-113f-48ac-ab06-ea5d46ce06f7"
+      }
+    },
+    "2,115": {
+      "NameUsedInJavaScript": "倉出し27_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し27_倉出し番号",
+        "GUID": "30bf0100-8039-4a7d-8579-878a16b02688"
+      }
+    },
+    "2,116": {
+      "NameUsedInJavaScript": "倉出し27_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し27_工程名",
+        "GUID": "41da84bf-dc50-403a-ae83-db561c453468"
+      }
+    },
+    "2,117": {
+      "NameUsedInJavaScript": "倉出し27_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し27_倉出し日",
+        "GUID": "d07bde3c-1442-49cb-96fc-29a6caf9d377"
+      }
+    },
+    "2,118": {
+      "NameUsedInJavaScript": "倉出し28_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し28_倉出し番号",
+        "GUID": "95a55c1a-8425-4124-8963-864cae09d6d7"
+      }
+    },
+    "2,119": {
+      "NameUsedInJavaScript": "倉出し28_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し28_工程名",
+        "GUID": "4e4668f5-9efd-487c-b7ab-7faa2b64a9ce"
+      }
+    },
+    "2,120": {
+      "NameUsedInJavaScript": "倉出し28_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し28_倉出し日",
+        "GUID": "e8928739-ca6e-4ad9-b117-0bdaa0980e5c"
+      }
+    },
+    "2,121": {
+      "NameUsedInJavaScript": "倉出し29_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し29_倉出し番号",
+        "GUID": "987d4181-b843-4d47-ac76-d858b1a22413"
+      }
+    },
+    "2,122": {
+      "NameUsedInJavaScript": "倉出し29_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し29_工程名",
+        "GUID": "5761115a-13f5-4291-ba8d-00a45d9dea57"
+      }
+    },
+    "2,123": {
+      "NameUsedInJavaScript": "倉出し29_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し29_倉出し日",
+        "GUID": "eca2dc9d-5c6e-4858-ad35-0028aceae5a9"
+      }
+    },
+    "2,124": {
+      "NameUsedInJavaScript": "倉出し30_倉出し番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し30_倉出し番号",
+        "GUID": "bff8cf6e-2e01-4239-8d09-20be8850edf3"
+      }
+    },
+    "2,125": {
+      "NameUsedInJavaScript": "倉出し30_工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し30_工程名",
+        "GUID": "6e3b4a00-3501-42b3-a54d-7e74dbab0bb4"
+      }
+    },
+    "2,126": {
+      "NameUsedInJavaScript": "倉出し30_倉出し日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "倉出し30_倉出し日",
+        "GUID": "a90d3f12-ff96-4e42-92ef-7e2429b14f95"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 7,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 7,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 9,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333015441895,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 9,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Meiryo UI",
+        "Normal",
+        "#FF000000",
+        "[AUTO]General",
+        "General",
+        "Center",
+        "#FFA3C7EB",
+        "@",
+        "#FFB1E49E",
+        "[AUTO]yyyy/m/d"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "1,0": 1,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 2,
+      "1,25": 2,
+      "1,26": 2,
+      "1,27": 2,
+      "1,28": 2,
+      "1,29": 2,
+      "1,30": 2,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 2,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 2,
+      "1,40": 2,
+      "1,41": 2,
+      "1,42": 2,
+      "1,43": 2,
+      "1,44": 2,
+      "1,45": 2,
+      "1,46": 2,
+      "1,47": 2,
+      "1,48": 2,
+      "1,49": 2,
+      "1,50": 2,
+      "1,51": 2,
+      "1,52": 2,
+      "1,53": 2,
+      "1,54": 2,
+      "1,55": 2,
+      "1,56": 2,
+      "1,57": 2,
+      "1,58": 2,
+      "1,59": 2,
+      "1,60": 2,
+      "1,61": 2,
+      "1,62": 2,
+      "1,63": 2,
+      "1,64": 2,
+      "1,65": 2,
+      "1,66": 2,
+      "1,67": 2,
+      "1,68": 2,
+      "1,69": 2,
+      "1,70": 2,
+      "1,71": 2,
+      "1,72": 2,
+      "1,73": 2,
+      "1,74": 2,
+      "1,75": 2,
+      "1,76": 2,
+      "1,77": 2,
+      "1,78": 2,
+      "1,79": 2,
+      "1,80": 2,
+      "1,81": 2,
+      "1,82": 2,
+      "1,83": 2,
+      "1,84": 2,
+      "1,85": 2,
+      "1,86": 2,
+      "1,87": 2,
+      "1,88": 2,
+      "1,89": 2,
+      "1,90": 2,
+      "1,91": 2,
+      "1,92": 2,
+      "1,93": 2,
+      "1,94": 2,
+      "1,95": 2,
+      "1,96": 2,
+      "1,97": 2,
+      "1,98": 2,
+      "1,99": 2,
+      "1,100": 2,
+      "1,101": 2,
+      "1,102": 2,
+      "1,103": 2,
+      "1,104": 2,
+      "1,105": 2,
+      "1,106": 2,
+      "1,107": 2,
+      "1,108": 2,
+      "1,109": 2,
+      "1,110": 2,
+      "1,111": 2,
+      "1,112": 2,
+      "1,113": 2,
+      "1,114": 2,
+      "1,115": 2,
+      "1,116": 2,
+      "1,117": 2,
+      "1,118": 2,
+      "1,119": 2,
+      "1,120": 2,
+      "1,121": 2,
+      "1,122": 2,
+      "1,123": 2,
+      "1,124": 2,
+      "1,125": 2,
+      "1,126": 2,
+      "2,0": 3,
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 4,
+      "2,19": 4,
+      "2,20": 4,
+      "2,21": 4,
+      "2,22": 4,
+      "2,23": 4,
+      "2,24": 4,
+      "2,25": 4,
+      "2,26": 4,
+      "2,27": 4,
+      "2,28": 4,
+      "2,29": 4,
+      "2,30": 4,
+      "2,31": 4,
+      "2,32": 4,
+      "2,33": 4,
+      "2,34": 4,
+      "2,35": 4,
+      "2,36": 4,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 4,
+      "2,40": 0,
+      "2,41": 0,
+      "2,42": 4,
+      "2,45": 4,
+      "2,48": 4,
+      "2,51": 4,
+      "2,54": 4,
+      "2,57": 4,
+      "2,60": 4,
+      "2,63": 4,
+      "2,66": 4,
+      "2,69": 4,
+      "2,72": 4,
+      "2,75": 4,
+      "2,78": 4,
+      "2,81": 4,
+      "2,84": 4,
+      "2,87": 4,
+      "2,90": 4,
+      "2,93": 4,
+      "2,96": 4,
+      "2,99": 4,
+      "2,102": 4,
+      "2,105": 4,
+      "2,108": 4,
+      "2,111": 4,
+      "2,114": 4,
+      "2,117": 4,
+      "2,120": 4,
+      "2,123": 4,
+      "2,126": 5,
+      "3,0": 6,
+      "3,126": 7,
+      "4,0": 6,
+      "4,126": 7,
+      "5,0": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "5,17": 0,
+      "5,18": 4,
+      "5,19": 4,
+      "5,20": 4,
+      "5,21": 4,
+      "5,22": 4,
+      "5,23": 4,
+      "5,24": 4,
+      "5,25": 4,
+      "5,26": 4,
+      "5,27": 4,
+      "5,28": 4,
+      "5,29": 4,
+      "5,30": 4,
+      "5,31": 4,
+      "5,32": 4,
+      "5,33": 4,
+      "5,34": 4,
+      "5,35": 4,
+      "5,36": 4,
+      "5,37": 0,
+      "5,38": 0,
+      "5,39": 4,
+      "5,40": 0,
+      "5,41": 0,
+      "5,42": 4,
+      "5,45": 4,
+      "5,48": 4,
+      "5,51": 4,
+      "5,54": 4,
+      "5,57": 4,
+      "5,60": 4,
+      "5,63": 4,
+      "5,66": 4,
+      "5,69": 4,
+      "5,72": 4,
+      "5,75": 4,
+      "5,78": 4,
+      "5,81": 4,
+      "5,84": 4,
+      "5,87": 4,
+      "5,90": 4,
+      "5,93": 4,
+      "5,96": 4,
+      "5,99": 4,
+      "5,102": 4,
+      "5,105": 4,
+      "5,108": 4,
+      "5,111": 4,
+      "5,114": 4,
+      "5,117": 4,
+      "5,120": 4,
+      "5,123": 4,
+      "5,126": 4
+    },
+    "ColStyles": {
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0,
+      "41": 0,
+      "42": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 13.333333015441895,
+      "FontStyle": 1,
+      "FontWeight": 1,
+      "Foreground": 2,
+      "Formatter": 3,
+      "TextIndent": 0,
+      "HorizontalAlignment": 4,
+      "VerticalAlignment": 5,
+      "WordWrap": false,
+      "Strikethrough": false,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "3,0,3,127"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Orientation": 2,
+    "Margin": {},
+    "PageOrder": 1
+  }
+}//0coLtCUeiVhWUcAc8mxvNDKvYnX/9aJGSec8Vj5x4UIbCF9inUPwTjh7ufgEu5Ss+Pkb1XhQ1kbyIxrxcneCa1mxQiWl2FdKMfBCDB1sgMnC9KN4vPyHqwDTAAvOQEB8esgT1UOMaTNO4En5zo64QzNzoe8q9j1W6tfYUZmDb3HPTrdtIuULe3WlVAXDSm+fg3bboVIqykb45mQriTBsW4arv4Vfgh7djYwF1q5GyfAiR9Az2eftcLhQGtiEwwO8zmEWRvOy7wNHazcLp5vdiTNJAg/1+C+zzW7MxWc7Ot6SYKILJcaOl25o59zds5CIoVBNvZ484Uq8Yotvxal8hR8MyL6U5byE/m6j380FJsy3KSSQGesFeHgQ/HKHT/77j7GUKF2BAa4ks9dtLsNp+fa2Uh2IDYHXmLOFmDuT/8F4jwzb8m2R+vSUEa6qK0W+YXIjRF5rsSS1g63bfRcHkk8Pi5oEmW2TTT+PaHioop6OnYFzY1Yf1SLvr1epzEPeaWLwb4Vc0EDFuZ8RjhGL9i5C1htzM8RWODiad+6uAEJeGQ3K8+NDKONc++dRWZuwQEpWt3t6uvGGPS5YYGpG1voaMqkiUyAByGPtr3Bax8ZAxRB2oZ+Z2D7VzjjAICzBVV0Ve8BfZIy/5PeBlfuciXb+D6n6rgJHiZO02e3CwDuSUtYRCeUJy7jtok8kptKK6blcDMuiqN5ImqYpHbN2fnDFEHsXJXuEIEdytTXAwG9hEo9l5W1cOq0e6riej5nwugif6gDvSb9wwu8IClxYJQnypKyN9KggYIfhiHkpyKQLFiOD4DezML1m1MN/duI2G1Mk+JvlY3CtkNxq8Gb60PSAb04QIi7136wCCbtcIBC4dJ2Wf//beWqtOy4SGHjmrRtYkqWLplzwbzYuUt3AVg==|920

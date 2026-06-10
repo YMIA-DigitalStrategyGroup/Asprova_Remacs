@@ -1,0 +1,324 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Count": 36
+  },
+  "Cols": {
+    "Count": 71
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.svg"
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Value": "ホーム",
+            "Text": "ホーム",
+            "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "目次"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "生産実績入力",
+            "Text": "生産実績入力",
+            "IconPath": "Navigation/167_file_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "生産実績入力"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "その他実績入力",
+            "Text": "その他実績入力",
+            "IconPath": "Mobile/419_share_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "その他作業実績入力"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "有償工事実績入力",
+            "Text": "有償工事実績入力",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "その他有償工事"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "海洋商品入力",
+            "Text": "海洋商品入力",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "海洋実績入力"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "投入計画取込",
+            "Text": "投入計画取込",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "投入計画取込",
+                "Text": "投入計画取込",
+                "IconPath": "Application/136_calendar_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "投入計画設定"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "投入計画設定（海洋）",
+                "Text": "投入計画設定（海洋）",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "投入計画設定 (海洋)"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "マスタ設定",
+            "Text": "マスタ設定",
+            "IconPath": "Application/015_add_user_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "工程-社員マスタ登録",
+                "Text": "工程-社員マスタ登録",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "工程社員マスタ管理"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "担当工程マスタ",
+                "Text": "担当工程マスタ",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "担当工程マスタ管理"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 16.0,
+            "Height": 45.0,
+            "Width": 180.0,
+            "IconHeight": 20.0,
+            "IconWidth": 20.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 180.0,
+            "IconHeight": 20.0,
+            "IconWidth": 20.0
+          }
+        ]
+      }
+    },
+    "7,61": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "9,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "7,61": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,5,10",
+    "2,54,3,17",
+    "9,0,27,71",
+    "7,61,2,10",
+    "7,0,2,61"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "515397b3-ef9b-4f31-a45b-aa3c3ce18665",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,210"
+    },
+    {
+      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1420,100"
+    }
+  ]
+}//zx+La5unRULV74uzeIPRh01iKAeBXtC+0FPJAOfwNS/nlgeYyr1BR4v/qadN8hbodyUlFxgr5FpDZbwCOl3sYht/RDFuZ+AcJNMSjVuEceGDvFFtsUb74iOR2Te2oqZ2H44lIUEUTKT1PfCvq/mAmE6gF4EAttcUFOzy6h9nIzxACpkdhiy3iAvvqzwGp6jvOGyqaFctBVWWJhnaTHRh2bzpTauQz8p1jIpdDB+iBfJolcGk228xL6IedYJSyxShvOgke6mITv7GuR546SQ5WpEXQ+73bvqnc3YwoYI6MErc2CCS6ftedlGfFO5EmCuTCXjj4WvWxB9rPkm/wZ3YqqpomnWZrp6ZbRgIC0n7njb4uRz7GVTdItk6zqzpNfhyhkTtWvvZQwDZsrBRU0UokLSkAS9QM9Bn5dCiMOJ43WSSQOq50yDtua4e3DljZOlJiQgDNQZmbugWQq7RynpYm6aYMD6/4In/7rWH21LCCFgWB8KAWcUaGSoXcj7PaITKKEplMpfsCJV3uakgV0hAOnshm3wcWFAv09TyVrcmOLk68r7y5sh15Iaytj5tf0z6sfT4LixnhJM1zTK3BqMpAxxXE0mFob6kpTWmtP1sy2eIyqcjn2mC7qRPfVb1Qig7q98sQHBUQgxSKaU9jgM7OY5eJ5BAwPoVIpp+sgDkpsCCoUv8FTuFwaBsqG7viA7CeoKXam9+VbO0v1+Gf5HDcekIDOkJJtfsI7DW4o6kDjLn1KyPjY87vnL7JD3apJzMSgOvmi9n/C/rKjSbI7kP89ex45OmtFtYK+4Bt1nu5sbDkHK6GbXyOLotXr6aTFOLbeggL5a1A/jrcTi4PpR1CcTIrDAP6ujiOObzfbgFLzEhPCzpXLb+FuWedQ3QueI/EX9dLdS2SQUSXpNMFNzzfw==|920

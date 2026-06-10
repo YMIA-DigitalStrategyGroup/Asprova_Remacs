@@ -1,0 +1,124 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,26": "工程社員マスタ管理ページの[設定内容を確認]ボタンにコマンドを設定し、",
+    "3,26": "ボタンをクリックしたら、社員係数一覧画面がポップアップ表示されるようにする。",
+    "4,26": "⇨できれば、検索窓を作って、社員名を入力したらその情報のレコーダだけリストビューに表示されるような動きを作る",
+    "6,26": "※社員コードが社員名で表示されるようにする"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_v_seisan_keisu",
+        "RowIndex": 2,
+        "ColumnIndex": 1,
+        "RowCount": 26,
+        "ColumnCount": 24,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,1": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_v_seisan_keisu",
+        "ColumnName": "工程コード",
+        "GUID": "500cdb81-81a1-4855-b5ff-5d7f0e7fb6f8"
+      }
+    },
+    "3,5": {
+      "NameUsedInJavaScript": "社員コード",
+      "BindingInfo": {
+        "TableName": "ymia_v_seisan_keisu",
+        "ColumnName": "社員コード",
+        "GUID": "b39c66cd-d3c3-4ac2-9863-9d7f7d8fd41d"
+      }
+    },
+    "3,9": {
+      "NameUsedInJavaScript": "代表者",
+      "BindingInfo": {
+        "TableName": "ymia_v_seisan_keisu",
+        "ColumnName": "代表者",
+        "GUID": "c695c98a-9a51-4451-8d00-4d117af8da86"
+      }
+    },
+    "3,13": {
+      "NameUsedInJavaScript": "係数",
+      "BindingInfo": {
+        "TableName": "ymia_v_seisan_keisu",
+        "ColumnName": "係数",
+        "GUID": "cf7e9aeb-7f07-4ad6-9b9a-107faa5eabab"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "Foreground": 1,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FFFF0000",
+        "[AUTO]General",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,26": 0,
+      "3,26": 0,
+      "4,26": 0,
+      "6,26": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "4,1,24,24",
+    "2,1,1,4",
+    "3,1,1,4",
+    "2,5,1,4",
+    "3,5,1,4",
+    "2,9,1,4",
+    "3,9,1,4",
+    "2,13,1,4",
+    "3,13,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//j1aHzYS3nug3T7RZqIW+0pUPZmheN4HGH8FG0f8c6Zt9ur/qRl6LNvJZwqoCEBbbeawYFUC9wcdT//7Vbwb/r5n3a/VH1X33PR6Np5nCKQ6ojrmiWe8Kx0CEzHWsmtwlrKNNPYeWH+gy2YbrtLyVsOnp306oi2IDByLpK71QCA7ysEjCU8HDg+0wYeB/vguyqDsEaGFQvptXX78+BvMl1m5/D6fyVgOJ3+5rqth9CeKrn86MYlfZjaH2vVV+bVYlje655ZGju1KOefIYSSkNrU+BjS/EXW6IaRLaqUZwCCKLUUsPxgoiZ7xkZG7OEm9DWoXFKYOe95nQR4nrXwGBW5t8jI95lIjSrGgxCJs2HdfLPwugP/V7Wb3DGetL5ICyT5GuCGh2cBRHX7m1bkJA86b28pIUX3SGJCpcRs/IFU/EsxepOGwZjnyxfa18N2lgDCTjjerMPmpkGalpRlCTtPmcncLHLVtXY3knjhyngxV0NzhiHXnLkYTYIOQgBRlJ/mwlWxvTxqv4da2mNBI/OBPR4zxzHH0IZZRwMen4Lab/ZuHEf1uNSw7nxGxtGZK2MP4xg0dq+BWSyaQ3S6lufFpH5GN/huMSvwMqnF/xqwr3p+kskaJ0DsLNEox6XBUO6NH2BfN6UycBgLKfnZy7tvCHi59ExZOPNjQ1vsjzjTua67iIyFTyOuhf8/4LgrdZjLpJAeFdBCodfdLl2C7QtskfTWKAvhnAFOpE3wydsfQlqd38Rg38K0J8tHkuM159GsAT5WezYp3mhnHhKA0NXjncVBHcSLnzDcXbKvxO7/534TLhTp7t2rdUJfIcJ+RkoIUR1+OHsoGam7XXMr6Ujd9T97eHzfNZHlq68r2urAGWGu3TC6iQGjyGHV9XlF2R2BjNf5gytJdPIbpS6a22HA==|920

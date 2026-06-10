@@ -1,0 +1,106 @@
+{
+  "Name": "艇番一括変換（海洋）",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "Target艇種",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "old艇番",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "new艇番",
+          "DataValidationInfo": {}
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "生産実績情報SQLServer",
+      "Params": {
+        "@new艇番": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=new艇番"
+          },
+          "Item2": 22
+        },
+        "@Target艇種": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=Target艇種"
+          },
+          "Item2": 22
+        },
+        "@old艇番": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=old艇番"
+          },
+          "Item2": 22
+        }
+      },
+      "SqlStatement": "UPDATE ymia_t_seisan_jissekikaiyo \r\nSET 艇番 = @new艇番 \r\nWHERE 艇種 = @Target艇種 \r\n  AND 艇番 = @Old艇番;",
+      "ReturnsName": "",
+      "ID": "cb488f96ff8f401dba8a3492344c1ec1",
+      "Comments": "SQLServer仕様",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {
+        "@new艇番": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=new艇番"
+          },
+          "Item2": 253
+        },
+        "@Target艇種": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=Target艇種"
+          },
+          "Item2": 253
+        },
+        "@old艇番": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=old艇番"
+          },
+          "Item2": 253
+        }
+      },
+      "SqlStatement": "UPDATE ymia_t_seisan_jissekikaiyo \r\nSET 艇番 = ? \r\nWHERE 艇種 = ?\r\n  AND 艇番 = ?;",
+      "ID": "86dd485be1524d9b948cc26b5c852163",
+      "Comments": "MySQL仕様"
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 48.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 40,
+    "DefaultSize": 32.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "1,1": "登録ページ",
+    "1,9": "工程検索",
+    "1,12": "解除",
+    "1,15": "検索",
+    "4,14": "更新",
+    "4,16": "削除"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "担当工程マスタ登録",
+            "PassValues": [
+              {
+                "Source": "登録",
+                "TargetCell": {
+                  "SerializeProperty": "=担当工程マスタ登録!B16"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "登録ページ",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "vProcessOne",
+            "TableValue": {
+              "TableName": "T_担当工程マスタ",
+              "BindingInfos": [
+                {
+                  "GUID": "8abf4928-4f14-4b97-93f3-a7d15b2fd176",
+                  "BindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "41ec282d-023b-4f48-bfd8-6316d48d8a29"
+                  },
+                  "ColumnName": "担当者名"
+                },
+                {
+                  "GUID": "e9da79d5-e532-42c2-a218-0e21a4e20c6b",
+                  "BindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "ユーザー名",
+                    "GUID": "aa55c906-f1b3-4aef-b438-7111d2e74f1f"
+                  },
+                  "ColumnName": "ユーザー名"
+                },
+                {
+                  "GUID": "194e5bb2-66c6-45b4-b721-adca84a79d57",
+                  "BindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "工程コード",
+                    "GUID": "f698f486-4f77-49c1-82be-a4b27d1d75c9"
+                  },
+                  "ColumnName": "工程コード"
+                },
+                {
+                  "GUID": "59743937-ff89-4fe2-8a4e-425ad1b8cfe3",
+                  "BindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "工程名",
+                    "GUID": "db0d4b46-4f66-4f2c-a233-3f996ac8d87c"
+                  },
+                  "ColumnName": "工程名"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "T_担当工程マスタ",
+                  "ColumnName": "ユーザー名",
+                  "GUID": "441b8535-9034-403a-9bd3-cc852892b463"
+                },
+                "Value": "%CurrentUser.UserName%"
+              }
+            },
+            "ID": "931cfae4440b4405a5b53adb9c114d82"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "T_担当工程マスタ",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "4aa3fd1b-54b7-4869-bd16-c5f848c33c76"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.0.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "b8a6f1dc-d4db-492d-952d-d2f7961f4dc3"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.1.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "a6763b4f-71ee-42fb-a1bf-1cbf5e3c8cd1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.2.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "730d002a-ea34-42c8-983c-7e27c3b3c1fb"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.3.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "bdf517fd-1056-41fd-a171-633ae874c8db"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.4.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "8012de4f-e1d9-44d3-90e3-85610bc4a8dc"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.5.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "7bf41fa5-e7ad-4cf3-aca2-7bcc01761f1d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.6.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "d5d7662e-d067-4ad9-8d9e-4fc516367ba2"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.7.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "8d62a0f5-c1b1-42e4-8e04-4308a14518ee"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.8.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "82b09023-8851-41fb-96e0-bf6f061667f8"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.9.担当者名"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "b021fd93-794f-4ecb-af1e-c8cef035dada"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=担当工程マスタ管理!vProcessOne.10.担当者名"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "3f096b9abb8c4e5cad7980275c776722"
+          },
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "担当工程一覧",
+            "OrderByCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "工程コード",
+                    "GUID": "238ad9f4-0221-409a-99ab-fb94fa17b780"
+                  },
+                  "Order": 0
+                }
+              ]
+            },
+            "ID": "65de8aff06eb41c3aeb35f93378b13d5"
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=IFERROR(\"1件目：\"&担当工程マスタ管理!vProcessOne.0.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.0.工程名&CHAR(10),\"\")&IFERROR(\"2件目：\"&担当工程マスタ管理!vProcessOne.1.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.1.工程名&CHAR(10),\"\")&IFERROR(\"3件目：\"&担当工程マスタ管理!vProcessOne.2.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.2.工程名&CHAR(10),\"\")&IFERROR(\"4件目：\"&担当工程マスタ管理!vProcessOne.3.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.3.工程名&CHAR(10),\"\")&IFERROR(\"5件目：\"&担当工程マスタ管理!vProcessOne.4.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.4.工程名&CHAR(10),\"\")&IFERROR(\"6件目：\"&担当工程マスタ管理!vProcessOne.5.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.5.工程名&CHAR(10),\"\")&IFERROR(\"7件目：\"&担当工程マスタ管理!vProcessOne.6.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.6.工程名&CHAR(10),\"\")&IFERROR(\"8件目：\"&担当工程マスタ管理!vProcessOne.7.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.7.工程名&CHAR(10),\"\")&IFERROR(\"9件目：\"&担当工程マスタ管理!vProcessOne.8.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.8.工程名&CHAR(10),\"\")&IFERROR(\"10件目：\"&担当工程マスタ管理!vProcessOne.9.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.9.工程名&CHAR(10),\"\")&IFERROR(\"11件目：\"&担当工程マスタ管理!vProcessOne.10.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.10.工程名&CHAR(10),\"\")&IFERROR(\"12件目：\"&担当工程マスタ管理!vProcessOne.11.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.11.工程名&CHAR(10),\"\")&IFERROR(\"13件目：\"&担当工程マスタ管理!vProcessOne.12.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.12.工程名&CHAR(10),\"\")&IFERROR(\"14件目：\"&担当工程マスタ管理!vProcessOne.13.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.13.工程名&CHAR(10),\"\")&IFERROR(\"15件目：\"&担当工程マスタ管理!vProcessOne.14.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.14.工程名&CHAR(10),\"\")&IFERROR(\"16件目：\"&担当工程マスタ管理!vProcessOne.15.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.15.工程名&CHAR(10),\"\")&IFERROR(\"17件目：\"&担当工程マスタ管理!vProcessOne.16.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.16.工程名&CHAR(10),\"\")&IFERROR(\"18件目：\"&担当工程マスタ管理!vProcessOne.17.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.17.工程名&CHAR(10),\"\")&IFERROR(\"19件目：\"&担当工程マスタ管理!vProcessOne.18.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.18.工程名&CHAR(10),\"\")&IFERROR(\"20件目：\"&担当工程マスタ管理!vProcessOne.19.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.19.工程名&CHAR(10),\"\")&IFERROR(\"21件目：\"&担当工程マスタ管理!vProcessOne.20.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.20.工程名&CHAR(10),\"\")&IFERROR(\"22件目：\"&担当工程マスタ管理!vProcessOne.21.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.21.工程名&CHAR(10),\"\")&IFERROR(\"23件目：\"&担当工程マスタ管理!vProcessOne.22.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.22.工程名&CHAR(10),\"\")&IFERROR(\"24件目：\"&担当工程マスタ管理!vProcessOne.23.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.23.工程名&CHAR(10),\"\")&IFERROR(\"25件目：\"&担当工程マスタ管理!vProcessOne.24.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.24.工程名&CHAR(10),\"\")&IFERROR(\"26件目：\"&担当工程マスタ管理!vProcessOne.25.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.25.工程名&CHAR(10),\"\")&IFERROR(\"27件目：\"&担当工程マスタ管理!vProcessOne.26.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.26.工程名&CHAR(10),\"\")&IFERROR(\"28件目：\"&担当工程マスタ管理!vProcessOne.27.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.27.工程名&CHAR(10),\"\")&IFERROR(\"29件目：\"&担当工程マスタ管理!vProcessOne.28.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.28.工程名&CHAR(10),\"\")&IFERROR(\"30件目：\"&担当工程マスタ管理!vProcessOne.29.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.29.工程名&CHAR(10),\"\")&IFERROR(\"31件目：\"&担当工程マスタ管理!vProcessOne.30.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.30.工程名&CHAR(10),\"\")&IFERROR(\"32件目：\"&担当工程マスタ管理!vProcessOne.31.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.31.工程名&CHAR(10),\"\")&IFERROR(\"33件目：\"&担当工程マスタ管理!vProcessOne.32.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.32.工程名&CHAR(10),\"\")&IFERROR(\"34件目：\"&担当工程マスタ管理!vProcessOne.33.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.33.工程名&CHAR(10),\"\")&IFERROR(\"35件目：\"&担当工程マスタ管理!vProcessOne.34.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.34.工程名&CHAR(10),\"\")&IFERROR(\"36件目：\"&担当工程マスタ管理!vProcessOne.35.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.35.工程名&CHAR(10),\"\")&IFERROR(\"37件目：\"&担当工程マスタ管理!vProcessOne.36.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.36.工程名&CHAR(10),\"\")&IFERROR(\"38件目：\"&担当工程マスタ管理!vProcessOne.37.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.37.工程名&CHAR(10),\"\")&IFERROR(\"39件目：\"&担当工程マスタ管理!vProcessOne.38.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.38.工程名&CHAR(10),\"\")&IFERROR(\"40件目：\"&担当工程マスタ管理!vProcessOne.39.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.39.工程名&CHAR(10),\"\")&IFERROR(\"41件目：\"&担当工程マスタ管理!vProcessOne.40.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.40.工程名&CHAR(10),\"\")&IFERROR(\"42件目：\"&担当工程マスタ管理!vProcessOne.41.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.41.工程名&CHAR(10),\"\")&IFERROR(\"43件目：\"&担当工程マスタ管理!vProcessOne.42.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.42.工程名&CHAR(10),\"\")&IFERROR(\"44件目：\"&担当工程マスタ管理!vProcessOne.43.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.43.工程名&CHAR(10),\"\")&IFERROR(\"45件目：\"&担当工程マスタ管理!vProcessOne.44.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.44.工程名&CHAR(10),\"\")&IFERROR(\"46件目：\"&担当工程マスタ管理!vProcessOne.45.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.45.工程名&CHAR(10),\"\")&IFERROR(\"47件目：\"&担当工程マスタ管理!vProcessOne.46.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.46.工程名&CHAR(10),\"\")&IFERROR(\"48件目：\"&担当工程マスタ管理!vProcessOne.47.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.47.工程名&CHAR(10),\"\")&IFERROR(\"49件目：\"&担当工程マスタ管理!vProcessOne.48.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.48.工程名&CHAR(10),\"\")&IFERROR(\"50件目：\"&担当工程マスタ管理!vProcessOne.49.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.49.工程名&CHAR(10),\"\")&IFERROR(\"51件目：\"&担当工程マスタ管理!vProcessOne.50.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.50.工程名&CHAR(10),\"\")&IFERROR(\"52件目：\"&担当工程マスタ管理!vProcessOne.51.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.51.工程名&CHAR(10),\"\")&IFERROR(\"53件目：\"&担当工程マスタ管理!vProcessOne.52.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.52.工程名&CHAR(10),\"\")&IFERROR(\"54件目：\"&担当工程マスタ管理!vProcessOne.53.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.53.工程名&CHAR(10),\"\")&IFERROR(\"55件目：\"&担当工程マスタ管理!vProcessOne.54.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.54.工程名&CHAR(10),\"\")&IFERROR(\"56件目：\"&担当工程マスタ管理!vProcessOne.55.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.55.工程名&CHAR(10),\"\")&IFERROR(\"57件目：\"&担当工程マスタ管理!vProcessOne.56.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.56.工程名&CHAR(10),\"\")&IFERROR(\"58件目：\"&担当工程マスタ管理!vProcessOne.57.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.57.工程名&CHAR(10),\"\")&IFERROR(\"59件目：\"&担当工程マスタ管理!vProcessOne.58.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.58.工程名&CHAR(10),\"\")&IFERROR(\"60件目：\"&担当工程マスタ管理!vProcessOne.59.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.59.工程名&CHAR(10),\"\")&IFERROR(\"61件目：\"&担当工程マスタ管理!vProcessOne.60.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.60.工程名&CHAR(10),\"\")&IFERROR(\"62件目：\"&担当工程マスタ管理!vProcessOne.61.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.61.工程名&CHAR(10),\"\")&IFERROR(\"63件目：\"&担当工程マスタ管理!vProcessOne.62.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.62.工程名&CHAR(10),\"\")&IFERROR(\"64件目：\"&担当工程マスタ管理!vProcessOne.63.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.63.工程名&CHAR(10),\"\")&IFERROR(\"65件目：\"&担当工程マスタ管理!vProcessOne.64.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.64.工程名&CHAR(10),\"\")&IFERROR(\"66件目：\"&担当工程マスタ管理!vProcessOne.65.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.65.工程名&CHAR(10),\"\")&IFERROR(\"67件目：\"&担当工程マスタ管理!vProcessOne.66.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.66.工程名&CHAR(10),\"\")&IFERROR(\"68件目：\"&担当工程マスタ管理!vProcessOne.67.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.67.工程名&CHAR(10),\"\")&IFERROR(\"69件目：\"&担当工程マスタ管理!vProcessOne.68.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.68.工程名&CHAR(10),\"\")&IFERROR(\"70件目：\"&担当工程マスタ管理!vProcessOne.69.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.69.工程名&CHAR(10),\"\")&IFERROR(\"71件目：\"&担当工程マスタ管理!vProcessOne.70.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.70.工程名&CHAR(10),\"\")&IFERROR(\"72件目：\"&担当工程マスタ管理!vProcessOne.71.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.71.工程名&CHAR(10),\"\")&IFERROR(\"73件目：\"&担当工程マスタ管理!vProcessOne.72.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.72.工程名&CHAR(10),\"\")&IFERROR(\"74件目：\"&担当工程マスタ管理!vProcessOne.73.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.73.工程名&CHAR(10),\"\")&IFERROR(\"75件目：\"&担当工程マスタ管理!vProcessOne.74.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.74.工程名&CHAR(10),\"\")&IFERROR(\"76件目：\"&担当工程マスタ管理!vProcessOne.75.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.75.工程名&CHAR(10),\"\")&IFERROR(\"77件目：\"&担当工程マスタ管理!vProcessOne.76.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.76.工程名&CHAR(10),\"\")&IFERROR(\"78件目：\"&担当工程マスタ管理!vProcessOne.77.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.77.工程名&CHAR(10),\"\")&IFERROR(\"79件目：\"&担当工程マスタ管理!vProcessOne.78.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.78.工程名&CHAR(10),\"\")&IFERROR(\"80件目：\"&担当工程マスタ管理!vProcessOne.79.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.79.工程名&CHAR(10),\"\")&IFERROR(\"81件目：\"&担当工程マスタ管理!vProcessOne.80.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.80.工程名&CHAR(10),\"\")&IFERROR(\"82件目：\"&担当工程マスタ管理!vProcessOne.81.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.81.工程名&CHAR(10),\"\")&IFERROR(\"83件目：\"&担当工程マスタ管理!vProcessOne.82.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.82.工程名&CHAR(10),\"\")&IFERROR(\"84件目：\"&担当工程マスタ管理!vProcessOne.83.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.83.工程名&CHAR(10),\"\")&IFERROR(\"85件目：\"&担当工程マスタ管理!vProcessOne.84.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.84.工程名&CHAR(10),\"\")&IFERROR(\"86件目：\"&担当工程マスタ管理!vProcessOne.85.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.85.工程名&CHAR(10),\"\")&IFERROR(\"87件目：\"&担当工程マスタ管理!vProcessOne.86.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.86.工程名&CHAR(10),\"\")&IFERROR(\"88件目：\"&担当工程マスタ管理!vProcessOne.87.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.87.工程名&CHAR(10),\"\")&IFERROR(\"89件目：\"&担当工程マスタ管理!vProcessOne.88.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.88.工程名&CHAR(10),\"\")&IFERROR(\"90件目：\"&担当工程マスタ管理!vProcessOne.89.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.89.工程名&CHAR(10),\"\")&IFERROR(\"91件目：\"&担当工程マスタ管理!vProcessOne.90.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.90.工程名&CHAR(10),\"\")&IFERROR(\"92件目：\"&担当工程マスタ管理!vProcessOne.91.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.91.工程名&CHAR(10),\"\")&IFERROR(\"93件目：\"&担当工程マスタ管理!vProcessOne.92.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.92.工程名&CHAR(10),\"\")&IFERROR(\"94件目：\"&担当工程マスタ管理!vProcessOne.93.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.93.工程名&CHAR(10),\"\")&IFERROR(\"95件目：\"&担当工程マスタ管理!vProcessOne.94.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.94.工程名&CHAR(10),\"\")&IFERROR(\"96件目：\"&担当工程マスタ管理!vProcessOne.95.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.95.工程名&CHAR(10),\"\")&IFERROR(\"97件目：\"&担当工程マスタ管理!vProcessOne.96.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.96.工程名&CHAR(10),\"\")&IFERROR(\"98件目：\"&担当工程マスタ管理!vProcessOne.97.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.97.工程名&CHAR(10),\"\")&IFERROR(\"99件目：\"&担当工程マスタ管理!vProcessOne.98.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.98.工程名&CHAR(10),\"\")&IFERROR(\"100件目：\"&担当工程マスタ管理!vProcessOne.99.工程コード,\"\")&IFERROR(\" / \"&担当工程マスタ管理!vProcessOne.99.工程名,\"\")"
+            }
+          }
+        ],
+        "Text": "工程検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "担当工程一覧",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false,
+                "clearRuntimeQueryConditions": true
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "T_担当工程マスタ",
+            "ID": "0e3c7d3128c84c7cb08b68d4b071f6f0"
+          },
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "担当工程一覧",
+            "ID": "a6715e47f64e4552a5744bcd860858ca"
+          }
+        ],
+        "Text": "解除",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "担当工程一覧",
+            "OrderByCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "担当者名",
+                    "GUID": "13397aae-5e8e-4be1-a8b7-c4de96b7cfa8"
+                  },
+                  "Order": 0
+                },
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "T_担当工程マスタ",
+                    "ColumnName": "工程コード",
+                    "GUID": "e3c267de-0a11-4812-9c09-3061f8dfbffc"
+                  },
+                  "Order": 0
+                }
+              ]
+            },
+            "ID": "668ae60f0bcd44a78b4093adf3661852"
+          },
+          {
+            "$type": "ServerDesignerCommon.Command.RuntimeQueryCommand, ServerDesignerCommon",
+            "ListviewName": "担当工程一覧",
+            "Columns": [
+              {
+                "BindingInfo": {
+                  "TableName": "T_担当工程マスタ",
+                  "ColumnName": "担当者名",
+                  "GUID": "e4af237a-49dd-418e-a29c-a29018de4b40"
+                },
+                "Name": "担当者名"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "T_担当工程マスタ",
+                  "ColumnName": "ユーザー名",
+                  "GUID": "729d8125-7243-42b1-9eda-dfc5dd885277"
+                },
+                "Name": "ユーザー名"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "T_担当工程マスタ",
+                  "ColumnName": "工程コード",
+                  "GUID": "b6249ca3-7862-4f43-b3c5-959bc7080c30"
+                },
+                "Name": "工程コード"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "T_担当工程マスタ",
+                  "ColumnName": "工程名",
+                  "GUID": "3a6bb0ec-2291-45bb-8d9f-992cf52d8e98"
+                },
+                "Name": "工程名"
+              }
+            ],
+            "DefaultViewId": "custom",
+            "QueryDialogTitle": "検索",
+            "ID": "cd47386393a945fc8468608cb8c4c2fa"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,1": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "担当工程一覧",
+        "PageLimitRowCount": 20,
+        "FirstImage": {
+          "Name": "Arrow/277_move_first_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "NextImage": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        },
+        "LastImage": {
+          "Name": "Arrow/278_move_last_3.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 50"
+        }
+      }
+    },
+    "3,1": {
+      "ListViewInfo": {
+        "Name": "担当工程一覧",
+        "TableName": "T_担当工程マスタ",
+        "RowIndex": 3,
+        "ColumnIndex": 1,
+        "RowCount": 34,
+        "ColumnCount": 17,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,2": {
+      "NameUsedInJavaScript": "担当者名",
+      "BindingInfo": {
+        "TableName": "T_担当工程マスタ",
+        "ColumnName": "担当者名",
+        "GUID": "e4af237a-49dd-418e-a29c-a29018de4b40"
+      }
+    },
+    "4,5": {
+      "NameUsedInJavaScript": "ユーザー名",
+      "BindingInfo": {
+        "TableName": "T_担当工程マスタ",
+        "ColumnName": "ユーザー名",
+        "GUID": "729d8125-7243-42b1-9eda-dfc5dd885277"
+      }
+    },
+    "4,8": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "T_担当工程マスタ",
+        "ColumnName": "工程コード",
+        "GUID": "b6249ca3-7862-4f43-b3c5-959bc7080c30"
+      }
+    },
+    "4,11": {
+      "NameUsedInJavaScript": "工程名",
+      "BindingInfo": {
+        "TableName": "T_担当工程マスタ",
+        "ColumnName": "工程名",
+        "GUID": "3a6bb0ec-2291-45bb-8d9f-992cf52d8e98"
+      }
+    },
+    "4,14": {
+      "NameUsedInJavaScript": "更新",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "担当工程マスタ登録",
+            "PassValues": [
+              {
+                "Source": "更新",
+                "TargetCell": {
+                  "SerializeProperty": "=担当工程マスタ登録!B16"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "更新"
+      }
+    },
+    "4,16": {
+      "NameUsedInJavaScript": "削除",
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "本当に削除してもよろしいですか？"
+          }
+        ],
+        "Text": "削除"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Right",
+        "Blue"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "4,14": 2,
+      "4,16": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,1,3",
+    "2,1,1,17",
+    "4,2,1,3",
+    "4,5,1,3",
+    "4,8,1,3",
+    "4,11,1,3",
+    "4,14,1,2",
+    "4,16,1,2",
+    "5,1,32,17",
+    "1,15,1,2",
+    "1,12,1,2",
+    "1,9,1,2",
+    "3,2,1,3",
+    "3,5,1,3",
+    "3,8,1,3",
+    "3,11,1,3",
+    "3,14,1,2",
+    "3,16,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "生産実績入力メニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ACfT7F8wbTcusi1ALHup36V/YWiwcygCavJ+kmnvqL4cpB2K6BSE1AfvhE2Ca3EgOP+yOKuVpT80RqIoRafY1rx7zJgzYPPm/0WpB4f3VLBiy7+Egj3gPVVA4B4zJMvdqbmXPneskqu7BIIjvKgvZb2ewvTmrx9HbkJGHReyUHtu2+PgjMvUkaWaKEyUMiDTMolX15KrT/cZXNhfftY9bl3FfPzSWxf5LT/xyzuiRQmQMUZqeauoAIvwxwTAvTRoQo7/BbzvjLR2XfB0nlKq1ZG4Piyekl831Tab0ZsJoZUZ9US8NjPH++8DWlGVd3H3soXyBug0x4vDWPOLo+mWx6KyoSKAfPuYANlsQEoG8x5ebi2TFEHOEfwqMQTXYuALMs5ukLb+dxba4G9TC2LtixHWwWolFijDKxAXNXg7+z7dJMeHQtuaAcvEvIpHDVbi8bZxsfT5YNfLKPpPKj2arYoMK+hNsTe+WIw4IKOHOkXwDuVDivUhkXBLN8X+/j0fSw66QU69eUKKA2i9vl/UjzR6O2JuP9R+HSirN9tsuAxr2DhqQG6RNrPcI+wHpzyFnb6d/y9FKW3QuNRYaVEXL5ZimzQVZKbYXQ9jFA9MGhO2RlK6Mj9YpIpTPTvFDtPMcA5cHPS2JV4r30A+Z9dN4i2StG4lqoE9o2xWAR5+Xld12bx1ZDK7QordbV3gcL12SlXfzLu47i3lpWO5goi+dTvhorX0anDNdGJelyOKxmpyM02K7DTlGJI5dqor1Tk5HxpSwqDx/a3pRmYgVSDwFHccHzkUJBs9WXbY4Ftfgo2SIce8Sd37kQUZJ1I7hJKRA7YOvaMKowQPdj/RbTY3kpKvolf39ehmiTR5veUO9z/9Wpd33++xBvGUfaFwQP1W/RKvb9RstMIcAOCXd058AA==|920

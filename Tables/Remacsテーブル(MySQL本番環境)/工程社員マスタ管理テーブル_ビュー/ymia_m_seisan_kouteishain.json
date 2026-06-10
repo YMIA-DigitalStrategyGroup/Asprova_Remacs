@@ -1,0 +1,57 @@
+{
+  "Name": "ymia_m_seisan_kouteishain",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "社員コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "代表者",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0.0,
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "係数",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql本番環境",
+    "SourceTableName": "ymia_m_seisan_kouteishain",
+    "SourceTableSchema": ""
+  },
+  "PrimaryKey": [
+    "工程コード",
+    "社員コード"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "ユーザー名",
+      "ForeignTable": "ymia_m_seisan_kouteishain",
+      "ForeignColumn": "社員コード",
+      "IsDetailTableRelation": false
+    }
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,549 @@
+{
+  "Rows": {
+    "Count": 23
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      31
+    ],
+    "Count": 32
+  },
+  "Values": {
+    "1,2": "対象艇種",
+    "1,8": "対象艇番(旧)",
+    "1,15": "変換後の艇番(新)",
+    "2,14": "⇨",
+    "4,2": "艇番確定",
+    "4,15": "キャンセル"
+  },
+  "Formulas": {
+    "2,31": "ODATA(\"ymia_t_seisan_jissekidt?$filter=艇種 eq '\"&C3&\"' and 艇番 eq '\"&I3&\"'&$count=true\")",
+    "3,31": "ODATA(\"ymia_t_seisan_jissekidt?$filter=艇種 eq '\"&C3&\"' and 艇番 eq '\"&P3&\"'&$count=true\")"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "選択して下さい",
+        "IsBounding": true,
+        "DataSource": "ymia_t_seisan_jissekidt",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_jissekidt",
+          "ColumnName": "艇種",
+          "GUID": "cc405ff2-314e-4c1a-a9fd-1e2dfc714892"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_jissekidt",
+          "ColumnName": "艇種",
+          "GUID": "140220c7-f1ab-439f-99e1-7753ac3ac42d"
+        }
+      }
+    },
+    "2,8": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "選択して下さい",
+        "IsBounding": true,
+        "DataSource": "ymia_t_seisan_jissekidt",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_jissekidt",
+          "ColumnName": "艇番",
+          "GUID": "ddb2d6ba-8541-486f-9801-bd20914b6a15"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_jissekidt",
+          "ColumnName": "艇番",
+          "GUID": "6389de79-3f70-4ee0-a1c8-8e53fbee73e1"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "艇種",
+            "GUID": "210e0519-9f67-4767-9290-414553cbeaf3"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=艇番一括変換!C3"
+          }
+        }
+      }
+    },
+    "2,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "InputCharOption": {
+          "Format": "9"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "艇番を入力して下さい"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=艇番一括変換!AF3"
+                          }
+                        ]
+                      },
+                      "value": "0"
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=艇番一括変換!I3"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=艇番一括変換!P3"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "変換対象データが存在しないか、未入力項目があります"
+                  }
+                ],
+                "ID": "487908f9-851c-44df-8821-94aa0b28ca75"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=艇番一括変換!AF4"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 2
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "変換したい艇番は既に存在しています。確認して下さい。"
+                  }
+                ],
+                "ID": "b0d37309-8a6e-4c34-b719-db807bd6233b"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "艇番一括変換",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "Target艇種",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=艇番一括変換!C3"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "old艇番",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=艇番一括変換!I3"
+                        }
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "new艇番",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=艇番一括変換!P3"
+                        }
+                      }
+                    ],
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "変換が完了しました！",
+                    "Comments": ""
+                  }
+                ],
+                "ID": "477c6c16-bef8-424c-9688-c43d9f47236c"
+              }
+            ]
+          }
+        ],
+        "Text": "艇番確定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_seisan_jissekidt",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 15,
+        "ColumnCount": 28,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_seisan_jissekidt",
+                "ColumnName": "艇種",
+                "GUID": "2d64e3d1-1bb2-4312-a453-6f0e92f04a6b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=艇番一括変換!C3"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_seisan_jissekidt",
+                "ColumnName": "艇番",
+                "GUID": "fab9274c-fef2-4722-b25f-db0689dc480e"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=艇番一括変換!I3"
+              }
+            }
+          ]
+        },
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_seisan_jissekidt",
+                "ColumnName": "日付",
+                "GUID": "85d95bab-4fad-42ba-af53-2f41bc01bd20"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "NameUsedInJavaScript": "艇種",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "艇種",
+        "GUID": "90b0fd18-1b3d-4a75-b486-9267de8e4354"
+      }
+    },
+    "8,6": {
+      "NameUsedInJavaScript": "艇番",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "艇番",
+        "GUID": "c8c09758-a833-4ccc-81a7-72738cb95bf5"
+      }
+    },
+    "8,10": {
+      "NameUsedInJavaScript": "社員コード",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "社員コード",
+        "GUID": "f6448529-c29a-4171-8543-1a666932f77e"
+      }
+    },
+    "8,14": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "工程コード",
+        "GUID": "c89633f5-3065-46e7-be91-1a1664d21820"
+      }
+    },
+    "8,18": {
+      "NameUsedInJavaScript": "日付",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "日付",
+        "GUID": "9826874c-fb73-4f28-981f-f5324d69f92b"
+      }
+    },
+    "8,22": {
+      "NameUsedInJavaScript": "作業時間",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "作業時間",
+        "GUID": "1590d12b-767d-4bba-8f35-fb147b996237"
+      }
+    },
+    "8,26": {
+      "NameUsedInJavaScript": "伝票番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "伝票番号",
+        "GUID": "7a160b6f-0893-4aee-be56-73ac221ab160"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 0,
+        "BorderTop": 0
+      },
+      {
+        "Background": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "Formatter": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "BorderTop": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontWeight": 4,
+        "Foreground": 5
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 13.333333333333332,
+        "Formatter": 6,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "Background": 0,
+        "Foreground": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "Foreground": 1
+      },
+      {
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "ShrinkToFit": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 3 80",
+        "black",
+        "Body",
+        "[AUTO]General",
+        "Bold",
+        "#FFFF0000",
+        "@",
+        "yyyy/MM/dd",
+        "Center"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 2,
+      "1,8": 3,
+      "1,9": 4,
+      "1,10": 4,
+      "1,11": 4,
+      "1,12": 4,
+      "1,13": 5,
+      "1,15": 6,
+      "1,16": 7,
+      "1,17": 7,
+      "1,18": 7,
+      "1,19": 7,
+      "1,20": 7,
+      "2,2": 8,
+      "2,3": 9,
+      "2,4": 9,
+      "2,5": 9,
+      "2,6": 9,
+      "2,7": 10,
+      "2,8": 11,
+      "2,9": 9,
+      "2,10": 9,
+      "2,11": 9,
+      "2,12": 9,
+      "2,13": 10,
+      "2,15": 12,
+      "2,16": 13,
+      "2,17": 13,
+      "2,18": 13,
+      "2,19": 13,
+      "2,20": 13,
+      "2,31": 7,
+      "4,2": 14,
+      "4,15": 14,
+      "7,2": 15,
+      "7,6": 15,
+      "7,10": 15,
+      "7,14": 15,
+      "7,18": 15,
+      "7,22": 15,
+      "7,26": 16,
+      "8,18": 17,
+      "8,26": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,2,1,6",
+    "2,8,1,6",
+    "2,15,1,6",
+    "4,2,2,6",
+    "4,15,2,6",
+    "9,2,13,28",
+    "8,2,1,4",
+    "8,6,1,4",
+    "8,10,1,4",
+    "8,14,1,4",
+    "8,18,1,4",
+    "8,22,1,4",
+    "8,26,1,4",
+    "7,2,1,4",
+    "7,6,1,4",
+    "7,10,1,4",
+    "7,14,1,4",
+    "7,18,1,4",
+    "7,22,1,4",
+    "7,26,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ol0JIB8j5bD0aCbQaTnGtFpWbdDTr4mRrUWd+CsdE8XZ0jQV3TU4bUT/Z3p289SLlDnTZsNtkUx1WsFugwlQNl0e6dfdmdVN5iDnB1Wrux/3iXdKitzJt5oJ14XPAw+vTh05iZE8NZRoPrMBvMbkk8YytYRM4NYClQQ3xar2l4q+PXFqd8UUZ6Y4KA7rLH9Wp/T9YE372+nzFC+gx87QmeEc/th9ALIA/SxlWtowaIfnISPmHWzQvI+3shIJncWsj8OP1+JpFTTBlvl8Ck1wPga7jGugO7bXBUf7omMsX+9xFiJkxJtA8DOYAh8OceCjFSqICgU5BkFSUhwqmUmt5PghhCn0Ajr9jJaaLTtzvqpuBKNywm4CUNNffn4w077LsXu1o1Az4D107Uc0UEeMdNOHJGEbDvnpKe1L0XUNemhGaqHMGHKfT8s+egjoDLDO44ah6gp55zGJk2xRNc2ij/GE1HZ7VNAaLI37xcflyevfFZuxCeQYjnKV7tj2eZl2KXdzugaY2+sqXZg3dASQ3cKRen7rBXAiZv4hbbNxkA4dM8jqMHV60DXAYymJjf+z53R9U2D855j35t5wAOHn85oT4MbMZsQeYUELzqwQKX/Bp/eiHzJ5tWS0ep94xz0lUhiBY3B6EBb93YjfrsCCHBBODe22y9DFxnFvqVFx/3LyGNssZqhj4IMn3kTYIVPYPdmpnOmepwPfo1imfp2jJlJFK+H+/9Fle98/OUTXeg29+ZKQ863+7hgJB8t6FXxPqmjIYI6fcUl4RS5hpj/qlVlTvCwJX3O2LvqrZHZmHMp+SAy2R2SwgRkTIzOOnK/g1v9bSHpEUcO6bf5kjmExIX7eclVfN1DMvJ2oWjsTjOYr3bZ1oOXMw17usmNQJ7f0Wpp18wm2aeO449Xu5+Nliw==|920

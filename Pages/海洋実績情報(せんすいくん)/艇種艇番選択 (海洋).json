@@ -1,0 +1,226 @@
+{
+  "Rows": {
+    "Count": 7
+  },
+  "Cols": {
+    "Count": 22
+  },
+  "Values": {
+    "1,1": "艇種",
+    "1,11": "艇番",
+    "3,1": "確定",
+    "3,16": "取消"
+  },
+  "AttachInfos": {
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "ymia_t_seisan_schedule_kaiyo",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_schedule_kaiyo",
+          "ColumnName": "艇種",
+          "GUID": "f9140103-097d-402d-afeb-e4d6b22ca4aa"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_schedule_kaiyo",
+          "ColumnName": "艇種",
+          "GUID": "cb79121d-ee21-403d-a40c-057b31479761"
+        }
+      }
+    },
+    "1,15": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "ymia_t_seisan_schedule_kaiyo",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_schedule_kaiyo",
+          "ColumnName": "艇番",
+          "GUID": "2552cfc8-a86c-482c-b667-13b6ad5d0fe6"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_schedule_kaiyo",
+          "ColumnName": "艇番",
+          "GUID": "c91bbc27-c681-410f-a51a-c49908433c94"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_t_seisan_schedule_kaiyo",
+            "ColumnName": "艇種",
+            "GUID": "aaacddd7-3cb7-4a93-a735-b9e6b6b6c01f"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='艇種艇番選択 (海洋)'!F2"
+          }
+        }
+      }
+    },
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "確定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "Formatter": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 2 60",
+        "black",
+        "Body",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 2,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 4,
+      "1,11": 5,
+      "1,12": 6,
+      "1,13": 6,
+      "1,14": 6,
+      "1,15": 7,
+      "1,16": 3,
+      "1,17": 3,
+      "1,18": 3,
+      "1,19": 3,
+      "1,20": 4,
+      "3,16": 8,
+      "3,17": 8,
+      "3,18": 8,
+      "3,19": 8,
+      "3,20": 8,
+      "4,16": 8,
+      "4,17": 8,
+      "4,18": 8,
+      "4,19": 8,
+      "4,20": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,1,1,4",
+    "1,11,1,4",
+    "1,5,1,6",
+    "1,15,1,6",
+    "3,1,2,5",
+    "3,16,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//j5Wk4erIVQscCy5Trg63SO/eI8g+wD3wYbKjOfvstVUKBOmUWGmXq3BzN6JO9J6KNFrHpu2YgYZgycBg2pcaaPogmYNnRHgzEuo8M5k3gVFYDxRgcMH2hZOSz1lMFac79xxwotwT6R/oDU0FZiEBvfDigtEicj3Sf4BVNF/IqUxgd/JvbXDOcyINut+5SvG1FC88cHd3ffQRbwpubPPjDg4Knc5A4kzltEzTXV1DzprW68aDCAt3h9kohsnPi40xpQQb1EBYP/HyfuZi2EvO6wF50YYc6aZlwVDE8vnso0kfnMQ7oYnkajk8sRJ3Mhwi3/Es7ZAwnjrPP/TknM7+DB+sHZJ8rcc+rzB2Hk9ZbCOpSjmIUBmO4tXe+VgRmYZsPFzG3k2JrFEGiKNraKFJ10BgteaomKIIFJctOzyRAYNT5U4gPTFxzzQzAQc1XSMNJawuui/weVNRePTgNqWJwKPt8TG/HTlcTY9ko36sILx25ymjMzJgavAUX+FLTWmTN8W04tzsSOhdUz+n3uClvY5oT+nDP2VuIv/r9DysAiw+BJmaDCdX6DvfnkJVu7X5N1YEFbV8gyEToC8RGlhAkJw9m0Q8f4Sd2ZN8FmHymoMYFyl8cnOg4+UduyoE7UBYQwayvkl+roaNu92w2zoHm5umtO04Gz2buNpWmHWQlUTFWjn5jhIaWyrKXrY6iT/XfSmBFrG1bULmj2H777V/VMb7S4eEkS/2KSW3rdmJV/uMXtUxGI2tNif/EHUIwKbH6PIvLwfF1JIvzt+DqIWKMpviC1hSy/9JESYJ7Yeqn8+ts8lp5vIbHzCsfQVGXgNN+XDjDtH8H0VN9JYXN0OQbE037lY/9asrznnZ8x7n1L41HfJs1pCOdt7SaMQcubqsVa8fZzF8dEiPzW1/AWsBVg==|920

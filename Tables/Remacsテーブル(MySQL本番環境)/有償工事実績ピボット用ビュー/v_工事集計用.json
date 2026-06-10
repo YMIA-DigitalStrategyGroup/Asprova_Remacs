@@ -1,0 +1,92 @@
+{
+  "Name": "v_工事集計用",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "工事区分",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 60,
+      "Name": "工事番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "艇種",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "社員コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "日付",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 100,
+      "Name": "作業内容",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "作業時間",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "KOTEI_NAME",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql本番環境",
+    "SourceTableName": "v_工事集計用",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `t1`.`工事区分` AS `工事区分`,`t1`.`工事番号` AS `工事番号`,`t1`.`艇種` AS `艇種`,`t1`.`社員コード` AS `社員コード`,`t1`.`工程コード` AS `工程コード`,`t1`.`日付` AS `日付`,`t1`.`作業内容` AS `作業内容`,`t1`.`作業時間` AS `作業時間`,(select `m`.`KOTEI_NAME` from `mkoteiname` `m` where (`m`.`KOTEI_CODE` = `t1`.`工程コード`) limit 1) AS `KOTEI_NAME` from `ymia_t_seisan_jissekikouji` `t1` where (`t1`.`工事区分` <> '-')",
+    "ViewInfo": {
+      "ViewName": "v_工事集計用",
+      "IsUpdatable": true,
+      "QueryColumns": [
+        "工事区分",
+        "艇種",
+        "社員コード",
+        "工程コード",
+        "日付"
+      ]
+    }
+  },
+  "Indexes": []
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "生産計画連携処理",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 46183.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+      "TargetPageName": "投入計画",
+      "ServerExportFileName": "C:\\temp\\test.xlsx"
+    }
+  ]
+}

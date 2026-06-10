@@ -1,0 +1,219 @@
+{
+  "Name": "5b9f3049-14ab-40bc-9bed-08048082a17f",
+  "Enabled": false,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 46051.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "DELETE FROM ymia_t_asprova_2remacs",
+      "ID": "bb098d8004374ee7b9699df7dca45853",
+      "Comments": "Remacsに送信すべき情報の内容を一度全部削除する"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_jisseki_remacs \r\nselect 日付, 機種, 機番, 0, 工程コード, 開始, 終了, 0\r\n from ymia_t_asprova_jisseki where (日付, 機種, 機番, 工程コード) not in \r\n(select 日付, 機種, 機番, 工程コード from ymia_t_asprova_jisseki_remacs)",
+      "ID": "2aa044bcec0f4b13b66a87d289cdb26a",
+      "Comments": "生産完了（ymia_t_asprova_jisseki）の情報で、未連携のものを一次テーブル（ymia_t_asprova_jisseki_remacs）に取得する（この際　まだ送信フラグは０になっている）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_jisseki_remacs \r\nselect 日付, 機種, 機番, 0, 工程コード, 開始, 終了, 0\r\n from ymia_t_asprova_jisseki where (日付, 機種, 機番, 工程コード) not in \r\n(select 日付, 機種, 機番, 工程コード from ymia_t_asprova_jisseki_remacs)",
+      "ID": "f0801c44190c489ba50ec0c145098d85",
+      "Comments": "ymia_t_asprova_jisseki に存在していて、\nymia_t_asprova_jisseki_remacs にはまだ存在しない実績データだけを追加する（この際　まだ送信フラグは０になっている）\r\n＝重複登録防止付きの差分INSART"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "update `ymia_t_asprova_jisseki_remacs` as target\r\ninner join `thatchum` as source\r\non source.`SEIBAN` = concat(\r\n    RPAD(target.`機種`, 11, ' '), \r\n    RPAD(target.`機番`, 4, ' ')\r\n) AND source.`KOTEI_CODE` = target.`工程コード`\r\nSET target.`伝票No` = source.`DENPYO_NBR`\r\nwhere (target.`伝票No` is NULL or target.`伝票No` = '')",
+      "ID": "405d4e29ff0d4cd985990b31e27e3049",
+      "Comments": "伝票番号を設定しておく（修正前3番目に実行されるコマンド）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "update `ymia_t_asprova_jisseki_remacs` as target\r\ninner join `thatchum` as source\r\non REPLACE(source.`SEIBAN`, ' ', '') = concat(target.`機種`, target.`機番`)\r\n   AND source.`KOTEI_CODE` = target.`工程コード`\r\nSET target.`伝票No` = source.`DENPYO_NBR`\r\nwhere (target.`伝票No` is NULL or target.`伝票No` = '' or target.`伝票No` = '0')",
+      "ID": "1026313397b4478c946faf50fbeb79fc",
+      "Comments": "ymia_t_asprova_jisseki_remacs のうち、伝票Noが未設定（NULL / 空 / 0）のレコードだけを対象に、thatchum から対応する伝票番号を取得して更新する（修正後3番目に実行されるコマンド）"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, '999999', 伝票No, '', 終了, 0, 0, 開始, 終了, 0\r\nfrom ymia_t_asprova_jisseki_remacs where 送信フラグ = 0\r\n",
+      "ID": "2a9ad8314e654f709c84efb08a152255",
+      "Comments": "作業工程の完了を設定する（ただし未送信のもののみ設定）",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, '999999', 伝票No, '', 終了, 0, 0, 開始, 終了, 0\r\nfrom ymia_t_asprova_jisseki_remacs where 送信フラグ = 0\r\n",
+      "ID": "c1d4ff5a0bd14ab9ad38ed32e5c227a8",
+      "Comments": "ymia_t_asprova_jisseki_remacs のうち、\nまだ送信していない（送信フラグ = 0）実績だけを、\nymia_t_asprova_2remacs に登録する（ただし未送信のもののみ設定）\r\n＝Remacs送信用データ作成"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, 社員コード, 伝票番号, '', 0, 0, 作業時間, 0, 0, 0 from ymia_t_seisan_jissekidt\r\nwhere 連携フラグ = 0\r\n",
+      "ID": "dfc69661c34846a5ba3a503ba708f4b9",
+      "Comments": "作業実績時間をRemacs連携情報に設定する",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, 社員コード, 伝票番号, '', 0, 0, 作業時間, 0, 0, 0 from ymia_t_seisan_jissekidt\r\nwhere 連携フラグ = 0\r\n",
+      "ID": "c73483fbe038460682640ac3e524de6f",
+      "Comments": "ymia_t_seisan_jissekidt のうち、\nまだ Remacs と連携していない（連携フラグ = 0）作業実績だけを、\nymia_t_asprova_2remacs に追加する\r\n＝人作業実績のRemacs送信用データ作成"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "c:\\temp\\SEISAN_JISSEKI.csv",
+      "TableName": "ymia_t_asprova_2remacs",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "日付",
+            "GUID": "2fdfbd90-34b1-4491-8d2b-ffe9631f81b4"
+          },
+          "CSVColumnNameOrIndex": "日付"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "社員コード",
+            "GUID": "e55b1e3e-8705-4a99-be4a-18093fc3b3eb"
+          },
+          "CSVColumnNameOrIndex": "社員コード"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "伝票番号",
+            "GUID": "f938273e-85df-413f-80c6-ef26b243526a"
+          },
+          "CSVColumnNameOrIndex": "伝票番号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "棚番号",
+            "GUID": "f98e29c4-9f71-4a05-a576-1320dc617434"
+          },
+          "CSVColumnNameOrIndex": "棚番号"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "良品数",
+            "GUID": "2cb9b035-42b8-4839-8e33-1f89074300aa"
+          },
+          "CSVColumnNameOrIndex": "良品数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "不良品数",
+            "GUID": "b1b0879d-f6a7-4c63-8ed2-7b177f3cbf0b"
+          },
+          "CSVColumnNameOrIndex": "不良品数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "作業時間",
+            "GUID": "ecc18cb5-cf0b-4952-b05d-7edb82e04c62"
+          },
+          "CSVColumnNameOrIndex": "作業時間"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "着手",
+            "GUID": "8780379b-9e3f-4bb9-b1c6-0c992a595f15"
+          },
+          "CSVColumnNameOrIndex": "着手"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "完了",
+            "GUID": "837b3030-870f-45f1-b0ca-6a63bf2a495d"
+          },
+          "CSVColumnNameOrIndex": "完了"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs",
+            "ColumnName": "削除",
+            "GUID": "4ece660a-ac39-4784-a713-6abef16b84a8"
+          },
+          "CSVColumnNameOrIndex": "削除"
+        }
+      ]
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "UPDATE `ymia_t_asprova_jisseki_remacs` SET `送信フラグ` = 1 where `送信フラグ` = 0",
+      "ID": "975f6d6de8a645d0972346e8dcc39c0f",
+      "Comments": "工程進捗の送信フラグをONにする",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "UPDATE `ymia_t_asprova_jisseki_remacs` SET `送信フラグ` = 1 where `送信フラグ` = 0",
+      "ID": "1069e57d5cde42988314c8aa2d07a116",
+      "Comments": "ymia_t_asprova_jisseki_remacs にある\n未送信（送信フラグ = 0）の実績データを、\nすべて「送信済み（1）」に変更する"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "UPDATE `ymia_t_seisan_jissekidt` set `連携フラグ` = 1 where `連携フラグ` = 0",
+      "ID": "b49bcad976c24df08f600a738361415a",
+      "Comments": "生産実績時間の連携フラグをONにする",
+      "Disabled": true
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "UPDATE `ymia_t_seisan_jissekidt` set `連携フラグ` = 1 where `連携フラグ` = 0",
+      "ID": "5eefb6500550496582a657b74b6735b0",
+      "Comments": "ymia_t_seisan_jissekidt にある\n未連携（連携フラグ = 0）の作業実績を、\nすべて「連携済み（1）」に変更する"
+    },
+    {
+      "$type": "OperateFilesCommand.MoveFileCommand, OperateFilesCommand",
+      "FilePath": "a",
+      "TargetFolderPath": "a",
+      "MoveFileName": "a",
+      "Comments": "Remacsの特定のフォルダの場所が決まったら、指定フォルダへ出力されたCSVファイルをコピー送信する処理作成開始\r\n※このコマンドは「ファイルの移動」という名前だが、指定フォルダへ出力されたCSVファイルがフォルダ\r\n　から消えるのでは？初めに出力される指定フォルダ内にCSVファイルを残さなくてもいいのか？\r\n　残さなくてもいいのであれば、わざわざ別の場所へCSVファイルを出力させる理由は？\r\n　前の処理実行タイミングでRemacsの特定のフォルダへ出力させれば、このコマンドは不要では？\r\n　初めからRemacsの特定のフォルダに出力させればいいのでは？",
+      "Disabled": true
+    }
+  ]
+}

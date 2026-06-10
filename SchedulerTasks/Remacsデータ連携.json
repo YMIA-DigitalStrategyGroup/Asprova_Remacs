@@ -1,0 +1,95 @@
+{
+  "Name": "Remacsデータ連携",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 45999.0,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "f:\\temp\\Remacs_Sagyou.CSV",
+      "TableName": "ymia_t_seisan_jissekidt",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "艇種",
+            "GUID": "a58ca344-dd2f-4fad-b135-96702af29c02"
+          },
+          "CSVColumnNameOrIndex": "艇種",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "艇番",
+            "GUID": "c859f818-875d-434a-bf17-29eefeee4567"
+          },
+          "CSVColumnNameOrIndex": "艇番",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "社員コード",
+            "GUID": "d012b075-9314-4a07-884b-bcb216ce6890"
+          },
+          "CSVColumnNameOrIndex": "社員コード",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "工程コード",
+            "GUID": "23b34b48-5c60-454f-a2b2-4ac965e7974b"
+          },
+          "CSVColumnNameOrIndex": "工程コード",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "日付",
+            "GUID": "853efdd5-5ff9-4e62-bb92-ee40fe163e36"
+          },
+          "CSVColumnNameOrIndex": "日付",
+          "IsPrimaryKey": true,
+          "Formatter": "yyyy/MM/dd"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "作業時間",
+            "GUID": "d8e23cfd-ef1a-4c13-b9be-b6c2e07e0797"
+          },
+          "CSVColumnNameOrIndex": "作業時間"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_seisan_jissekidt",
+            "ColumnName": "伝票番号",
+            "GUID": "dfa72434-4b3f-4b48-8dfa-6ad3c75c5ec8"
+          },
+          "CSVColumnNameOrIndex": "伝票番号"
+        }
+      ],
+      "QueryCondition": {
+        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+        "ColumnBindingInfo": {
+          "TableName": "ymia_t_seisan_jissekidt",
+          "ColumnName": "日付",
+          "GUID": "2c51ee22-fe5c-4b19-84ad-747578204480"
+        },
+        "Value": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-1"
+        }
+      }
+    }
+  ]
+}
