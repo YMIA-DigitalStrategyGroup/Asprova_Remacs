@@ -530,13 +530,13 @@
     "ModuleType": 41
   },
   {
-    "ModuleName": "PCPage/☆工程名称マスタ",
+    "ModuleName": "PCPage/☆工程名称マスタ管理",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-10T16:16:34.0581831+09:00",
+    "LockDateTime": "2026-06-10T16:16:51.7214746+09:00",
     "ModuleType": 1
   }
 ]
