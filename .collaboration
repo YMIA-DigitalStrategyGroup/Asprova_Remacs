@@ -569,5 +569,25 @@
     },
     "LockDateTime": "2026-06-11T10:46:34.7027994+09:00",
     "ModuleType": 16
+  },
+  {
+    "ModuleName": "PCPage/ページ1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-11T12:27:06.0888891+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-11T12:27:06.0895673+09:00",
+    "ModuleType": 6
   }
 ]
