@@ -577,17 +577,17 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-11T12:27:23.799521+09:00",
+    "LockDateTime": "2026-06-11T12:28:38.7688768+09:00",
     "ModuleType": 1
   },
   {
-    "ModuleName": "Pages/インポートフォルダー1",
+    "ModuleName": "Pages/計画と実績ファイルコピー用",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-11T12:27:06.0895673+09:00",
+    "LockDateTime": "2026-06-11T12:28:38.7686755+09:00",
     "ModuleType": 6
   }
 ]
