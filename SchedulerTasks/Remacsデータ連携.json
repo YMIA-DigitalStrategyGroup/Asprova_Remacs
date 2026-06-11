@@ -1,6 +1,6 @@
 {
   "Name": "Remacsデータ連携",
-  "Enabled": true,
+  "Enabled": false,
   "Triggers": [
     {
       "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",

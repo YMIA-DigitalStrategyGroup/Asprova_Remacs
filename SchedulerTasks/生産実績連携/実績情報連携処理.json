@@ -88,7 +88,7 @@
     {
       "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
       "CSVOperation": 1,
-      "FilePath": "c:\\temp\\SEISAN_JISSEKI.csv",
+      "FilePath": "F:\\Remacs\\Data\\SEISAN_JISSEKI.csv",
       "TableName": "ymia_t_asprova_2remacs",
       "Columns": [
         {

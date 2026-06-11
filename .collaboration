@@ -427,16 +427,7 @@
   },
   {
     "ModuleName": "TaskScheduler/Remacsデータ連携",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T10:31:38.1335839+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\Remacsデータ連携.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/82d6a276-44a9-4596-a8ed-a8d9c8b6410f",
@@ -448,16 +439,7 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T10:36:39.8086423+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
@@ -465,16 +447,7 @@
   },
   {
     "ModuleName": "TaskScheduler/生産計画連携処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T10:32:56.672596+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\生産実績連携\\生産計画連携処理.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/5b9f3049-14ab-40bc-9bed-08048082a17f",
@@ -562,12 +535,6 @@
   },
   {
     "ModuleName": "TaskScheduler/生産計画_生産実績ファイルをRemacsサーバーへコピー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T10:46:34.7027994+09:00",
     "ModuleType": 16
   }
 ]
