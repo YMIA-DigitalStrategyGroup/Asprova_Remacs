@@ -427,7 +427,16 @@
   },
   {
     "ModuleName": "TaskScheduler/Remacsデータ連携",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-11T10:31:38.1335839+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\Remacsデータ連携.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/82d6a276-44a9-4596-a8ed-a8d9c8b6410f",
