@@ -541,7 +541,17 @@
   },
   {
     "ModuleName": "PCPage/☆工程名称マスタ管理",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-11T15:57:45.9732554+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\マスタ管理\\☆工程名称マスタ管理.json",
+      "Pages\\マスタ管理\\☆工程名称マスタ管理.rd"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/生産計画_生産実績ファイルをRemacsサーバーへコピー",
