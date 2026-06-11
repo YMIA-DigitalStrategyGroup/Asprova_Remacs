@@ -535,6 +535,16 @@
   },
   {
     "ModuleName": "PCPage/島添：間違い防止用ページ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T08:07:29.1534102+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\島添：間違い防止用ページ.json",
+      "Pages\\島添：間違い防止用ページ.rd"
+    ]
   }
 ]
