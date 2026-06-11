@@ -267,7 +267,17 @@
   },
   {
     "ModuleName": "PCPage/※※※※社員係数一覧（後で必ず設定する設定）",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T07:53:19.4611866+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\※※※※社員係数一覧（後で必ず設定する設定）.json",
+      "Pages\\※※※※社員係数一覧（後で必ず設定する設定）.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/目次",
