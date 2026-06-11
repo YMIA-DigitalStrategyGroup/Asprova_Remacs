@@ -5,6 +5,10 @@
   "Cols": {
     "Count": 60
   },
+  "Values": {
+    "13,1": "A棟で生産されたのか、C棟で生産されたのか分けられるように",
+    "14,1": "「A棟_組立1工程」「C棟_組立1工程」といったように工程名の先頭に「A棟_」or「C棟_」と付ける"
+  },
   "AttachInfos": {
     "1,1": {
       "ListViewInfo": {
@@ -40,13 +44,27 @@
     }
   },
   "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "Foreground": 1,
+        "Formatter": 2
+      }
+    ],
     "Types": {
       "Strs": [
+        "Bold",
+        "#FFFF0000",
+        "[AUTO]General",
         "Body"
       ]
     },
+    "CellStyles": {
+      "13,1": 0,
+      "14,1": 0
+    },
     "SheetStyle": {
-      "FontFamily": 0
+      "FontFamily": 3
     }
   },
   "Spans": [
@@ -79,4 +97,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//o4PubczIG5GMSb3I+0GjUQyCGXu1ORS36QsZDpBR7SKV/SRmCkffyLk1lYhrBCWzVjHCWqL7q2k4CUiMOLkruCMdmSm3PCiO58NDC08+T8OBvZ+/5z9ykTpCz82dfLmO5jzA3olOXSVs+uWGc5xWDYLAUsoU0OxxS5Bde/znAeHzc9zQtGDDKqQVcHOt05r0B1nnDgrXSDJdmtMvLvwyhVcdfbpJUME/HlUcPRkAuyHjPxGELuy31Pnm2o80tjCnQoe4uyFnYvQueuxGo8jS3TOekPj66giR+X0bspxdho0Vd7ilGcciit29mkC73ZTVJQvKXhSvY2rvJnTl+cNO1aFETxVswgmTlL8byRjEZ8JUXzgAiEg4XEEGkkdDsH4hXcX8evMUYLi86e+KxTctD5pREx82+TuEDTcMOczvpxyoOJYCe3quhXenN244stijxbS6J730fnh1xaZtsj9lgY3ZH0eGhtnGijT0SU6kknVjHmfT4DLwPsGFHP5/gyGBOjqFaIxeqW+tDeosPFIRDXLo3TOd+7VcuU3NV3hP0zBamfZyJWcWxBTJzzLSldaiep6LR26egh7nw+wAGefZa2DiYkIvNUYKMRWnVMtj3mKHTcKBRZhep4n1Oz3HkDmD9Zu1wydpFi31bm6fa2aZ9G8r/RcFPHe9cqtsVQGbCcD4GTWXDbO1OP71vL53ED0TZz3oOzAZxF+gNIT1MiADC40DeOXXq/4Y7Ioox4sEHGWadO5JprWWIdbHjRdOo3vnAYuKwFeRLXWPRADMhJel+6kiRm6/fH0FC3Tsy9E4CT687M2pE9LhVQNeg73xFb60xNQZKBXOoSZm3ad8UxEw1PVGMfLuTB8j6FgfszXAiZ202fDFdxbZSt68bWiLbjCpS6KfdRn7s3kEUMRyvg8vlQ==|920
+}//7rq+IRIoGHMucoSZ+GONSkBwZhRs/aT+biVUJuwootiQQoa3X1eHjxihyol/SdvEVVhBXEVfESPahUAJ+RTekH16BbyLKdp8ew25GDRO0gs7tkC5VYuuUQWyj9Rd7llMg3bpEq77Kd39DN20Wf37ijSdfy3aP2/V/yJgyi/ewwJorGR/rBnOs7pGRyID5rqLMQly95NBUWhPVNplYpPd6O7cVDctGZGoKcHRlQ2Ucok1BxWm9SQG11LvVeyt7EkT95hZQg4hKKXHuVhru30gHNC0FlTt7GoFrBOzsrYSWXL+YPoIP+4jwZ9Xg16IEnFFa+cpOHOVxzfApiJjGW8R6bhSRnfhuGnAFlkk7qN1NKKT2xb2y8ujj8c6dEYpkdOfa7bfpEInFkeFNRGLix3G5RCHZY1YFHxhkf7ieY4UmgkHBCWuUhzDgrAE/Ar+yzjLJbSfPbkUXuKucXkG7/5V/kzD025Q6d/GZ9s5oQg91DgaO/iqBU5jVHF2fzARPhwWAAbnFuJJVMY+AQ8gfgwe3J2NTOrRIxLd4CpdL1UB3vRscZ0Es/trSX6v0rd8aJdgUVEoeEIZOavQBDkBOPAReRnMeHoI2IV/hYtyrPYzA6+6y8jA9J5kNSIvpzk4PS/VeSaK8iTqcFD77pbtCesUBGzz24IJOVzrnsab7G76OuTZzRXP1z68BxTp4I3DDPVJh22NWTZ0PskB/j2HhP5LE1p+ELXRnc3AzNnZzVM7dwtT/ULFftq24ToJyOdJPZN3tpLZwtwvBSZsc/p1T02nGov0o/F32joL3YljEQtMba6BLKSA+vfNJMri9+r9XoxWC894+5NEdOXqBPPsCuKINGZ3dgwIIHX/8Q4vCl6HUdgmlLdG0f/uWrR1QMD4WpuIK0VOiumnDDNx1+op+KrEuQ==|920

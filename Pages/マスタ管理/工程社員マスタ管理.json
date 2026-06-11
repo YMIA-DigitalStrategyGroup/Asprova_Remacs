@@ -13,7 +13,10 @@
     "Count": 27
   },
   "Values": {
+    "0,9": "全員の名前を登録する必要はない",
     "1,1": "設定内容を確認",
+    "1,9": "※工程使う工程分の重複しない名前があればいい（各班の班長の名前を使うか？）",
+    "2,9": "※マスタの中に同じ名前が２つあるとデフォルト設定が使えない",
     "4,17": "係数",
     "5,17": "表示",
     "31,1": "更新"
@@ -70,7 +73,7 @@
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain",
         "ColumnName": "社員コード",
-        "GUID": "4b825a87-4164-421c-85a8-62f0b9c07eeb"
+        "GUID": "01f67bf8-e7c3-4d67-a3dc-d865b87b4a01"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -86,7 +89,7 @@
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain",
         "ColumnName": "工程コード",
-        "GUID": "4d55000a-775e-4b5d-8ca9-ebbfa1264172"
+        "GUID": "e128dfc7-71ef-45c9-a1fc-f66438a3fd08"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -188,7 +191,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "a23ca731-0a91-44e0-9f92-ad91397984b0"
+                "ID": "955bb4f6-4f94-4e17-8c53-5547b1b75e74"
               }
             ]
           }
@@ -201,6 +204,16 @@
   "StyleDatas": {
     "Styles": [
       {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
         "FontFamily": 0
       },
       {
@@ -211,28 +224,33 @@
       },
       {
         "FontFamily": 0,
-        "HorizontalAlignment": 1
+        "HorizontalAlignment": 3
       }
     ],
     "Types": {
       "Strs": [
         "Body",
+        "#FFFF0000",
+        "[AUTO]General",
         "Center"
       ]
     },
     "CellStyles": {
-      "4,1": 0,
-      "4,12": 0,
-      "4,17": 0,
-      "4,23": 1,
-      "4,24": 1,
-      "5,1": 0,
-      "5,7": 0,
-      "5,12": 2,
-      "5,15": 0,
-      "5,17": 0,
-      "5,23": 1,
-      "5,24": 1
+      "0,9": 0,
+      "1,9": 0,
+      "2,9": 0,
+      "4,1": 1,
+      "4,12": 1,
+      "4,17": 1,
+      "4,23": 2,
+      "4,24": 2,
+      "5,1": 1,
+      "5,7": 1,
+      "5,12": 3,
+      "5,15": 1,
+      "5,17": 1,
+      "5,23": 2,
+      "5,24": 2
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -281,4 +299,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//6hQ4r6VbVro6/c41GdihBWj8btCmuJxNE2aNJQOsYnA12DqpleJZwMF277H29rGTCN6Co/NwVLDoChioYMVzdffG7fqKmotFFiKRcQqBZouDcZVdhXgjueMgNcRQr7Phu674nluUx1eK0RvK8VkUVGtz0TnC4dc5drrpJGwQMcJL8GNivR+8KFvZC/ElfjpgPrIORBaRgN+4Awt2LhvKqoSM2zip41YaorVcfWQeUszfuIxGk+CE1361qtH1zUp1e+nt4+5WI29fnHha7n8+E+89JlC4xilx+l1Mc6zEH41d0YJBADP4JIoa5ipDNEjwNsl56XMbXj4DJQpdCatPnRMft5Mx/tstXSkEsOzapff43QWk1g7sO2IZeyNj8OEi2I1mOhParqkDGmoNNMh4XKhPUjKDmSUBCB4y24vf/Q3BovqV6+YFI4KjaREhf1bnbnvJyeeRorm4W/8r62LP21Kuy3/kyBe30rljEH7frY1mDBIDf8ZZ7AVzF9IGynyPnbc8gasUtl3zgBCCgMl0MsSXI7paK1B9blEJGww2nbLQpVmLmLiqQai0zp4iziQIHo0XX2xV0+I+biSAPbRfMGRWHP5E1ItlRGjh1H8DJgejQr6FSUcZdhJk6WBDzb6eshBV9rBL5mJMRICY2J2WeV1FBIjxWq1ORTXr2f9n6U9XBihSvlRRc6v5N6lYsi0hs+aGDrIEKPC0UK66r0eUSs+Chwz+65GGTfosU23A9ITj9Q/VIKRM0pFP3FJvtx8lgwH/U/2ruv00f1rUh7zVM4v/ijP+vfLF0VLPrKvE2lv2Izgt232E4wefjzh403e5V0oMIOleVkuqbCOpbeFAAhlm5yaKCRHgUF9DyZ/72wtiMIBftz9DuWrvQ/pX0PBCftfdrg5vksrIo+qoschC9g==|920
+}//xUxG51u73buc87KB9UzG/mTMWOr+tcVFLXO2URyx9XY781Y65LVswN4Q5dvw1lamDGmwZJyP1FBOaRuLWvq8PjTU6h2VMKh+TmkGOq07QDNajBY7ymgUnZs99rbSXUXdJ7Si13YG+bSbyhJ+2I1VAf+ESSn1zuveXb5vvJhkcEF9zPZvdEDN/+CYrnk5/RB3ahuKHPvPJxjxEKKDI08zzWoszOesXfOGqpqDksJfpsTqJM9RXiOMEz8vM0ARY2sE6uQx5Qpvlb1Ax5LRA/NcHaZMaGUp10MsP8donKFtBMtZAavawJOPFNpnbUeI93Jhea4sptlChH2iR3kElOhXJvX4bxNROQMzudVdJUivbxdLpWqYHhd9KOcOp9GCT2eOBqleIZGg8bVRU6w+EGONWLrkLLQ5aNa22ruPxmNYHy1XY6INbRLpnYrhfRnfPgfKcTi+xeq4Z1yf3F7L8jG1MUtQbP93BgmsTC3DnL4uIAwdJpn69Q9zVurvgVuLopW1XhQfkMw+rFV1c8BkM02v69Bm2QALdAwfrwQj31VwR8psx4T/6nIWTORVWMQTJ/sR6INUqoRqknN6aXy4zPnxIx1BIIJrmCIfToUV4wItpPEoJo7Y7QIZAL9QJEvnYo7tUBpsTuJHi6fyf0F27DIgBpZU33W+w9BMpR3/q6Nlndx/eAlb7iwhTbKl1vNNyh0r46tWXFc/m01kliZaOhSmLJIjP4c3e1p1we9fF536SfA/tu+NhpMSgy7fjByX6VltLNii0cG2fcljmYzv1utDBcB2UvexF0yE/475enpMi7dFmeniwwS1PXzQ2xMOm35mvYfdvQux/bXNhFnJZbkTjgMhFPETtXOJyfbNKpGMjsrVXNtjOxs0i67B8WHHsR3yLmzV+YzL7XW9B1t2uGprig==|920
