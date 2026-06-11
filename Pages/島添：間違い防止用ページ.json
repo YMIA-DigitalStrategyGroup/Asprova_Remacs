@@ -1,0 +1,147 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 65.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 45.0
+        }
+      }
+    },
+    "Count": 46
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,2": "目次ページへ移動",
+    "4,2": "※現在使われていません※",
+    "6,2": "Remacs本番環境にあわせて改修を行っているアプリです。",
+    "7,2": "９月～Remacsトライアル",
+    "8,2": "12月～完全移行",
+    "9,2": "※9月～11月末までに既存アプリと入れ替え※"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "目次"
+          }
+        ],
+        "Text": "目次ページへ移動",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 48.0,
+        "FontWeight": 2,
+        "Foreground": 3,
+        "Formatter": 0
+      },
+      {
+        "FontSize": 32.0
+      },
+      {
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 32.0,
+        "Foreground": 3,
+        "Formatter": 0,
+        "Underline": true
+      },
+      {
+        "FontSize": 32.0,
+        "Foreground": 3,
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "[AUTO]General",
+        "Body",
+        "Bold",
+        "#FFFF0000"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "4,2": 1,
+      "4,3": 2,
+      "5,2": 3,
+      "5,3": 2,
+      "6,2": 4,
+      "6,3": 2,
+      "7,2": 5,
+      "7,3": 2,
+      "8,2": 5,
+      "8,3": 2,
+      "9,2": 5,
+      "9,3": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,2,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//7TTD6/gT1AsjeuWq3UITvzBWVyXJYhr19kfrkcz+5OWdCS6aWfayIFo9ov7jIFegj9RNTFP07RkHWONo6+UICLHNsJZFmICQXZEP6ELYwHLOEZBuk3Vy0m3kTo5biuWy+xC0zFDWaQhEWtDBrp4CbBYv+59959kVzLPZGsasqTdQM8zg+iSBg8TMet5JM31Xx6hF5KOMEEncup0P5jUoeZ6UrDrk8EhcLQ4sN6/tGN0nR/GqgkOmae4IrirrAFsxxc9Iy0NPSRqMEVRNpXyYGHnjMZJgWZiNhrJxF/A2+d3iIgiSnKQh9L+bTkml6/QiyK8LJlBSL7UVjBBeyMe4A5/APaWVgGmC5WjzrS9Tlh0keZWFJZeHFZA+07jIBbEbulEwcrm2HNIExbVeXZWyRdSxfArRKG++Mz828IM/9cfOu8fov7Gy20V10Iz/IKZ3yNU+588MX7AdDDDCqXonPBmSj5ZqibdYDlCJIcl1vK9fiD1QUuxEiA/hGV6iwuveBJspli37BTUNTnCQOtawMsr0EWHJ7bJAKn9Q3n5yh47+KzoPdIOLcLZtyojMn4fCiaMBc6U4+PD++KKOxHh3sijJWJFWwzBL8x74FQhCd2poZ879pnYjILrL2mazRS7dXEMiSHFA0jGsR1qESwe+suDHLQE+96rSPlOAsb1a+iJM6QrYQ7ViLLVPQFecX+4vqy8Nsolf21efT+tyEPBz7V8eCyApPNI6qgNbDujHEnCSkmP+J1x/FVyXbA0NglbMS7QBdOw1+a28zzUUd4vQ21cwjgFVQT+dHvMvUJ7zaOuvcUZqcJU135moDc/3tEBRowLyk/J5U3CHO1dENqMLJ2hX8N5TRgyuWKH1KJTKBfkEccRdDahQXqkDpsvj3IZB58TyvSg24N3DyyNuwdv/HA==|920
