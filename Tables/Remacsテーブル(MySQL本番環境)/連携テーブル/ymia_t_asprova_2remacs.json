@@ -80,7 +80,7 @@
   ],
   "ExternalDatabaseInfo": {
     "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
-    "ConnectionId": "MySql1",
+    "ConnectionId": "MySql本番環境",
     "SourceTableName": "ymia_t_asprova_2remacs",
     "SourceTableSchema": ""
   },

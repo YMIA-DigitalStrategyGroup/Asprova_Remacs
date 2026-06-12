@@ -1,5 +1,5 @@
 {
-  "Name": "ymia_t_asprova_jisseki",
+  "Name": "ymia_t_asprova_jisseki_new",
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
@@ -17,13 +17,6 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DatabaseColumnType": "bigint",
-      "MaxLength": -1,
-      "Name": "伝票No",
-      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "varchar",
       "MaxLength": 5,
       "Name": "工程コード",
@@ -31,40 +24,23 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0,
-      "DatabaseColumnType": "int",
+      "DatabaseColumnType": "date",
       "MaxLength": -1,
-      "Name": "開始",
-      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0,
-      "DatabaseColumnType": "int",
-      "MaxLength": -1,
-      "Name": "終了",
-      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0,
-      "DatabaseColumnType": "int",
-      "MaxLength": -1,
-      "Name": "送信フラグ",
-      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      "Name": "開始日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "date",
       "MaxLength": -1,
-      "Name": "日付",
+      "Name": "終了日",
       "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
     "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
     "ConnectionId": "MySql本番環境",
-    "SourceTableName": "ymia_t_asprova_jisseki",
+    "SourceTableName": "ymia_t_asprova_jisseki_new",
     "SourceTableSchema": ""
   },
   "Indexes": []

@@ -11,7 +11,7 @@
   "Commands": [
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "DELETE FROM ymia_t_asprova_2remacs",
       "ID": "48a69e42f371443dae13097857d629b2",
@@ -19,7 +19,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "insert into ymia_t_asprova_jisseki_remacs \r\nselect 日付, 機種, 機番, 0, 工程コード, 開始, 終了, 0\r\n from ymia_t_asprova_jisseki where (日付, 機種, 機番, 工程コード) not in \r\n(select 日付, 機種, 機番, 工程コード from ymia_t_asprova_jisseki_remacs)",
       "ID": "50925c105226483888c1fe44f7570148",
@@ -27,7 +27,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "update `ymia_t_asprova_jisseki_remacs` as target\r\ninner join `thatchum` as source\r\non source.`SEIBAN` = concat(\r\n    RPAD(target.`機種`, 11, ' '), \r\n    RPAD(target.`機番`, 4, ' ')\r\n) AND source.`KOTEI_CODE` = target.`工程コード`\r\nSET target.`伝票No` = source.`DENPYO_NBR`\r\nwhere (target.`伝票No` is NULL or target.`伝票No` = '')",
       "ID": "62f48ba6006e4b13984110dab56af5d0",
@@ -35,7 +35,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, '999999', 伝票No, '', 終了, 0, 0, 開始, 終了, 0\r\nfrom ymia_t_asprova_jisseki_remacs where 送信フラグ = 0\r\n",
       "ID": "ae6826a48a0748ed842d2b07d655a7ae",
@@ -43,7 +43,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, 社員コード, 伝票番号, '', 0, 0, 作業時間, 0, 0, 0 from ymia_t_seisan_jissekidt\r\nwhere 連携フラグ = 0\r\n",
       "ID": "d5452169150e4e7d8a8f7d0f8eddb201",
@@ -139,7 +139,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "UPDATE `ymia_t_asprova_jisseki_remacs` SET `送信フラグ` = 1 where `送信フラグ` = 0",
       "ID": "38936b29d08a4755b4396fff47b55a8d",
@@ -147,7 +147,7 @@
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
-      "ConnStrId": "MySql1",
+      "ConnStrId": "MySql開発環境",
       "Params": {},
       "SqlStatement": "UPDATE `ymia_t_seisan_jissekidt` set `連携フラグ` = 1 where `連携フラグ` = 0",
       "ID": "dd64507ed9dc47b484bd9e6888b11df6",
