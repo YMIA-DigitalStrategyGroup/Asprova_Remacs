@@ -17,19 +17,55 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_jisseki_remacs",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7573578+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_jisseki_remacs.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_asprova_jisseki",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7573098+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_jisseki.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7573513+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_asprova_keikaku",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7573643+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_keikaku.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_m_seisan_kouteiname",
@@ -440,7 +476,7 @@
       "UserName": "UNITY\\AA121806",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-06-12T13:47:20.3511958+09:00",
+    "LockDateTime": "2026-06-12T15:11:01.7577792+09:00",
     "ModuleType": 16,
     "ToRemoveFiles": [
       "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
@@ -448,7 +484,16 @@
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7578029+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/生産計画連携処理",
@@ -456,7 +501,16 @@
   },
   {
     "ModuleName": "TaskScheduler/5b9f3049-14ab-40bc-9bed-08048082a17f",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.757573+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\5b9f3049-14ab-40bc-9bed-08048082a17f.json"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -516,7 +570,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:01.7568459+09:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",
