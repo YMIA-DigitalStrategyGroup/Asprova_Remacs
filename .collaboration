@@ -69,7 +69,16 @@
   },
   {
     "ModuleName": "Table/ymia_m_seisan_kouteiname",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T15:11:15.4101073+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_m_seisan_kouteiname.json"
+    ]
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル",
