@@ -545,5 +545,15 @@
   {
     "ModuleName": "PCPage/島添：間違い防止用ページ",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Table/ymia_t_asprova_jisseki_new",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-12T13:54:56.2503873+09:00",
+    "ModuleType": 7
   }
 ]
