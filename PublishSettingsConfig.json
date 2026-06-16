@@ -1,13 +1,13 @@
 [
   {
     "Name": "サーバーへ発行1",
-    "ApplicationUrl": "http://YMIADIGITALSV01/生産実績工数管理",
+    "ApplicationUrl": "http://YMIADIGITALSV01/Remacs生産実績管理",
     "PublishSettings": {
       "IsPrivateServer": true,
       "ServerName": "YMIADIGITALSV01",
       "UserName": "ME023221",
       "SitePort": 80,
-      "AppName": "生産実績工数管理",
+      "AppName": "Remacs生産実績管理",
       "AppStartPage": "",
       "TakeServeronline": true
     }
