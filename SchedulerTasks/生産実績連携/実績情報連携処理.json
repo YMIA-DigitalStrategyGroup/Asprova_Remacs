@@ -223,6 +223,12 @@
       "MoveFileName": "a",
       "Comments": "Remacsの特定のフォルダの場所が決まったら、指定フォルダへ出力されたCSVファイルをコピー送信する処理作成開始\r\n※このコマンドは「ファイルの移動」という名前だが、指定フォルダへ出力されたCSVファイルがフォルダ\r\n　から消えるのでは？初めに出力される指定フォルダ内にCSVファイルを残さなくてもいいのか？\r\n　残さなくてもいいのであれば、わざわざ別の場所へCSVファイルを出力させる理由は？\r\n　前の処理実行タイミングでRemacsの特定のフォルダへ出力させれば、このコマンドは不要では？\r\n　初めからRemacsの特定のフォルダに出力させればいいのでは？",
       "Disabled": true
+    },
+    {
+      "$type": "Forguncy.Model.BatchProgramCommand, ServerDesignerCommon",
+      "Path": "cmd.exe",
+      "Arguments": "/c F:\\Remacs\\App\\SeisanJissekiCopy.bat",
+      "WorkingDirectory": "F:\\Remacs\\App"
     }
   ]
 }
