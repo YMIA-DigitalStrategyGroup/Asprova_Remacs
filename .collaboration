@@ -435,16 +435,7 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T07:36:12.5589152+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
@@ -452,16 +443,7 @@
   },
   {
     "ModuleName": "TaskScheduler/生産計画連携処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T07:02:37.1308302+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\生産実績連携\\生産計画連携処理.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/5b9f3049-14ab-40bc-9bed-08048082a17f",
@@ -533,16 +515,7 @@
   },
   {
     "ModuleName": "PublishConfiguration",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T07:03:01.0418884+09:00",
-    "ModuleType": 39,
-    "ToRemoveFiles": [
-      "PublishSettingsConfig.json"
-    ]
+    "ModuleType": 39
   },
   {
     "ModuleName": "Plugin",
