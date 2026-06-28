@@ -533,7 +533,16 @@
   },
   {
     "ModuleName": "PublishConfiguration",
-    "ModuleType": 39
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T07:03:01.0418884+09:00",
+    "ModuleType": 39,
+    "ToRemoveFiles": [
+      "PublishSettingsConfig.json"
+    ]
   },
   {
     "ModuleName": "Plugin",
