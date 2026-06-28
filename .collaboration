@@ -435,7 +435,16 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T07:36:12.5589152+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
