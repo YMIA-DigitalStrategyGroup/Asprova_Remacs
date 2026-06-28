@@ -549,5 +549,15 @@
   {
     "ModuleName": "Table/ymia_t_asprova_jisseki_new",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/実績連携確認画面",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T07:59:20.0508603+09:00",
+    "ModuleType": 1
   }
 ]
