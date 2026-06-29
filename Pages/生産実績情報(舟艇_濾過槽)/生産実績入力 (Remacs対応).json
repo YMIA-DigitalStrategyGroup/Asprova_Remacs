@@ -115,7 +115,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "d66fa9c4-2a55-4889-a7d4-7d6df69033f5"
+                "ID": "3dcf6d8b-54d3-4149-bbab-64c03d817490"
               }
             ]
           }
@@ -584,7 +584,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-            "MessageFormula": "開発中・・・\r\n\r\n\r\nスケジュールタスクに設定した生産計画連携処理をサーバーサイドコマンドへ移動させ、\r\nこのボタンのサーバーサイドコマンドの呼び出しで生産計画用の処理を動かす。\r\n出力ページ：投入計画（連携用フォルダの中）"
+            "MessageFormula": "開発中・・・\r\nこのページにボタンを作るか、専用ページを作ってボタンを配置するか相談\r\n\r\nスケジュールタスクに設定した生産計画連携処理をサーバーサイドコマンドへ移動させ、\r\nこのボタンのサーバーサイドコマンドの呼び出しで生産計画用の処理を動かす。\r\n出力ページ：投入計画（連携用フォルダの中）"
           },
           {
             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -1045,7 +1045,7 @@
                     }
                   }
                 ],
-                "ID": "73776da6-b341-4faf-ac99-00a78308a073"
+                "ID": "96c2d087-be59-4e4e-ad81-15b873c99b76"
               },
               {
                 "CommandList": [
@@ -1054,7 +1054,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "69816355-3a1c-452f-8577-48b96d2fd383"
+                "ID": "a1a9097b-595a-4e0b-8796-e696a3447fa6"
               }
             ]
           }
@@ -1748,7 +1748,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "12cffdab-8120-45d1-ab75-192b7be64c3e"
+                "ID": "dd45aae7-ad0f-426f-9a42-e93d11da0c0f"
               },
               {
                 "CommandList": [
@@ -1756,7 +1756,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "5cda405c-0628-4590-89ad-4d33f2ac6163"
+                "ID": "8852069f-be97-4cb3-b1c8-49423dc78748"
               }
             ]
           }
@@ -1824,7 +1824,7 @@
                     ]
                   }
                 ],
-                "ID": "3c086c5c-f8df-40d4-af25-7e79d06a7035"
+                "ID": "70515d5f-2698-4c6c-800b-d4140a078431"
               }
             ]
           }
@@ -3470,4 +3470,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//67FrVvlKx1aOM1TuBdgMpVLTCK7MAGecBS+ObK+yvU1ttnTkWFjpfTKBoTehJ/3KQffxFR5r7mKLvOf0Mu4vAoRc3g/D0DQGj8M1aNTdYLa5XDWQ17q36l4RTPBvS5bzbSd+jm4n5orIc853SLGgJMaCFePvFWEx7DDUDv58XLhLQardTUxjokxojPKvY30zzlWk9i12PV5niT39MV0cK4BA7Q0LzGhBrNidzxYbaj75EWhiIh8x1ePe4kVLd9rbuvDILM9vEfHQDappy9l1PUFbhxF38xseI/ENxEhxlgqRFV+lB4xateRduduLk7B4vJbvI4ZfXWxKUVrLFIX4x6KpT88/pReqVnDFuFW9oP3UiR5pzfQH6yOiXdBsbWF9fSbJiUY2sq1cqYRd8s8sInA5WzzsQVBFvNSVC+Dmce7yc1q90wEZTvkkwyPjLlZH0LrgPTxB8bWND2kL6O/7DAaT9klCaB3sDFt7Y6R/gUznp3ham2mSbSvxkc1bWXi/9sXDkX/awKRJT2dTz9RnEH1EgGdP+RVZTt9ZLLwBkRyhBUAbAhjFlrZIUU1d6MN7f5uzRws1UdUk017pR9bTNVKhjFpLhs6X8kIDwMtgvg5sxHmrT7NzBaOmXOCB0gaoWsNyF6mLMNWzCZf1OiFW2ExaW2QljbPTzfQKpIwXkzdiXXaXUFpvk0jJXpnCcB0KOi7HcMteezYpciurTJLpdo9XS/tR4DxFqDd0jxXzGNxwrCAAveVS0EdOdVljFsvVqi8VFIbs9UJ0D11nResUVhqdaHqoxTghzU56zYw0aIIy0sbvx+XtlBRyn6rV0WcW1+Lv8PRYUjXmVqgO7/+jpHg7jwSx24Sfg0gAQL3JRIcOnZUVNiqJNcWgBh0I/flZWnWM7ATYOrcjYb0oGrmcyQ==|920
+}///XEV4yvaBcRzbpiYZVCNQPZbwBaDdaY37dD2mgCsv2Qnws4Nx/obvoTvwdInGpMbycw5UXkqNNicYarSJol9CY2B1Hbmhb9aqN9boUpctp8S32tPwKOGjMdfKXuZaJ6gPdrSJ0Qg5wUX3SHbC/h2HMr7r/pKwY6zvW7pce0st38e8jijLSYLP3tS0tFDnNJ0NifxIVgy4l6EBej/pbxJk+PAo87e13WycH9yST2E4dODBWBG6ypTHvkftRICmL/BUYxr96FXeVwdUPs2S9CNfK9jotqdrq+3FEfhhpjbsyw5ozClUoeCBzXFGQ423B0VZIVL0tg2N0A5Pu64ZWDQTzL3TG9ZD34c3nL5lHT2Uv0Qi7UMfGCvRikdFOpJ5njfOdn8YdXdwx8Jmofch1V4vlU6hVf0LK+z9NVtcNiVF8/6NiBVmqApubDTm9p6yjixPIBS/mreCNoTJVIR5PwVmv6HL1ZXo09Hzb5EzQiSgF1yq3HXq2Jip3BwdXUOnQrLMBBuDM271RRuFX2KLqHYDpbJlJ8XyoIB1Q6bd1e03wc3mm5kVFmWrIHYwXB9JchKOiU6Aob4LRnDxjSyBL6vvq/ArJN06VjOIbx7woF8Hkii/2zSdrfxwleAIrcBs6CaYGNGY3595Os+A1jo9rrpKO/n5fBzkrnpb6VtQai6EMfVo0Un0pkOWadyWRM5rnAMreFcmoFJxiuc+mn2vnZJTiBCKA9N96CuB1y0Z7b1Au7lTgK6YXyw6NGo/z04TuLELDNha2l8eHXH16zrEJCiXqoY1iP/mT7TvGgb/NHwxM/Atzk7SEzXneCIv5fAIjsUJPQ3EPVgRrCM6QK7/EsMeA1CpZAKRrzR2koINdrvV93w8PQ9gg3j5ZjYs3nQq+Sv9FeZNV+stOIm5Z+lTc/dlw==|920
