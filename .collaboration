@@ -17,16 +17,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_jisseki_remacs",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:25:16.341017+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_jisseki_remacs.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_asprova_jisseki",
@@ -34,16 +25,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:25:16.3409852+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_asprova_keikaku",
@@ -167,32 +149,12 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:25:16.341036+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/T_担当工程マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:25:16.3410289+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\T_担当工程マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -473,16 +435,7 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:01:19.6464147+09:00",
-    "ModuleType": 16,
-    "ToRemoveFiles": [
-      "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
-    ]
+    "ModuleType": 16
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
@@ -606,22 +559,10 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理_伝票番号1個",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:00:57.4328214+09:00",
     "ModuleType": 16
   },
   {
     "ModuleName": "PCPage/Remacs年間計画取得",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:30:19.0689687+09:00",
     "ModuleType": 1
   }
 ]

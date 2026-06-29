@@ -1,0 +1,370 @@
+{
+  "Rows": {
+    "Count": 35
+  },
+  "Cols": {
+    "Count": 141
+  },
+  "Values": {
+    "1,1": "YMIA年度",
+    "1,14": "引合NO",
+    "1,18": "エンジンNO",
+    "1,22": "拠点",
+    "32,1": "Excel出力"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_asprova_keikaku",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 30,
+        "ColumnCount": 90,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "YMIA枠年度",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "YMIA枠年度",
+        "GUID": "091a052c-a716-4c8f-9b36-ca14d3f87d98"
+      }
+    },
+    "2,5": {
+      "NameUsedInJavaScript": "機種",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "機種",
+        "GUID": "6ea3328a-4954-4f74-9a39-acfcc4e5846d"
+      }
+    },
+    "2,10": {
+      "NameUsedInJavaScript": "機番",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "機番",
+        "GUID": "7f204222-ee99-432e-a4b2-e4fcb6ab9333"
+      }
+    },
+    "2,14": {
+      "NameUsedInJavaScript": "引合管理No",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "引合管理No",
+        "GUID": "97e39054-4578-4ed0-b8fc-f9150ef3a48c"
+      }
+    },
+    "2,18": {
+      "NameUsedInJavaScript": "エンジン",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン",
+        "GUID": "c693a86f-17c8-47b3-8ef0-88c045bac3b3"
+      }
+    },
+    "2,22": {
+      "NameUsedInJavaScript": "担当_YMS拠点",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "担当_YMS拠点",
+        "GUID": "69ee1b0a-6fba-4a1d-85f7-55de7b72832e"
+      }
+    },
+    "2,26": {
+      "NameUsedInJavaScript": "充当先",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "充当先",
+        "GUID": "40001019-dd5e-48e6-b902-4f66a4f5a89b"
+      }
+    },
+    "2,35": {
+      "NameUsedInJavaScript": "枠数",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "枠数",
+        "GUID": "d192944a-2998-41c2-8cc5-2ba129c07f12"
+      }
+    },
+    "2,39": {
+      "NameUsedInJavaScript": "工場",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "工場",
+        "GUID": "c67956f6-6fb0-43b5-87eb-43bfca7f5306"
+      }
+    },
+    "2,43": {
+      "NameUsedInJavaScript": "ライン",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "ライン",
+        "GUID": "ee0f54d7-70e5-45b7-abe6-6fb925955329"
+      }
+    },
+    "2,47": {
+      "NameUsedInJavaScript": "積層投入枠1枠_2枠",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "積層投入枠1枠_2枠",
+        "GUID": "872586a6-179b-4578-abc7-91b2e4ac8287"
+      }
+    },
+    "2,51": {
+      "NameUsedInJavaScript": "大型_小型_個別",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "大型_小型_個別",
+        "GUID": "64ff7171-af15-4c92-8f29-da46f02e2b6b"
+      }
+    },
+    "2,55": {
+      "NameUsedInJavaScript": "受注確定",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "受注確定",
+        "GUID": "89755c44-3404-4680-8059-5d4c2f6a0546"
+      }
+    },
+    "2,60": {
+      "NameUsedInJavaScript": "エンジン発注",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン発注",
+        "GUID": "d0440b52-a0a9-4a2a-b71a-a2abba6fe4c3"
+      }
+    },
+    "2,65": {
+      "NameUsedInJavaScript": "エンジン仕様変更_発行日",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン仕様変更_発行日",
+        "GUID": "84c4bf9e-3265-4dbc-a064-cac97a56ffec"
+      }
+    },
+    "2,70": {
+      "NameUsedInJavaScript": "エンジン仕様変更_発行数",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "エンジン仕様変更_発行数",
+        "GUID": "21275c04-f2af-44d5-8b6d-b389281c8a6a"
+      }
+    },
+    "2,75": {
+      "NameUsedInJavaScript": "工事指令書発行",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "工事指令書発行",
+        "GUID": "44b5e176-dd5d-48fc-af28-45a7884d3b7f"
+      }
+    },
+    "2,80": {
+      "NameUsedInJavaScript": "出図_部品表_発行",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "出図_部品表_発行",
+        "GUID": "0a4b58a1-bb57-459a-9f47-3fec2fad1279"
+      }
+    },
+    "2,85": {
+      "NameUsedInJavaScript": "資材展開",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_keikaku",
+        "ColumnName": "資材展開",
+        "GUID": "fa6bdc5a-72bb-42e2-9080-02677f9b0331"
+      }
+    },
+    "32,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "Excelに出力しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ExportPageToExcelCommand, ServerDesignerCommon",
+                    "ExportExcelPageNameMode": 2,
+                    "TargetPageName": "投入計画",
+                    "NewOtherName": "Remacs年間計画"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "Excelを出力しました！！"
+                  }
+                ],
+                "ID": "3b6d15ef-1ead-46ce-ac9e-ce108ff2500a"
+              }
+            ]
+          }
+        ],
+        "Text": "Excel出力",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "File/348_excel_file_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 24.0
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "yyyy/m/d",
+        "Right",
+        "Accent 2 -25",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,5": 0,
+      "1,10": 0,
+      "1,14": 0,
+      "1,18": 0,
+      "1,22": 0,
+      "1,26": 0,
+      "1,35": 0,
+      "1,39": 0,
+      "1,43": 0,
+      "1,47": 0,
+      "1,51": 0,
+      "1,55": 0,
+      "1,60": 0,
+      "1,65": 0,
+      "1,70": 0,
+      "1,75": 0,
+      "1,80": 0,
+      "1,85": 0,
+      "1,90": 0,
+      "2,1": 0,
+      "2,5": 0,
+      "2,10": 0,
+      "2,14": 0,
+      "2,18": 0,
+      "2,22": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,35": 0,
+      "2,39": 0,
+      "2,43": 0,
+      "2,47": 0,
+      "2,51": 0,
+      "2,55": 1,
+      "2,60": 1,
+      "2,65": 1,
+      "2,66": 1,
+      "2,70": 1,
+      "2,75": 1,
+      "2,80": 1,
+      "2,81": 1,
+      "2,85": 1,
+      "2,86": 1,
+      "2,90": 0,
+      "32,1": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,1,1,4",
+    "2,1,1,4",
+    "1,5,1,5",
+    "2,5,1,5",
+    "1,10,1,4",
+    "2,10,1,4",
+    "1,14,1,4",
+    "2,14,1,4",
+    "1,18,1,4",
+    "2,18,1,4",
+    "1,22,1,4",
+    "2,22,1,4",
+    "1,26,1,9",
+    "2,26,1,9",
+    "1,35,1,4",
+    "2,35,1,4",
+    "1,39,1,4",
+    "2,39,1,4",
+    "1,43,1,4",
+    "2,43,1,4",
+    "1,47,1,4",
+    "2,47,1,4",
+    "1,51,1,4",
+    "2,51,1,4",
+    "1,55,1,5",
+    "2,55,1,5",
+    "1,60,1,5",
+    "2,60,1,5",
+    "1,65,1,5",
+    "2,65,1,5",
+    "1,70,1,5",
+    "2,70,1,5",
+    "1,75,1,5",
+    "2,75,1,5",
+    "1,80,1,5",
+    "2,80,1,5",
+    "1,85,1,5",
+    "2,85,1,5",
+    "3,1,28,90",
+    "32,1,2,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//vLFXdKs3n089rAerkqLS5EdaDukyaVdvVfBFZhkqNOKyw0UYJ+BmDPYbcYpyuLK11P/k1MWexRV91ZaYh6L0vC3f30/e6PuBl1MuDOUK05Piu/hJaqJAoR8kGV94VHNzNRAK8BjudLuc/Ek1W5w7USrukuCYeCutP91Mac9OoYjyvWeWoi2F4FBUqGA+ughbav6/Z8kXDfZgaQfMsKBBZj92u9PRe4fUigQ1gLi2+uOwA7UPOIn4PXoacPprYuIqkqJpagh1qTZ4WJZd6kgW3ZHQsm7dp3aaxOeZyh8yZTCF1ZlqLhl2aEr+SSzE10K54i4S5HvYWs72HrTBNgtbppizoVoM6kSxMJAGjuNYU1NrGaMvUtnbe449xOPg2Zxxw9jn9IVfqHls0sVK+hPVD4c9qWdfGHLeqQANb5vVhzWieoKiG2Yo83vDR9B6eAZAKLiozzsih2qcukRwKEcmcWTGHTAv1fce29QIgQbaTdxH/qIHfNU0EpImqlJhVJ5jxnaz/2XV+ZqoF7JJpZcV2zmV8rzG0mW/lcIT2lP4ktBvG8fMXcvXkmHwB6Ma82ZbhptERt086coc1Ui/d8OWKIcHWKHScJO5RmDYzo/w7x2tR7WzzcTE7NnNQ+EEH3A+HG4c+P6KLUUoufw0p/4abl4YCEZ3h8ieXwfDJrx0eKrnxBTfCiuQjiJMsWyIgA0radP0yhSSgrgPGaWAK3wgqsjm7SsbZc30uSI0IPi1UpZCEXojX3CeyRmugw7/AISJnzqoBDVkzFEym+LC9OuErfQ1/iYJL/+tbvjaoCjrTEQmGWJjVXCC6P+y1Wi2y3fZSVI9Qit2I5chIkxas3XHdrLIGuKcYdWQzQ45ROG+Ug1Q4gObGfIteY9bIslF5mVtVN9s4nbtJDVpfcKXowonlA==|920
