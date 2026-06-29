@@ -543,6 +543,16 @@
   },
   {
     "ModuleName": "PCPage/実績連携確認画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T10:52:27.3500437+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\連携用\\実績連携確認画面.json",
+      "Pages\\連携用\\実績連携確認画面.rd"
+    ]
   }
 ]
