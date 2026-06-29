@@ -564,5 +564,15 @@
     },
     "LockDateTime": "2026-06-29T11:14:28.7384941+09:00",
     "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/生産計画出力処理",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-29T11:15:35.4430996+09:00",
+    "ModuleType": 15
   }
 ]
