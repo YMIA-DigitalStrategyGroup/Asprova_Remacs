@@ -115,7 +115,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "3dcf6d8b-54d3-4149-bbab-64c03d817490"
+                "ID": "dff1a438-cd9a-4d05-ab83-7ec647500af2"
               }
             ]
           }
@@ -584,10 +584,12 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-            "MessageFormula": "開発中・・・\r\nこのページにボタンを作るか、専用ページを作ってボタンを配置するか相談\r\n\r\nスケジュールタスクに設定した生産計画連携処理をサーバーサイドコマンドへ移動させ、\r\nこのボタンのサーバーサイドコマンドの呼び出しで生産計画用の処理を動かす。\r\n出力ページ：投入計画（連携用フォルダの中）"
+            "MessageFormula": "開発中・・・\r\nこのページにボタンを作るか、専用ページを作ってボタンを配置するか相談\r\n\r\nスケジュールタスクに設定した生産計画連携処理をサーバーサイドコマンドへ移動させ、\r\nこのボタンのサーバーサイドコマンドの呼び出しで生産計画用の処理を動かす。\r\n出力ページ：投入計画（連携用フォルダの中）",
+            "Disabled": true
           },
           {
             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "生産計画連携　島添Ver（岸山Verチェックイン前に動きだけ確認してみた）",
             "RefreshAfterFinish": true,
             "CheckDataValidation": true
           }
@@ -1045,7 +1047,7 @@
                     }
                   }
                 ],
-                "ID": "96c2d087-be59-4e4e-ad81-15b873c99b76"
+                "ID": "b949dcaf-b814-4d28-a395-9c119e255b29"
               },
               {
                 "CommandList": [
@@ -1054,7 +1056,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "a1a9097b-595a-4e0b-8796-e696a3447fa6"
+                "ID": "904b61c9-574d-4ae6-a90e-1fd956b90c68"
               }
             ]
           }
@@ -1199,7 +1201,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "31b5699b-87a8-4e38-a575-ff1a465557c8"
+        "GUID": "438d70cc-034c-48cd-adb6-80118f38bc9a"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1300,7 +1302,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "88a699ed-3aad-4279-81ea-d596c09e5e08"
+        "GUID": "f65c68dd-7898-4bb1-95db-5dba86c05647"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1392,7 +1394,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "853497e6-dd60-4f85-961c-19d344f2287d"
+        "GUID": "6423fb47-7b2b-431a-aec4-2321eeea1240"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -1408,7 +1410,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "1b67a4b7-9867-45e5-81f2-c87298115f8b"
+        "GUID": "c74893d3-7141-414f-8773-00f3fd2136f6"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1748,7 +1750,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "dd45aae7-ad0f-426f-9a42-e93d11da0c0f"
+                "ID": "64c13088-916b-4342-bd43-4643139ea2c8"
               },
               {
                 "CommandList": [
@@ -1756,7 +1758,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "8852069f-be97-4cb3-b1c8-49423dc78748"
+                "ID": "8cb60e07-55cc-485a-b43d-41ad524d93ae"
               }
             ]
           }
@@ -1824,7 +1826,7 @@
                     ]
                   }
                 ],
-                "ID": "70515d5f-2698-4c6c-800b-d4140a078431"
+                "ID": "df7ad395-32d2-464d-aa39-d0f8daf92690"
               }
             ]
           }
@@ -3470,4 +3472,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}///XEV4yvaBcRzbpiYZVCNQPZbwBaDdaY37dD2mgCsv2Qnws4Nx/obvoTvwdInGpMbycw5UXkqNNicYarSJol9CY2B1Hbmhb9aqN9boUpctp8S32tPwKOGjMdfKXuZaJ6gPdrSJ0Qg5wUX3SHbC/h2HMr7r/pKwY6zvW7pce0st38e8jijLSYLP3tS0tFDnNJ0NifxIVgy4l6EBej/pbxJk+PAo87e13WycH9yST2E4dODBWBG6ypTHvkftRICmL/BUYxr96FXeVwdUPs2S9CNfK9jotqdrq+3FEfhhpjbsyw5ozClUoeCBzXFGQ423B0VZIVL0tg2N0A5Pu64ZWDQTzL3TG9ZD34c3nL5lHT2Uv0Qi7UMfGCvRikdFOpJ5njfOdn8YdXdwx8Jmofch1V4vlU6hVf0LK+z9NVtcNiVF8/6NiBVmqApubDTm9p6yjixPIBS/mreCNoTJVIR5PwVmv6HL1ZXo09Hzb5EzQiSgF1yq3HXq2Jip3BwdXUOnQrLMBBuDM271RRuFX2KLqHYDpbJlJ8XyoIB1Q6bd1e03wc3mm5kVFmWrIHYwXB9JchKOiU6Aob4LRnDxjSyBL6vvq/ArJN06VjOIbx7woF8Hkii/2zSdrfxwleAIrcBs6CaYGNGY3595Os+A1jo9rrpKO/n5fBzkrnpb6VtQai6EMfVo0Un0pkOWadyWRM5rnAMreFcmoFJxiuc+mn2vnZJTiBCKA9N96CuB1y0Z7b1Au7lTgK6YXyw6NGo/z04TuLELDNha2l8eHXH16zrEJCiXqoY1iP/mT7TvGgb/NHwxM/Atzk7SEzXneCIv5fAIjsUJPQ3EPVgRrCM6QK7/EsMeA1CpZAKRrzR2koINdrvV93w8PQ9gg3j5ZjYs3nQq+Sv9FeZNV+stOIm5Z+lTc/dlw==|920
+}//z5RFKyc/PtZ3n0kkP40flq4dAgwlK0OhCSiXHajQD5tEyiH1ZcflYUXCzQ4hgvHzEpVrl7iQARVat60ZZ/hYtQ03Y4z90C7uFBUdUhkH9RzYmdD00rYW1gyVsZ0HN4CjQ/VbpEkife5diKd+EkhswQC0MvON7xZizNnb7Ws+RsfGHutFpLhLe1tcmp0MkEnZg27FVr//lDuYJyEZY+s86YeYdrB1P68bNyH3CyBIQkj2knfV15xOXoihME/14WngRIXFWMA3gYqtBgSMiOEgCe0Cxz5+LzSQsASYsIUC9hRJRX5e66zqo2IgvGDc6jqdPHLr3fN2evOvLqqIbQa12//ssjJrtZkMMAdZk7rvXspK/vJSoMeSCMt4lfeAma4K2cpy9qT/KYh6gzIFvH1Yv4NhPzzsXZ0qgpaop7dpCJ0xunF5KS3M4bLxB0G9EwXMdMyMz0irFWRQtv1rzHaVcorat5S/tP0rScI3o0s1VaqkeAkDrQ09/xJ7EvSs+d7EPNQ/9YwuEPVLB3bZezBxKUeZZenV0+1ZTvSbcowPTca/dtx5UPGlE3nxNjEy5kcQvf/hrO/KHP9NkJ5hmKdce+smx+3viWUxB/yIt9tscrdAEWZPO7/+UCGYNm42UVp4PLFHPhIZhglnLGWgVBlIsOuPu24V0gyXavzptwxnF26znaLaWw+/qc+jns4DdbDx+eNYveJGak25zofeZAVaC7+KxgQVKiwANirlpMyb1iVu5ypk8Vq9LbzTAmHsGy7uOMXR9VALBlysDqLz2Uyl85UH8pTz9haWy8Be6pzGDF+FSlIW0XmjUWch8ZX/iB4OzLf6/3z+7rbsLi2LyFgko2Rz8mpb4tk0ZqX9dkLKzfGU8cp5n5ts0W/PbE0uk2lwCPGiF+dDFV//kHkVBL/DxQ==|920

@@ -295,17 +295,7 @@
   },
   {
     "ModuleName": "PCPage/生産実績入力 (Remacs対応)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T17:01:24.2883037+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 (Remacs対応).json",
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 (Remacs対応).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/海洋実績情報(せんすいくん)",
@@ -587,12 +577,6 @@
   },
   {
     "ModuleName": "ServerCommand/生産計画連携　島添Ver（岸山Verチェックイン前に動きだけ確認してみた）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T16:56:15.3065801+09:00",
     "ModuleType": 15
   }
 ]
