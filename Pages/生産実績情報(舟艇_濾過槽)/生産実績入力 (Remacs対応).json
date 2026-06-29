@@ -115,7 +115,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "5a5f7a52-9629-49b9-a59b-32a40d76ceed"
+                "ID": "d66fa9c4-2a55-4889-a7d4-7d6df69033f5"
               }
             ]
           }
@@ -584,7 +584,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-            "MessageFormula": "開発中・・・"
+            "MessageFormula": "開発中・・・\r\n\r\n\r\nスケジュールタスクに設定した生産計画連携処理をサーバーサイドコマンドへ移動させ、\r\nこのボタンのサーバーサイドコマンドの呼び出しで生産計画用の処理を動かす。\r\n出力ページ：投入計画（連携用フォルダの中）"
           },
           {
             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
@@ -1045,7 +1045,7 @@
                     }
                   }
                 ],
-                "ID": "42b38667-e4dc-4cb6-b750-12baec1a1935"
+                "ID": "73776da6-b341-4faf-ac99-00a78308a073"
               },
               {
                 "CommandList": [
@@ -1054,7 +1054,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "b634af3d-b4f8-43d3-a948-67606853b943"
+                "ID": "69816355-3a1c-452f-8577-48b96d2fd383"
               }
             ]
           }
@@ -1748,7 +1748,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "8f8146dd-b6ad-4f0b-8320-d73aa373d3e2"
+                "ID": "12cffdab-8120-45d1-ab75-192b7be64c3e"
               },
               {
                 "CommandList": [
@@ -1756,7 +1756,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "b717c009-8d08-4cc1-a427-cb2146185be4"
+                "ID": "5cda405c-0628-4590-89ad-4d33f2ac6163"
               }
             ]
           }
@@ -1824,7 +1824,7 @@
                     ]
                   }
                 ],
-                "ID": "0fd9f7c9-278e-4616-bdb8-68c98473fc37"
+                "ID": "3c086c5c-f8df-40d4-af25-7e79d06a7035"
               }
             ]
           }
@@ -3470,4 +3470,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//eTWR6GGxkiAUvzJTJvP8cay3bXeu0TjYQsGcb5Q+WSrkfPzQukhBCAnEsfV+LpjYpBVBCnmvIym5xjjBEe9yn9RaCHwSDxbXBC8WqqjhyZKAD+zl4PcNxrAcegicBNq9bsBxN0L9g7DjkpfLAcEd+6uXv4wZ2hx2bfv0QFi4ecKtLYo1vd0afJbJujQ3wjdAXJwV/WO+I3+0NN01Q/2UW14zKmoJ57Nm1nKV10BrH+vNkg6611CmbprLpB35ba8L8uT5uhkkFVDclIofNAvxljQJ36D8qkvqhrSIn9d/DHhsTHTakbRszW4moO348rR/8FGIpg29ZwFJojv9V173IL5ELsPeK8i3iJGLjxt7ga+ABftNBX/1YX5Ee/fYJSu62K2Fyr0jc+SIb9mnSWrRMma4OE3FtedXtmkz+r8B1c6/Z1b1nyCT8ZZVcye9n5cWp/Y/PNwIfppooeyUWLTMbu8jidoxyEHmYYC625+OZnB/UcwDzhWvEkTGikqxMqGeOGPG/fbQ0If8s6ChxJUFd73Sen6Q4IaBqpEqarheJugpEBTswE4AEcLPXBbbaFEGtNaP5IqJEafBM0Ahndg+tb0u47rFcMfft5x4w7HLtz7lDgLcZXP0dwaGescXlvCejwPUsOkl8994E5u3E23P29JWrV+rOKebVl4s66lUbAgH6BATO5lgsUa3+5EDf7hl7UU+Ow6y56LniPxitE1XRgLxbbxkX7JJy0q63aUKbSnxQizRhHQj6v/AK1R8DlMUgTDlVnM3T1Gogek5RMWdZPxv8CuZQ/0MVWd5Q7pRxfY+MrJ2WtoLy3QXtWu4Q6BCpM3A2o4vqInzMDOIkaKm+NAwcbjet8SUuU1AHg0fOiEQOhCn5cE30GzXECap5IrWN0uyxMMloR5vMqtKYDAFmQ==|920
+}//67FrVvlKx1aOM1TuBdgMpVLTCK7MAGecBS+ObK+yvU1ttnTkWFjpfTKBoTehJ/3KQffxFR5r7mKLvOf0Mu4vAoRc3g/D0DQGj8M1aNTdYLa5XDWQ17q36l4RTPBvS5bzbSd+jm4n5orIc853SLGgJMaCFePvFWEx7DDUDv58XLhLQardTUxjokxojPKvY30zzlWk9i12PV5niT39MV0cK4BA7Q0LzGhBrNidzxYbaj75EWhiIh8x1ePe4kVLd9rbuvDILM9vEfHQDappy9l1PUFbhxF38xseI/ENxEhxlgqRFV+lB4xateRduduLk7B4vJbvI4ZfXWxKUVrLFIX4x6KpT88/pReqVnDFuFW9oP3UiR5pzfQH6yOiXdBsbWF9fSbJiUY2sq1cqYRd8s8sInA5WzzsQVBFvNSVC+Dmce7yc1q90wEZTvkkwyPjLlZH0LrgPTxB8bWND2kL6O/7DAaT9klCaB3sDFt7Y6R/gUznp3ham2mSbSvxkc1bWXi/9sXDkX/awKRJT2dTz9RnEH1EgGdP+RVZTt9ZLLwBkRyhBUAbAhjFlrZIUU1d6MN7f5uzRws1UdUk017pR9bTNVKhjFpLhs6X8kIDwMtgvg5sxHmrT7NzBaOmXOCB0gaoWsNyF6mLMNWzCZf1OiFW2ExaW2QljbPTzfQKpIwXkzdiXXaXUFpvk0jJXpnCcB0KOi7HcMteezYpciurTJLpdo9XS/tR4DxFqDd0jxXzGNxwrCAAveVS0EdOdVljFsvVqi8VFIbs9UJ0D11nResUVhqdaHqoxTghzU56zYw0aIIy0sbvx+XtlBRyn6rV0WcW1+Lv8PRYUjXmVqgO7/+jpHg7jwSx24Sfg0gAQL3JRIcOnZUVNiqJNcWgBh0I/flZWnWM7ATYOrcjYb0oGrmcyQ==|920
