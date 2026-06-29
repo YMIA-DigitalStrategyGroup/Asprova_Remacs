@@ -623,15 +623,5 @@
     },
     "LockDateTime": "2026-06-30T08:30:19.0689687+09:00",
     "ModuleType": 1
-  },
-  {
-    "ModuleName": "PCPage/投入計画 (2)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-30T08:30:58.2616388+09:00",
-    "ModuleType": 1
   }
 ]
