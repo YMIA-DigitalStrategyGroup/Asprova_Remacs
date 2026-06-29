@@ -295,17 +295,7 @@
   },
   {
     "ModuleName": "PCPage/生産実績入力 (Remacs対応)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-29T11:58:22.1503505+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 (Remacs対応).json",
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 (Remacs対応).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/海洋実績情報(せんすいくん)",
