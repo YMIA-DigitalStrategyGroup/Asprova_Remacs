@@ -556,5 +556,15 @@
   {
     "ModuleName": "ServerCommand/生産計画連携　島添Ver（岸山Verチェックイン前に動きだけ確認してみた）",
     "ModuleType": 15
+  },
+  {
+    "ModuleName": "TaskScheduler/実績情報連携処理_伝票番号1個",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-06-30T08:00:57.4328214+09:00",
+    "ModuleType": 16
   }
 ]
