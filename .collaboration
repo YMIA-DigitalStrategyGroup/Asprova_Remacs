@@ -308,7 +308,17 @@
   },
   {
     "ModuleName": "PCPage/生産実績入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-02T16:11:56.6107082+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力.json",
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/艇種艇番選択",
