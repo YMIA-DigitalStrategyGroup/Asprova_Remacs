@@ -25,7 +25,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-02T16:11:24.8948709+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_asprova_keikaku",
@@ -149,12 +158,32 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-02T16:11:24.8951394+09:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\ユーザー情報ビュー.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/T_担当工程マスタ",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-02T16:11:24.8951524+09:00",
     "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\T_担当工程マスタ.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
