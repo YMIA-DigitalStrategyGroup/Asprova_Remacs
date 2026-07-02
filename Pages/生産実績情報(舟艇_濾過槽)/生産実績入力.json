@@ -111,7 +111,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "32c57759-9e9f-44f9-baf4-800961d282d3"
+                "ID": "408146d0-ab03-41b1-b57f-adf9f990e705"
               }
             ]
           }
@@ -552,6 +552,7 @@
     "3,25": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
@@ -991,7 +992,7 @@
                     }
                   }
                 ],
-                "ID": "c12f64f6-602d-48b0-97ad-b9f4327fbc7a"
+                "ID": "3ce2d784-e2df-49a0-b18a-98b742a4d385"
               },
               {
                 "CommandList": [
@@ -1000,7 +1001,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "68112a81-5a93-4ffa-ae8b-1de555d293b5"
+                "ID": "e1a24905-522d-4d1c-a089-780097c188ab"
               }
             ]
           }
@@ -1134,7 +1135,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "5f0100ed-f733-445b-83a0-e674ac601cd7"
+        "GUID": "2ebdabbb-050f-4e91-a19a-c646fc2d838a"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1235,7 +1236,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "d8f754e5-3abb-42a9-927a-a4cfee86d25a"
+        "GUID": "8a189093-4f03-4c1d-bff4-6ef4de806b48"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1327,7 +1328,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "c2c180b9-9785-4e37-98fb-aa0057746f05"
+        "GUID": "1ce1988e-a3bc-49c5-b807-0e35f42b0e74"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -1343,7 +1344,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "57a85342-0553-4d73-941f-718b63070760"
+        "GUID": "858d3c6d-8769-4566-9741-99ee2ab13ecd"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1683,7 +1684,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "bf7e3748-f681-4069-852c-4dfa9a4a2d75"
+                "ID": "5a9f7980-0fc2-400a-823d-05dfc90e35e6"
               },
               {
                 "CommandList": [
@@ -1691,7 +1692,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "0eac62a8-c65f-4820-8abe-8792e60ab2b7"
+                "ID": "2e6ff6ba-e854-4d7e-85e3-ed60289d358e"
               }
             ]
           }
@@ -1759,7 +1760,7 @@
                     ]
                   }
                 ],
-                "ID": "71d5b31b-e67f-4471-b325-f8339c945c87"
+                "ID": "e185e4c3-0e0a-4c41-8a54-0a51d854ec0f"
               }
             ]
           }
@@ -3350,4 +3351,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//LSzZfv1yrflBOKy1ymKzsxP+s+C5i0H6ohd9EeorwEKoFmKP+ICTIn73kqnb8dBrtF6xAGMjkh7Pm8keFiAU1x81JBUq/chbqkYlovV0fXNQYbaPnW68M3kGYU5eZxjp+7Xx0QPQ3kdILjryyHqBQunBJEKqDgs/4/VAFJNYpLCCjhjM1LASQ87zRgj/WtRF/l7Id0vp0LwcFrKzpO6YZdj1peXpsM5v/xfvFqD9khLHj4fvFm5l3ED0YdTimGD/cJLyJroheoL8IWHhAUrAjF5x8OsgnSfv9ObcmeO1lFAmUM0hXnht/awjpFXTqgEs43quGxOF9FlTkhXq0+8jGSg/FNUl8aKR0Uu8AOsd6jrJdBJqLc6eLyYWFMAVTTTFkyKd//5wXevUiMJgHtGC3prDaA4BxztZe0a4Ep5ereeXImqf0Qc6+R7G8pO3pZTnceA4/Eqm5f6pdvrOXugpYUVzyBBVcsI36SoFYddbsL6AaMW1+q9yOF3VcIIatZN0puAPeTJ+/gNsoYnNV3aPf8b/Ngl3UM5TwJonKe7Nn74ZqhO+G1hxczWda8Mcea9xvHgvrMZQAOWny9+hD4aj4g6Yln7B3F7kyI+d/8eaYIs8+fi3pRzjhfRwKw97/XMJA1SWkgC7vUBKj5hs/7n/smJyGspWZBu2umYBJD6hMYcEg4rWh5+UuxY/gTK6v9ZkHJUvCpT19/VFvQKXb6iMM2dMpU9jw4IdfKym3OJ+MCQvGxwJ2oeaYu3NvEvUhBsTSQYpRgD5tMOtRzrRHh4Ni4pPaELozDe98WEkkv4HJJaVHJMLizf7oWo44NY66D9BBcLEqVaLW/+bVjv0nWdP4/p/V4PBifZstYpPKJG8TkY1BYsfF1JvJXk82RGOTlMwKiuED+Q1R/BJvlFgLzavIA==|920
+}//cgsqqgnXY/QMCky9zxB5dXBBuqqPYYQlI+5M67i82eom/Zr1B5zCLoPWtlkkRkX/9k8WKZcmNWxAKChXO5mdAXLZPJ67djN9Mw+HsOkEF0nd6bpzDuLKFXjEnS9DIWq7EIiQ0wct4siaqhG64JC4MwuKPdGkncnkuUme1vedMGNOTRKg9wahSTpIotfMILmgtMTdMjZ3UKJdXfHOv+85eCW6yjsVSMyiSfRBLC39f2V4m8qcGHxoVTaucKV4jZwXUovM9rnhHYl9twZIbCWG4yWIWeCwG1dV5Idt5tPqN55BvI+kmk2/jW3vXacQRIyG4h/kn9ZdK1ktstTHsEAzu5oCJyVtrPNWHbfXSY2Anl/OrshOs7po9KBvFtUOPpt2AOLNgxKk/kmNozc41TrBHETHH3zBxP6I3AX6jocywGyXe4wfKBP0t7S7rzfnSeCrtB4+Dh4ahgSyxlDBWbnObjXDPjwmn2Ug3WnrlVRD9pC7n4A7peNqCU0G+roA1EQE0qZWH2bWYjWdgaQrfgFUyHlhirhyYnEgjCnm4KhekI0Z72EVaej0XKkCzkmxiGrh1/3gSkDwK4VfibvFBOwveKVeE0abw3ekt6+lCTEgD5fKQrrgdxkSTO8FplYV8Yqa/8LaYnlaDXzRgHYKyn36r1e83qdF2kv/8YbK9An1MbfU/gfbudlBDLsxaWzjUmrld9hvpXis8r48Kb9ckHzH5t0v/ESE91BpgL3XQVGWAo/9niFIrzkVR7EtZYbOgp1eU8wDBFLJjgQh7G+l59Dvo4JVCTiTJuVms0gkZlFIHH1qz8ZYxkZd32WJI7c2x40+74mWh2174yvJaRY9HHKqTx/jiZTOMZnio3d0gTfHRXvfle4yc3yOnNn6NHMy43+MTNqWjwP9INh4FL8q0fYZJg==|920

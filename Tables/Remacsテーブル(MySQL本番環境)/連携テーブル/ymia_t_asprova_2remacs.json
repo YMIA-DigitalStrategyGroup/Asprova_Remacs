@@ -31,7 +31,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0.0000,
+      "DefaultValue": 0.0,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "良品数",
@@ -39,7 +39,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0.0000,
+      "DefaultValue": 0.0,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "不良品数",
