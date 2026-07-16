@@ -1,0 +1,44 @@
+{
+  "Name": "工程マスタ連携",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "truncate table ymia_m_asprova_koteiname ",
+      "ID": "0bff7c0771f9453b87072142e455ce82"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "INSERT INTO ymia_m_asprova_koteiname (\r\n  工程コード,\r\n  工程名,\r\n  工程種別\r\n)\r\nSELECT\r\n  KOTEI_CODE AS 工程コード, -- 工程コード [1]\r\n  KOTEI_NAME AS 工程名,     -- 工程名 [1]\r\n  KOTEI_KUBUN AS 工程種別   -- 工程区分 [1]\r\nFROM\r\n  mkoteiname",
+      "ID": "caa702106fd54cf2a917b1340ced6b2c"
+    }
+  ]
+}

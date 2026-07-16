@@ -1,0 +1,55 @@
+{
+  "Name": "引合情報連携",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "積層投入日",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {},
+      "SqlStatement": "truncate table ymia_t_asprova_hikiai",
+      "ID": "b63c2a4367204ea9bd531ea80602ff8e"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql本番環境",
+      "Params": {
+        "積層投入日": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=積層投入日"
+          },
+          "Item2": 253
+        }
+      },
+      "SqlStatement": "INSERT INTO ymia_t_asprova_hikiai (\r\n  引合いコード,\r\n  艇番,\r\n  担当,\r\n  艇種,\r\n  仕様,\r\n  エンジン,\r\n  充当先,\r\n  備考,\r\n  取消し\r\n)\r\nSELECT\r\n  CAST(S.KANRI_NBR AS CHAR) AS 引合いコード, -- 商談管理No\r\n  S.KIBAN AS 艇番,                            -- 機番\r\n  S.EIGYO_TANTOSHA_CODE AS 担当,             -- 営業担当者コード\r\n  S.KISHU AS 艇種,                            -- 機種\r\n  S.SHIYO_CODE AS 仕様,                       -- 仕様コード\r\n  S.ENGINE_RYAKU AS エンジン,                 -- エンジン略称\r\n  T.JYUTOUSAKI AS 充当先,                    -- 投入計画の充当先\r\n  LEFT(S.BIKO, 20) AS 備考,                  -- 備考（取込先桁数に合わせて切り詰め）\r\n  CASE \r\n    WHEN S.SHODAN_JOKYO = 7 THEN '失注'       -- 商談状況が「失注」の場合\r\n    ELSE '' \r\n  END AS 取消し\r\nFROM\r\n  myymia.tshodan S\r\n-- 日付条件を判定するために投入計画テーブルと結合\r\nINNER JOIN\r\n  myymia.ttonyukeikaku_torikomi T ON CAST(S.KANRI_NBR AS CHAR) = T.HIKIAI_KANRI_NBR\r\nWHERE\r\n  -- 商談テーブルの最新の履歴通番のみを対象とする\r\n  S.RIREKI_SEQ_NBR = (\r\n    SELECT MAX(RIREKI_SEQ_NBR) \r\n    FROM myymia.tshodan \r\n    WHERE KANRI_NBR = S.KANRI_NBR\r\n  )\r\n  -- 積層投入（開始日）が本日以降のデータに限定\r\n  AND T.SEKISO_START >= ?積層投入日",
+      "ID": "3e9e6b0414fb45eb8be8e6d910fd200a"
+    }
+  ]
+}
