@@ -23,9 +23,13 @@
       "Parameters": [
         {
           "Name": "積層投入日",
-          "DataValidationInfo": {}
+          "DataValidationInfo": {},
+          "TestData": "2026/1/1"
         }
-      ]
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
     }
   ],
   "Commands": [
