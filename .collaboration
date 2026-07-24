@@ -587,16 +587,7 @@
   },
   {
     "ModuleName": "ServerCommand/引合情報連携",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-23T07:55:17.9890776+09:00",
-    "ModuleType": 15,
-    "ToRemoveFiles": [
-      "ServerCommands\\Asprova取込用\\引合情報連携.json"
-    ]
+    "ModuleType": 15
   },
   {
     "ModuleName": "ServerCommand/工程マスタ連携",
