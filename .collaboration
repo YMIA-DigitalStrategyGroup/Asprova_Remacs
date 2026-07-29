@@ -648,13 +648,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/生産実績入力 (生産部用)",
+    "ModuleName": "PCPage/生産実績入力 (生産部用：表)",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-07-29T14:23:02.8482043+09:00",
+    "LockDateTime": "2026-07-29T17:14:53.7392404+09:00",
     "ModuleType": 1
   },
   {
