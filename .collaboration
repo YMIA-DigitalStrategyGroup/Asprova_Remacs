@@ -319,23 +319,72 @@
   },
   {
     "ModuleName": "Pages/海洋実績情報(せんすいくん)",
-    "ModuleType": 6
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.3031925+09:00",
+    "ModuleType": 6,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)"
+    ]
   },
   {
     "ModuleName": "PCPage/海洋実績入力",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.3073591+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)\\海洋実績入力.json",
+      "Pages\\海洋実績情報(せんすいくん)\\海洋実績入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/艇種艇番選択 (海洋)",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.3075496+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)\\艇種艇番選択 (海洋).json",
+      "Pages\\海洋実績情報(せんすいくん)\\艇種艇番選択 (海洋).rd"
+    ]
   },
   {
     "ModuleName": "PCPage/艇番一括変換（海洋）",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.3079514+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)\\艇番一括変換（海洋）.json",
+      "Pages\\海洋実績情報(せんすいくん)\\艇番一括変換（海洋）.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（海洋実績）",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.30839+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)\\作業実績エクスポート（海洋実績）.json",
+      "Pages\\海洋実績情報(せんすいくん)\\作業実績エクスポート（海洋実績）.rd"
+    ]
   },
   {
     "ModuleName": "Pages/その他実績情報(ライン外)",
@@ -666,5 +715,15 @@
     },
     "LockDateTime": "2026-07-29T14:23:38.4505385+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/海洋実績情報(せんすいくん)※Remacs仕様にする",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-30T14:30:04.3032371+09:00",
+    "ModuleType": 6
   }
 ]
