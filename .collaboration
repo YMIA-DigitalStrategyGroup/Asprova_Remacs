@@ -37,23 +37,68 @@
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル",
-    "ModuleType": 22
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.262578+09:00",
+    "ModuleType": 22,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.2642077+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekidt.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikaiyo",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.2642667+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekikaiyo.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekielse",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.2642722+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekielse.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikouji",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.2642759+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekikouji.json"
+    ]
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/バックアップ用テーブル",
@@ -715,5 +760,15 @@
     },
     "LockDateTime": "2026-07-30T14:30:04.3032371+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル（Remacs用）",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:09.2626105+09:00",
+    "ModuleType": 22
   }
 ]
