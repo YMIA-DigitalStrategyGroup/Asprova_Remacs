@@ -770,5 +770,15 @@
     },
     "LockDateTime": "2026-08-05T09:26:09.2626105+09:00",
     "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/ymia_t_seisan_jissekidt1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-05T09:26:46.2125965+09:00",
+    "ModuleType": 7
   }
 ]
