@@ -18,7 +18,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "生産実績入力"
+            "PageName": "生産実績入力（バックアップ用）"
           }
         ],
         "Text": "生産実績入力",
@@ -1100,4 +1100,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//TY6Df0RlUm73UfeqUwT97az+lPsz4Nm8AH2uu5308SYSKEzKzXSuFR/xQCO6MnXDDuYTpdjNxDq7fbDXpHXoykFek9gIsAH4XjY0cTfCrMeajvr6fXdASKrmWjFASqVd0PHkh3IAKu++kyr/5fd5d63SWsUvBPz+Fbh8zWfX/cL+DK2HaAa36iKoNpJIH4j8C8BUI8nOmgFSIA65wM0FfGGfCyGkLiXKu7oS+o4azcV/AQDeVaZoTJUjeCXGxC4/EYMV6MB04lzaIskv9N5skJhxXWeqIhDO/s7YIzIAr2nD+fNa2LtICCAjIdvHzaThv0GZ9Yp5/EfLvgN3aYeqGQwu6Z6FzgS1kxbXV24eu48YEnoKSwS/6uwtc6obvTlewR7dVKjVgZc9yNaxYRSSGggwtzPsFrY+4Ydx16qTXKirPFHfXy7UReWeU3i+e5205vYmMwchn0ufp01ya8z2b1VqceQK6UxDZweICz9c8Rb7t7FMFPZtxm2fOQpGRY5JGqgg20QZOz8IxQ0Ia08+dvpYea9dhYPxjiRBktHj2fzW+qC4fTrKaFoMgSsxMDLQbd9oj3qNDszoKjZ0vj12t+g4peZPoW2m03UAKcWF5xvlWrXcaPKWQmPMoxncNdZCu6dmqxtRY72F767AMEEsZ9xe5cmYPRAiyhM5LgxKd6L5qGxkiod5wvx2NdO0neM+E/Rn/WMpuX85RAREsFp98IvEZ/+ttiygInaV+MwbOMwbZKf2c/LOvJ3UFL28JxJ/GUgBAuFuTmyhrGtPViVE//G/l/UEBiEXH9RyDU9gJ9VJvJQ6rzOSoRycsIFxXDsLtXKbN6EfuOKdCjbY6zX5m5MOXsKfg5TZbFfZxYIgUpZVEopFpn2Vclvk+fYIOnX9rSn2coRuBBELy5/HX4zp1w==|920
+}//cFOhCmsf6S3NFkKJQO/JWpRf82ZdkpygloD+HHZAJ/ptp0pr/rsIDjbtuXphTSHnj9Qtta2yi3BdmEFcE1OiaqR1uO1v3KMZ63/kq1YuaR5q6+zDrW2RGQQFWhL6K+rU0OxGQz9Gdn+iak+UuIFayUucxsKoOf66l+UYDnQ6zS2AbTNiSs+AEsWvIPP4FY9hNN2uO8Cx6TkMtNbNgB4g0PL17Av9zT6AzK5W4Bh9LCRUaUD5BhXsjTf0K8tb7qqPGUTKv9Bjc8psEaPP1af3AcQXZFSwMcBVbUA20d+KanwNgceExXJUkU64aMsQfOsRCatRaRdqtWjNrV21vdeA/+CQ9s0+ZUZS7TfFB1ee7W27OdGS7tLrysuwz8fZpH493DVxVXbiQPdiHUwTsxalSk8VKVN2cIXlGI0AFFAP+nUrs0iJIgREzWlXRkgOVRbtpnT9ND4FX8xhh8055QFyrAraV3tSY9qE/o1qSXMuMutl2AOkEvj5GxrZ7HDCMKdvf0Lkq6fEqxicz5A4qkuh3YQxHabLonab/W4xiaCTbYsTkXbsXRDzG5NVtvbaFU+H2ktOr8dtF7arXgM7Ec9angWvWaiWtuIK8ruvGF9/LYd2EmWFk8ilGN1G+YuGUdfo60mG8KU+Rpocct4hht7cpP2cfQloMMcZwapaGjZNAVlq8erY8p1vUk+s7iW47xkzQ26/i9m03xBied+WAdR+3GCze6xFtiSMT3YeKeeX8wQ9OmNgj/lIUaysas29iVQACN5VvKURMTwTY2pVcugkscjZRsL7uQ/8lDF6ItqpfK7+PH7+ugVJNc/KpexnkIsBquQWwywow4dvUCXGofpnAQtql0FIxyJ+F3ykfxb7VtV4tEd4uXKhKMxO8yjc1UJlnKDYYVWXXdbJCgkPBdFOhQ==|920

@@ -25,16 +25,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T14:46:10.7844+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_asprova_keikaku",
@@ -45,69 +36,20 @@
     "ModuleType": 7
   },
   {
-    "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.262578+09:00",
-    "ModuleType": 22,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル"
-    ]
-  },
-  {
     "ModuleName": "Table/ymia_t_seisan_jissekidt",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.2642077+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekidt.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikaiyo",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.2642667+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekikaiyo.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekielse",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.2642722+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekielse.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikouji",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.2642759+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル\\ymia_t_seisan_jissekikouji.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/バックアップ用テーブル",
@@ -203,32 +145,12 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T14:46:10.7844438+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/T_担当工程マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T14:46:10.7844521+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\T_担当工程マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -341,17 +263,7 @@
   },
   {
     "ModuleName": "PCPage/目次",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-29T14:23:38.4506568+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\目次.json",
-      "Pages\\目次.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/★設定確認及び動作確認済み★",
@@ -360,20 +272,6 @@
   {
     "ModuleName": "Pages/生産実績情報(舟艇_濾過槽)",
     "ModuleType": 6
-  },
-  {
-    "ModuleName": "PCPage/生産実績入力",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-29T14:23:38.4505065+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力.json",
-      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力.rd"
-    ]
   },
   {
     "ModuleName": "PCPage/艇種艇番選択",
@@ -392,73 +290,20 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "Pages/海洋実績情報(せんすいくん)",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.3031925+09:00",
-    "ModuleType": 6,
-    "ToRemoveFiles": [
-      "Pages\\海洋実績情報(せんすいくん)"
-    ]
-  },
-  {
     "ModuleName": "PCPage/海洋実績入力",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.3073591+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\海洋実績情報(せんすいくん)\\海洋実績入力.json",
-      "Pages\\海洋実績情報(せんすいくん)\\海洋実績入力.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/艇種艇番選択 (海洋)",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.3075496+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\海洋実績情報(せんすいくん)\\艇種艇番選択 (海洋).json",
-      "Pages\\海洋実績情報(せんすいくん)\\艇種艇番選択 (海洋).rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/艇番一括変換（海洋）",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.3079514+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\海洋実績情報(せんすいくん)\\艇番一括変換（海洋）.json",
-      "Pages\\海洋実績情報(せんすいくん)\\艇番一括変換（海洋）.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（海洋実績）",
-    "State": 4,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.30839+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\海洋実績情報(せんすいくん)\\作業実績エクスポート（海洋実績）.json",
-      "Pages\\海洋実績情報(せんすいくん)\\作業実績エクスポート（海洋実績）.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/その他実績情報(ライン外)",
@@ -534,17 +379,7 @@
   },
   {
     "ModuleName": "MasterPCPage/生産実績入力メニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-29T14:23:38.4512878+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\生産実績入力メニュー.json",
-      "MasterPages\\生産実績入力メニュー.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "ServerCommands/※MySQL仕様に変更する必要あり",
@@ -748,76 +583,30 @@
   },
   {
     "ModuleName": "PCPage/各種マスタ連動",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-28T07:52:25.0838321+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\連携用\\各種マスタ連動.json",
-      "Pages\\連携用\\各種マスタ連動.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産実績入力 ver2",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-04T12:16:49.1911187+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/生産実績入力（バックアップ用）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-29T14:23:38.4505385+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/海洋実績情報(せんすいくん)※Remacs仕様にする",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-30T14:30:04.3032371+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル（Remacs用）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:26:09.2626105+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:27:34.4426641+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル（生産部用）",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-05T09:27:34.44268+09:00",
     "ModuleType": 22
   }
 ]
