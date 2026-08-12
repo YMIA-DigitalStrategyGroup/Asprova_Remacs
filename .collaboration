@@ -568,7 +568,16 @@
   },
   {
     "ModuleName": "ServerCommand/生産計画出力処理",
-    "ModuleType": 15
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-12T11:32:09.2530653+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\MySQL生産計画作成\\生産計画出力処理.json"
+    ]
   },
   {
     "ModuleName": "ServerCommand/生産計画連携　島添Ver（岸山Verチェックイン前に動きだけ確認してみた）",
