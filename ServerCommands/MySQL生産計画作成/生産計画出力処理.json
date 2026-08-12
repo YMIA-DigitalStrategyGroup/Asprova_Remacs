@@ -19,6 +19,9 @@
             }
           ]
         }
+      },
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
       }
     }
   ],

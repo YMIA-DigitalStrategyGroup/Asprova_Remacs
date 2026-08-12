@@ -36,7 +36,7 @@
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
       "ConnStrId": "MySql本番環境",
       "Params": {},
-      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, '999999', 伝票No, '', 終了, 0, 0, 開始, 終了, 0\r\nfrom ymia_t_asprova_jisseki_remacs where 送信フラグ = 0\r\n",
+      "SqlStatement": "insert into ymia_t_asprova_2remacs\r\nselect 日付, '9998', 伝票No, '', 終了, 0, 0, 開始, 終了, 0\r\nfrom ymia_t_asprova_jisseki_remacs where 送信フラグ = 0\r\n",
       "ID": "7e0ce77c994a4538a2bbc62c84f41dd7",
       "Comments": "ymia_t_asprova_jisseki_remacs のうち、\nまだ送信していない（送信フラグ = 0）実績だけを、\nymia_t_asprova_2remacs に登録する（ただし未送信のもののみ設定）\r\n＝Remacs送信用データ作成"
     },

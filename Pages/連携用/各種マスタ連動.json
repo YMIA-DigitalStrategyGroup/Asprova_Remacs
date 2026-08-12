@@ -7,14 +7,16 @@
   },
   "Values": {
     "1,1": "引合情報連携",
-    "4,2": "希望納期",
+    "4,2": "積層投入日",
     "4,21": "Asprovaに書出",
     "6,9": "↑",
     "7,9": "この日　移行の情報をAsprovaに連携",
     "11,1": "カレンダーマスタ連携",
     "11,20": "工程名称マスタ連携",
     "14,2": "Asprovaに書出",
-    "14,21": "Asprovaに書出"
+    "14,21": "Asprovaに書出",
+    "19,1": "※ 2026-8-12 希望納期を投入計画の積層投入日に変更。サーバーサイドコマンドも修正済。",
+    "20,1": "※ 投入計画取込時に仕様番号が無い場合があるので（通常ない）、本サーバーサイドコマンドで仕様コードを設定するように変更。"
   },
   "AttachInfos": {
     "4,9": {
@@ -60,7 +62,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "c389ee65-2fc2-4d50-a456-b04d0fda2700"
+                "ID": "7436c402-e2f1-4a19-a218-20ab0d28a77d"
               }
             ]
           }
@@ -96,7 +98,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "6e17ce88-46f8-44d9-be68-b96cf9108af4"
+                "ID": "15503303-9a14-4f32-897a-4b878e326d1b"
               }
             ]
           }
@@ -132,7 +134,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "b73fd2ac-69e7-47e2-9710-acab5cdfc8ce"
+                "ID": "14d0149f-2ee0-4a55-9a35-ac82c21dbe0d"
               }
             ]
           }
@@ -749,4 +751,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//porL/vGqHCIh4rKAvYNSWTZmCCGBCcnXf4yU8yQ9E5oNSHFqmG99G9P6VUTb9ybDnmSl1HU8kamKIu5k7Lu+bAU7sTT1JkLEYwDMWyPiZDPMz13nkZG/dO5b3R3FrG7R1+MUmHMNy4OKy4d28LODzhAZo27+6E8CH0sdnxGy52TWq4XrNDPXxmYjanuhW7rLOpE9978Ts/xgHGNiAK58zMnFA75o5ZLTDdjbD1YxvlTlraS9UFmT9EETxLUU/MkWhs04/PrUG86Ngbk4pob398UGWE6rUiexg2hwzh2LlYbogdyZOJkGs1iGZCYlj2cwp3tFTuJeD0YHfCpkuCMB4eozyx12ijXwyqGOAYsx/f7dx/wBDWpupp0aISQCNBXLwGo28pBnGfYskssFV5neTnuJU3q41s6f4CnWEU8mwV57nnifrcmN5oBPrvIH5YRcX0mtDtVWgrFoIt1XzYsf5ayBzJPbvGNw1NGyKdnj6V03qJgXSYcxnDeS2zZy+7YC96NvbiGsGWnuFVsd+pB1uXc7wmeDZPoscXgv5TsNwsWxn5bm0Zdj2j+8RKwuwm0JMBHtyCq8pyDr3UaE2YhH8WddG4FPXh0WNfkkS5u2co3u2zABTYwX70RBbKVNz4MgEZP6VC2I3V/NSLhNvgxeAMzWb4Vp5oDMEvxmo65b0nW++YevDnfPz7PIF+06lUaGgf8hwqYxwiekfaWhVg9n64dABewflnPeIdXto3bd0hssYgedkbU6OT19qrk39GLJSu8T2LdaR22DKxaBr1f1l6NFJ6in647vrqim2zoXdU0ncZU0eoMsoBoAEeKD/kufvNoM0rdsr4VPTLiLTkYOYxnElzwMdEFBaEJ5psYkdIFjfEgzr4YnrRHRGCsnaayt6hMEGsFC1czxBRc2LOQ7ZQ==|920
+}//ZnNAhmxrCYSnnzIUrgh7NpUwj6G+ECTPrV7f6dXyNYZasDvEAXWUF+Hkl0H/Wesj47AoAAIcGe065UDZCjvxy7jzIW4MdjL5gVSwdt/ApM4EYJh13xj5IwGTThvfcdY3kT485BwGvk9YF0cCNn5gjebsmqMSuHofMMgdGMsnpPrV0sHIP9YJ0F3cQqFPQgNO6F9lPdLzYr5MdeeCpJMHUqJo6aAYzGtEM8Vy1UnVty9v0GkK/cDAtOynRWo/8t9Re/zY2wkZOdZ/Zb+emI9gWsZpu5UrF2X9EPjaHY2cfbNpOMNWVU38bff667VQcAf3RY067pp52xpXheSyZBwtYfUEVyDEXvJLbWb1G6l5Z2Bf1eGJ+6FpC6Gunqty8DMHhIhXjfy4gjs6Ngd5B2kbab1Peo7DFgTcqJEkA0fIA2jho0lRbcFOltTy+KhDHOm8qVJHTtOH9KV40XnmCQOQFwPxZ4PXONQXnBUgtx3a5OxdZMasBgUUaaSgwLgt3wArKwJcFJyyR1IXb/NbRNmDYYEux2XYt8jCoCl7Y0/h6W5ZXhhx2iVfSGWpMYoY6RO3innaC4/8RoARPmRCk6kAXy7VAb+aZH9oGsQgRKm8JZy8jbsp/VzuDq/mYmyu6dXQASYlo9eUZmh5wdjjAsWXz0J3+cAfcXETB2KND096KeWquKQmg8ZaFg8nF+TnoW/npiEVH0gCdh0fDR+usiQ8fkvQbNjmI3mE4aoi0uObXfDqqIkF7m5FOv91HK+QBfnyxVehJ4Qw1rcpW6K0pI0EsEyJzvF2EBEo/22c48A4/ve9Jr3VZj6g0ran7CWO22aCpnDD5RS1lSQnZW2QOTQFw2unFdQbqBYpW1yyeUS+Uj10COUt51SnJ8AUFI9kBF0Hj1E6TAG6lOeaXxt07bwc6Q==|920
