@@ -60,7 +60,8 @@
             "ColumnName": "日付",
             "GUID": "2fdfbd90-34b1-4491-8d2b-ffe9631f81b4"
           },
-          "CSVColumnNameOrIndex": "日付"
+          "CSVColumnNameOrIndex": "日付",
+          "Formatter": "yyyy/m/d"
         },
         {
           "BindingColumn": {
@@ -76,7 +77,7 @@
             "ColumnName": "伝票番号",
             "GUID": "f938273e-85df-413f-80c6-ef26b243526a"
           },
-          "CSVColumnNameOrIndex": "伝票番号"
+          "CSVColumnNameOrIndex": "伝票No"
         },
         {
           "BindingColumn": {
@@ -84,7 +85,7 @@
             "ColumnName": "棚番号",
             "GUID": "f98e29c4-9f71-4a05-a576-1320dc617434"
           },
-          "CSVColumnNameOrIndex": "棚番号"
+          "CSVColumnNameOrIndex": "棚番"
         },
         {
           "BindingColumn": {

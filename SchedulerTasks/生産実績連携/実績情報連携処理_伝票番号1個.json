@@ -1,6 +1,6 @@
 {
   "Name": "実績情報連携処理_伝票番号1個",
-  "Enabled": true,
+  "Enabled": false,
   "Triggers": [
     {
       "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
