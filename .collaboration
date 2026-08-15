@@ -547,7 +547,16 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理_伝票番号1個",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-15T10:06:05.5629637+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\実績情報連携処理_伝票番号1個.json"
+    ]
   },
   {
     "ModuleName": "PCPage/Remacs年間計画取得",
