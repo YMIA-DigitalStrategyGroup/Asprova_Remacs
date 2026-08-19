@@ -628,5 +628,15 @@
     },
     "LockDateTime": "2026-08-20T07:26:31.9807376+09:00",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "Pages/作業用帳票発行",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-20T07:26:53.8267622+09:00",
+    "ModuleType": 6
   }
 ]
