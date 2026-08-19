@@ -1,0 +1,108 @@
+{
+  "Name": "作業用帳票",
+  "DataSources": [
+    {
+      "Name": "作業用帳票テーブル",
+      "GUID": "d9f4b669-c5d5-447a-8351-bc86afd4d021",
+      "DataSourceSetting": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "BindingInfos": [
+          {
+            "GUID": "bb9a03e6-81e3-4697-8ff5-880bd23f1c8f",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "艇番",
+              "GUID": "6b3922c7-b3ca-4204-a128-44068bed3e0f"
+            },
+            "ColumnName": "艇番"
+          },
+          {
+            "GUID": "5b9b52aa-d84f-4a51-ab8f-0a77496abeb4",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "品番",
+              "GUID": "270d47cc-8d2c-467c-b2bf-48ee0c74b4ec"
+            },
+            "ColumnName": "品番"
+          },
+          {
+            "GUID": "4ff690fd-39e0-442f-954d-92797e184fe8",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "品名",
+              "GUID": "0beb7fb3-51e9-4fe2-9aa0-d669f9b7ff7e"
+            },
+            "ColumnName": "品名"
+          },
+          {
+            "GUID": "4761cf4d-e8bc-44bd-abeb-a3c993838948",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "工程CD",
+              "GUID": "75323927-56b4-41e6-b4c5-b59bb5120dec"
+            },
+            "ColumnName": "工程CD"
+          },
+          {
+            "GUID": "bcb613a4-b3e1-4f08-8bc5-a7903be5ac77",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "工程名",
+              "GUID": "a8730f5e-143d-4df0-b8ab-49da1fe86b8e"
+            },
+            "ColumnName": "工程名"
+          },
+          {
+            "GUID": "fa80c7fd-ec70-427d-acbb-064555ce209b",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "伝票番号",
+              "GUID": "0cfd12e9-4f41-41cb-9b61-e9abeae90dd9"
+            },
+            "ColumnName": "伝票番号"
+          },
+          {
+            "GUID": "f40c8107-b9f1-49b6-8875-0adee5e34cb4",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "QRコード",
+              "GUID": "58ef02db-b8f0-483d-b7ce-40bfefd44a19"
+            },
+            "ColumnName": "QRコード"
+          }
+        ]
+      },
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 47
+  },
+  "Cols": {
+    "Count": 62
+  },
+  "Values": {
+    "3,2": "艇種",
+    "3,11": "艇番",
+    "3,20": "工程CD",
+    "3,30": "検索",
+    "6,2": "製番",
+    "6,10": "品番",
+    "6,17": "品名",
+    "6,25": "工程CD",
+    "6,30": "工程名",
+    "6,36": "伝票番号",
+    "37,1": "帳票発行"
+  },
+  "AttachInfos": {
+    "3,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,14": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,23": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "mkoteiname1",
+        "ValueColumnBindingInfo": {
+          "TableName": "mkoteiname1",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "907974ae-3ec2-4390-871d-706b8c46e744"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mkoteiname1",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "cd590f77-2aab-4bfb-b889-a92b0a1d45f7"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "0bcc3854ee1c4045ac07655ea24c9a4a",
+            "BindingInfo": {
+              "TableName": "mkoteiname1",
+              "ColumnName": "KOTEI_CODE",
+              "GUID": "5b3bb43a-7ddd-43cf-a5a2-c0c2a93e1f19"
+            },
+            "ColumnName": "工程CD"
+          },
+          {
+            "GUID": "2ff04b0d2b5e4e2da66bc4c7bb9c95c5",
+            "BindingInfo": {
+              "TableName": "mkoteiname1",
+              "ColumnName": "KOTEI_NAME",
+              "GUID": "41dcce11-dcdc-4892-bf89-c9eb190c2cca"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      }
+    },
+    "3,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "thatchum",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "SEIBAN",
+                    "GUID": "13aebbff-248d-4e6a-909d-70be4cff17cf"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=作業用帳票発行!F4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "SEIBAN",
+                    "GUID": "7fc054c9-c794-4918-8313-1dec646f3666"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=作業用帳票発行!O4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "KOTEI_CODE",
+                    "GUID": "1091924b-9716-4a80-889e-a8c8a8669043"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=作業用帳票発行!X4"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 2,
+                      "ColumnBindingInfo": {
+                        "TableName": "thatchum",
+                        "ColumnName": "KOTEI_CODE",
+                        "GUID": "98262ca4-db2a-4de4-9a4a-e4d6b951e90b"
+                      },
+                      "Value": "A",
+                      "LeftBracket": 1
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 2,
+                      "ColumnBindingInfo": {
+                        "TableName": "thatchum",
+                        "ColumnName": "KOTEI_CODE",
+                        "GUID": "2848c6ee-0217-439d-86b5-71eb6c8f497e"
+                      },
+                      "Value": "B"
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 2,
+                      "ColumnBindingInfo": {
+                        "TableName": "thatchum",
+                        "ColumnName": "KOTEI_CODE",
+                        "GUID": "4a24a0f8-e1da-40fa-9452-72d53c3f04d4"
+                      },
+                      "Value": "C"
+                    },
+                    {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 2,
+                      "ColumnBindingInfo": {
+                        "TableName": "thatchum",
+                        "ColumnName": "KOTEI_CODE",
+                        "GUID": "cac98971-6776-4f84-8da2-5acf10d20ec2"
+                      },
+                      "Value": "D",
+                      "RightBracket": 1
+                    }
+                  ],
+                  "RelationType": 1
+                }
+              ]
+            },
+            "ID": "6d60e14b99c44155b11815ff58e7a4b8"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "thatchum",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "RowCount": 30,
+        "ColumnCount": 43,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "SelectionMode": 1,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "7,2": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "SEIBAN",
+        "GUID": "8ca54b83-b3bf-4041-9573-c23174f57bde"
+      }
+    },
+    "7,10": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HINBAN",
+        "GUID": "c8c8d6b9-4117-4667-9131-16f168f97dea"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HINMEI",
+        "GUID": "a765ba0b-07a4-4005-a147-31240135a020"
+      }
+    },
+    "7,25": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "KOTEI_CODE",
+        "GUID": "a5a3727b-46bb-46ae-ac79-07376a0cec5d"
+      }
+    },
+    "7,30": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "KOTEI_CODE",
+        "GUID": "4817ce62-b385-45ac-9598-f75a6e31ae01",
+        "RelationBinding": {
+          "RelatedTable": "mkoteiname1",
+          "RelatedColumn": "KOTEI_CODE",
+          "DisplayColumn": "KOTEI_NAME"
+        }
+      }
+    },
+    "7,36": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "DENPYO_NBR",
+        "GUID": "b98dbb5a-a1ca-4f60-a616-77aea221c73c"
+      }
+    },
+    "37,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "帳票を発行しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "帳票用テーブルの削除",
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+                    "PassValueItems": [
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!C8"
+                        },
+                        "TargetCell": "艇番"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!K8"
+                        },
+                        "TargetCell": "品番"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!R8"
+                        },
+                        "TargetCell": "品名"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!Z8"
+                        },
+                        "TargetCell": "工程CD"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AE8"
+                        },
+                        "TargetCell": "工程名"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AK8"
+                        },
+                        "TargetCell": "伝票番号"
+                      }
+                    ],
+                    "Source": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=作業用帳票発行!B9"
+                    },
+                    "Target": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=作業用帳票発行!B45"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー2",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+                    "SessionGuid": "2d7f8222-db62-45c8-86d1-b337b20d9e93",
+                    "OpenReportName": "作業用帳票",
+                    "SideBarPosition": 0
+                  }
+                ],
+                "ID": "e410dd69-1733-473f-bc2f-de78bf668e82"
+              }
+            ]
+          }
+        ],
+        "Text": "帳票発行",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "42,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "RowIndex": 42,
+        "ColumnIndex": 1,
+        "RowCount": 4,
+        "ColumnCount": 43,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "43,1": {
+      "NameUsedInJavaScript": "艇番",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "艇番",
+        "GUID": "90961abc-c9e6-44d9-9528-7ed363983b23"
+      }
+    },
+    "43,5": {
+      "NameUsedInJavaScript": "品番",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "品番",
+        "GUID": "151e2a63-d49d-4e7a-a750-a1c72203dbb2"
+      }
+    },
+    "43,9": {
+      "NameUsedInJavaScript": "品名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "品名",
+        "GUID": "8113efbc-128e-4041-8935-9d6d7d9164d8"
+      }
+    },
+    "43,13": {
+      "NameUsedInJavaScript": "工程CD",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "工程CD",
+        "GUID": "ed23e4c0-84be-4870-9ca6-c8f9a6f2102d"
+      }
+    },
+    "43,17": {
+      "NameUsedInJavaScript": "工程名",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "工程名",
+        "GUID": "4d4b81b8-9982-4bd8-9dc9-d505a77b44f5"
+      }
+    },
+    "43,21": {
+      "NameUsedInJavaScript": "伝票番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "伝票番号",
+        "GUID": "c11d8f9e-dc5c-4a9f-8f0d-866f89d8fe39"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 80",
+        "black",
+        "@",
+        "Body",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,2": 0,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 2,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 3,
+      "3,12": 4,
+      "3,13": 4,
+      "3,14": 5,
+      "3,15": 4,
+      "3,16": 4,
+      "3,17": 4,
+      "3,18": 4,
+      "3,19": 4,
+      "3,20": 6,
+      "3,21": 4,
+      "3,22": 4,
+      "3,23": 4,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 4,
+      "4,20": 4,
+      "4,21": 4,
+      "4,22": 4,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "37,1": 7,
+      "37,2": 8,
+      "37,3": 8,
+      "37,4": 8,
+      "37,5": 8,
+      "37,6": 8,
+      "37,9": 8,
+      "37,10": 8,
+      "37,11": 8,
+      "37,12": 8,
+      "37,13": 8,
+      "37,14": 8,
+      "37,15": 8,
+      "37,16": 8,
+      "37,17": 8,
+      "37,18": 8,
+      "38,1": 8,
+      "38,2": 8,
+      "38,3": 8,
+      "38,4": 8,
+      "38,5": 8,
+      "38,6": 8,
+      "38,9": 8,
+      "38,10": 8,
+      "38,11": 8,
+      "38,12": 8,
+      "38,13": 8,
+      "38,14": 8,
+      "38,15": 8,
+      "38,16": 8,
+      "38,17": 8,
+      "38,18": 8,
+      "39,9": 8,
+      "39,10": 8,
+      "39,11": 8,
+      "39,12": 8,
+      "39,13": 8,
+      "39,14": 8,
+      "39,15": 8,
+      "39,16": 8,
+      "39,17": 8,
+      "39,18": 8,
+      "39,34": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "7,2,1,8",
+    "6,2,1,8",
+    "7,10,1,7",
+    "6,10,1,7",
+    "7,17,1,8",
+    "6,17,1,8",
+    "7,25,1,5",
+    "6,25,1,5",
+    "7,30,1,6",
+    "6,30,1,6",
+    "7,36,1,7",
+    "6,36,1,7",
+    "3,2,2,3",
+    "3,5,2,6",
+    "3,11,2,3",
+    "3,14,2,6",
+    "3,20,2,3",
+    "3,23,2,6",
+    "3,30,2,6",
+    "37,1,2,6",
+    "42,1,1,4",
+    "43,1,1,4",
+    "42,5,1,4",
+    "43,5,1,4",
+    "42,9,1,4",
+    "43,9,1,4",
+    "42,13,1,4",
+    "43,13,1,4",
+    "42,17,1,4",
+    "43,17,1,4",
+    "42,21,1,4",
+    "43,21,1,4",
+    "8,1,28,43",
+    "44,1,2,43"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//rmYqv7Q/eqMF0Gp0IdReZftRNduSJvLGt1Z5aabYlqnKyIlT+pG7ER03aA/X/RAfvMzsqjinf0FeNBNYRLrceh0lVcpazEeUDryv77qtnCwGmRxLfAhOK+AXsCh+VoRamHdqR4THgxa+3SIDbtQnO9YhyGcnxMmxiNbezkoeuMsT7p84I1GYUELuKwyNEl8KnZxBc9MSngp4gQxoqTlVGrWokU77z24T0oh6P/mKJDxXe19GZA38fm9IBk4V6ZrLILex7oB/1EoRWZZD/QjfP1T3M+Cc+Y5hyzX02msiDsXq9RMNxx4MuHSi+TwR2Zg4hVJTZKhFMAPi0SUd3IfJhP3XO/KG1JfS3EkM+mtU9N/9lQ4B8IMtCzUloMJZ0C2gTXOCqLIRfWWEp527CP4sIGCi/Ul20V98EA0G32qsmiEPNGNn3Okh9jvmrUpn0ldNEGJ8IKVaUSMyZ292qS4o4aUYPqgYmucjZixYXMvdS+0csrIdhhNJbFoUqUkxBidzOqrkffe0TOJfHsxZ6JYZryFtcM9ZZ4ECQyStm0lqeMmNaLTIFR+d1eeRNqDrJrlhp2/fcR4cUlyq3W0edx3XZfjUeWXMaaD/W+2FC24mCBnRyZWTpCSL4fNAfSRQLOk7vV62b0Ti8nW/TfQ2smCLdCumjurLT66WJYqHap7SCT7JKkf9QDmT0dKV1eWd6UbsLVZ7cV25e5I8Yz/8Il9YIlYgc70jGOl1nylyWmQn+XSDzkfP8nF47rsZRtT/NFLlIqoZtTioWcD2jej4iDZFdK7FaL25GeUioK444dTmlCrR4BTB32jdZMLB9C6EK4ZOpj7KXo+ZgScQ3gZHFoZ9X9/IxUjhS1mTeaRVSu4SAqvdXlTp4wEIUC19ZOLYxWyJknVXfG1qWKy8iD/8pGf03Q==|920

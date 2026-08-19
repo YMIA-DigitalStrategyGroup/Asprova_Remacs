@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "Table/thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:30:03.8268366+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\thatchum.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/thatchu",
@@ -34,16 +25,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:49:32.8982387+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_asprova_keikaku",
@@ -163,32 +145,12 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:49:32.898256+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/T_担当工程マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:49:32.8982533+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\T_担当工程マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -649,72 +611,30 @@
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業用帳票発行",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:26:14.8083417+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Table/ymia_t_asprova_qrdenpyo",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:26:31.9807376+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "Pages/作業用帳票発行",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:26:53.8267622+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "PCPage/作業用帳票発行",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:27:11.3058662+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/作業用帳票",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T07:53:24.6817492+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "ServerCommands/作業用帳票発行",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T08:11:38.9339624+09:00",
     "ModuleType": 20
   },
   {
     "ModuleName": "ServerCommand/帳票用テーブルの削除",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-20T08:12:03.7599519+09:00",
     "ModuleType": 15
   }
 ]
