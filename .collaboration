@@ -706,5 +706,15 @@
     },
     "LockDateTime": "2026-08-20T08:11:38.9339624+09:00",
     "ModuleType": 20
+  },
+  {
+    "ModuleName": "ServerCommand/帳票用テーブルの削除",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-20T08:12:03.7599519+09:00",
+    "ModuleType": 15
   }
 ]
