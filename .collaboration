@@ -379,7 +379,17 @@
   },
   {
     "ModuleName": "MasterPCPage/生産実績入力メニュー",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-01T15:43:15.4005205+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\生産実績入力メニュー.json",
+      "MasterPages\\生産実績入力メニュー.rd"
+    ]
   },
   {
     "ModuleName": "ServerCommands/※MySQL仕様に変更する必要あり",
