@@ -311,7 +311,17 @@
   },
   {
     "ModuleName": "PCPage/その他作業実績入力",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-04T13:26:47.626107+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\その他実績情報(ライン外)\\その他作業実績入力.json",
+      "Pages\\その他実績情報(ライン外)\\その他作業実績入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（その他実績）",
