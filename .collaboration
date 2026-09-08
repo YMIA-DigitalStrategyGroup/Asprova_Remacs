@@ -366,12 +366,12 @@
   },
   {
     "ModuleName": "PCPage/工程社員マスタ管理",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-04T15:56:15.5564034+09:00",
+    "LockDateTime": "2026-09-08T14:26:04.7630254+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\マスタ管理\\工程社員マスタ管理.json",
@@ -413,7 +413,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-01T15:43:15.4005205+09:00",
+    "LockDateTime": "2026-09-08T14:26:04.7634038+09:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\生産実績入力メニュー.json",
@@ -725,5 +725,15 @@
     },
     "LockDateTime": "2026-09-08T14:25:29.6396027+09:00",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/工程社員マスタ管理　Ver2",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-08T14:26:04.7630514+09:00",
+    "ModuleType": 1
   }
 ]
