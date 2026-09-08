@@ -744,5 +744,15 @@
     },
     "LockDateTime": "2026-09-08T14:26:04.7630514+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/工程社員マスタ管理　Ver2 (バックアップ)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-08T22:21:48.3700948+09:00",
+    "ModuleType": 1
   }
 ]
