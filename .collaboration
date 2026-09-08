@@ -130,7 +130,16 @@
   },
   {
     "ModuleName": "Table/mkoteiname",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-08T16:35:01.8840891+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\SQLServerテーブル\\MySQL接続予定(工程マスタ_最新日付）\\mkoteiname.json"
+    ]
   },
   {
     "ModuleName": "TableView/V投入計画_最新日付艇種艇番",
