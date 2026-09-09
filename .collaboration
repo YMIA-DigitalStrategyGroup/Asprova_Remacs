@@ -670,5 +670,15 @@
   {
     "ModuleName": "Table/ymia_m_seisan_kouteigroup",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/その他作業実績入力 (バックアップ)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T15:33:01.0928486+09:00",
+    "ModuleType": 1
   }
 ]
