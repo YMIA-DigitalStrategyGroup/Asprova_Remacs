@@ -681,7 +681,17 @@
   },
   {
     "ModuleName": "PCPage/工程社員マスタ管理　Ver2",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T15:36:46.6897239+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\マスタ管理\\工程社員マスタ管理　Ver2.json",
+      "Pages\\マスタ管理\\工程社員マスタ管理　Ver2.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/工程社員マスタ管理　Ver2 (バックアップ)",
