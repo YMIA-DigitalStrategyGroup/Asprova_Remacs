@@ -655,7 +655,17 @@
   },
   {
     "ModuleName": "PCPage/工程社員マスタ管理　Ver2 (バックアップ)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T14:48:18.3070657+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\マスタ管理\\工程社員マスタ管理　Ver2 (バックアップ).json",
+      "Pages\\マスタ管理\\工程社員マスタ管理　Ver2 (バックアップ).rd"
+    ]
   },
   {
     "ModuleName": "Table/ymia_m_seisan_kouteigroup",
