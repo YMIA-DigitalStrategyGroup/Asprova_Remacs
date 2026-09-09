@@ -1,0 +1,347 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 35
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      15,
+      16
+    ],
+    "Count": 27
+  },
+  "Values": {
+    "4,17": "係数",
+    "5,17": "表示",
+    "31,1": "更新"
+  },
+  "AttachInfos": {
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "工程社員マスタ",
+        "TableName": "ymia_m_seisan_kouteishain",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 26,
+        "ColumnCount": 24,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "社員コード",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "社員コード",
+        "GUID": "ea888054-a01e-4d11-9816-008d76abe530"
+      },
+      "CellType": {
+        "$type": "Forguncy.UserCellType, ServerDesignerCommon",
+        "DisplayColumnName": "FullName",
+        "Columns": 3
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "5,7": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "工程コード",
+        "GUID": "b12fc4e1-9360-4daf-a673-2d81a540b759"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "ymia_m_seisan_kouteiname",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteiname",
+          "ColumnName": "工程コード",
+          "GUID": "b879f85e-9a6e-4759-8f57-89979fe541fc"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteiname",
+          "ColumnName": "工程名",
+          "GUID": "010e0331-293b-40be-bc30-3172758a0587"
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "750f6242696e4b0e87f2e1a2dad3f441",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteiname",
+              "ColumnName": "工程コード",
+              "GUID": "339f9814-45de-47c1-a237-88edccf5a07b"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "04fd3ded813f4167804126968d803c2d",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteiname",
+              "ColumnName": "工程名",
+              "GUID": "1aadc8c0-8559-4041-ac62-7cbcb650faad"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "5,12": {
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "代表者",
+        "GUID": "b05cc870-7eab-48e7-9db2-6bc277ef1053"
+      }
+    },
+    "5,15": {
+      "NameUsedInJavaScript": "係数",
+      "BindingInfo": {
+        "TableName": "ymia_m_seisan_kouteishain",
+        "ColumnName": "係数",
+        "GUID": "d933a05c-14fe-4925-9894-31e476d81717"
+      }
+    },
+    "5,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "社員係数マスタ管理",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='工程社員マスタ管理 (バックアップ)'!B6"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=社員係数マスタ管理!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "表示",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "マスタを更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "工程社員マスタ",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "91b08f9a-6327-4416-8799-56028f87250f"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFF0000",
+        "[AUTO]General",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "0,9": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 0,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 0,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "4,1": 2,
+      "4,12": 2,
+      "4,17": 2,
+      "4,23": 3,
+      "4,24": 3,
+      "5,1": 2,
+      "5,7": 2,
+      "5,12": 4,
+      "5,15": 2,
+      "5,17": 2,
+      "5,23": 3,
+      "5,24": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "31,1,2,5",
+    "6,1,24,24",
+    "4,1,1,6",
+    "5,1,1,6",
+    "5,7,1,5",
+    "4,7,1,5",
+    "5,12,1,3",
+    "4,12,1,3",
+    "5,15,1,2",
+    "4,15,1,2",
+    "4,17,1,2",
+    "5,17,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "生産実績入力メニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//L8/IVqBOHU87+DhYz/7w6y211PKcGFKzbJMySps8r2HN9EJ7z+rWLtrqkigPbAsWFIluL+JhxzWMV00Fit0eGLwruAqzy/lrYCtmQEFnQK6NpPzzAox3CZW/UsFmVbn2P5jDFKM4HM5NUj3cUT/NlWug/TCtctJfqYZ6aKPevsrVpVzCW9UJpn19HNnzbYrCotFFm2Ow9tY4aP+Qvlsi1Ft8FjgYdj3a76IDIIHEePZqsxTRlM84K+ATpnPWVrHwLrg0gAxsDLMurwpSNtxyG7phm3YT79/2TVatNin03279sJLvt3imqdhrZqD1RJIpiJE+6pxKFphgjQhwujf1AZhKnGJKVlFsymOBpfxzDTE6XJlXhlwkkC4vBmWY9FP7sdPsOSATOzRuCmxHnjaR4TvL98ixl6YwARonFFQbCdMxUIsVpmYj69XTrHV0r8aprgfeoUHc+ALhYCi0/M+qfu6ZkQh7iWiTsbakkv6q6aHpYVN2FjzkhE6M3bmG9zCYrF/xqESjQiN9dTMs+DxCpMa0+j2UELJ3XXrCm9OYpjMCh/WzLXf9pfauas2U2nJ6nrC++2KEFvz/oAkBADz/dkx9Drbo7IG2wWUCdpwKd3EgQsw1dxJHVQ7vG9GTLWGEqKwXG+c2teXhzKwrNK9SHyQQQS5ycpO163n8GCrGoPJqbdSYTYZKRVnJLljpyilSwqoFWME1H/CeGYMJNT7x03TaRO75sQF4Ih4E1nRGMoNJhyyJlT855WykyqmkTvJ2+zI5Cyt5xTloP4eBXWpzRV1MYmyttgb9iRQoR+ow3Q2xq/Zg3aWa+Arphskjzg0rNLLjuNGSUrjW2Hur9ZaH8+rCoA75T2qrOndf/+n9dziyQa5Rp2Wlrb2CEZf5QmB1yMKWzMxsRBhBmgn01tAGmA==|920

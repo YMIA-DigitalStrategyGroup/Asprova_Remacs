@@ -1,0 +1,338 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,2": "社員コード",
+    "2,7": "作業者",
+    "2,11": "係数",
+    "2,37": "係数",
+    "6,2": "更新",
+    "6,10": "閉じる"
+  },
+  "Formulas": {
+    "3,11": "IF(ISERROR(AL4),0,AL4)"
+  },
+  "AttachInfos": {
+    "3,11": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,37": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "ymia_m_seisan_keisu",
+            "UpdateType": "addOrEdit",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_seisan_keisu",
+                "ColumnName": "社員コード",
+                "GUID": "0d820c78-2e37-4f51-90e1-f00af1b5c30a"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!C4"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "ymia_m_seisan_keisu",
+                  "ColumnName": "係数",
+                  "GUID": "23de06dc-76a2-49b9-8d75-e4dd43d830e1"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!L4"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "ymia_m_seisan_keisu",
+                  "ColumnName": "社員コード",
+                  "GUID": "fa3e0487-08fd-4106-89d4-25cc0b3e5abc"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Body",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,37": 1,
+      "2,38": 1,
+      "2,39": 1,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,8": 0,
+      "3,9": 0,
+      "3,10": 0,
+      "3,11": 2,
+      "3,12": 3,
+      "3,13": 4,
+      "3,37": 5,
+      "3,38": 6,
+      "3,39": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,2,1,5",
+    "2,2,1,5",
+    "2,7,1,4",
+    "2,11,1,3",
+    "3,7,1,4",
+    "3,11,1,3",
+    "6,2,2,4",
+    "6,10,2,4",
+    "2,37,1,3",
+    "3,37,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "作業者",
+        "TableValue": {
+          "TableName": "ユーザー情報ビュー",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "GUID": "7e7ea574-2124-4da2-9837-f37be448f660",
+              "BindingInfo": {
+                "TableName": "ユーザー情報ビュー",
+                "ColumnName": "氏名",
+                "GUID": "a98188de-579d-45c0-a207-59b9f2c4ceaf"
+              },
+              "ColumnName": "氏名"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "ユーザー情報ビュー",
+              "ColumnName": "ユーザー名",
+              "GUID": "8746ddd4-aa92-4ff6-92ce-678b9fe66891"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!C4"
+            }
+          }
+        },
+        "ID": "4c9de7db1ee94c3b80f6098403ef38c1"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "係数",
+        "TableValue": {
+          "TableName": "ymia_m_seisan_keisu",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "GUID": "d5996fd2-0b9f-4e69-a0f2-217e1c2f10d6",
+              "BindingInfo": {
+                "TableName": "ymia_m_seisan_keisu",
+                "ColumnName": "係数",
+                "GUID": "aca725fa-e823-42a6-85f7-9a88646a8afa"
+              },
+              "ColumnName": "係数"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "ymia_m_seisan_keisu",
+              "ColumnName": "社員コード",
+              "GUID": "77e5b390-973b-4c65-a1a8-0144de6aeb5a"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!C4"
+            }
+          },
+          "NullFormulaValueQueryPolicy": 0
+        },
+        "ID": "e4f11d4c03bd467eac4a694ddc293fe1"
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!AL4"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!係数"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!H4"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='社員係数マスタ管理 (バックアップ)'!作業者"
+            }
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//2W9JAMbyzj7iEh9NPN0fiXkaHwwMioEtR8R6bnQ0GPSmFtYMljUhmgttV08x3HXRtyw4BpnqP7o9VIozt85qnxOV0QnI7g+qSvUXdhlOMznl9r34JNZtrujwsRa1C2TEywRItb0W1AOEPspYtS6S6RzieNSEORu8udpsDe19hPGB5G6UeiKLa4mJbE1oenZlMd7Bc02n8jRp3nMuHeDgPx2ex30944/fN9Lt6pT6+d0jQG9wd4wmG+mfRkYgo8Lg8qiWHRYOPN1c65Nqmo5eNsLzTB0vKJ2O9twfTbdHqUjGaYNCvJN4NfyvFIeeSZlv6h0uutS+VZGnRE9b5Zw4DOUC1PQQOEbwT1IC8wmX/AKELE6mIeUytLZMVlfxSaRLTrR471jNmIHz5Olg2KnPR42pSaYi/jSCkos7BwUiJsmxdmPaBCJertuDfqulSIUQ+QDZ+HknuH+phOb9phZ8zfyowoweiZY4T/kVhgJNnthmbhiFmLg2NIIXbJNaPmf0ql9i2Sz/0a9HQNuf8lpeqorSD5/IUe9ayGekZuTBi+Eh+dXgpoMNs2K7M/eVtg63WQteDij7PpU+JjY0mLzaZYtO7rW9sZsa4JV3XMbLwM+1Gi7leV0Kkfnmg787wkjl3o1p1Mb32J/SFy6RRJzV+e/n9bPC+K7dNE8za8OTcmq92Z2iUx85VUw0klMnPN1YNWKBk1yaArRrowWdPMBGLjHdD/LraN7Pd7pqck/5CFvhG6xou/NTfu3ivX/cT/zNbYFXTgC6/pP4CAHAxdRD4nlbkFWq+YPLu40S3VdPRBaWmjOO2MAhhOpMNOEhArAiyw+GEvd9eQoSmLKmbBcAu7M5a66fp50uwXSa5YD77tYMX/q+juGZZlb8vRdSgwHXN9I/y2uyu+5dDBKRCQAQiA==|920

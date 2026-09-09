@@ -13,26 +13,15 @@
     "Count": 27
   },
   "Values": {
-    "0,9": "全員の名前を登録する必要はない",
-    "1,1": "設定内容を確認",
-    "1,9": "※工程使う工程分の重複しない名前があればいい（各班の班長の名前を使うか？）",
-    "2,9": "※マスタの中に同じ名前が２つあるとデフォルト設定が使えない",
-    "4,17": "係数",
-    "5,17": "表示",
+    "4,19": "係数",
+    "5,19": "表示",
     "31,1": "更新"
   },
   "AttachInfos": {
-    "1,1": {
-      "CellType": {
-        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
-        "Text": "設定内容を確認",
-        "TemplateKey": "_RS_Normal_Style2"
-      }
-    },
     "4,1": {
       "ListViewInfo": {
         "Name": "工程社員マスタ",
-        "TableName": "ymia_m_seisan_kouteishain",
+        "TableName": "ymia_m_seisan_kouteishain_new",
         "RowIndex": 4,
         "ColumnIndex": 1,
         "RowCount": 26,
@@ -71,9 +60,9 @@
     "5,1": {
       "NameUsedInJavaScript": "社員コード",
       "BindingInfo": {
-        "TableName": "ymia_m_seisan_kouteishain",
+        "TableName": "ymia_m_seisan_kouteishain_new",
         "ColumnName": "社員コード",
-        "GUID": "01f67bf8-e7c3-4d67-a3dc-d865b87b4a01"
+        "GUID": "c43ff809-04b3-425f-941b-51bf7c819846"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -87,9 +76,9 @@
     "5,7": {
       "NameUsedInJavaScript": "工程コード",
       "BindingInfo": {
-        "TableName": "ymia_m_seisan_kouteishain",
+        "TableName": "ymia_m_seisan_kouteishain_new",
         "ColumnName": "工程コード",
-        "GUID": "e128dfc7-71ef-45c9-a1fc-f66438a3fd08"
+        "GUID": "e1b3956e-9454-4df0-8ba0-04fd87fa138d"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -98,12 +87,12 @@
         "ValueColumnBindingInfo": {
           "TableName": "ymia_m_seisan_kouteiname",
           "ColumnName": "工程コード",
-          "GUID": "d02b9e2a-9ba4-4601-9451-52ad45ca4024"
+          "GUID": "1dddbf20-3b4c-401c-a021-ab7a1a1ff5a2"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "ymia_m_seisan_kouteiname",
           "ColumnName": "工程名",
-          "GUID": "e8c35966-c39d-4d8c-9224-4e494041a425"
+          "GUID": "c6a68fc2-ee3c-464b-b20e-482fe3a452e7"
         },
         "DropDownSubItems": [
           {
@@ -111,7 +100,7 @@
             "BindingInfo": {
               "TableName": "ymia_m_seisan_kouteiname",
               "ColumnName": "工程コード",
-              "GUID": "fb2b9c54-da90-4cb0-b620-382fddefca88"
+              "GUID": "4e5b6908-a607-45dc-8c83-7a14b2789e9b"
             },
             "ColumnName": "工程コード"
           },
@@ -120,7 +109,7 @@
             "BindingInfo": {
               "TableName": "ymia_m_seisan_kouteiname",
               "ColumnName": "工程名",
-              "GUID": "a1e1a949-37c4-47b3-b358-0d4b871af125"
+              "GUID": "f4e40173-670f-4661-91ec-00107b7d9ac5"
             },
             "ColumnName": "工程名"
           }
@@ -132,20 +121,20 @@
     },
     "5,12": {
       "BindingInfo": {
-        "TableName": "ymia_m_seisan_kouteishain",
+        "TableName": "ymia_m_seisan_kouteishain_new",
         "ColumnName": "代表者",
-        "GUID": "1c3e8160-7691-4bb1-a424-699dea476c23"
+        "GUID": "73ffc10d-8b86-4efc-a391-8a597f23c652"
       }
     },
     "5,15": {
-      "NameUsedInJavaScript": "係数",
+      "NameUsedInJavaScript": "グループ",
       "BindingInfo": {
-        "TableName": "ymia_m_seisan_kouteishain",
-        "ColumnName": "係数",
-        "GUID": "e9cfc113-b7ea-4086-8aa0-a7753f896723"
+        "TableName": "ymia_m_seisan_kouteishain_new",
+        "ColumnName": "グループ",
+        "GUID": "000cd2d7-863f-49ab-a6e5-210f773fd496"
       }
     },
-    "5,17": {
+    "5,19": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -156,7 +145,7 @@
               {
                 "Source": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=工程社員マスタ管理!B6"
+                  "SerializeProperty": "='工程社員マスタ管理　Ver2 (バックアップ)'!B6"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=社員係数マスタ管理!C4"
@@ -191,7 +180,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "955bb4f6-4f94-4e17-8c53-5547b1b75e74"
+                "ID": "15d219e6-e675-41d4-879a-a84dbc37b1bb"
               }
             ]
           }
@@ -214,13 +203,14 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 0
-      },
-      {
+        "FontFamily": 0,
         "BorderBottom": null,
         "BorderTop": null,
         "BorderLeft": null,
         "BorderRight": null
+      },
+      {
+        "FontFamily": 0
       },
       {
         "FontFamily": 0,
@@ -237,20 +227,71 @@
     },
     "CellStyles": {
       "0,9": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
       "1,9": 0,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
       "2,9": 0,
-      "4,1": 1,
-      "4,12": 1,
-      "4,17": 1,
-      "4,23": 2,
-      "4,24": 2,
-      "5,1": 1,
-      "5,7": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "4,1": 2,
+      "4,12": 2,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "5,1": 2,
+      "5,7": 2,
       "5,12": 3,
-      "5,15": 1,
-      "5,17": 1,
-      "5,23": 2,
-      "5,24": 2
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1,
+      "5,22": 1
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -262,18 +303,17 @@
   },
   "Spans": [
     "31,1,2,5",
-    "1,1,2,8",
     "6,1,24,24",
-    "4,1,1,6",
     "5,1,1,6",
+    "4,1,1,6",
     "5,7,1,5",
     "4,7,1,5",
     "5,12,1,3",
     "4,12,1,3",
-    "5,15,1,2",
-    "4,15,1,2",
-    "4,17,1,2",
-    "5,17,1,2"
+    "4,15,1,4",
+    "5,15,1,4",
+    "5,19,1,4",
+    "4,19,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -299,4 +339,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//xUxG51u73buc87KB9UzG/mTMWOr+tcVFLXO2URyx9XY781Y65LVswN4Q5dvw1lamDGmwZJyP1FBOaRuLWvq8PjTU6h2VMKh+TmkGOq07QDNajBY7ymgUnZs99rbSXUXdJ7Si13YG+bSbyhJ+2I1VAf+ESSn1zuveXb5vvJhkcEF9zPZvdEDN/+CYrnk5/RB3ahuKHPvPJxjxEKKDI08zzWoszOesXfOGqpqDksJfpsTqJM9RXiOMEz8vM0ARY2sE6uQx5Qpvlb1Ax5LRA/NcHaZMaGUp10MsP8donKFtBMtZAavawJOPFNpnbUeI93Jhea4sptlChH2iR3kElOhXJvX4bxNROQMzudVdJUivbxdLpWqYHhd9KOcOp9GCT2eOBqleIZGg8bVRU6w+EGONWLrkLLQ5aNa22ruPxmNYHy1XY6INbRLpnYrhfRnfPgfKcTi+xeq4Z1yf3F7L8jG1MUtQbP93BgmsTC3DnL4uIAwdJpn69Q9zVurvgVuLopW1XhQfkMw+rFV1c8BkM02v69Bm2QALdAwfrwQj31VwR8psx4T/6nIWTORVWMQTJ/sR6INUqoRqknN6aXy4zPnxIx1BIIJrmCIfToUV4wItpPEoJo7Y7QIZAL9QJEvnYo7tUBpsTuJHi6fyf0F27DIgBpZU33W+w9BMpR3/q6Nlndx/eAlb7iwhTbKl1vNNyh0r46tWXFc/m01kliZaOhSmLJIjP4c3e1p1we9fF536SfA/tu+NhpMSgy7fjByX6VltLNii0cG2fcljmYzv1utDBcB2UvexF0yE/475enpMi7dFmeniwwS1PXzQ2xMOm35mvYfdvQux/bXNhFnJZbkTjgMhFPETtXOJyfbNKpGMjsrVXNtjOxs0i67B8WHHsR3yLmzV+YzL7XW9B1t2uGprig==|920
+}//lumP8VmXdmfzm8hGPBugKe4yHVkfl2qfmiOKfAH1SazcxXz/thcWwSCjZXUYAhYOA0ukpe8pcQRf5VJoW1lwj4VQJBiEngIgVc7ffhPP0+E7jL3YvQS2kIXEMmZKKc39AfDHeLJ6/ci7SYjP43fJZKGD9DgePALf5BcdUPCSgSZzev0hkm9b10tyvF3MsjRANc+MNZ7wq63q/d4w7uOKyBxvD1xxh3iRl/Sf4m+Vj+UH47KoKGzWjzjbJxjRxvyZJVmKOqXTabuh8xd4lY+rCT0ROyP/oT2HLYrj72jR+/fIPNPENWNds2CDQ4OygYLUcvvzx7ZTsmcecFY2rlNDxnp8OhDRQtMfZC3hIj7SDWzSyeB61wiHf4D4iu8NDrn5r3u+P+cLrrbrBWkFjL0Q3gpS9ePYNccNbaisWy6iMEB+mu+5k9Vmqp1E71056PFaXXCxDMuzViljoGQvSCoPCJ7RzEjedvQjsghTgtNSZCsfYWBXuUDDGcbYIegk4U/yITkggS33DtL3joP4HZxY+LnWoN7EcFX91H0bxZ4zVHDyjdd1s4s2brkwufhCgZfgvKCjBDUnhaR5cQyvR+NxWB1qWZuPEfqUb/efXjx7Seuzos5c0O+yYrijgF1LTBjNQMZvK0p7qp5qOFNKeFEuySnQrTOUJFOS6GKpo00X17wkEr5ccCne6aGsq4kCpMl8NY0QjFssScqL2umybrmlZmzCTcDtz3UAM7ZFsOR11UTAnIbhMBybthktG6zZG2dT6oCO6I1TYMrQJMip/MjPpzM5DOAfnSvemcbZAA+7Z1TWGwapfT4RKDa3kZi10mDotzOErDIto9v1uXMTaEonTJ/b2WeXvAqsHRt+1b1haw0alTfqbWca42sPhWe/qvbc8lAdUQPgRW16/GQho74fWQ==|920
