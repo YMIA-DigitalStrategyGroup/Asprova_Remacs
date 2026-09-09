@@ -268,7 +268,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-09T15:33:27.3420572+09:00",
+    "LockDateTime": "2026-09-09T15:40:45.2087306+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\目次.json",
@@ -343,7 +343,17 @@
   },
   {
     "ModuleName": "PCPage/その他有償工事",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T15:40:45.2086741+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\その他実績情報(有償工事)\\その他有償工事.json",
+      "Pages\\その他実績情報(有償工事)\\その他有償工事.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（有償工事実績）",
@@ -400,7 +410,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-09T15:33:27.3421347+09:00",
+    "LockDateTime": "2026-09-09T15:40:45.208818+09:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\生産実績入力メニュー.json",
@@ -739,6 +749,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-09-09T15:40:25.1350091+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/その他有償工事 Ver2",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T15:40:45.2086861+09:00",
     "ModuleType": 1
   }
 ]
