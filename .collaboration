@@ -730,5 +730,15 @@
     },
     "LockDateTime": "2026-09-09T15:33:27.3420152+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/その他有償工事 (バックアップ)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-09T15:40:25.1350091+09:00",
+    "ModuleType": 1
   }
 ]
