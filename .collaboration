@@ -880,13 +880,13 @@
     "ModuleType": 2
   },
   {
-    "ModuleName": "MobilePage/特殊工事実績",
+    "ModuleName": "MobilePage/モバイル_特殊工事",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-10T16:33:48.3227837+09:00",
+    "LockDateTime": "2026-09-10T16:34:06.9040537+09:00",
     "ModuleType": 2
   }
 ]
