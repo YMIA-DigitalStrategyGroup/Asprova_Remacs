@@ -858,5 +858,15 @@
     },
     "LockDateTime": "2026-09-10T16:28:31.9005215+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/モバイル_生産実績",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-10T16:29:46.316807+09:00",
+    "ModuleType": 2
   }
 ]
