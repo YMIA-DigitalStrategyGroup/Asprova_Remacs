@@ -339,7 +339,17 @@
   },
   {
     "ModuleName": "PCPage/海洋実績入力",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-10T14:52:25.5871722+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\海洋実績情報(せんすいくん)※Remacs仕様にする\\海洋実績入力.json",
+      "Pages\\海洋実績情報(せんすいくん)※Remacs仕様にする\\海洋実績入力.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/艇種艇番選択 (海洋)",
@@ -448,7 +458,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-10T10:54:04.6732576+09:00",
+    "LockDateTime": "2026-09-10T14:52:25.5873336+09:00",
     "ModuleType": 3,
     "ToRemoveFiles": [
       "MasterPages\\生産実績入力メニュー.json",
@@ -817,6 +827,16 @@
       "Email": "example@example.com"
     },
     "LockDateTime": "2026-09-10T14:52:00.1763765+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/海洋実績入力　Ver2",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-10T14:52:25.5871983+09:00",
     "ModuleType": 1
   }
 ]
