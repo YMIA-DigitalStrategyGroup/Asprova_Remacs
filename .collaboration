@@ -697,11 +697,29 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt1",
-    "ModuleType": 7
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-11T16:44:45.4904322+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル（生産部用）\\ymia_t_seisan_jissekidt1.json"
+    ]
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業実績テーブル（生産部用）",
-    "ModuleType": 22
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-11T16:44:45.4905146+09:00",
+    "ModuleType": 22,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル（生産部用）"
+    ]
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/作業用帳票発行",
@@ -888,5 +906,15 @@
     },
     "LockDateTime": "2026-09-11T09:56:52.1534087+09:00",
     "ModuleType": 2
+  },
+  {
+    "ModuleName": "Tables/SQLServerテーブル/作業実績テーブル（生産部用）",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-11T16:44:45.4905187+09:00",
+    "ModuleType": 22
   }
 ]
