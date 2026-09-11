@@ -880,13 +880,13 @@
     "ModuleType": 2
   },
   {
-    "ModuleName": "MobilePage/モバイル_生産実績_",
+    "ModuleName": "MobilePage/モバイル_生産実績",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-11T09:54:52.8597574+09:00",
+    "LockDateTime": "2026-09-11T09:56:52.1534087+09:00",
     "ModuleType": 2
   }
 ]
