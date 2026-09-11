@@ -840,16 +840,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "MobilePage/実績入力モバイル",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-11T09:55:24.0341377+09:00",
-    "ModuleType": 2
-  },
-  {
     "ModuleName": "Pages/モバイル版実績入力ページ",
     "State": 3,
     "LockedBy": {
