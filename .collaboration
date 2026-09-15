@@ -46,7 +46,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-15T17:02:33.1863153+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル（Remacs用）\\ymia_t_seisan_jissekidt.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikaiyo",
@@ -78,7 +87,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt_bk",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-15T17:02:33.1863301+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\バックアップ用テーブル\\ymia_t_seisan_jissekidt_bk.json"
+    ]
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/投入計画情報テーブル(舟艇_海洋)",
