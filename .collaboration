@@ -685,7 +685,17 @@
   },
   {
     "ModuleName": "PCPage/生産実績入力（バックアップ用）",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-15T16:35:39.7358925+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力（バックアップ用）.json",
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力（バックアップ用）.rd"
+    ]
   },
   {
     "ModuleName": "Pages/海洋実績情報(せんすいくん)※Remacs仕様にする",
@@ -751,7 +761,17 @@
   },
   {
     "ModuleName": "PCPage/生産実績入力 ver2 (バックアップ用)",
-    "ModuleType": 1
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-15T16:35:39.7355868+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 ver2 (バックアップ用).json",
+      "Pages\\生産実績情報(舟艇_濾過槽)\\生産実績入力 ver2 (バックアップ用).rd"
+    ]
   },
   {
     "ModuleName": "PCPage/工程社員マスタ管理 (バックアップ)",
