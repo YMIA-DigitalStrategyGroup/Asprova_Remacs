@@ -973,5 +973,15 @@
     },
     "LockDateTime": "2026-09-15T16:35:29.6337199+09:00",
     "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/生産実績入力 ver2 (最新バックアップ用)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-16T14:02:26.7980234+09:00",
+    "ModuleType": 1
   }
 ]
