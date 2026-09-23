@@ -678,7 +678,17 @@
   },
   {
     "ModuleName": "PCPage/作業用帳票発行",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T13:36:09.0319354+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\作業用帳票発行\\作業用帳票発行.json",
+      "Pages\\作業用帳票発行\\作業用帳票発行.rd"
+    ]
   },
   {
     "ModuleName": "PageReport/作業用帳票",
