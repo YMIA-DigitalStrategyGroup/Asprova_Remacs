@@ -701,7 +701,17 @@
   },
   {
     "ModuleName": "PageReport/作業用帳票",
-    "ModuleType": 17
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T14:05:45.8196652+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\作業用帳票.json",
+      "Reports\\作業用帳票.rdlx"
+    ]
   },
   {
     "ModuleName": "ServerCommands/作業用帳票発行",
