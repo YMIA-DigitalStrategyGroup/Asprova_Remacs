@@ -577,12 +577,12 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理_伝票番号1個",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-23T10:47:46.439906+09:00",
+    "LockDateTime": "2026-09-23T10:58:43.4217161+09:00",
     "ModuleType": 16,
     "ToRemoveFiles": [
       "SchedulerTasks\\生産実績連携\\実績情報連携処理_伝票番号1個.json"
