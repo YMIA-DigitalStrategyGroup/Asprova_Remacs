@@ -50,7 +50,7 @@
     "1,24": "フィルタ解除",
     "1,30": "自由フィルタ",
     "1,33": "未確定艇番を一括変換",
-    "2,69": "社員コード",
+    "2,69": "工程コード",
     "3,1": "艇種",
     "3,11": "艇番",
     "3,19": "検索",
@@ -73,6 +73,9 @@
     "8,1": "※\"リストビューで直接変更”を行った場合は必ず更新ボタンで情報の更新を行ってください※",
     "8,69": "1つ目カンマ",
     "8,79": "※投入計画取込処理に関係する",
+    "9,27": "調整時間",
+    "9,30": "Remacs",
+    "9,64": "Remacs",
     "9,69": "2つ目カンマ",
     "9,79": "　テーブル及びビューについて、",
     "10,69": "3つ目カンマ",
@@ -130,7 +133,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "e7b04117-3e50-439f-b7ba-4cab34747c87"
+                "ID": "6816e634-6435-41d8-b532-4abd4b500740"
               }
             ]
           }
@@ -164,7 +167,7 @@
                 "SerializeProperty": "='生産実績入力 ver2'!Z4"
               }
             },
-            "ID": "b8ef83d4120f44b78651ca9dad8e8fe2",
+            "ID": "3e1f8795506f45be86105bd8426bb8e7",
             "Disabled": true
           },
           {
@@ -354,20 +357,15 @@
               "OrderByColumns": [
                 {
                   "ColumnBindingInfo": {
-                    "TableName": "ymia_t_seisan_jissekidt1",
+                    "TableName": "ymia_t_seisan_jissekidt",
                     "ColumnName": "工程コード",
-                    "GUID": "30df1fa1-8722-4e44-bd58-deac40ab2b90",
-                    "RelationBinding": {
-                      "RelatedTable": "mkoteiname",
-                      "RelatedColumn": "KOTEI_CODE",
-                      "DisplayColumn": "KOTEI_CODE"
-                    }
+                    "GUID": "c82508a6-b433-4d9d-9bc2-59d825bca7f1"
                   },
                   "Order": 0
                 }
               ]
             },
-            "ID": "9d69b6fa01514eb3b5404075a9aea80f"
+            "ID": "b3bc1ebf0285495682d456d45009c76a"
           },
           {
             "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
@@ -401,12 +399,12 @@
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "ymia_t_seisan_jissekidt",
-            "ID": "1edf7a9fbc4d4d74bb34159905559158"
+            "ID": "bf4320f29590423593400aa9f7d681a9"
           },
           {
             "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
             "ListViewName": "生産実績一覧表",
-            "ID": "e649c8ec5bcb4ec6a8ed3e3fa902b458"
+            "ID": "fde1da721bb54d029982cc632117e02e"
           }
         ],
         "Text": "フィルタ解除",
@@ -424,20 +422,15 @@
               "OrderByColumns": [
                 {
                   "ColumnBindingInfo": {
-                    "TableName": "ymia_t_seisan_jissekidt1",
+                    "TableName": "ymia_t_seisan_jissekidt",
                     "ColumnName": "工程コード",
-                    "GUID": "af28b48c-2feb-424e-a3c6-257d31d78bd7",
-                    "RelationBinding": {
-                      "RelatedTable": "mkoteiname",
-                      "RelatedColumn": "KOTEI_CODE",
-                      "DisplayColumn": "KOTEI_CODE"
-                    }
+                    "GUID": "013eeb21-4d78-48f5-8f67-84f889a4fd20"
                   },
                   "Order": 0
                 }
               ]
             },
-            "ID": "26191ad60406408d945ea388cf27f92d"
+            "ID": "54c4be4658034f21b655006e0bff6575"
           },
           {
             "$type": "ServerDesignerCommon.Command.RuntimeQueryCommand, ServerDesignerCommon",
@@ -445,9 +438,9 @@
             "Columns": [
               {
                 "BindingInfo": {
-                  "TableName": "ymia_t_seisan_jissekidt1",
+                  "TableName": "ymia_t_seisan_jissekidt",
                   "ColumnName": "工程コード",
-                  "GUID": "d7b9fc2b-a9fb-44f7-b255-5fcd8446e9f1",
+                  "GUID": "2fed0b4e-cae6-454d-a92a-6e24a66a7439",
                   "RelationBinding": {
                     "RelatedTable": "mkoteiname",
                     "RelatedColumn": "KOTEI_CODE",
@@ -458,17 +451,17 @@
               },
               {
                 "BindingInfo": {
-                  "TableName": "ymia_t_seisan_jissekidt1",
+                  "TableName": "ymia_t_seisan_jissekidt",
                   "ColumnName": "艇種",
-                  "GUID": "b53ec93f-8ca7-46f5-8ffa-fc2fbb7801fa"
+                  "GUID": "e1dcafeb-b57b-4de2-b8c8-c9d1c6487f18"
                 },
                 "Name": "艇種"
               },
               {
                 "BindingInfo": {
-                  "TableName": "ymia_t_seisan_jissekidt1",
+                  "TableName": "ymia_t_seisan_jissekidt",
                   "ColumnName": "艇番",
-                  "GUID": "f08efbdc-a51e-4f1e-ace9-452b38d981e2"
+                  "GUID": "41322b4d-5796-4f25-bf6a-d9f31325b299"
                 },
                 "Name": "艇番"
               }
@@ -572,6 +565,7 @@
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
@@ -718,7 +712,7 @@
                     ]
                   }
                 ],
-                "ID": "d3f4c77f-ebf8-4cd5-a24c-606b8b6e17c3"
+                "ID": "9e5d167c-b1f9-4d77-ad72-5e7f22498fff"
               },
               {
                 "CommandList": [
@@ -727,7 +721,7 @@
                     "MessageFormula": "QRコードを正しく読み取れませんでした"
                   }
                 ],
-                "ID": "d5a6b600-ca64-4f44-9789-a6c2c11f658a"
+                "ID": "8c8713a6-decb-4e8d-b979-afb80e63e267"
               }
             ],
             "Comments": "手動テストの際に使用した条件分岐。手動に戻す時はこの中のコマンドはこのコマンド以外を無効化にして、AL5の全コマンド無効化にする。",
@@ -824,9 +818,21 @@
             "DisplayColumn": "氏名"
           }
         },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "f3cdda20-3cdc-488c-8767-96bb9b4315f2"
+              },
+              "Order": 0
+            }
+          ]
+        },
         "DropDownSubItems": [
           {
-            "GUID": "b73bc267b2d046f88e10fb832878a17e",
+            "GUID": "a6991c40d55843c0b9a60feba5917500",
             "BindingInfo": {
               "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
@@ -835,7 +841,7 @@
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "d275a92c880d44fcad3acc2d6067add2",
+            "GUID": "6f6ecbae4c6f4d8cac303f701278b312",
             "BindingInfo": {
               "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
@@ -849,7 +855,7 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "43ab14144d824b7ebcbdcde8042de01d",
+            "GUID": "57b74cf84eba402bb39e54de1f27edd5",
             "BindingInfo": {
               "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "工程コード",
@@ -944,7 +950,7 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "4678aed3-eeca-4721-b94f-5ff3ebf6ee91",
+                  "GUID": "f9196f4b-c7e2-46f2-a6c6-58f70199cb2b",
                   "BindingInfo": {
                     "TableName": "ymia_m_seisan_kouteishain_new",
                     "ColumnName": "工程コード",
@@ -967,7 +973,7 @@
               },
               "NullFormulaValueQueryPolicy": 0
             },
-            "ID": "08208701b9994d30ae65d5f2959f4999"
+            "ID": "d5a8cfd6b96e4d01a4160cfc3219cadd"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -1113,7 +1119,7 @@
                     ]
                   }
                 ],
-                "ID": "bdd6b6ae-9fc8-4ef9-b654-c83d17ebcbeb"
+                "ID": "2eacf4c9-78a3-404f-96be-58054b653bab"
               },
               {
                 "Condition": {
@@ -1134,7 +1140,7 @@
                     "MessageFormula": "QRコードを正しく読み取れませんでした"
                   }
                 ],
-                "ID": "a9ae209f-ccdc-4ba8-b0c8-b3551848d8cb"
+                "ID": "8b8f62e1-df44-4f47-9bb0-436c4c402cf3"
               }
             ]
           }
@@ -1300,6 +1306,16 @@
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "='生産実績入力 ver2'!AF5"
                         }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='生産実績入力 ver2'!AE11"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='生産実績入力 ver2'!AT5"
+                        }
                       }
                     ]
                   },
@@ -1444,12 +1460,13 @@
                             }
                           }
                         ],
-                        "ID": "cac2a61d-0017-4da1-a7cf-abf32c11cfc2"
+                        "ID": "c9018952-a05a-4641-836f-7a3b5e85f492"
                       }
-                    ]
+                    ],
+                    "Disabled": true
                   }
                 ],
-                "ID": "00775a3b-5dfb-4e5b-b3c2-39febaededc7"
+                "ID": "85d01db1-838f-4ad8-9300-61888c82b386"
               },
               {
                 "CommandList": [
@@ -1458,7 +1475,7 @@
                     "MessageFormula": "未入力項目があります！\r\nQRコードを読み取ってから追加してください。"
                   }
                 ],
-                "ID": "d3e00763-0994-4183-b9eb-d937ae8c3424"
+                "ID": "be271862-c973-44e1-8a5a-3c502135acdf"
               }
             ]
           }
@@ -1486,7 +1503,7 @@
     "9,1": {
       "ListViewInfo": {
         "Name": "生産実績一覧表",
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "RowIndex": 9,
         "ColumnIndex": 1,
         "RowCount": 18,
@@ -1494,9 +1511,9 @@
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
-            "TableName": "ymia_t_seisan_jissekidt1",
+            "TableName": "ymia_t_seisan_jissekidt",
             "ColumnName": "日付",
-            "GUID": "8672e501-5137-4f95-9d61-4429a84d94c5"
+            "GUID": "2e6d912d-44fb-46a6-8565-60bae6972441"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1539,7 +1556,7 @@
     "9,36": {
       "ListViewInfo": {
         "Name": "生産実績一覧表_過去",
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "RowIndex": 9,
         "ColumnIndex": 36,
         "RowCount": 18,
@@ -1547,9 +1564,9 @@
         "SqlCondition": {
           "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
           "ColumnBindingInfo": {
-            "TableName": "ymia_t_seisan_jissekidt1",
+            "TableName": "ymia_t_seisan_jissekidt",
             "ColumnName": "日付",
-            "GUID": "066f8c7c-e7ee-4247-b352-555ce59cfcc6"
+            "GUID": "9a7d104c-e54a-4dd7-a03f-598612ac0f62"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1572,98 +1589,78 @@
       "NameUsedInJavaScript": "艇種",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "艇種",
-        "GUID": "b53ec93f-8ca7-46f5-8ffa-fc2fbb7801fa"
+        "GUID": "e1dcafeb-b57b-4de2-b8c8-c9d1c6487f18"
       }
     },
     "10,5": {
       "NameUsedInJavaScript": "艇番",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "艇番",
-        "GUID": "f08efbdc-a51e-4f1e-ace9-452b38d981e2"
+        "GUID": "41322b4d-5796-4f25-bf6a-d9f31325b299"
       }
     },
     "10,8": {
       "NameUsedInJavaScript": "社員コード",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "dca01253-671a-477a-96b9-cdeeaa21ed75"
+        "GUID": "6e28bdda-b2c7-4a71-8f44-902233a40668"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
-        "DataSource": "ymia_m_seisan_kouteishain",
+        "DataSource": "ymia_m_seisan_kouteishain_new",
         "ValueColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "452205fe-7987-41c8-ac17-0a3781e6e7db"
+          "GUID": "917de1e5-aac7-4991-a286-7175e76837c8"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "3b248d8b-1c98-44a4-8ac5-e6d8db58f888",
+          "GUID": "ecb7663a-2f3e-4c41-bf70-ce6b8b7490f4",
           "RelationBinding": {
             "RelatedTable": "ユーザー情報ビュー",
             "RelatedColumn": "ユーザー名",
             "DisplayColumn": "氏名"
           }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "ymia_m_seisan_kouteishain",
-            "ColumnName": "工程コード",
-            "GUID": "72d9099d-7b4c-4f0e-ae67-462786d361bb"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "='生産実績入力 ver2'!N11"
-          }
-        },
         "ItemsSort": {
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "ymia_m_seisan_kouteishain",
-                "ColumnName": "代表者",
-                "GUID": "f40dfc6a-de16-4ca8-8c26-0f576a5cd49c"
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "a404a9dc-d349-439a-926a-71ef6882f227"
               },
-              "Order": 1
+              "Order": 0
             }
           ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "616db91f213e43b2b44b127db46816bd",
+            "GUID": "477c5fd592d04b4f9a784cb03906709a",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "工程コード",
-              "GUID": "ecebc14d-c38c-41a1-aa83-e1899845025f"
-            },
-            "ColumnName": "工程コード"
-          },
-          {
-            "GUID": "e0b00725a236456b9c0bd1e0834b35f7",
-            "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "b392da0c-8c4b-4550-bf60-8347ac30c41a"
+              "GUID": "4900795d-a08a-4369-8eac-583fb2067a69"
             },
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "4ef2078f92f844d6b9580d203441e249",
+            "GUID": "f62f9a7822394e27a619430ac7dcec34",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "9444a7d4-10ed-4c75-a83e-c60e2bcd5e0f",
+              "GUID": "b3116163-fc2e-4501-886e-161ff27dfab3",
               "RelationBinding": {
                 "RelatedTable": "ユーザー情報ビュー",
                 "RelatedColumn": "ユーザー名",
@@ -1673,13 +1670,89 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "c83acc87567f47efaadc40cfc80ed729",
+            "GUID": "88f28969188d4aa6bb3728ebe3748de0",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "代表者",
-              "GUID": "475785a8-5930-4e56-8453-19feced9dc79"
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "cab9d29a-e792-4332-9319-3358f3c1e3ce",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
-            "ColumnName": "代表者"
+            "ColumnName": "工程名"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "主工程",
+            "TableValue": {
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "a8f4bcb3-3ffc-4f0e-8787-7d006ee0171f",
+                  "BindingInfo": {
+                    "TableName": "ymia_m_seisan_kouteishain_new",
+                    "ColumnName": "工程コード",
+                    "GUID": "49cef3ce-053c-4381-915d-b3572697b68b"
+                  },
+                  "ColumnName": "工程コード"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ymia_m_seisan_kouteishain_new",
+                  "ColumnName": "社員コード",
+                  "GUID": "00a0a82a-4b7f-4ac4-b944-95e34b6eb60a"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!I11"
+                }
+              },
+              "NullFormulaValueQueryPolicy": 0
+            },
+            "ID": "a6c5b1ca24144d56ac516039b235f479",
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "生産実績一覧表",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetCurrentRowIndex",
+              "RetrunParamNames": {
+                "RowIndex": {
+                  "SerializeProperty": "='生産実績入力 ver2'!対象行"
+                }
+              }
+            },
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "生産実績一覧表",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "SetValue",
+              "ParameterValues": {
+                "rowIndex": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!対象行"
+                },
+                "columnIndexOrName": "工程コード",
+                "value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!主工程"
+                }
+              }
+            },
+            "Disabled": true
           }
         ]
       },
@@ -1691,12 +1764,14 @@
       "NameUsedInJavaScript": "工程コード",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "59269bb9-6fbd-4566-a854-8958f1a09f5c"
+        "GUID": "19c104cc-0e88-4e96-82a4-948cb6ee5715"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
         "DataSource": "mkoteiname",
@@ -1709,7 +1784,65 @@
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_NAME",
           "GUID": "a322bd62-3e13-4197-98ac-4af52b9fef6e"
-        }
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "6f38d63d-c148-4df1-97d1-f14e44f8cd8b"
+              },
+              "Value": "A"
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "bc2bd417-602a-4716-a43a-97872a041607"
+              },
+              "Value": "C"
+            }
+          ],
+          "RelationType": 1
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "24e4f2df-0294-46ec-8f0c-ca22d20f6cc1"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "1a16dee267ef4fcb82386a8969475753",
+            "BindingInfo": {
+              "TableName": "mkoteiname",
+              "ColumnName": "KOTEI_CODE",
+              "GUID": "6a96e857-4e46-499e-aec3-ebfae452a96d"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "c5ce687efebc4010985b1ffd63f32f9a",
+            "BindingInfo": {
+              "TableName": "mkoteiname",
+              "ColumnName": "KOTEI_NAME",
+              "GUID": "3a935270-c1d1-4d94-a34d-0114578a9000"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
       },
       "DataValidationInfo": {
         "IgnoreBlank": false
@@ -1719,9 +1852,9 @@
       "NameUsedInJavaScript": "日付",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "日付",
-        "GUID": "c4aaf3ae-cc6f-44da-a5f9-688826c8499d"
+        "GUID": "b59f424b-2305-45ca-8386-87a645988601"
       }
     },
     "10,23": {
@@ -1730,34 +1863,43 @@
         "FormulaType": 5
       },
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "作業時間",
-        "GUID": "ad521c14-6808-4878-8df3-7282c1d7b7cd"
+        "GUID": "79e8bcb6-6580-47f5-a962-608d638fb219"
       }
     },
     "10,27": {
-      "NameUsedInJavaScript": "調整後時間",
+      "NameUsedInJavaScript": "調整時間",
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "調整後時間",
-        "GUID": "b98a67f4-bcea-4b99-926a-2a17b2c726da"
+        "GUID": "b043fb9b-961a-44ff-98d8-ed770eb4d5b2"
+      }
+    },
+    "10,30": {
+      "NameUsedInJavaScript": "Remacs",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "工程コード_Remacs用",
+        "GUID": "91e8f960-23c3-45c4-bc56-8050a8dad187"
       }
     },
     "10,31": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "伝票番号",
-        "GUID": "7c3f8628-6d6c-4a67-adee-dfd5df20123e"
+        "GUID": "4e124436-b42f-4fd4-bcb8-2c9fc6c71627"
       }
     },
     "10,32": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "d7b9fc2b-a9fb-44f7-b255-5fcd8446e9f1",
+        "GUID": "09292a0b-9b3f-4094-b5b4-fca286f52cf3",
         "RelationBinding": {
           "RelatedTable": "mkoteiname",
           "RelatedColumn": "KOTEI_CODE",
@@ -1768,24 +1910,24 @@
     "10,37": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "艇種",
-        "GUID": "40d13d8d-0d4c-42df-9c88-d80466abf806"
+        "GUID": "d42abe26-5cf9-45da-91bf-8c939f226b13"
       }
     },
     "10,40": {
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "艇番",
-        "GUID": "c02f415f-a85d-4af5-839b-8094b8005113"
+        "GUID": "cc57fbb0-05be-466a-ad49-63679c7f4e80"
       }
     },
     "10,43": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "ccb1f202-b81d-4909-bdfc-b311466e11f8"
+        "GUID": "a4b68f97-82f1-49df-862b-e540c62693d7"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -1799,9 +1941,9 @@
     "10,48": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "89fa91df-8b42-4d74-8479-06d171ade2ea"
+        "GUID": "17e0096c-5dfa-48ea-aa66-7fc7182bb55c"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1825,9 +1967,9 @@
     "10,53": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "日付",
-        "GUID": "433a475a-110e-4d75-b741-168d4288480d"
+        "GUID": "636421ea-d21c-4487-a9f4-d7aae358a227"
       }
     },
     "10,58": {
@@ -1835,17 +1977,35 @@
         "FormulaType": 5
       },
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "作業時間",
-        "GUID": "b639d1cb-b531-44cd-a912-bf2b3c635af1"
+        "GUID": "a02070d5-de4a-444a-b000-cfe691266366"
       }
     },
-    "10,63": {
+    "10,61": {
       "TotalRowSetting": {},
       "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekidt1",
+        "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "調整後時間",
-        "GUID": "7ab35075-572c-4381-b0bc-f8682b59118b"
+        "GUID": "04e1a6ef-d0a6-4dd6-a2a8-b1abf213e70e"
+      }
+    },
+    "10,64": {
+      "NameUsedInJavaScript": "Remacs",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "工程コード_Remacs用",
+        "GUID": "be2a3295-32bf-4a70-b3be-8774811f05db"
+      }
+    },
+    "10,66": {
+      "NameUsedInJavaScript": "伝票番号",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekidt",
+        "ColumnName": "伝票番号",
+        "GUID": "43b1fbbe-07fd-4727-b9c2-e1746db32de2"
       }
     },
     "10,68": {
@@ -1922,11 +2082,31 @@
               {
                 "SourceCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "='生産実績入力 ver2'!BL11"
+                  "SerializeProperty": "='生産実績入力 ver2'!BJ11"
                 },
                 "TargetCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "='生産実績入力 ver2'!AB11"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!BM11"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!AE11"
+                }
+              },
+              {
+                "SourceCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!BO11"
+                },
+                "TargetCell": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='生産実績入力 ver2'!AF11"
                 }
               }
             ],
@@ -2141,7 +2321,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "64eaf16b-15fa-4d06-b027-28fdcfbc45eb"
+                "ID": "a9326316-6e3a-4896-aca7-cae86869a991"
               },
               {
                 "CommandList": [
@@ -2149,7 +2329,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "244610d4-417d-4da0-b731-71adace71a38"
+                "ID": "615c6160-2502-425a-ad08-3a718b0f7eac"
               }
             ]
           }
@@ -2211,13 +2391,26 @@
                         "ColumnName": "作業時間"
                       },
                       {
-                        "Column": "調整後時間",
+                        "Column": "調整時間",
                         "ColumnName": "調整後時間"
+                      },
+                      {
+                        "Column": "Remacs",
+                        "ColumnName": "工程コード_Remacs用"
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='生産実績入力 ver2'!AF11"
+                        },
+                        "ColumnName": "伝票番号"
                       }
-                    ]
+                    ],
+                    "IsShowSuccessAlert": true,
+                    "SuccessMessage": "Excelファイルのインポートが正常に完了しました。"
                   }
                 ],
-                "ID": "10711edc-afba-47e8-9dba-030eaa17c0b0"
+                "ID": "d3152802-a158-4c2e-81b1-91ec1af03b58"
               }
             ]
           }
@@ -2274,8 +2467,32 @@
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
         "ColumnOperation": 2
       }
     },
@@ -2297,18 +2514,196 @@
     },
     "44,8": {
       "NameUsedInJavaScript": "社員コード",
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "社員コード",
-        "GUID": "c5ba2fe7-494a-4d34-a9f8-1b625b064723"
+        "GUID": "788da4fd-b899-4df6-87d6-374b66354cba"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "MaxDropDownItemCount": 10,
+        "IsBounding": true,
+        "DataSource": "ymia_m_seisan_kouteishain_new",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain_new",
+          "ColumnName": "社員コード",
+          "GUID": "e6d84f2a-5c7d-4cfc-9917-9c098835a8ab"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain_new",
+          "ColumnName": "社員コード",
+          "GUID": "bb9249d5-ece9-4d50-830c-21ca3fe12a81",
+          "RelationBinding": {
+            "RelatedTable": "ユーザー情報ビュー",
+            "RelatedColumn": "ユーザー名",
+            "DisplayColumn": "氏名"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "927b12cf-31a4-4127-a789-e697a9ad8399"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "794883885e6d4b37bc71a6bdf2c3db62",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "社員コード",
+              "GUID": "87950648-9c71-4d8c-9dc5-51028b8420b1"
+            },
+            "ColumnName": "社員コード"
+          },
+          {
+            "GUID": "c4566447ed6e4027b0ce65434203c8d0",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "社員コード",
+              "GUID": "5ad61797-e3ff-411b-ae7e-533b5201a84e",
+              "RelationBinding": {
+                "RelatedTable": "ユーザー情報ビュー",
+                "RelatedColumn": "ユーザー名",
+                "DisplayColumn": "氏名"
+              }
+            },
+            "ColumnName": "氏名"
+          },
+          {
+            "GUID": "895a5d4f3a674bbf9eddc04ff23c92c5",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "d7777d05-fbc8-4c78-bf8c-368db03e193f",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "44,13": {
       "NameUsedInJavaScript": "工程コード",
+      "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "23f26900-b5f4-4c9e-a719-74677f7ddec2"
+        "GUID": "87726c97-d5ef-497e-b0d4-9271f79d92b7"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
+        "MaxDropDownItemCount": 10,
+        "IsBounding": true,
+        "DataSource": "mkoteiname1",
+        "ValueColumnBindingInfo": {
+          "TableName": "mkoteiname1",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "9a056c21-48df-4cae-bf0b-f3a6c32618ef"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mkoteiname1",
+          "ColumnName": "KOTEI_NAME",
+          "GUID": "ff6d7a31-31fa-413c-a39c-ffa13e1c8e10"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname1",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "f69ef0fa-cb8f-46cf-9e8b-3d9461f79f92"
+              },
+              "Value": "A"
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname1",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "87a4a5f4-9777-4cf3-aef9-8167fb3f8627"
+              },
+              "Value": "B"
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname1",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "4b90d8ce-3fc4-4b90-91f5-a6632ab8b510"
+              },
+              "Value": "C"
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname1",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "5b9e5926-1460-4d16-a088-743c71903d91"
+              },
+              "Value": "D"
+            }
+          ],
+          "RelationType": 1
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname1",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "fb8c5187-4eab-4df8-bdc8-2d5f0889f35e"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "acdee9a9928d413aa2a3220afc3380b0",
+            "BindingInfo": {
+              "TableName": "mkoteiname1",
+              "ColumnName": "KOTEI_CODE",
+              "GUID": "d69e1479-86e3-4b80-9a29-17c86dfb9462"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "c25bf0f48ebb4c1d8d17e221ad0fc42a",
+            "BindingInfo": {
+              "TableName": "mkoteiname1",
+              "ColumnName": "KOTEI_NAME",
+              "GUID": "ea8f996a-f6d7-412d-b08d-6e45b211f903"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
       }
     },
     "44,18": {
@@ -3618,6 +4013,7 @@
       "9,56": 0,
       "9,57": 0,
       "9,58": 38,
+      "9,61": 0,
       "9,69": 34,
       "9,70": 35,
       "9,71": 35,
@@ -3725,8 +4121,6 @@
       "10,25": 0,
       "10,26": 0,
       "10,27": 40,
-      "10,28": 0,
-      "10,29": 0,
       "10,30": 0,
       "10,31": 41,
       "10,37": 38,
@@ -3749,11 +4143,8 @@
       "10,56": 0,
       "10,57": 0,
       "10,58": 40,
-      "10,63": 40,
-      "10,64": 0,
-      "10,65": 0,
+      "10,61": 40,
       "10,66": 0,
-      "10,67": 0,
       "10,69": 34,
       "10,70": 35,
       "10,71": 35,
@@ -4990,6 +5381,24 @@
     "12,73,1,6",
     "13,73,1,6",
     "14,73,1,6",
+    "11,1,16,32",
+    "45,1,16,32",
+    "44,1,1,4",
+    "43,1,1,4",
+    "44,5,1,3",
+    "43,5,1,3",
+    "44,18,1,5",
+    "43,18,1,5",
+    "44,23,1,4",
+    "43,23,1,4",
+    "44,27,1,4",
+    "43,27,1,4",
+    "3,25,1,6",
+    "4,5,1,6",
+    "44,13,1,5",
+    "43,13,1,5",
+    "44,8,1,5",
+    "43,8,1,5",
     "10,1,1,4",
     "9,1,1,4",
     "10,5,1,3",
@@ -5002,8 +5411,9 @@
     "9,18,1,5",
     "10,23,1,4",
     "9,23,1,4",
-    "10,27,1,4",
-    "9,27,1,4",
+    "10,27,1,3",
+    "9,27,1,3",
+    "11,36,16,33",
     "10,37,1,3",
     "9,37,1,3",
     "10,40,1,3",
@@ -5014,29 +5424,14 @@
     "9,48,1,5",
     "10,53,1,5",
     "9,53,1,5",
-    "10,58,1,5",
-    "9,58,1,5",
-    "10,63,1,5",
-    "9,63,1,5",
-    "11,1,16,32",
-    "11,36,16,33",
-    "45,1,16,32",
-    "44,1,1,4",
-    "43,1,1,4",
-    "44,5,1,3",
-    "43,5,1,3",
-    "44,8,1,5",
-    "43,8,1,5",
-    "44,13,1,5",
-    "43,13,1,5",
-    "44,18,1,5",
-    "43,18,1,5",
-    "44,23,1,4",
-    "43,23,1,4",
-    "44,27,1,4",
-    "43,27,1,4",
-    "3,25,1,6",
-    "4,5,1,6"
+    "10,58,1,3",
+    "9,58,1,3",
+    "10,61,1,3",
+    "9,61,1,3",
+    "10,64,1,2",
+    "9,64,1,2",
+    "10,66,1,2",
+    "9,66,1,2"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -5265,4 +5660,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//vNGDbbisLb4Oha45hZyWesldZ7Po58bz/g+gc18B9iqKtcTgd5IRD6O2I1ceiykhi9W1jKxcW2qKISKN47+xUqQ6700iaryyldizozpXUmR2AdUzHzuQNep0jsnRDJ0SoaTwEXmeBsyYPBaLlOaOcan4hPq+ywaz4fs+Em3YrdPGkvrD8tzm/2SVoyIhx20NZJP/PQXefPVTxp0LTRms0bzy1JHBunmUAltioYi7FmWlIK2YoZNy4pYk5+GQgNBzeNfnLoMe+0lRVABkTI29nHKu1FDdYHfbvCmDWS5VD8x+V8kGAcoMwUBkLtJs57AMU+5GwgWsliqRJAKQS0YlDdgqDnl6VHCloy8sK5QAtfE+RlzD5s19ZMsO0XpXIVlW+24bqW4nRTLgmmEq5b++TALzjrFlvjbi5dJ4ksdyDY6/bpRO+p6B8Ut7j2Emz/GZu8sxpMIScmUCCMVuf1y7lCPw0nyE8Ey43K6jQNVyzU4E/WLTMxXxCbKmeXHFNkK65biv7FPsXkAREXaXYXR7SgYjrhGIkwpiEM3rtgnY7xRmXvqPvr0OWQBI9EsjKjNdC37D4n6cCPVm9gvAYkhZ36MyHUQUNfHZanm+wt1nUaFJ68oLQBORD0K+uuYSQKv1GYRJow/zUVhxh6NLbHsabzPIQpD2otBjDkDa5n9eRMzaTi1drT/Qdsyw3mvtxA3e70HxLtj6a1bqKES3MiDVLtPzYA2hqTEbQqJiRJSDRkGnwGU8DJoTse5UpvENc0xCZQ/azIJQRRCuZhWlqi6Dw4lin+r0wfp+FXJkBhu/m6NdPSTAtWtsSiovLUDuzWxrz6jZ3nbsFW9l5PxvJBO4CYRYYrrc+t11oX44czIhLjmeWU95molC5ExtuQ2OtrvbBxHm+eBWpFfX0GW1rW8BJA==|920
+}//f4zh5ePoECOXQtvqlHXLyDH7yvcI9DPiQTtmors//faFIkiG/d6dEN11mF6ebrSTKqOBhOBaO3l8jxWObAQekWaYjOcfeWWbg6+AegMN6vSnGlStyZQe9o284lc2Qn75+bMOtXqPPkiRnO2H59wbrQ8QKRcfkdvFpXfNPgezKqApYZyLxsbE+QTIlUB9EBwEN4BDeVFIkPBPmG0NzSSzd7FXj8pGtxhbxKF01f34UaU+krxNLjO+5kFm+aODXltZZLdtx/pVl5sq2eG/NFu8KCAkS+taEAbXP2CHQRfOzAd/XaGtrwiTxZ6epyGexhv24ShchliZVb6xCGO2utwFi+9jam5YYWRxZlSoh6f5dolHsSuj6opzPYDcX7STQB+6OYy/Ix8xzhD69peUEU+lxvDQqPA8j5qVKwBVbmW3B8+/774RnmIqJldiMJe+0YWdYcxm6UE2epCYTSTvd/Xopv/8jiKkyIkzNMcex+IFGj23dB/xBqcLz9VfN/xRZ06pRyeAu6xWirhRX0rm1FPW+HFk0zuSEBkRo0FL6od0V63BPnlMNh+qa0Vo2VJpKlUObt2mYucdqEt7FPCZAbVApf2BaiEuGjkQNUmxGWER0zdEfifscxPxmdrfYptbPNCqDv+BNJBIekKq/0x8GqAtuc3oXVtNmq7naIAjvu1IZmkZjeIm6upB+CEcI6Mp1Szo7VSO4zJxu9dG1Uggzc9UCpBmCqzzvjFzA2GdrbpMR9fxCk1cO4iCeKXYX5m9aCmPGtwWNzeDaTmZcxdtOcAWwfbiCgdiYK6vhmvs6Iztud43X9K6w1uaMwvCkpeVDRGYstrKsuCIpmFolpATBxncjvyi+Wmh+2Q1+sSPRq8QI5rGIzpGGkKyrP5rxJ1swayXfOEQ2Q6TgeFFoSTqccEu2A==|920

@@ -157,7 +157,8 @@
       "$type": "Forguncy.Model.BatchProgramCommand, ServerDesignerCommon",
       "Path": "cmd.exe",
       "Arguments": "/c F:\\Remacs\\App\\SeisanJissekiCopy.bat",
-      "WorkingDirectory": "F:\\Remacs\\App"
+      "WorkingDirectory": "F:\\Remacs\\App",
+      "Comments": "AWSで対応する"
     }
   ]
 }

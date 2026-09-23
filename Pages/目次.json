@@ -39,7 +39,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "その他作業実績入力"
+            "PageName": "その他作業実績入力 Ver2"
           }
         ],
         "Text": "その他作業実績入力",
@@ -60,7 +60,7 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "PageName": "その他有償工事"
+            "PageName": "その他有償工事 （バックアップ）"
           }
         ],
         "Text": "その他有償工事実績入力",
@@ -1100,4 +1100,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//cFOhCmsf6S3NFkKJQO/JWpRf82ZdkpygloD+HHZAJ/ptp0pr/rsIDjbtuXphTSHnj9Qtta2yi3BdmEFcE1OiaqR1uO1v3KMZ63/kq1YuaR5q6+zDrW2RGQQFWhL6K+rU0OxGQz9Gdn+iak+UuIFayUucxsKoOf66l+UYDnQ6zS2AbTNiSs+AEsWvIPP4FY9hNN2uO8Cx6TkMtNbNgB4g0PL17Av9zT6AzK5W4Bh9LCRUaUD5BhXsjTf0K8tb7qqPGUTKv9Bjc8psEaPP1af3AcQXZFSwMcBVbUA20d+KanwNgceExXJUkU64aMsQfOsRCatRaRdqtWjNrV21vdeA/+CQ9s0+ZUZS7TfFB1ee7W27OdGS7tLrysuwz8fZpH493DVxVXbiQPdiHUwTsxalSk8VKVN2cIXlGI0AFFAP+nUrs0iJIgREzWlXRkgOVRbtpnT9ND4FX8xhh8055QFyrAraV3tSY9qE/o1qSXMuMutl2AOkEvj5GxrZ7HDCMKdvf0Lkq6fEqxicz5A4qkuh3YQxHabLonab/W4xiaCTbYsTkXbsXRDzG5NVtvbaFU+H2ktOr8dtF7arXgM7Ec9angWvWaiWtuIK8ruvGF9/LYd2EmWFk8ilGN1G+YuGUdfo60mG8KU+Rpocct4hht7cpP2cfQloMMcZwapaGjZNAVlq8erY8p1vUk+s7iW47xkzQ26/i9m03xBied+WAdR+3GCze6xFtiSMT3YeKeeX8wQ9OmNgj/lIUaysas29iVQACN5VvKURMTwTY2pVcugkscjZRsL7uQ/8lDF6ItqpfK7+PH7+ugVJNc/KpexnkIsBquQWwywow4dvUCXGofpnAQtql0FIxyJ+F3ykfxb7VtV4tEd4uXKhKMxO8yjc1UJlnKDYYVWXXdbJCgkPBdFOhQ==|920
+}//qBz3m4HhEbn4f7CSx07WgOFlLA5zgMO7serW2a946P/eTThXVFLwjWLdXlsi08pmj6yByCySmaL0g0nlplWz8NommsoneX/qORrdNMNq2x1xQLQLm6kB2NzhSEnQK6QkLrPkFcMc+uimJxFKUmBIatbSoFYKlMLv9G6aAEKlOSUBQOwIC10srJAFikKBlq+p62xGI3EB3mpe9GhU2RrZLK4VY66GN7ZXS5e2v2LzwkAGs54ybWBCwZUFy67b3tjey3fSDRwnwDn8naBPP1Jc37AzEqK2sZt5tJYRYIQPOgMt7cN30znnK9tuyzYTRYHDh1z/qlnuN0k1uRRCz0YiM9DTQ87gf5iBqL+1SWXBGOJIDFHqZNFNtJTDgQik6u+U7pFrpt1B6VJDtK9B1tn9bO3svgR6eSmU4voWg2WJ7jJUEHfKYMpUVTqrEkxP7DFe54/Ymsq3RBc0cHwGCQ2cwGaadlhhKWyfp8ctyAHplzzhJR0/KSKycvOUIq5AY/XPOLqi65QP1/I7VuZyEBBmMY/+OTu8OF1VIEqsMvjs1AiJT6MoRFKl2NlMt7nJhgs58IQhyUs5RV4P7BpbAwIoqudrV1jDeC6t02g8jWFdZ+HUOpc7jJL5u9AcV2yhEi9JPCLt51NiYUHGc+WQgz5kpZGRaR+HdNoJvEvrWaa5soMQHEqLt9lJTzciVLG8flYywHUC/MIfu+Uqqd9hBoQIh1Xz05dPoPfKMDmvL5pDj4W01+9ToxNFUk9PxoBTIaAhkAt7L6Ev8JmnH4GLCG9pVBudn9qKHOUW0LY65rTLPZPIJNI9VQMaFnT0rc7QYl/TuU6VRzPPQnFYCn7roIiH1mdCy1Kf4tNRpjy54NUNsGpJ0g6JnvoBCTphC/AdhZeAf95kv74JwMCXZcJFaoRIuw==|920

@@ -1,0 +1,43 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "特殊工事実績",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//4K0ejvUh7uamF01hoFoT4nov0Q+SFhMUxN2bJskI7wfZS/B+jAOijvX0jNJLJB6xxFojIsKO+YJ0oj0F/wVdP6e9Q45DTXkayPnj7sbDs37gToFDcde4v+vetvyLsJMH29AIOk8wXURHQ3u7rNNyhrXWAWQaAHjdArZfPR6dVAR77QsnQOIlj9LYKtYqzHwRk3m/MFP00q7DmG/vVy1cUHYkNYWRZw3FK3YNOhbOE0j9fEK4f+B/NSBC+L83c6jBRiJUqG/176DHlFQCBsMyKl6+3T3jRgQZNL7dfQIOCG+Tyl9EOEW4jLw22nsuqVKCrAoLVQwAwS7LZYEETrbX1q/Im/VaBTMBVNiQpxuH3AlDRywLPUUGcoRIlKIWsIdfjMLcb+oBHMHjj2V4b2Ed0gFjEUrQbgPb5o5EYB/KmyN53V4O9K4ItEsMuwx2ii20T0hSWhWhIsd5JGC0pfgOD6TjwvlfSX4oKQVu416xNELsDcPVRWWbdSejr7vKNzx1PeoINQtDSKtGXF7jSWVn2nTrpQIFKV7fn9RngXSHUMK7Pn40IZJiIFl3sGo4sRASugN0/8GRkz6qzZf9a8rWpWP4ShF44I067mKuPWOybhogN8xSux+hVJTRcv+QPmPGzupEG1MwaShkQrb85fwXdNyx/i6nM0DHxI979ex5u55T8PV2uk6vTnN88YEtZ4VgcFhqfF7UNKGA7MfU6FvZ5xE9XZCMIcLqqYyqVeI1PhlGxUbo7Bpd0hhlcH92oSFxcP2d1rj6uzSJ3GDW2K1BBcJ3XVmOeHURt72NN5dtf90415PTZVXTv6nqqVndXJ30XAjnMt5I9RM1mZ55CfXls7E4nJlZSeAMXBNtPVvoCP+5aeE2XAo+n8I5N2IFsu6+1HH0NkFklmj47yMIsHNUWg==|920

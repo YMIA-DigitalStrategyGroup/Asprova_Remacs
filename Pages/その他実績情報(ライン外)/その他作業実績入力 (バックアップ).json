@@ -1,0 +1,2037 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      }
+    },
+    "Count": 60
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      42
+    ],
+    "Count": 64
+  },
+  "Values": {
+    "1,1": "その他作業実績入力画面",
+    "1,13": "更新",
+    "1,22": "これまでは職制（1人）がまとめてインプットしていたから、インプットに使う工程を統一できていたが、",
+    "2,22": "作業者に入力してもらうなら工程をグループに変えないといけないかも・・・中尾さんに聞いてみよ",
+    "3,1": "作業種別",
+    "4,1": "工程",
+    "4,11": "作業者",
+    "5,1": "日付",
+    "5,11": "作業時間",
+    "7,1": "追加",
+    "9,1": "※\"リストビューで直接変更”を行った場合は必ず更新ボタンで情報の更新を行ってください※",
+    "43,1": "戻る",
+    "43,31": "インポート",
+    "43,37": "エクスポート"
+  },
+  "AttachInfos": {
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "削除したデータは更新すると復元できません。\r\n本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "その他時間実績一覧表",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "データを更新しました！！"
+                  }
+                ],
+                "ID": "af793398-dba9-4a0e-83d9-fe44a084ff3e"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "更新",
+        "Icon": {
+          "Name": "Application/057_refresh_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "選択してください",
+        "Items": [
+          {
+            "Value": "【共通】船やモノの移動(待ち時間含む)",
+            "DisplayValue": "【共通】船やモノの移動(待ち時間含む)"
+          },
+          {
+            "Value": "【共通】確認相談",
+            "DisplayValue": "【共通】確認相談"
+          },
+          {
+            "Value": "【共通】準備・片付け・掃除（作業、出張等）",
+            "DisplayValue": "【共通】準備・片付け・掃除（作業、出張等）"
+          },
+          {
+            "Value": "【共通】諸活動(打合、QC、3S)",
+            "DisplayValue": "【共通】諸活動(打合、QC、3S)"
+          },
+          {
+            "Value": "【共通】OJT",
+            "DisplayValue": "【共通】OJT"
+          },
+          {
+            "Value": "【共通】夕市会",
+            "DisplayValue": "【共通】夕市会"
+          },
+          {
+            "Value": "【共通】棚卸",
+            "DisplayValue": "【共通】棚卸"
+          },
+          {
+            "Value": "【共通】健康診断",
+            "DisplayValue": "【共通】健康診断"
+          },
+          {
+            "Value": "【共通】工場床塗装",
+            "DisplayValue": "【共通】工場床塗装"
+          },
+          {
+            "Value": "【共通】やり替え工事（不具合対策）",
+            "DisplayValue": "【共通】やり替え工事（不具合対策）"
+          },
+          {
+            "Value": "【共通】安全パトロール",
+            "DisplayValue": "【共通】安全パトロール"
+          },
+          {
+            "Value": "【共通】ラインストップ",
+            "DisplayValue": "【共通】ラインストップ"
+          },
+          {
+            "Value": "【成形G】二次接着裁断時間",
+            "DisplayValue": "【成形G】二次接着裁断時間"
+          },
+          {
+            "Value": "【成形G】汎用ハッチ製作",
+            "DisplayValue": "【成形G】汎用ハッチ製作"
+          },
+          {
+            "Value": "【成形G】船体積層",
+            "DisplayValue": "【成形G】船体積層"
+          },
+          {
+            "Value": "【成形G】部材作成（キングストン座、バッテリー受け、Lアングル）",
+            "DisplayValue": "【成形G】部材作成（キングストン座、バッテリー受け、Lアングル）"
+          },
+          {
+            "Value": "【成形G】型移動（待ち時間含む）",
+            "DisplayValue": "【成形G】型移動（待ち時間含む）"
+          },
+          {
+            "Value": "【成形G】型メンテナンス",
+            "DisplayValue": "【成形G】型メンテナンス"
+          },
+          {
+            "Value": "【加工G】水切り清掃",
+            "DisplayValue": "【加工G】水切り清掃"
+          },
+          {
+            "Value": "【加工G】型 ケガキ",
+            "DisplayValue": "【加工G】型 ケガキ"
+          },
+          {
+            "Value": "【BgG】クレーン作業",
+            "DisplayValue": "【BgG】クレーン作業"
+          },
+          {
+            "Value": "【組立G】組立補助作業",
+            "DisplayValue": "【組立G】組立補助作業"
+          },
+          {
+            "Value": "【組立G】エンジン段取り",
+            "DisplayValue": "【組立G】エンジン段取り"
+          },
+          {
+            "Value": "【据付G】補修工事（型など）",
+            "DisplayValue": "【据付G】補修工事（型など）"
+          },
+          {
+            "Value": "【据付G】エンジン関係不具合対応",
+            "DisplayValue": "【据付G】エンジン関係不具合対応"
+          },
+          {
+            "Value": "【C棟G】安全設備（足場設置、片付け）",
+            "DisplayValue": "【C棟G】安全設備（足場設置、片付け）"
+          },
+          {
+            "Value": "【C棟G】機械等メンテナンス",
+            "DisplayValue": "【C棟G】機械等メンテナンス"
+          }
+        ]
+      }
+    },
+    "4,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "mkoteiname",
+        "ValueColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "da7f5bed-0300-4999-bc25-9e0c4a4ee38b"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_NAME",
+          "GUID": "514c378a-4aec-4b0a-91fa-e989d611bab1"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "ac8d2c06-0c82-46a2-8bc8-7294396929f6"
+              },
+              "Value": "A"
+            },
+            {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 2,
+              "ColumnBindingInfo": {
+                "TableName": "mkoteiname",
+                "ColumnName": "KOTEI_CODE",
+                "GUID": "4284599f-da55-4564-9ab1-72840d753239"
+              },
+              "Value": "C"
+            }
+          ],
+          "RelationType": 1
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "e17fa31723364b83a398dedd809c3e33",
+            "BindingInfo": {
+              "TableName": "mkoteiname",
+              "ColumnName": "KOTEI_CODE",
+              "GUID": "aafcf76e-bb7b-4765-99dc-8b8914dc39a7"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "05bb69f09d1e4233b209ea50e199354c",
+            "BindingInfo": {
+              "TableName": "mkoteiname",
+              "ColumnName": "KOTEI_NAME",
+              "GUID": "6a0db9da-d186-4110-aaf5-1e7c7e6c190e"
+            },
+            "ColumnName": "工程名"
+          }
+        ]
+      }
+    },
+    "4,15": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "ymia_m_seisan_kouteishain",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain",
+          "ColumnName": "社員コード",
+          "GUID": "41c82129-b401-4eaa-86dc-7b7cbc74b447"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain",
+          "ColumnName": "社員コード",
+          "GUID": "3aba6e1a-cacb-4bb9-8d71-070b18f44854",
+          "RelationBinding": {
+            "RelatedTable": "ユーザー情報ビュー",
+            "RelatedColumn": "ユーザー名",
+            "DisplayColumn": "氏名"
+          }
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_m_seisan_kouteishain",
+            "ColumnName": "工程コード",
+            "GUID": "ee86a560-be2a-4d06-9060-4aec3f064bdb"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F5"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_seisan_kouteishain",
+                "ColumnName": "代表者",
+                "GUID": "3aa8c201-7831-4e71-9d2c-413b72f42222"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "af20531ea3804ddaafd2c370ac956b0e",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "工程コード",
+              "GUID": "a291ef3f-eedd-40cb-822c-3fc7e89f25d7"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "bc1cffa6d09242238ad76d20daaf5639",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "社員コード",
+              "GUID": "8c16ac3e-a35b-4d66-ba04-a47488917d92"
+            },
+            "ColumnName": "社員コード"
+          },
+          {
+            "GUID": "33c2870b63ff42598256ada6dfb5ee38",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "社員コード",
+              "GUID": "3d5cd70e-5dc2-406b-aeb1-34806dabfc33",
+              "RelationBinding": {
+                "RelatedTable": "ユーザー情報ビュー",
+                "RelatedColumn": "ユーザー名",
+                "DisplayColumn": "氏名"
+              }
+            },
+            "ColumnName": "氏名"
+          },
+          {
+            "GUID": "325d8b4076c943c8a8a62272455178de",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "代表者",
+              "GUID": "31f62a3a-9758-4602-8ada-d2304befbad5"
+            },
+            "ColumnName": "代表者"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "調整後係数",
+            "TableValue": {
+              "TableName": "ymia_m_seisan_keisu",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "2823db5c-bad3-4bbb-82ef-a17a04fd7ce0",
+                  "BindingInfo": {
+                    "TableName": "ymia_m_seisan_keisu",
+                    "ColumnName": "係数",
+                    "GUID": "fb74d7bd-4390-4a50-8d11-37fc06141d9e"
+                  },
+                  "ColumnName": "係数"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ymia_m_seisan_keisu",
+                  "ColumnName": "社員コード",
+                  "GUID": "d273e256-5881-45d5-bddc-56f7da70ab7f"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他作業実績入力 (バックアップ)'!P5"
+                }
+              }
+            },
+            "ID": "02ad667d40c4461495fd712905f94c2c"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他作業実績入力 (バックアップ)'!S5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他作業実績入力 (バックアップ)'!調整後係数"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()-1"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "5,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "InputCharOption": {
+          "Format": "9"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "分"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F4"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F5"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!P6"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "その他時間実績一覧表",
+                    "UpdateType": 1,
+                    "UpdateValues": [
+                      {
+                        "Column": "作業種別",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F4"
+                        }
+                      },
+                      {
+                        "Column": "工程コード",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F5"
+                        }
+                      },
+                      {
+                        "Column": "社員コード",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='その他作業実績入力 (バックアップ)'!P5"
+                        }
+                      },
+                      {
+                        "Column": "日付",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F6"
+                        }
+                      },
+                      {
+                        "Column": "作業時間",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='その他作業実績入力 (バックアップ)'!P6"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "その他時間実績一覧表",
+                    "UpdateType": 3
+                  }
+                ],
+                "ID": "694580e0-ce91-4d63-af85-3fc9d23047b5"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "未入力項目があります！"
+                  }
+                ],
+                "ID": "a5ef64fe-93a2-4b23-bad8-f75d7e0f4477"
+              }
+            ]
+          }
+        ],
+        "Text": "追加",
+        "TemplateKey": "追加",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "10,1": {
+      "ListViewInfo": {
+        "Name": "その他時間実績一覧表",
+        "TableName": "ymia_t_seisan_jissekielse",
+        "RowIndex": 10,
+        "ColumnIndex": 1,
+        "RowCount": 18,
+        "ColumnCount": 42,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_t_seisan_jissekielse",
+            "ColumnName": "日付",
+            "GUID": "a8bef401-0451-4629-8ff6-8f3ef96bb621"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!F6"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsTotalRowVisible": true,
+        "IsTotalRowAtFirstRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "11,1": {
+      "NameUsedInJavaScript": "作業種別",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "作業種別",
+        "GUID": "8a17081d-f84c-47c0-bbf1-c9749f3e6eac"
+      }
+    },
+    "11,18": {
+      "NameUsedInJavaScript": "工程コード",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "工程コード",
+        "GUID": "730f4ad9-13ff-40ab-ba44-e67ed5c1e492"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "IsBounding": true,
+        "DataSource": "mkoteiname",
+        "ValueColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "4bbfd5ab-1e1d-4ea3-b4dd-b6e4fe4e9ea7"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_NAME",
+          "GUID": "0003e69d-74d0-46f0-b6fa-c3f2bfc30302"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "11,24": {
+      "NameUsedInJavaScript": "社員コード",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "社員コード",
+        "GUID": "340335f5-1ee9-4102-a7af-1eb91f811a24"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "IsBounding": true,
+        "DataSource": "ymia_m_seisan_kouteishain",
+        "ValueColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain",
+          "ColumnName": "社員コード",
+          "GUID": "5e161e4d-8b09-4738-993a-86a444091958"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "ymia_m_seisan_kouteishain",
+          "ColumnName": "社員コード",
+          "GUID": "e63ef71c-55cc-46e3-b1cb-4cdbdfcb52c5",
+          "RelationBinding": {
+            "RelatedTable": "ユーザー情報ビュー",
+            "RelatedColumn": "ユーザー名",
+            "DisplayColumn": "氏名"
+          }
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_m_seisan_kouteishain",
+            "ColumnName": "工程コード",
+            "GUID": "33f8e8f2-d2ff-4003-8b3e-15bcc18cda81"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "='その他作業実績入力 (バックアップ)'!S12"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_seisan_kouteishain",
+                "ColumnName": "代表者",
+                "GUID": "509a0a96-abc2-477f-84f8-b70d288703d8"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "817fd379385b4ab0b0b6cde698d3458e",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "工程コード",
+              "GUID": "3c2a3725-36fd-422c-834c-a717bdaf14c9"
+            },
+            "ColumnName": "工程コード"
+          },
+          {
+            "GUID": "e2772651b96d45618f51749c5628891b",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "社員コード",
+              "GUID": "21aaea10-26ad-4544-94f4-949b5312e7c2"
+            },
+            "ColumnName": "社員コード"
+          },
+          {
+            "GUID": "36bf9abe2f9b4de5ba21a4510e72c31e",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "社員コード",
+              "GUID": "0f3bc980-9c14-43ef-bacc-6898b20f54fc",
+              "RelationBinding": {
+                "RelatedTable": "ユーザー情報ビュー",
+                "RelatedColumn": "ユーザー名",
+                "DisplayColumn": "氏名"
+              }
+            },
+            "ColumnName": "氏名"
+          },
+          {
+            "GUID": "eabb8bcffa314b31a490fac2866737ab",
+            "BindingInfo": {
+              "TableName": "ymia_m_seisan_kouteishain",
+              "ColumnName": "代表者",
+              "GUID": "55be1bab-a2ef-4b50-8691-239008a3a736"
+            },
+            "ColumnName": "代表者"
+          }
+        ]
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "11,32": {
+      "NameUsedInJavaScript": "日付",
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "日付",
+        "GUID": "5cddf212-dbee-4b68-872c-6984bb2252d0"
+      }
+    },
+    "11,38": {
+      "NameUsedInJavaScript": "作業時間",
+      "TotalRowSetting": {
+        "FormulaType": 5
+      },
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "作業時間",
+        "GUID": "d71df42d-905d-4f26-8b84-d30ef2f4ecdf"
+      }
+    },
+    "11,42": {
+      "TotalRowSetting": {},
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekielse",
+        "ColumnName": "工程コード",
+        "GUID": "3907ce16-6f16-4c9d-9ecd-8aa7f6c04bd0",
+        "RelationBinding": {
+          "RelatedTable": "mkoteiname",
+          "RelatedColumn": "KOTEI_CODE",
+          "DisplayColumn": "KOTEI_NAME"
+        }
+      }
+    },
+    "29,1": {
+      "CellType": {
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
+        "PivotTableSetting": {
+          "SelectedListViewName": "その他時間実績一覧表",
+          "Rows": [
+            {
+              "DatabaseColumnName": "作業種別",
+              "DisplayName": "作業種別",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!B12"
+              }
+            }
+          ],
+          "Cols": [
+            {
+              "DatabaseColumnName": "KOTEI_NAME",
+              "DisplayName": "KOTEI_NAME",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!AQ12"
+              }
+            }
+          ],
+          "Values": [
+            {
+              "DatabaseColumnName": "作業時間",
+              "DisplayName": "作業時間",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!AM12"
+              },
+              "Format": "#,##0",
+              "Aggregator": 0,
+              "TotalAggregator": 0,
+              "BackgroundValue": {}
+            }
+          ],
+          "DatabaseColumns": [
+            {
+              "DatabaseColumnName": "作業種別",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!B12"
+              }
+            },
+            {
+              "DatabaseColumnName": "工程コード",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!S12"
+              }
+            },
+            {
+              "DatabaseColumnName": "社員コード",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!Y12"
+              }
+            },
+            {
+              "DatabaseColumnName": "日付",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!AG12"
+              }
+            },
+            {
+              "DatabaseColumnName": "作業時間",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!AM12"
+              }
+            },
+            {
+              "DatabaseColumnName": "KOTEI_NAME",
+              "ColumnCell": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='その他作業実績入力 (バックアップ)'!AQ12"
+              }
+            }
+          ],
+          "ForceFrozenRowHeader": true
+        },
+        "PivotTableConditionalFormatSetting": {
+          "Conditions": [
+            {
+              "Label": "作業時間",
+              "DataConditionFormatRulesCollection": {
+                "Rules": [
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 7,
+                    "Value1": "=801",
+                    "Priority": 1,
+                    "GUID": "e6a925a6-a4fb-4797-b1d8-236763711994",
+                    "StyleInfo": {
+                      "BorderLeft": "black|1",
+                      "BorderTop": "black|1",
+                      "BorderRight": "black|1",
+                      "BorderBottom": "black|1",
+                      "Background": "#FFFF0000",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 1,
+                    "Value1": "=401",
+                    "Value2": "=800",
+                    "GUID": "1a1192f7-2dee-4664-b040-d68161f47272",
+                    "StyleInfo": {
+                      "BorderLeft": "black|1",
+                      "BorderTop": "black|1",
+                      "BorderRight": "black|1",
+                      "BorderBottom": "black|1",
+                      "Background": "#FFFFFF00",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+                    "Operator": 1,
+                    "Value1": "=1",
+                    "Value2": "=400",
+                    "GUID": "fd76d58c-d201-48e0-9eb3-10db1dabc0f7",
+                    "StyleInfo": {
+                      "BorderLeft": "black|1",
+                      "BorderTop": "black|1",
+                      "BorderRight": "black|1",
+                      "BorderBottom": "black|1",
+                      "Background": "Accent 1 40",
+                      "Underline": null,
+                      "Strikethrough": null
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "PivotTableStyle": {
+          "IsDataColumnAutoFitWidth": true,
+          "IsRowHeaderAutoFitWidth": true,
+          "UseSimpleBar": true
+        },
+        "ShowBandedRows": true,
+        "PivotTableID": "33717f4d-e7f8-4731-ad5d-8f7ed61414b6",
+        "TemplateKey": "Accent_4_3"
+      }
+    },
+    "43,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "このページで追加した実績データを更新しましたか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "目次"
+                  }
+                ],
+                "ID": "230f26ab-7c21-450f-a47d-354248defe70"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "9a5b57c6-d068-4c0e-93fc-68e22359fecb"
+              }
+            ]
+          }
+        ],
+        "Text": "戻る",
+        "TemplateKey": "戻る",
+        "Icon": {
+          "Name": "Navigation/165_home_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "43,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "本当に実行してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ImportExcelToListViewCommand, ServerDesignerCommon",
+                    "ListViewName": "その他時間実績一覧表",
+                    "UseIndex": true,
+                    "SheetNameOrIndex": "1",
+                    "ImportExcelToListViewColumnInfos": [
+                      {
+                        "Column": "作業種別",
+                        "ColumnName": "艇種"
+                      },
+                      {
+                        "Column": "工程コード",
+                        "ColumnName": "艇番"
+                      },
+                      {
+                        "Column": "社員コード",
+                        "ColumnName": "社員コード"
+                      },
+                      {
+                        "Column": "日付",
+                        "ColumnName": "工程コード"
+                      },
+                      {
+                        "Column": "作業時間",
+                        "ColumnName": "日付"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "42b73b37-3971-44df-b2c6-dd1f07706752"
+              }
+            ]
+          }
+        ],
+        "Text": "インポート",
+        "TemplateKey": "追加",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "43,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "作業実績エクスポート（その他実績）"
+          }
+        ],
+        "Text": "エクスポート",
+        "TemplateKey": "追加",
+        "Icon": {
+          "Name": "File/349_excel_file_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "Foreground": 2
+      },
+      {
+        "Background": 0
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 5
+      },
+      {
+        "Foreground": 4
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontWeight": 9,
+        "Foreground": 4,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 14.666666666666666,
+        "Formatter": 10,
+        "HorizontalAlignment": 11,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 12,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 4,
+        "Formatter": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "HGP創英角ｺﾞｼｯｸUB",
+        "Text 1 0",
+        "Body",
+        "#FFFF0000",
+        "[AUTO]General",
+        "black",
+        "@",
+        "Right",
+        "Bold",
+        "yyyy/m/d",
+        "Center",
+        "#,##0"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,13": 2,
+      "1,22": 3,
+      "2,22": 4,
+      "3,1": 5,
+      "3,2": 6,
+      "3,3": 6,
+      "3,4": 7,
+      "3,5": 6,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,14": 8,
+      "3,15": 8,
+      "3,16": 8,
+      "3,17": 8,
+      "3,18": 8,
+      "3,19": 8,
+      "3,20": 8,
+      "3,32": 2,
+      "3,33": 2,
+      "3,34": 2,
+      "3,35": 2,
+      "3,36": 2,
+      "3,37": 2,
+      "3,38": 2,
+      "3,39": 2,
+      "3,40": 2,
+      "3,41": 2,
+      "3,42": 2,
+      "3,43": 2,
+      "3,44": 2,
+      "3,45": 2,
+      "3,46": 2,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "3,52": 2,
+      "3,53": 2,
+      "3,54": 2,
+      "3,55": 2,
+      "3,56": 2,
+      "3,57": 2,
+      "3,58": 2,
+      "3,59": 2,
+      "3,60": 2,
+      "3,61": 2,
+      "3,62": 2,
+      "3,63": 2,
+      "4,1": 5,
+      "4,2": 6,
+      "4,3": 6,
+      "4,4": 6,
+      "4,5": 9,
+      "4,6": 10,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 11,
+      "4,11": 12,
+      "4,12": 13,
+      "4,13": 13,
+      "4,14": 13,
+      "4,15": 9,
+      "4,16": 14,
+      "4,17": 14,
+      "4,18": 14,
+      "4,19": 14,
+      "4,20": 15,
+      "4,31": 2,
+      "4,32": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "4,35": 2,
+      "4,36": 2,
+      "4,37": 2,
+      "4,38": 2,
+      "4,39": 2,
+      "4,40": 2,
+      "4,41": 2,
+      "4,42": 2,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "4,46": 2,
+      "4,47": 2,
+      "4,48": 2,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 2,
+      "4,52": 2,
+      "4,53": 2,
+      "4,54": 2,
+      "4,55": 2,
+      "4,56": 2,
+      "4,57": 2,
+      "4,58": 2,
+      "4,59": 2,
+      "4,60": 2,
+      "4,61": 2,
+      "4,62": 2,
+      "4,63": 2,
+      "5,1": 5,
+      "5,2": 6,
+      "5,3": 6,
+      "5,4": 6,
+      "5,5": 7,
+      "5,6": 16,
+      "5,7": 16,
+      "5,8": 16,
+      "5,9": 16,
+      "5,10": 17,
+      "5,11": 5,
+      "5,12": 6,
+      "5,13": 6,
+      "5,14": 6,
+      "5,15": 18,
+      "5,16": 6,
+      "5,17": 6,
+      "5,18": 6,
+      "5,19": 6,
+      "5,20": 6,
+      "5,31": 2,
+      "5,32": 2,
+      "5,33": 2,
+      "5,34": 2,
+      "5,35": 2,
+      "5,36": 2,
+      "5,37": 2,
+      "5,38": 2,
+      "5,39": 2,
+      "5,40": 2,
+      "5,41": 2,
+      "5,42": 2,
+      "5,43": 2,
+      "5,44": 2,
+      "5,45": 2,
+      "5,46": 2,
+      "5,47": 2,
+      "5,48": 2,
+      "5,49": 2,
+      "5,50": 2,
+      "5,51": 2,
+      "5,52": 2,
+      "5,53": 2,
+      "5,54": 2,
+      "5,55": 2,
+      "5,56": 2,
+      "5,57": 2,
+      "5,58": 2,
+      "5,59": 2,
+      "5,60": 2,
+      "5,61": 2,
+      "5,62": 2,
+      "5,63": 2,
+      "6,1": 2,
+      "6,2": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "6,39": 2,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "6,59": 2,
+      "6,60": 2,
+      "6,61": 2,
+      "6,62": 2,
+      "6,63": 2,
+      "7,1": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,24": 2,
+      "7,25": 2,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,31": 2,
+      "7,32": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "7,46": 2,
+      "7,47": 2,
+      "7,48": 2,
+      "7,49": 2,
+      "7,50": 2,
+      "7,51": 2,
+      "7,52": 2,
+      "7,53": 2,
+      "7,54": 2,
+      "7,55": 2,
+      "7,56": 2,
+      "7,57": 2,
+      "7,58": 2,
+      "7,59": 2,
+      "7,60": 2,
+      "7,61": 2,
+      "7,62": 2,
+      "7,63": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,42": 2,
+      "8,43": 2,
+      "8,44": 2,
+      "8,45": 2,
+      "8,46": 2,
+      "8,47": 2,
+      "8,48": 2,
+      "8,49": 2,
+      "8,50": 2,
+      "8,51": 2,
+      "8,52": 2,
+      "8,53": 2,
+      "8,54": 2,
+      "8,55": 2,
+      "8,56": 2,
+      "8,57": 2,
+      "8,58": 2,
+      "8,59": 2,
+      "8,60": 2,
+      "8,61": 2,
+      "8,62": 2,
+      "8,63": 2,
+      "9,1": 19,
+      "9,2": 2,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "10,43": 2,
+      "11,18": 2,
+      "11,24": 2,
+      "11,32": 20,
+      "11,33": 2,
+      "11,34": 2,
+      "11,35": 2,
+      "11,36": 2,
+      "11,37": 2,
+      "11,38": 21,
+      "11,39": 2,
+      "11,40": 2,
+      "11,41": 2,
+      "11,43": 2,
+      "12,43": 2,
+      "13,43": 2,
+      "14,43": 2,
+      "15,43": 2,
+      "16,43": 2,
+      "17,43": 2,
+      "18,43": 2,
+      "19,43": 2,
+      "20,43": 2,
+      "21,43": 2,
+      "22,43": 2,
+      "23,43": 2,
+      "24,43": 2,
+      "25,43": 2,
+      "26,43": 2,
+      "27,43": 2,
+      "28,1": 2,
+      "28,2": 2,
+      "28,3": 2,
+      "28,4": 2,
+      "28,5": 2,
+      "28,6": 2,
+      "28,7": 2,
+      "28,8": 2,
+      "28,9": 2,
+      "28,10": 2,
+      "28,11": 2,
+      "28,12": 2,
+      "28,13": 2,
+      "28,14": 2,
+      "28,15": 2,
+      "28,16": 2,
+      "28,17": 2,
+      "28,18": 2,
+      "28,19": 2,
+      "28,20": 2,
+      "28,21": 2,
+      "28,22": 2,
+      "28,23": 2,
+      "28,24": 2,
+      "28,25": 2,
+      "28,26": 2,
+      "28,27": 2,
+      "28,28": 2,
+      "28,29": 2,
+      "28,30": 2,
+      "28,31": 2,
+      "28,32": 2,
+      "28,33": 2,
+      "28,34": 2,
+      "28,35": 2,
+      "28,36": 2,
+      "28,37": 2,
+      "28,38": 2,
+      "28,39": 2,
+      "28,40": 2,
+      "28,41": 2,
+      "28,42": 2,
+      "28,43": 2,
+      "29,1": 22,
+      "29,2": 23,
+      "29,3": 23,
+      "29,4": 23,
+      "29,5": 23,
+      "29,6": 23,
+      "29,7": 23,
+      "29,8": 23,
+      "29,9": 23,
+      "29,10": 23,
+      "29,11": 23,
+      "29,12": 23,
+      "29,13": 23,
+      "29,14": 23,
+      "29,15": 23,
+      "29,16": 23,
+      "29,17": 23,
+      "29,18": 23,
+      "29,19": 23,
+      "29,20": 23,
+      "29,21": 23,
+      "29,22": 23,
+      "29,23": 23,
+      "29,24": 23,
+      "29,25": 23,
+      "29,26": 23,
+      "29,27": 23,
+      "29,28": 23,
+      "29,29": 23,
+      "29,30": 23,
+      "29,31": 23,
+      "29,32": 23,
+      "29,33": 23,
+      "29,34": 23,
+      "29,35": 23,
+      "29,36": 23,
+      "29,37": 23,
+      "29,38": 23,
+      "29,39": 23,
+      "29,40": 23,
+      "29,41": 24,
+      "29,42": 2,
+      "29,43": 2,
+      "30,1": 25,
+      "30,41": 26,
+      "30,42": 2,
+      "30,43": 2,
+      "31,1": 25,
+      "31,41": 26,
+      "31,42": 2,
+      "31,43": 2,
+      "32,1": 25,
+      "32,41": 26,
+      "32,42": 2,
+      "32,43": 2,
+      "33,1": 25,
+      "33,41": 26,
+      "33,42": 2,
+      "33,43": 2,
+      "34,1": 25,
+      "34,41": 26,
+      "34,42": 2,
+      "34,43": 2,
+      "35,1": 25,
+      "35,41": 26,
+      "35,42": 2,
+      "35,43": 2,
+      "36,1": 25,
+      "36,41": 26,
+      "36,42": 2,
+      "36,43": 2,
+      "37,1": 25,
+      "37,41": 26,
+      "37,42": 2,
+      "37,43": 2,
+      "38,1": 25,
+      "38,41": 26,
+      "38,42": 2,
+      "38,43": 2,
+      "39,1": 27,
+      "39,2": 14,
+      "39,3": 14,
+      "39,4": 14,
+      "39,5": 14,
+      "39,6": 14,
+      "39,7": 14,
+      "39,8": 14,
+      "39,9": 14,
+      "39,10": 14,
+      "39,11": 14,
+      "39,12": 14,
+      "39,13": 14,
+      "39,14": 14,
+      "39,15": 14,
+      "39,16": 14,
+      "39,17": 14,
+      "39,18": 14,
+      "39,19": 14,
+      "39,20": 14,
+      "39,21": 14,
+      "39,22": 14,
+      "39,23": 14,
+      "39,24": 14,
+      "39,25": 14,
+      "39,26": 14,
+      "39,27": 14,
+      "39,28": 14,
+      "39,29": 14,
+      "39,30": 14,
+      "39,31": 14,
+      "39,32": 14,
+      "39,33": 14,
+      "39,34": 14,
+      "39,35": 14,
+      "39,36": 14,
+      "39,37": 14,
+      "39,38": 14,
+      "39,39": 14,
+      "39,40": 14,
+      "39,41": 15,
+      "39,42": 2,
+      "39,43": 2,
+      "40,1": 2,
+      "40,2": 2,
+      "40,3": 2,
+      "40,4": 2,
+      "40,5": 2,
+      "40,6": 2,
+      "40,7": 2,
+      "40,8": 2,
+      "40,9": 2,
+      "40,10": 2,
+      "40,11": 2,
+      "40,12": 2,
+      "40,13": 2,
+      "40,14": 2,
+      "40,15": 2,
+      "40,16": 2,
+      "40,17": 2,
+      "40,18": 2,
+      "40,19": 2,
+      "40,20": 2,
+      "40,21": 2,
+      "40,22": 2,
+      "40,23": 2,
+      "40,24": 2,
+      "40,25": 2,
+      "40,26": 2,
+      "40,27": 2,
+      "40,28": 2,
+      "40,29": 2,
+      "40,30": 2,
+      "40,31": 2,
+      "40,32": 2,
+      "40,33": 2,
+      "40,34": 2,
+      "40,35": 2,
+      "40,36": 2,
+      "40,37": 2,
+      "40,38": 2,
+      "40,39": 2,
+      "40,40": 2,
+      "40,41": 2,
+      "40,42": 2,
+      "40,43": 2,
+      "41,1": 2,
+      "41,2": 2,
+      "41,3": 2,
+      "41,4": 2,
+      "41,5": 2,
+      "41,6": 2,
+      "41,7": 2,
+      "41,8": 2,
+      "41,9": 2,
+      "41,10": 2,
+      "41,11": 2,
+      "41,12": 2,
+      "41,13": 2,
+      "41,14": 2,
+      "41,15": 2,
+      "41,16": 2,
+      "41,17": 2,
+      "41,18": 2,
+      "41,19": 2,
+      "41,20": 2,
+      "41,21": 2,
+      "41,22": 2,
+      "41,23": 2,
+      "41,24": 2,
+      "41,25": 2,
+      "41,26": 2,
+      "41,27": 2,
+      "41,28": 2,
+      "41,29": 2,
+      "41,30": 2,
+      "41,31": 2,
+      "41,32": 2,
+      "41,33": 2,
+      "41,34": 2,
+      "41,35": 2,
+      "41,36": 2,
+      "41,37": 2,
+      "41,38": 2,
+      "41,39": 2,
+      "41,40": 2,
+      "41,41": 2,
+      "41,42": 2,
+      "41,43": 2,
+      "42,1": 2,
+      "42,2": 2,
+      "42,3": 2,
+      "42,4": 2,
+      "42,5": 2,
+      "42,6": 2,
+      "42,7": 2,
+      "42,8": 2,
+      "42,9": 2,
+      "42,10": 2,
+      "42,11": 2,
+      "42,12": 2,
+      "42,13": 2,
+      "42,14": 2,
+      "42,15": 2,
+      "42,16": 2,
+      "42,17": 2,
+      "42,18": 2,
+      "42,19": 2,
+      "42,20": 2,
+      "42,21": 2,
+      "42,22": 2,
+      "42,23": 2,
+      "42,24": 2,
+      "42,25": 2,
+      "42,26": 2,
+      "42,27": 2,
+      "42,28": 2,
+      "42,29": 2,
+      "42,30": 2,
+      "42,31": 2,
+      "42,32": 2,
+      "42,33": 2,
+      "42,34": 2,
+      "42,35": 2,
+      "42,36": 2,
+      "42,37": 2,
+      "42,38": 2,
+      "42,39": 2,
+      "42,40": 2,
+      "42,41": 2,
+      "42,42": 2,
+      "42,43": 2,
+      "43,1": 2,
+      "43,2": 2,
+      "43,3": 2,
+      "43,4": 2,
+      "43,5": 2,
+      "43,6": 2,
+      "43,7": 2,
+      "43,8": 2,
+      "43,9": 2,
+      "43,10": 2,
+      "43,11": 2,
+      "43,12": 2,
+      "43,13": 2,
+      "43,14": 2,
+      "43,15": 2,
+      "43,16": 2,
+      "43,18": 2,
+      "43,19": 2,
+      "43,20": 2,
+      "43,21": 2,
+      "43,22": 2,
+      "43,23": 2,
+      "43,24": 2,
+      "43,26": 2,
+      "43,27": 2,
+      "43,28": 2,
+      "43,29": 2,
+      "43,30": 2,
+      "43,31": 2,
+      "43,36": 2,
+      "43,37": 2,
+      "43,38": 2,
+      "43,39": 2,
+      "43,40": 2,
+      "43,41": 2,
+      "43,42": 2,
+      "43,43": 2,
+      "44,1": 2,
+      "44,2": 2,
+      "44,3": 2,
+      "44,4": 2,
+      "44,5": 2,
+      "44,6": 2,
+      "44,7": 2,
+      "44,8": 2,
+      "44,9": 2,
+      "44,10": 2,
+      "44,11": 2,
+      "44,12": 2,
+      "44,13": 2,
+      "44,14": 2,
+      "44,15": 2,
+      "44,16": 2,
+      "44,17": 2,
+      "44,18": 2,
+      "44,19": 2,
+      "44,20": 2,
+      "44,21": 2,
+      "44,22": 2,
+      "44,23": 2,
+      "44,24": 2,
+      "44,25": 2,
+      "44,26": 2,
+      "44,27": 2,
+      "44,28": 2,
+      "44,29": 2,
+      "44,30": 2,
+      "44,36": 2,
+      "44,37": 2,
+      "44,38": 2,
+      "44,39": 2,
+      "44,40": 2,
+      "44,41": 2,
+      "44,42": 2,
+      "44,43": 2,
+      "46,0": 2,
+      "46,42": 2,
+      "47,0": 28,
+      "47,1": 2,
+      "47,2": 2,
+      "47,3": 2,
+      "47,4": 2,
+      "47,5": 2,
+      "47,6": 2,
+      "47,42": 2,
+      "48,0": 28,
+      "49,0": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "3,1,1,4",
+    "5,1,1,4",
+    "5,5,1,6",
+    "5,11,1,4",
+    "5,15,1,6",
+    "4,1,1,4",
+    "4,5,1,6",
+    "4,11,1,4",
+    "3,5,1,16",
+    "4,15,1,6",
+    "11,1,1,17",
+    "11,32,1,6",
+    "11,38,1,4",
+    "11,18,1,6",
+    "7,1,2,20",
+    "1,13,1,5",
+    "43,31,2,5",
+    "43,1,2,6",
+    "12,1,16,42",
+    "11,24,1,8",
+    "29,1,11,41",
+    "43,37,2,5",
+    "10,1,1,17",
+    "10,18,1,6",
+    "10,24,1,8",
+    "10,32,1,6",
+    "10,38,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "生産実績入力メニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//IYoyn8+5RGx58dP7qVVbVkKBqPt2q0A+C/Rx7Sjn3WZLN6QG4oz+47RQ2jB+ng8s5KC7n00pCdlhRLJlLlOjxl7opQGNC7TqD0+K4ah8GJkI7BTNWEE5wRLjFBcb+4HmFldARh7Pp4XX6cuaq2Aqy731wweiVG3/khtEfnF06tqPFu6zn/rp4l8eCUn3mMWwa/bmjmqTkQ8DRcubcIdQybvsLsdUJRRkb1LmGsP5jnzU1XH98gGI0KKsxk+HcSe8PdKQLBK0ygAVqW3ysyoHR4H3FNWOmDSnwmEye6nZm1VQP3z5BHGj1MM2juajhLjDl2CSC9yeznvTzCobU2lY3Qm0RG6uyZWTkJMY0gkvOUq3rTVkS6Usk3kdYeaxiFdLN5nxwOLnTsDPYg/GOHIPiKB0VFE3EIaWh1pAsaa9KCNegEUl7Oysn96stGv+pJH3W3LAZCETS+TDeIkJKPboElup8kTzion5hQhhrZxaa63rz5GcKexuPxFuib6dUU0UL891rlxzT+RYBaD0gftt4LplPs+h/fDg/FHDW+gMcnbQsYZfvakVdLlazbJGBkzn0d3yg0nnIUGmVaLGTuFpd8NBWqBNiS9Gk4fOEbz1+wbivU+pBymwx9aYzWw3KHlv60EUfog+FFyinI1lYnn4yuI8+WbIDqc0tlQOu8pyjI5RAs9b/9SI/kMvpbU0gCsohtG2MSZsC4n4oT5YnCH+XsECE8P4odlMBWpigKPrWy0tF+Jou+JOAQ6/+WiK7vHpg1Ov8JNswDY3nZ0elVO/LsJZo6TdVgrxHvUGq46oWMAmBeNMCCEV9hajD9W7zh4EWdQgMqTbZDgE1jcxLufZv3arE9d+8AWtPkVWQdTiPq+9RkA+24mi9oQP++TMFB3nfC1p05bXaqiboIiQ6m5zjQ==|920

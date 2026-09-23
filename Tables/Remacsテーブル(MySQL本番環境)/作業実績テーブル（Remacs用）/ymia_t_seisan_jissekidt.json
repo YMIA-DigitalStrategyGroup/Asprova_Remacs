@@ -70,6 +70,13 @@
       "MaxLength": -1,
       "Name": "伝票番号",
       "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "工程コード_Remacs用",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
@@ -91,6 +98,13 @@
       "PrimaryColumn": "KOTEI_CODE",
       "ForeignTable": "ymia_t_seisan_jissekidt",
       "ForeignColumn": "工程コード",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "mkoteiname1",
+      "PrimaryColumn": "KOTEI_CODE",
+      "ForeignTable": "ymia_t_seisan_jissekidt",
+      "ForeignColumn": "工程コード_Remacs用",
       "IsDetailTableRelation": false
     }
   ],

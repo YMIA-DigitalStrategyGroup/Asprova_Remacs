@@ -69,15 +69,7 @@
       100,
       101,
       102,
-      103,
-      104,
-      105,
-      106,
-      107,
-      108,
-      109,
-      110,
-      111
+      103
     ],
     "Count": 114
   },
@@ -85,12 +77,14 @@
     "0,53": "「-」も含んでしまうピボットだけど、まだけさないで⇩（リストビュー名：特殊工事実績一覧表）",
     "1,1": "特殊工事実績入力画面",
     "1,12": "更新",
+    "2,104": "⇧工程自動入力に必要な箱",
     "3,1": "工事区分",
     "3,11": "工事番号",
     "3,21": "艇種",
     "3,25": "-",
     "3,31": "工程",
     "3,41": "作業者",
+    "3,104": "　消さないで！！！！",
     "4,1": "日付",
     "4,11": "作業内容",
     "4,41": "作業時間",
@@ -130,7 +124,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "18ff8d87-c272-4cbd-98d0-b0a987d5fea1"
+                "ID": "99696532-f7f2-4c62-8e9a-0fdc9bba32cd"
               }
             ]
           }
@@ -156,7 +150,7 @@
               "DisplayName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!N11"
+                "SerializeProperty": "='その他有償工事 Ver2'!N11"
               }
             }
           ],
@@ -166,7 +160,7 @@
               "DisplayName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AZ11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AZ11"
               }
             }
           ],
@@ -176,7 +170,7 @@
               "DisplayName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AV11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AV11"
               },
               "Format": "#,##0",
               "Aggregator": 0,
@@ -188,63 +182,63 @@
               "DatabaseColumnName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!B11"
+                "SerializeProperty": "='その他有償工事 Ver2'!B11"
               }
             },
             {
               "DatabaseColumnName": "工事番号",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!F11"
+                "SerializeProperty": "='その他有償工事 Ver2'!F11"
               }
             },
             {
               "DatabaseColumnName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!N11"
+                "SerializeProperty": "='その他有償工事 Ver2'!N11"
               }
             },
             {
               "DatabaseColumnName": "工程コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!R11"
+                "SerializeProperty": "='その他有償工事 Ver2'!R11"
               }
             },
             {
               "DatabaseColumnName": "社員コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!X11"
+                "SerializeProperty": "='その他有償工事 Ver2'!X11"
               }
             },
             {
               "DatabaseColumnName": "日付",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AD11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AD11"
               }
             },
             {
               "DatabaseColumnName": "作業内容",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AH11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AH11"
               }
             },
             {
               "DatabaseColumnName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AV11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AV11"
               }
             },
             {
               "DatabaseColumnName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AZ11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AZ11"
               }
             }
           ],
@@ -312,7 +306,7 @@
           "UseSimpleBar": true
         },
         "ShowBandedRows": true,
-        "PivotTableID": "cd634fa3-0777-45bb-9924-e37c6ab0a38a",
+        "PivotTableID": "48680f06-b005-4520-b32f-c1635963d88c",
         "TemplateKey": "Accent_5_3"
       }
     },
@@ -564,64 +558,79 @@
     "3,35": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
-        "DataSource": "mkoteiname",
+        "DataSource": "ymia_m_seisan_kouteigroup",
         "ValueColumnBindingInfo": {
-          "TableName": "mkoteiname",
-          "ColumnName": "KOTEI_CODE",
-          "GUID": "43bb22fd-cc31-45a9-a2f0-5d8a601b9871"
+          "TableName": "ymia_m_seisan_kouteigroup",
+          "ColumnName": "工程コード",
+          "GUID": "0d99fff2-7898-4435-ab3d-f54f50e27a6b"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "mkoteiname",
-          "ColumnName": "KOTEI_NAME",
-          "GUID": "dac2465c-133c-446b-ac2e-b00758cbeaa7"
+          "TableName": "ymia_m_seisan_kouteigroup",
+          "ColumnName": "工程コード",
+          "GUID": "53e52db3-a82a-4628-86c4-5978d5f2c6a1",
+          "RelationBinding": {
+            "RelatedTable": "mkoteiname",
+            "RelatedColumn": "KOTEI_CODE",
+            "DisplayColumn": "KOTEI_NAME"
+          }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-          "SubConditions": [
+        "ItemsSort": {
+          "OrderByColumns": [
             {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 2,
               "ColumnBindingInfo": {
-                "TableName": "mkoteiname",
-                "ColumnName": "KOTEI_CODE",
-                "GUID": "1b14e8d7-905e-453b-8df3-a8b115a1b2af"
+                "TableName": "ymia_m_seisan_kouteigroup",
+                "ColumnName": "工程コード",
+                "GUID": "d8f1bb4a-16b4-43ff-b0f6-d8ca5ee5ab3f"
               },
-              "Value": "A"
-            },
-            {
-              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-              "CompareType": 2,
-              "ColumnBindingInfo": {
-                "TableName": "mkoteiname",
-                "ColumnName": "KOTEI_CODE",
-                "GUID": "e88c494e-8c52-4181-a1a4-d37555579181"
-              },
-              "Value": "C"
+              "Order": 0
             }
-          ],
-          "RelationType": 1
+          ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "9bb10a8ec31f48c4a2828ad2989098cd",
+            "GUID": "ee2f46091fc844a881f312fa5c4c53e0",
             "BindingInfo": {
-              "TableName": "mkoteiname",
-              "ColumnName": "KOTEI_CODE",
-              "GUID": "8fa1241d-e76f-4ae1-8c11-5b1ab2c6bab1"
+              "TableName": "ymia_m_seisan_kouteigroup",
+              "ColumnName": "工程コード",
+              "GUID": "e30f3df0-4be5-4502-ac41-e0bb8322f119"
             },
             "ColumnName": "工程コード"
           },
           {
-            "GUID": "666124433696408296e417aa6d3ab33d",
+            "GUID": "7aa3d222651d4abd92c21d59ae2407d6",
             "BindingInfo": {
-              "TableName": "mkoteiname",
-              "ColumnName": "KOTEI_NAME",
-              "GUID": "aef45910-87aa-4162-8ab6-5a1dfc6638f3"
+              "TableName": "ymia_m_seisan_kouteigroup",
+              "ColumnName": "工程コード",
+              "GUID": "f04f7e3f-7c8d-4fde-907b-a41ed6e374a7",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
             "ColumnName": "工程名"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他有償工事 Ver2'!DA2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他有償工事 Ver2'!AJ4"
+                }
+              }
+            ]
           }
         ]
       }
@@ -632,71 +641,50 @@
         "MaxDropDownItemCount": 10,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
-        "DataSource": "ymia_m_seisan_kouteishain",
+        "DataSource": "ymia_m_seisan_kouteishain_new",
         "ValueColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "571da4fe-e8ef-4f66-90bb-a09d27a39c15"
+          "GUID": "9de553e8-9d4b-441b-9ed8-1149c44d695c"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "bde88af1-345f-4be7-8430-78e7e5dccf6b",
+          "GUID": "50e83478-759d-4024-966c-8eaf91084c36",
           "RelationBinding": {
             "RelatedTable": "ユーザー情報ビュー",
             "RelatedColumn": "ユーザー名",
             "DisplayColumn": "氏名"
           }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "ymia_m_seisan_kouteishain",
-            "ColumnName": "工程コード",
-            "GUID": "7633ccb5-845c-4531-8848-b4c6b80b1c44"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!AJ4"
-          }
-        },
         "ItemsSort": {
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "ymia_m_seisan_kouteishain",
-                "ColumnName": "代表者",
-                "GUID": "f68008aa-530b-43de-bb7d-ab0709bcb853"
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "937dc5bb-6be5-418a-a6bc-47fe47de1dd8"
               },
-              "Order": 1
+              "Order": 0
             }
           ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "c7cc86b852974f5489c551b6f023176a",
+            "GUID": "a940d294f0444f2f93103ae46adc5f4d",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "工程コード",
-              "GUID": "45b01686-21e6-4c8c-9383-3e97e6091c19"
-            },
-            "ColumnName": "工程コード"
-          },
-          {
-            "GUID": "4de52dd3856a4f33ba3805a0b0138687",
-            "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "641140c1-dde1-4218-95c4-c573e7b67178"
+              "GUID": "71e1875c-318b-408b-96e6-d2583e9204d6"
             },
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "1f47175ef7db4ce292688cd220880297",
+            "GUID": "ac23eb51b35c4095a2be5c61d8a12078",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "4b4caeb3-4158-43cc-adfd-f841888be0b9",
+              "GUID": "3be357d2-3771-4556-af9b-4ec91ca5d424",
               "RelationBinding": {
                 "RelatedTable": "ユーザー情報ビュー",
                 "RelatedColumn": "ユーザー名",
@@ -706,13 +694,18 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "f6418803a1bb43578bf3fc82a8f90b8c",
+            "GUID": "a65508a1d1ac4c5f962390784b609b23",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "代表者",
-              "GUID": "8faeac05-9270-4014-a258-15d5beac6a41"
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "6f089e44-600b-4430-9248-bbb5cf5896b5",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
-            "ColumnName": "代表者"
+            "ColumnName": "工程名"
           }
         ],
         "CommandList": [
@@ -725,11 +718,11 @@
               "TableValueType": 0,
               "BindingInfos": [
                 {
-                  "GUID": "2823db5c-bad3-4bbb-82ef-a17a04fd7ce0",
+                  "GUID": "bdec45fc-3510-48b6-8ff6-e501690b6292",
                   "BindingInfo": {
                     "TableName": "ymia_m_seisan_keisu",
                     "ColumnName": "係数",
-                    "GUID": "5750cdfe-4f7b-4ee5-b1e2-1852fb1776d5"
+                    "GUID": "c3028f56-aef5-4fd4-ab77-bab034000afc"
                   },
                   "ColumnName": "係数"
                 }
@@ -739,15 +732,16 @@
                 "ColumnBindingInfo": {
                   "TableName": "ymia_m_seisan_keisu",
                   "ColumnName": "社員コード",
-                  "GUID": "392ded41-3d29-45d0-96c4-fe2fe47ae390"
+                  "GUID": "ff9b7afd-483b-42c3-a716-504cc49cde15"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=その他有償工事!AT4"
+                  "SerializeProperty": "='その他有償工事 Ver2'!AT4"
                 }
               }
             },
-            "ID": "83bc5fe37dcc490ca0ba1460e79de26c"
+            "ID": "9b8a688b16de49c38574f2f44c4fc7fa",
+            "Disabled": true
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -755,11 +749,61 @@
               {
                 "TargetCells": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=その他有償工事!AW4"
+                  "SerializeProperty": "='その他有償工事 Ver2'!AW4"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=その他有償工事!調整後係数"
+                  "SerializeProperty": "='その他有償工事 Ver2'!調整後係数"
+                }
+              }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "主工程",
+            "TableValue": {
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "OnlyGetValue": true,
+              "TableValueType": 0,
+              "BindingInfos": [
+                {
+                  "GUID": "7cd0c968-0508-4449-ae12-18ec2d02566b",
+                  "BindingInfo": {
+                    "TableName": "ymia_m_seisan_kouteishain_new",
+                    "ColumnName": "工程コード",
+                    "GUID": "23869aa7-cb44-4525-b96a-2cded83ee448"
+                  },
+                  "ColumnName": "工程コード"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ymia_m_seisan_kouteishain_new",
+                  "ColumnName": "社員コード",
+                  "GUID": "d9c949a2-3f46-4c3b-893d-f968a4ba6cb6"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他有償工事 Ver2'!AT4"
+                }
+              },
+              "NullFormulaValueQueryPolicy": 0
+            },
+            "ID": "da4655bce9594887a24d9e83b6a920ae"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他有償工事 Ver2'!AJ4"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='その他有償工事 Ver2'!主工程"
                 }
               }
             ]
@@ -821,7 +865,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=その他有償工事!F4"
+                            "SerializeProperty": "='その他有償工事 Ver2'!F4"
                           }
                         ]
                       },
@@ -833,7 +877,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=その他有償工事!Z4"
+                            "SerializeProperty": "='その他有償工事 Ver2'!Z4"
                           }
                         ]
                       },
@@ -845,7 +889,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=その他有償工事!P5"
+                            "SerializeProperty": "='その他有償工事 Ver2'!P5"
                           }
                         ]
                       },
@@ -857,7 +901,7 @@
                         "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                         "cellLocations": [
                           {
-                            "SerializeProperty": "=その他有償工事!AT5"
+                            "SerializeProperty": "='その他有償工事 Ver2'!AT5"
                           }
                         ]
                       },
@@ -874,81 +918,81 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!B11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!B11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!F4"
+                          "SerializeProperty": "='その他有償工事 Ver2'!F4"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!F11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!F11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!P4"
+                          "SerializeProperty": "='その他有償工事 Ver2'!P4"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!N11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!N11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!Z4"
+                          "SerializeProperty": "='その他有償工事 Ver2'!Z4"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!R11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!R11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AJ4"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AJ4"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!X11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!X11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AT4"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AT4"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AD11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AD11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!F5"
+                          "SerializeProperty": "='その他有償工事 Ver2'!F5"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AH11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AH11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!P5"
+                          "SerializeProperty": "='その他有償工事 Ver2'!P5"
                         }
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AV11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AV11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AT5"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AT5"
                         }
                       }
                     ]
@@ -959,7 +1003,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "e2ebe677-636a-4515-999d-e258cd5d2511"
+                "ID": "6b973758-d75e-41e3-bb9a-9845a005d25d"
               },
               {
                 "CommandList": [
@@ -968,7 +1012,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "1094f3d2-b4a6-4665-a817-cf9ad7e2bf7b"
+                "ID": "300b99b4-e8f4-4c7b-bef7-41d4c5c273f1"
               }
             ]
           }
@@ -996,11 +1040,11 @@
           "ColumnBindingInfo": {
             "TableName": "ymia_t_seisan_jissekikouji",
             "ColumnName": "日付",
-            "GUID": "f8d394ac-bbeb-4ae3-a406-13fa0405ec1a"
+            "GUID": "59a27778-b62d-4a05-b413-846812c84d5d"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!F5"
+            "SerializeProperty": "='その他有償工事 Ver2'!F5"
           }
         },
         "TopCondition": null,
@@ -1040,7 +1084,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工事区分",
-        "GUID": "155a8ce7-8750-4cc8-aec5-3c9f269dafd3"
+        "GUID": "822bf454-3da1-4402-b065-73796d53d7d9"
       }
     },
     "10,5": {
@@ -1048,7 +1092,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工事番号",
-        "GUID": "973f094e-55ac-469f-aeaa-76ddf2680fde"
+        "GUID": "1e866229-483c-4dd0-8537-c5977b452a84"
       }
     },
     "10,13": {
@@ -1056,7 +1100,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "艇種",
-        "GUID": "e6ea2328-06a2-446d-9ff5-92d7dd11a7c9"
+        "GUID": "ca0b697f-5428-447a-befd-9fe8f51ef82b"
       }
     },
     "10,17": {
@@ -1064,39 +1108,41 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工程コード",
-        "GUID": "6ab3b422-36bc-4ac3-a5db-1c1c5915724b"
+        "GUID": "cc21f4e0-189e-4eb8-986d-c1840915e236"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
         "DataSource": "mkoteiname",
         "ValueColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_CODE",
-          "GUID": "8fe33ce6-e45f-45b5-9d80-b8262ae0578e"
+          "GUID": "76985f10-6888-4530-8c98-ecae598759a0"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_NAME",
-          "GUID": "f4a16663-07ee-4d13-b8bf-3ed0a270e07f"
+          "GUID": "082d309b-e3ee-44c2-8e81-c639759f67f4"
         },
         "DropDownSubItems": [
           {
-            "GUID": "1014b87f98884134bd1e5c9fd41a1576",
+            "GUID": "a4d01cbc26c54841ab4ae80d20de94ff",
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_CODE",
-              "GUID": "0d98ee61-c55c-491b-83d4-9e1d4e68f224"
+              "GUID": "b5a58ad6-7d26-4d57-a0f8-d8327c9e72b0"
             },
             "ColumnName": "工程コード"
           },
           {
-            "GUID": "949464d616d241d09ce93d0d652678e2",
+            "GUID": "f438f072447a4bf18a878bc9d8ff4159",
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_NAME",
-              "GUID": "b3f5c55b-e43c-44c0-b06b-287b64d928e0"
+              "GUID": "627fc673-377b-47c6-9545-34f999df6698"
             },
             "ColumnName": "工程名"
           }
@@ -1111,78 +1157,58 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "社員コード",
-        "GUID": "26207aa1-422f-4e04-bd3d-71716b4517fa"
+        "GUID": "7c55035c-5c59-487e-85b1-cec0a940e5cb"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
+        "ValidateItem": true,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
-        "DataSource": "ymia_m_seisan_kouteishain",
+        "DataSource": "ymia_m_seisan_kouteishain_new",
         "ValueColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "2fa9ae69-fcb2-4c6a-8761-e9d49c558298"
+          "GUID": "c3e88f9b-4482-4afd-986c-917859931977"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "3bff4b8b-ea83-4510-aefa-afb2e5ed415e",
+          "GUID": "e4dcfb36-1ccc-4008-bd3a-5f40d4f81b29",
           "RelationBinding": {
             "RelatedTable": "ユーザー情報ビュー",
             "RelatedColumn": "ユーザー名",
             "DisplayColumn": "氏名"
           }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "ymia_m_seisan_kouteishain",
-            "ColumnName": "工程コード",
-            "GUID": "06ba4dfb-3795-4221-acf3-1886be7909f7"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!R11"
-          }
-        },
         "ItemsSort": {
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "ymia_m_seisan_kouteishain",
-                "ColumnName": "代表者",
-                "GUID": "f2720d0b-258f-4e51-96d9-db5545ebd4f4"
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "dbbdda2b-649f-47ec-b437-8c53eab9108e"
               },
-              "Order": 1
+              "Order": 0
             }
           ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "b406f88f0a4846d8bf151fdf8427557e",
+            "GUID": "d8f85a81b1c6489296a41f13342a8794",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "工程コード",
-              "GUID": "9b5ca1c1-94f6-4c68-aa16-1b386d80fc68"
-            },
-            "ColumnName": "工程コード"
-          },
-          {
-            "GUID": "6612b79731d44a80a97ca08c03b5546e",
-            "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "dadea887-5d33-42aa-9a49-46a5ab126a2f"
+              "GUID": "b2e48d37-d5af-4984-a6d4-1a3da14998b7"
             },
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "e1ee6a2b9f9542fca9c4f0b3ddc782ab",
+            "GUID": "29301ad89ba34f4481929e3b318b5557",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "0b3d81df-600e-41b2-afbc-4beea4fe63ce",
+              "GUID": "3d940667-bfc1-4645-8f99-bd111cfba92b",
               "RelationBinding": {
                 "RelatedTable": "ユーザー情報ビュー",
                 "RelatedColumn": "ユーザー名",
@@ -1192,13 +1218,18 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "60ed1eaa30ce4068bcba916ce6544b6e",
+            "GUID": "d19eb858bbfd460aa8892b200b7cf8c7",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "代表者",
-              "GUID": "bd94c22b-08e2-42ed-84f1-43414a15c31a"
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "8a69b51f-f637-4b4d-9c91-f5890cedc0ac",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
-            "ColumnName": "代表者"
+            "ColumnName": "工程名"
           }
         ]
       },
@@ -1211,7 +1242,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "日付",
-        "GUID": "af6ee4f2-8ec6-4df3-b284-205dad746132"
+        "GUID": "4724d999-5508-4c28-8c66-0c9506254111"
       }
     },
     "10,33": {
@@ -1219,7 +1250,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "作業内容",
-        "GUID": "d2ee52d6-4aff-4b05-ac56-783707691660"
+        "GUID": "eaaec896-3248-4385-816c-db067b37bbfd"
       }
     },
     "10,47": {
@@ -1232,7 +1263,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "作業時間",
-        "GUID": "73d05ce9-cb9e-4cf4-aab1-23dd48abe00b"
+        "GUID": "e621c4e2-fdb7-411c-9ecd-87ffdc585515"
       }
     },
     "10,51": {
@@ -1240,7 +1271,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工程コード",
-        "GUID": "98bf7e9b-5e95-4f57-b41e-df30df33c06e",
+        "GUID": "d0bdaf3d-427d-45cf-acd2-9f7953bcf2ca",
         "RelationBinding": {
           "RelatedTable": "mkoteiname",
           "RelatedColumn": "KOTEI_CODE",
@@ -1259,7 +1290,7 @@
               "DisplayName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!B11"
+                "SerializeProperty": "='その他有償工事 Ver2'!B11"
               },
               "BackgroundValue": {}
             }
@@ -1270,7 +1301,7 @@
               "DisplayName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AZ11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AZ11"
               },
               "BackgroundValue": {}
             }
@@ -1281,7 +1312,7 @@
               "DisplayName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AV11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AV11"
               },
               "Format": "#,##0",
               "Aggregator": 0,
@@ -1294,63 +1325,63 @@
               "DatabaseColumnName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!B11"
+                "SerializeProperty": "='その他有償工事 Ver2'!B11"
               }
             },
             {
               "DatabaseColumnName": "工事番号",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!F11"
+                "SerializeProperty": "='その他有償工事 Ver2'!F11"
               }
             },
             {
               "DatabaseColumnName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!N11"
+                "SerializeProperty": "='その他有償工事 Ver2'!N11"
               }
             },
             {
               "DatabaseColumnName": "工程コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!R11"
+                "SerializeProperty": "='その他有償工事 Ver2'!R11"
               }
             },
             {
               "DatabaseColumnName": "社員コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!X11"
+                "SerializeProperty": "='その他有償工事 Ver2'!X11"
               }
             },
             {
               "DatabaseColumnName": "日付",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AD11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AD11"
               }
             },
             {
               "DatabaseColumnName": "作業内容",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AH11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AH11"
               }
             },
             {
               "DatabaseColumnName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AV11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AV11"
               }
             },
             {
               "DatabaseColumnName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!AZ11"
+                "SerializeProperty": "='その他有償工事 Ver2'!AZ11"
               }
             }
           ],
@@ -1436,7 +1467,7 @@
           "UseSimpleBar": true
         },
         "ShowBandedRows": true,
-        "PivotTableID": "e3174a9b-ccd7-4444-bf5c-f0106f406b79",
+        "PivotTableID": "bff49820-7cae-4163-8df8-300341b8cbc0",
         "TemplateKey": "Accent_5_3"
       }
     },
@@ -1451,7 +1482,7 @@
               "DisplayName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BN30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BN30"
               },
               "BackgroundValue": {}
             }
@@ -1462,13 +1493,13 @@
               "DisplayName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!DE30"
+                "SerializeProperty": "='その他有償工事 Ver2'!DE30"
               },
               "BackgroundValue": {
                 "DatabaseColumnName": "KOTEI_NAME",
                 "ColumnCell": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                  "SerializeProperty": "=その他有償工事!DE30"
+                  "SerializeProperty": "='その他有償工事 Ver2'!DE30"
                 }
               }
             }
@@ -1479,7 +1510,7 @@
               "DisplayName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CZ30"
+                "SerializeProperty": "='その他有償工事 Ver2'!CZ30"
               },
               "Aggregator": 0,
               "TotalAggregator": 0,
@@ -1491,63 +1522,63 @@
               "DatabaseColumnName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BB30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BB30"
               }
             },
             {
               "DatabaseColumnName": "工事番号",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BF30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BF30"
               }
             },
             {
               "DatabaseColumnName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BN30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BN30"
               }
             },
             {
               "DatabaseColumnName": "社員コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BR30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BR30"
               }
             },
             {
               "DatabaseColumnName": "工程コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BX30"
+                "SerializeProperty": "='その他有償工事 Ver2'!BX30"
               }
             },
             {
               "DatabaseColumnName": "日付",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CD30"
+                "SerializeProperty": "='その他有償工事 Ver2'!CD30"
               }
             },
             {
               "DatabaseColumnName": "作業内容",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CJ30"
+                "SerializeProperty": "='その他有償工事 Ver2'!CJ30"
               }
             },
             {
               "DatabaseColumnName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CZ30"
+                "SerializeProperty": "='その他有償工事 Ver2'!CZ30"
               }
             },
             {
               "DatabaseColumnName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!DE30"
+                "SerializeProperty": "='その他有償工事 Ver2'!DE30"
               }
             }
           ],
@@ -1615,7 +1646,7 @@
           "UseSimpleBar": true
         },
         "ShowBandedRows": true,
-        "PivotTableID": "cd634fa3-0777-45bb-9924-e37c6ab0a38a",
+        "PivotTableID": "4ab04bbb-5dc1-40fb-bb87-37276bb35b3b",
         "TemplateKey": "Accent_5_3"
       }
     },
@@ -1632,11 +1663,11 @@
           "ColumnBindingInfo": {
             "TableName": "v_艇種集計用",
             "ColumnName": "日付",
-            "GUID": "f23994f3-afc5-4ad1-a794-2206b2298e03"
+            "GUID": "99c8d929-2848-41a1-8ec5-21324ce80230"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!F5"
+            "SerializeProperty": "='その他有償工事 Ver2'!F5"
           }
         },
         "TopCondition": null,
@@ -1652,7 +1683,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "工事区分",
-        "GUID": "0c57b7b7-8800-4645-8f84-1c92687795bb"
+        "GUID": "64dba44e-8685-42ea-b2cd-7e0fdf83d68c"
       }
     },
     "29,57": {
@@ -1660,7 +1691,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "工事番号",
-        "GUID": "4bf10ef1-6fc5-4003-879a-8d6340b62a23"
+        "GUID": "dab884fe-4b46-4e15-be77-c0ee8b93e450"
       }
     },
     "29,65": {
@@ -1668,7 +1699,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "艇種",
-        "GUID": "0fc8d378-d4e3-4c18-a0e0-d09105bbfad6"
+        "GUID": "64ec3f8e-83e3-42bb-a4f4-01414b5f661f"
       }
     },
     "29,69": {
@@ -1676,78 +1707,57 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "社員コード",
-        "GUID": "22a772a7-18e1-47be-80cd-4a3bdd70a529"
+        "GUID": "b294f17e-ac7b-425e-8931-ae5199a7f793"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
-        "DataSource": "ymia_m_seisan_kouteishain",
+        "DataSource": "ymia_m_seisan_kouteishain_new",
         "ValueColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "835f6a2c-ae67-456c-b37c-5c767489e749"
+          "GUID": "e451381c-a92a-4926-a24e-b31ac643f355"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "92fc9d6d-23ea-4a94-8ef7-040a27150325",
+          "GUID": "3cb86cd2-2886-44d8-9d1b-50756441194e",
           "RelationBinding": {
             "RelatedTable": "ユーザー情報ビュー",
             "RelatedColumn": "ユーザー名",
             "DisplayColumn": "氏名"
           }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "ymia_m_seisan_kouteishain",
-            "ColumnName": "工程コード",
-            "GUID": "74188a65-2f5c-4c5b-9005-cfe8281254d2"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!BX30"
-          }
-        },
         "ItemsSort": {
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "ymia_m_seisan_kouteishain",
-                "ColumnName": "代表者",
-                "GUID": "7a7b076d-919e-4ce3-9a20-096942875949"
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "2f07fb17-f8ef-4fb0-b2f9-be621a1aae35"
               },
-              "Order": 1
+              "Order": 0
             }
           ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "7261da80bc664274b6612ec728d73032",
+            "GUID": "fe684bcf3102452fad8aec596f664b99",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "工程コード",
-              "GUID": "49f99aaf-173c-4eb7-83cb-eb8e4e98f3b4"
-            },
-            "ColumnName": "工程コード"
-          },
-          {
-            "GUID": "01eed41c77aa498b8438b885762815fc",
-            "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "a151ac9a-2604-4e18-be81-b4e053a7fec0"
+              "GUID": "339a98ff-cf6b-4727-9634-f8c1f5856f80"
             },
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "c89f9acb6f434c7d94d5abcb364012b1",
+            "GUID": "1c303242af97414aa2c51fea1f71b179",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "c296c89e-0e64-45ff-82d6-7d1902e2c9db",
+              "GUID": "7921111f-e01b-44fa-9cf4-b71302174427",
               "RelationBinding": {
                 "RelatedTable": "ユーザー情報ビュー",
                 "RelatedColumn": "ユーザー名",
@@ -1757,13 +1767,18 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "d9733bef74b84ee6a2d5cf0f9829e071",
+            "GUID": "74ba08d9d8f74825a47af21a96e3afb2",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "代表者",
-              "GUID": "eb4ae3d5-2efb-4eef-8577-455fef3ff37a"
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "b0f9f098-78e1-4758-a947-893a35ee4c9c",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
-            "ColumnName": "代表者"
+            "ColumnName": "工程名"
           }
         ]
       },
@@ -1776,7 +1791,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "工程コード",
-        "GUID": "fb43978e-4a87-4a9f-b03a-60a2af62fa69"
+        "GUID": "7a625451-55ee-4d05-a2a2-ab782f3a6cb2"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1786,12 +1801,12 @@
         "ValueColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_CODE",
-          "GUID": "eeeeb914-25b3-418b-a3e5-9fad5022fea1"
+          "GUID": "4ea96255-feb3-4c4c-be95-7f2ec4e03944"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_NAME",
-          "GUID": "687fb294-2f01-4f85-bf2b-47fca80fe7f3"
+          "GUID": "9a44f0a2-eb45-4d17-b1fe-403fa83ef0b8"
         },
         "DropDownSubItems": [
           {
@@ -1799,7 +1814,7 @@
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_CODE",
-              "GUID": "60709e18-c748-4d09-b87d-ed9e1b2bd32c"
+              "GUID": "0e8ad5f6-e16b-45d2-a9cb-c1aaae888f47"
             },
             "ColumnName": "工程コード"
           },
@@ -1808,7 +1823,7 @@
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_NAME",
-              "GUID": "f09c1aff-0a73-434b-a93b-2ef6717765bd"
+              "GUID": "8ccdcb9a-3942-4cfd-ab76-576e8279648b"
             },
             "ColumnName": "工程名"
           }
@@ -1823,7 +1838,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "日付",
-        "GUID": "6d4ad805-d291-4692-9288-3ec177e26786"
+        "GUID": "fa80da82-231b-4770-ac3f-ffd03fce915d"
       }
     },
     "29,87": {
@@ -1831,7 +1846,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "作業内容",
-        "GUID": "b4258eb1-dba9-4679-8c95-265d0fd4b54f"
+        "GUID": "dbe469bd-d28a-4eeb-bf78-26f7168ae3dd"
       }
     },
     "29,103": {
@@ -1839,7 +1854,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "作業時間",
-        "GUID": "0cf5b673-d4db-4ec1-b89f-23d1c8e02f9f"
+        "GUID": "05b42421-13d8-49f6-94dd-cecd23ac35b8"
       }
     },
     "29,108": {
@@ -1847,7 +1862,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "KOTEI_NAME",
-        "GUID": "29c69b48-7560-42af-ad50-da8548773d6a"
+        "GUID": "cd12d9d6-b90d-4087-8ffa-353fc977b69f"
       }
     },
     "40,1": {
@@ -1861,7 +1876,7 @@
               "DisplayName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BB45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BB45"
               },
               "BackgroundValue": {}
             }
@@ -1872,7 +1887,7 @@
               "DisplayName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!DE45"
+                "SerializeProperty": "='その他有償工事 Ver2'!DE45"
               },
               "BackgroundValue": {}
             }
@@ -1883,7 +1898,7 @@
               "DisplayName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CZ45"
+                "SerializeProperty": "='その他有償工事 Ver2'!CZ45"
               },
               "Aggregator": 0,
               "TotalAggregator": 0,
@@ -1895,63 +1910,63 @@
               "DatabaseColumnName": "工事区分",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BB45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BB45"
               }
             },
             {
               "DatabaseColumnName": "工事番号",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BF45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BF45"
               }
             },
             {
               "DatabaseColumnName": "艇種",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BN45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BN45"
               }
             },
             {
               "DatabaseColumnName": "社員コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BR45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BR45"
               }
             },
             {
               "DatabaseColumnName": "工程コード",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!BX45"
+                "SerializeProperty": "='その他有償工事 Ver2'!BX45"
               }
             },
             {
               "DatabaseColumnName": "日付",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CD45"
+                "SerializeProperty": "='その他有償工事 Ver2'!CD45"
               }
             },
             {
               "DatabaseColumnName": "作業内容",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CJ45"
+                "SerializeProperty": "='その他有償工事 Ver2'!CJ45"
               }
             },
             {
               "DatabaseColumnName": "作業時間",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!CZ45"
+                "SerializeProperty": "='その他有償工事 Ver2'!CZ45"
               }
             },
             {
               "DatabaseColumnName": "KOTEI_NAME",
               "ColumnCell": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "=その他有償工事!DE45"
+                "SerializeProperty": "='その他有償工事 Ver2'!DE45"
               }
             }
           ],
@@ -2037,7 +2052,7 @@
           "UseSimpleBar": true
         },
         "ShowBandedRows": true,
-        "PivotTableID": "e3174a9b-ccd7-4444-bf5c-f0106f406b79",
+        "PivotTableID": "3d361a7a-3e5b-4963-86dc-cc79209e814f",
         "TemplateKey": "Accent_5_3"
       }
     },
@@ -2054,11 +2069,11 @@
           "ColumnBindingInfo": {
             "TableName": "v_工事集計用",
             "ColumnName": "日付",
-            "GUID": "ebab1617-36bd-48d0-9b01-4633037c3e0b"
+            "GUID": "d6c931ae-6d14-4d09-92e5-f8ecf87b929b"
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!F5"
+            "SerializeProperty": "='その他有償工事 Ver2'!F5"
           }
         },
         "TopCondition": null,
@@ -2074,7 +2089,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "工事区分",
-        "GUID": "54aef82c-a3e9-4b8c-a48b-880922d5c8a4"
+        "GUID": "3c9e98a2-29ee-4105-aa51-43becbfdfca0"
       }
     },
     "44,57": {
@@ -2082,7 +2097,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "工事番号",
-        "GUID": "cea70292-46c3-477f-bee5-b127e491ae4b"
+        "GUID": "2020dc63-0d82-4b65-bfd4-906872a6448a"
       }
     },
     "44,65": {
@@ -2090,7 +2105,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "艇種",
-        "GUID": "8a22ab7a-b13b-42cf-8de2-cce8b49c0f4f"
+        "GUID": "d19faf96-7484-4cd2-b643-7a28fe4769da"
       }
     },
     "44,69": {
@@ -2098,78 +2113,57 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "社員コード",
-        "GUID": "cf43cf99-1bc1-49ce-bb42-97ea3617df1b"
+        "GUID": "3b38c477-7c15-49fd-bab6-fdbf830de994"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
         "MaxDropDownItemCount": 10,
         "IsBounding": true,
-        "DataSource": "ymia_m_seisan_kouteishain",
+        "DataSource": "ymia_m_seisan_kouteishain_new",
         "ValueColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "68d8ada2-34c2-4364-90d1-d620e4ceaf89"
+          "GUID": "594a180e-14cd-4720-b0c0-7fefdbaff6ba"
         },
         "DisplayColumnBindingInfo": {
-          "TableName": "ymia_m_seisan_kouteishain",
+          "TableName": "ymia_m_seisan_kouteishain_new",
           "ColumnName": "社員コード",
-          "GUID": "e70f19ce-a7dd-466a-946e-45376ec9a9d2",
+          "GUID": "04928c7e-7245-4349-8d13-a253654509e8",
           "RelationBinding": {
             "RelatedTable": "ユーザー情報ビュー",
             "RelatedColumn": "ユーザー名",
             "DisplayColumn": "氏名"
           }
         },
-        "ItemsQuery": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "ColumnBindingInfo": {
-            "TableName": "ymia_m_seisan_kouteishain",
-            "ColumnName": "工程コード",
-            "GUID": "9cb3dbc6-7fbf-4a4b-be9d-acade4f81a92"
-          },
-          "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "=その他有償工事!BX45"
-          }
-        },
         "ItemsSort": {
           "OrderByColumns": [
             {
               "ColumnBindingInfo": {
-                "TableName": "ymia_m_seisan_kouteishain",
-                "ColumnName": "代表者",
-                "GUID": "4b8e009b-edd8-4562-a0b1-3e0115b61e12"
+                "TableName": "ymia_m_seisan_kouteishain_new",
+                "ColumnName": "工程コード",
+                "GUID": "ce9ae498-0173-48f9-8e38-ca9b6b33cde5"
               },
-              "Order": 1
+              "Order": 0
             }
           ]
         },
         "DropDownSubItems": [
           {
-            "GUID": "d51ea24197d3421e89ebaad192ef864d",
+            "GUID": "cae3833fabfb4d47850d37a2a6efab86",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "工程コード",
-              "GUID": "a55f31e9-d99e-4a6c-8d43-336b74969e1c"
-            },
-            "ColumnName": "工程コード"
-          },
-          {
-            "GUID": "08cfac0f81dc4f4293ca81d5886b83f3",
-            "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "c3ab54bd-7971-4a98-aa15-d31e986a99b1"
+              "GUID": "b17a6a41-af96-4bb2-98f9-3d757843fb8b"
             },
             "ColumnName": "社員コード"
           },
           {
-            "GUID": "1256739ba5bb4986a859a419e3aad762",
+            "GUID": "1e94df28e0bf4754b4da421cb91e2aac",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
+              "TableName": "ymia_m_seisan_kouteishain_new",
               "ColumnName": "社員コード",
-              "GUID": "6d6772e9-eff3-4782-83bb-cae663d43011",
+              "GUID": "fec1ed84-39e9-49b2-a248-7854be89bb5b",
               "RelationBinding": {
                 "RelatedTable": "ユーザー情報ビュー",
                 "RelatedColumn": "ユーザー名",
@@ -2179,13 +2173,18 @@
             "ColumnName": "氏名"
           },
           {
-            "GUID": "d97728d36fad42b78566eae1fee2b144",
+            "GUID": "b224153586094bd4b13d6954f268165a",
             "BindingInfo": {
-              "TableName": "ymia_m_seisan_kouteishain",
-              "ColumnName": "代表者",
-              "GUID": "a8b023b6-4bf9-4e6c-9121-95da1832efd3"
+              "TableName": "ymia_m_seisan_kouteishain_new",
+              "ColumnName": "工程コード",
+              "GUID": "96249d81-1d5c-45c8-9cba-498c6602e972",
+              "RelationBinding": {
+                "RelatedTable": "mkoteiname",
+                "RelatedColumn": "KOTEI_CODE",
+                "DisplayColumn": "KOTEI_NAME"
+              }
             },
-            "ColumnName": "代表者"
+            "ColumnName": "工程名"
           }
         ]
       },
@@ -2198,7 +2197,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "工程コード",
-        "GUID": "a8dc1f81-0e32-43af-a02f-4480651b324b"
+        "GUID": "20e5941a-b32e-4f2e-96b8-ac19e56968ba"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -2208,12 +2207,12 @@
         "ValueColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_CODE",
-          "GUID": "6a7eabef-600a-4227-bb8c-ecd43f099a29"
+          "GUID": "0508826b-ef2d-479d-b6ab-1ffa229be6ae"
         },
         "DisplayColumnBindingInfo": {
           "TableName": "mkoteiname",
           "ColumnName": "KOTEI_NAME",
-          "GUID": "7e12e442-bc36-455b-9741-9b165fed6c49"
+          "GUID": "72cdce90-cfb4-45a6-b40b-ca709ebbc84c"
         },
         "DropDownSubItems": [
           {
@@ -2221,7 +2220,7 @@
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_CODE",
-              "GUID": "a75795fb-9b45-4f3a-8605-a4e21cab3f08"
+              "GUID": "10b3d92d-1774-4515-8163-c4ad3c0c568d"
             },
             "ColumnName": "工程コード"
           },
@@ -2230,7 +2229,7 @@
             "BindingInfo": {
               "TableName": "mkoteiname",
               "ColumnName": "KOTEI_NAME",
-              "GUID": "d868cfc5-7d32-4d88-9f24-3cf2b70b1cb3"
+              "GUID": "c18a58ad-fcb9-49d3-ba47-654b4a88b1a1"
             },
             "ColumnName": "工程名"
           }
@@ -2245,7 +2244,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "日付",
-        "GUID": "64c6f3ab-269f-476e-a431-286ab5ddef53"
+        "GUID": "6b9aed2b-155b-4fc4-abe6-e70c89a9ae1a"
       }
     },
     "44,87": {
@@ -2253,7 +2252,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "作業内容",
-        "GUID": "64f4225f-bc6d-4854-b64a-6d561af03cc3"
+        "GUID": "960c0466-8766-4913-8684-38492c28beb1"
       }
     },
     "44,103": {
@@ -2261,7 +2260,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "作業時間",
-        "GUID": "aff7bac6-c711-469f-b264-f8fb5b979360"
+        "GUID": "f7a8444d-3fc0-4c6a-ade0-7802a791e042"
       }
     },
     "44,108": {
@@ -2269,7 +2268,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "KOTEI_NAME",
-        "GUID": "ebba97e6-9314-400a-a7ef-5a00a56d557c"
+        "GUID": "ac7391fe-6dfa-40a0-9358-86ad7b7c7094"
       }
     },
     "53,1": {
@@ -2293,7 +2292,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "d2db9676-cbb8-47ac-93d9-8f5a8361f651"
+                "ID": "0263921a-fc03-4513-ae73-7718e2b2969f"
               },
               {
                 "CommandList": [
@@ -2301,7 +2300,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "fbfce527-6cd3-4a0f-94df-e48cb159c893"
+                "ID": "47f76b46-7bae-4b0d-a119-b606c28f7101"
               }
             ]
           }
@@ -2341,63 +2340,63 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!B11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!B11"
                         },
                         "ColumnName": "工事区分"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!F11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!F11"
                         },
                         "ColumnName": "工事番号"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!N11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!N11"
                         },
                         "ColumnName": "艇種"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!R11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!R11"
                         },
                         "ColumnName": "工程コード"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!X11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!X11"
                         },
                         "ColumnName": "社員コード"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AD11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AD11"
                         },
                         "ColumnName": "日付"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AH11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AH11"
                         },
                         "ColumnName": "作業内容"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=その他有償工事!AV11"
+                          "SerializeProperty": "='その他有償工事 Ver2'!AV11"
                         },
                         "ColumnName": "作業時間"
                       }
                     ]
                   }
                 ],
-                "ID": "564f2d1a-b2dd-4691-ade3-3b3a18c461bd"
+                "ID": "29ae0c31-c8af-4970-96aa-9c5f694ca711"
               }
             ]
           }
@@ -2466,11 +2465,41 @@
       },
       {
         "FontFamily": 0,
+        "FontWeight": 6,
+        "Foreground": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
         "BorderLeft": 0
       },
       {
         "FontFamily": 0,
         "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 6,
+        "Foreground": 1,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontWeight": 6,
+        "Foreground": 1
       },
       {
         "Background": 2,
@@ -2486,7 +2515,7 @@
         "BorderRight": 0
       },
       {
-        "HorizontalAlignment": 6,
+        "HorizontalAlignment": 8,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0
@@ -2502,41 +2531,30 @@
       },
       {
         "FontSize": 13.333333333333332,
-        "Formatter": 7,
-        "HorizontalAlignment": 6,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderBottom": 0,
-        "BorderTop": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "Formatter": 7,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 7,
+        "Formatter": 9,
         "HorizontalAlignment": 8,
         "BorderBottom": 0,
         "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Formatter": 9,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 9,
+        "HorizontalAlignment": 10,
+        "BorderBottom": 0,
+        "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
@@ -2546,12 +2564,6 @@
         "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
-      },
-      {
-        "FontFamily": 0,
-        "FontWeight": 9,
-        "Foreground": 1,
-        "Formatter": 10
       },
       {
         "HorizontalAlignment": 11
@@ -2563,13 +2575,13 @@
       {
         "FontFamily": 0,
         "Formatter": 12,
-        "HorizontalAlignment": 6,
+        "HorizontalAlignment": 8,
         "ShrinkToFit": true
       },
       {
         "FontFamily": 0,
         "Formatter": 13,
-        "HorizontalAlignment": 8
+        "HorizontalAlignment": 10
       },
       {
         "FontFamily": 0,
@@ -2598,11 +2610,11 @@
         "HGP創英角ｺﾞｼｯｸUB",
         "Text 1 0",
         "black",
+        "Bold",
+        "[AUTO]General",
         "Center",
         "@",
         "Right",
-        "Bold",
-        "[AUTO]General",
         "Left",
         "yyyy/MM/dd",
         "#,##0",
@@ -2727,7 +2739,14 @@
       "1,100": 5,
       "1,101": 5,
       "1,102": 6,
-      "2,53": 7,
+      "1,104": 7,
+      "1,105": 8,
+      "1,106": 8,
+      "1,107": 8,
+      "1,108": 8,
+      "1,109": 8,
+      "1,110": 9,
+      "2,53": 10,
       "2,54": 1,
       "2,55": 1,
       "2,56": 1,
@@ -2776,58 +2795,65 @@
       "2,99": 1,
       "2,100": 1,
       "2,101": 1,
-      "2,102": 8,
-      "3,1": 9,
-      "3,2": 10,
-      "3,3": 10,
-      "3,4": 10,
-      "3,5": 11,
-      "3,6": 12,
-      "3,7": 12,
-      "3,8": 12,
-      "3,9": 12,
-      "3,10": 13,
-      "3,11": 9,
-      "3,12": 10,
-      "3,13": 10,
-      "3,14": 10,
-      "3,15": 14,
-      "3,16": 12,
-      "3,17": 12,
-      "3,18": 12,
-      "3,19": 12,
-      "3,20": 13,
-      "3,21": 9,
-      "3,22": 10,
-      "3,23": 10,
-      "3,24": 10,
-      "3,25": 11,
-      "3,26": 12,
-      "3,27": 12,
-      "3,28": 12,
-      "3,29": 12,
-      "3,30": 13,
-      "3,31": 9,
-      "3,32": 10,
-      "3,33": 10,
-      "3,34": 10,
-      "3,35": 15,
-      "3,36": 16,
-      "3,37": 16,
-      "3,38": 16,
-      "3,39": 16,
-      "3,40": 17,
-      "3,41": 9,
-      "3,42": 10,
-      "3,43": 10,
-      "3,44": 10,
-      "3,45": 15,
-      "3,46": 12,
-      "3,47": 12,
-      "3,48": 12,
-      "3,49": 12,
-      "3,50": 13,
-      "3,53": 7,
+      "2,102": 11,
+      "2,104": 12,
+      "2,105": 13,
+      "2,106": 13,
+      "2,107": 13,
+      "2,108": 13,
+      "2,109": 13,
+      "2,110": 13,
+      "3,1": 14,
+      "3,2": 15,
+      "3,3": 15,
+      "3,4": 15,
+      "3,5": 16,
+      "3,6": 17,
+      "3,7": 17,
+      "3,8": 17,
+      "3,9": 17,
+      "3,10": 18,
+      "3,11": 14,
+      "3,12": 15,
+      "3,13": 15,
+      "3,14": 15,
+      "3,15": 19,
+      "3,16": 17,
+      "3,17": 17,
+      "3,18": 17,
+      "3,19": 17,
+      "3,20": 18,
+      "3,21": 14,
+      "3,22": 15,
+      "3,23": 15,
+      "3,24": 15,
+      "3,25": 16,
+      "3,26": 17,
+      "3,27": 17,
+      "3,28": 17,
+      "3,29": 17,
+      "3,30": 18,
+      "3,31": 14,
+      "3,32": 15,
+      "3,33": 15,
+      "3,34": 15,
+      "3,35": 20,
+      "3,36": 8,
+      "3,37": 8,
+      "3,38": 8,
+      "3,39": 8,
+      "3,40": 9,
+      "3,41": 14,
+      "3,42": 15,
+      "3,43": 15,
+      "3,44": 15,
+      "3,45": 20,
+      "3,46": 17,
+      "3,47": 17,
+      "3,48": 17,
+      "3,49": 17,
+      "3,50": 18,
+      "3,53": 10,
       "3,54": 1,
       "3,55": 1,
       "3,56": 1,
@@ -2876,58 +2902,65 @@
       "3,99": 1,
       "3,100": 1,
       "3,101": 1,
-      "3,102": 8,
-      "4,1": 9,
-      "4,2": 10,
-      "4,3": 10,
-      "4,4": 10,
-      "4,5": 15,
-      "4,6": 16,
-      "4,7": 16,
-      "4,8": 16,
-      "4,9": 16,
-      "4,10": 17,
-      "4,11": 9,
-      "4,12": 10,
-      "4,13": 10,
-      "4,14": 10,
-      "4,15": 18,
-      "4,16": 12,
-      "4,17": 12,
-      "4,18": 12,
-      "4,19": 12,
-      "4,20": 12,
-      "4,21": 12,
-      "4,22": 12,
-      "4,23": 12,
-      "4,24": 12,
-      "4,25": 12,
-      "4,26": 12,
-      "4,27": 12,
-      "4,28": 12,
-      "4,29": 12,
-      "4,30": 12,
-      "4,31": 12,
-      "4,32": 12,
-      "4,33": 12,
-      "4,34": 12,
-      "4,35": 12,
-      "4,36": 12,
-      "4,37": 12,
-      "4,38": 12,
-      "4,39": 12,
-      "4,40": 13,
-      "4,41": 9,
-      "4,42": 10,
-      "4,43": 10,
-      "4,44": 10,
-      "4,45": 19,
-      "4,46": 20,
-      "4,47": 20,
-      "4,48": 20,
-      "4,49": 20,
-      "4,50": 20,
-      "4,53": 7,
+      "3,102": 11,
+      "3,104": 12,
+      "3,105": 13,
+      "3,106": 13,
+      "3,107": 13,
+      "3,108": 13,
+      "3,109": 13,
+      "3,110": 13,
+      "4,1": 14,
+      "4,2": 15,
+      "4,3": 15,
+      "4,4": 15,
+      "4,5": 20,
+      "4,6": 8,
+      "4,7": 8,
+      "4,8": 8,
+      "4,9": 8,
+      "4,10": 9,
+      "4,11": 14,
+      "4,12": 15,
+      "4,13": 15,
+      "4,14": 15,
+      "4,15": 21,
+      "4,16": 17,
+      "4,17": 17,
+      "4,18": 17,
+      "4,19": 17,
+      "4,20": 17,
+      "4,21": 17,
+      "4,22": 17,
+      "4,23": 17,
+      "4,24": 17,
+      "4,25": 17,
+      "4,26": 17,
+      "4,27": 17,
+      "4,28": 17,
+      "4,29": 17,
+      "4,30": 17,
+      "4,31": 17,
+      "4,32": 17,
+      "4,33": 17,
+      "4,34": 17,
+      "4,35": 17,
+      "4,36": 17,
+      "4,37": 17,
+      "4,38": 17,
+      "4,39": 17,
+      "4,40": 18,
+      "4,41": 14,
+      "4,42": 15,
+      "4,43": 15,
+      "4,44": 15,
+      "4,45": 22,
+      "4,46": 23,
+      "4,47": 23,
+      "4,48": 23,
+      "4,49": 23,
+      "4,50": 23,
+      "4,53": 10,
       "4,54": 1,
       "4,55": 1,
       "4,56": 1,
@@ -2976,8 +3009,8 @@
       "4,99": 1,
       "4,100": 1,
       "4,101": 1,
-      "4,102": 8,
-      "5,53": 7,
+      "4,102": 11,
+      "5,53": 10,
       "5,54": 1,
       "5,55": 1,
       "5,56": 1,
@@ -3026,8 +3059,18 @@
       "5,99": 1,
       "5,100": 1,
       "5,101": 1,
-      "5,102": 8,
-      "6,53": 7,
+      "5,102": 11,
+      "5,104": 1,
+      "5,105": 1,
+      "5,106": 1,
+      "5,107": 1,
+      "5,108": 1,
+      "5,109": 1,
+      "5,110": 1,
+      "5,111": 1,
+      "5,112": 1,
+      "5,113": 1,
+      "6,53": 10,
       "6,54": 1,
       "6,55": 1,
       "6,56": 1,
@@ -3076,8 +3119,18 @@
       "6,99": 1,
       "6,100": 1,
       "6,101": 1,
-      "6,102": 8,
-      "7,53": 7,
+      "6,102": 11,
+      "6,104": 1,
+      "6,105": 1,
+      "6,106": 1,
+      "6,107": 1,
+      "6,108": 1,
+      "6,109": 1,
+      "6,110": 1,
+      "6,111": 1,
+      "6,112": 1,
+      "6,113": 1,
+      "7,53": 10,
       "7,54": 1,
       "7,55": 1,
       "7,56": 1,
@@ -3126,9 +3179,19 @@
       "7,99": 1,
       "7,100": 1,
       "7,101": 1,
-      "7,102": 8,
-      "8,1": 21,
-      "8,53": 7,
+      "7,102": 11,
+      "7,104": 1,
+      "7,105": 1,
+      "7,106": 1,
+      "7,107": 1,
+      "7,108": 1,
+      "7,109": 1,
+      "7,110": 1,
+      "7,111": 1,
+      "7,112": 1,
+      "7,113": 1,
+      "8,1": 12,
+      "8,53": 10,
       "8,54": 1,
       "8,55": 1,
       "8,56": 1,
@@ -3177,7 +3240,7 @@
       "8,99": 1,
       "8,100": 1,
       "8,101": 1,
-      "8,102": 8,
+      "8,102": 11,
       "9,16": 1,
       "9,19": 1,
       "9,20": 1,
@@ -3193,7 +3256,7 @@
       "9,48": 1,
       "9,49": 1,
       "9,50": 1,
-      "9,53": 7,
+      "9,53": 10,
       "9,54": 1,
       "9,55": 1,
       "9,56": 1,
@@ -3242,30 +3305,30 @@
       "9,99": 1,
       "9,100": 1,
       "9,101": 1,
-      "9,102": 8,
-      "10,1": 22,
-      "10,5": 23,
-      "10,13": 23,
+      "9,102": 11,
+      "10,1": 24,
+      "10,5": 25,
+      "10,13": 25,
       "10,14": 1,
       "10,15": 1,
       "10,16": 1,
-      "10,17": 23,
+      "10,17": 25,
       "10,18": 1,
       "10,19": 1,
       "10,20": 1,
       "10,21": 1,
       "10,22": 1,
-      "10,23": 23,
-      "10,29": 24,
+      "10,23": 25,
+      "10,29": 26,
       "10,30": 1,
       "10,31": 1,
       "10,32": 1,
-      "10,33": 23,
-      "10,47": 25,
+      "10,33": 25,
+      "10,47": 27,
       "10,48": 1,
       "10,49": 1,
       "10,50": 1,
-      "10,53": 7,
+      "10,53": 10,
       "10,54": 1,
       "10,55": 1,
       "10,56": 1,
@@ -3314,8 +3377,8 @@
       "10,99": 1,
       "10,100": 1,
       "10,101": 1,
-      "10,102": 8,
-      "11,53": 7,
+      "10,102": 11,
+      "11,53": 10,
       "11,54": 1,
       "11,55": 1,
       "11,56": 1,
@@ -3364,7 +3427,7 @@
       "11,99": 1,
       "11,100": 1,
       "11,101": 1,
-      "11,102": 8,
+      "11,102": 11,
       "12,30": 1,
       "12,31": 1,
       "12,32": 1,
@@ -3386,56 +3449,56 @@
       "12,48": 1,
       "12,49": 1,
       "12,50": 1,
-      "12,53": 26,
-      "12,54": 27,
-      "12,55": 27,
-      "12,56": 27,
-      "12,57": 27,
-      "12,58": 27,
-      "12,59": 27,
-      "12,60": 27,
-      "12,61": 27,
-      "12,62": 27,
-      "12,63": 27,
-      "12,64": 27,
-      "12,65": 27,
-      "12,66": 27,
-      "12,67": 27,
-      "12,68": 27,
-      "12,69": 27,
-      "12,70": 27,
-      "12,71": 27,
-      "12,72": 27,
-      "12,73": 27,
-      "12,74": 27,
-      "12,75": 27,
-      "12,76": 27,
-      "12,77": 27,
-      "12,78": 27,
-      "12,79": 27,
-      "12,80": 27,
-      "12,81": 27,
-      "12,82": 27,
-      "12,83": 27,
-      "12,84": 27,
-      "12,85": 27,
-      "12,86": 27,
-      "12,87": 27,
-      "12,88": 27,
-      "12,89": 27,
-      "12,90": 27,
-      "12,91": 27,
-      "12,92": 27,
-      "12,93": 27,
-      "12,94": 27,
-      "12,95": 27,
-      "12,96": 27,
-      "12,97": 27,
-      "12,98": 27,
-      "12,99": 27,
-      "12,100": 27,
-      "12,101": 27,
-      "12,102": 28,
+      "12,53": 28,
+      "12,54": 29,
+      "12,55": 29,
+      "12,56": 29,
+      "12,57": 29,
+      "12,58": 29,
+      "12,59": 29,
+      "12,60": 29,
+      "12,61": 29,
+      "12,62": 29,
+      "12,63": 29,
+      "12,64": 29,
+      "12,65": 29,
+      "12,66": 29,
+      "12,67": 29,
+      "12,68": 29,
+      "12,69": 29,
+      "12,70": 29,
+      "12,71": 29,
+      "12,72": 29,
+      "12,73": 29,
+      "12,74": 29,
+      "12,75": 29,
+      "12,76": 29,
+      "12,77": 29,
+      "12,78": 29,
+      "12,79": 29,
+      "12,80": 29,
+      "12,81": 29,
+      "12,82": 29,
+      "12,83": 29,
+      "12,84": 29,
+      "12,85": 29,
+      "12,86": 29,
+      "12,87": 29,
+      "12,88": 29,
+      "12,89": 29,
+      "12,90": 29,
+      "12,91": 29,
+      "12,92": 29,
+      "12,93": 29,
+      "12,94": 29,
+      "12,95": 29,
+      "12,96": 29,
+      "12,97": 29,
+      "12,98": 29,
+      "12,99": 29,
+      "12,100": 29,
+      "12,101": 29,
+      "12,102": 30,
       "13,30": 1,
       "13,31": 1,
       "13,32": 1,
@@ -3599,7 +3662,7 @@
       "15,48": 1,
       "15,49": 1,
       "15,50": 1,
-      "15,53": 7,
+      "15,53": 10,
       "15,54": 1,
       "15,55": 1,
       "15,56": 1,
@@ -3648,7 +3711,7 @@
       "15,99": 1,
       "15,100": 1,
       "15,101": 1,
-      "15,102": 8,
+      "15,102": 11,
       "16,30": 1,
       "16,31": 1,
       "16,32": 1,
@@ -3670,7 +3733,7 @@
       "16,48": 1,
       "16,49": 1,
       "16,50": 1,
-      "16,53": 7,
+      "16,53": 10,
       "16,54": 1,
       "16,55": 1,
       "16,56": 1,
@@ -3719,7 +3782,7 @@
       "16,99": 1,
       "16,100": 1,
       "16,101": 1,
-      "16,102": 8,
+      "16,102": 11,
       "17,30": 1,
       "17,31": 1,
       "17,32": 1,
@@ -3741,7 +3804,7 @@
       "17,48": 1,
       "17,49": 1,
       "17,50": 1,
-      "17,53": 7,
+      "17,53": 10,
       "17,54": 1,
       "17,55": 1,
       "17,56": 1,
@@ -3790,8 +3853,8 @@
       "17,99": 1,
       "17,100": 1,
       "17,101": 1,
-      "17,102": 8,
-      "18,53": 7,
+      "17,102": 11,
+      "18,53": 10,
       "18,54": 1,
       "18,55": 1,
       "18,56": 1,
@@ -3840,8 +3903,8 @@
       "18,99": 1,
       "18,100": 1,
       "18,101": 1,
-      "18,102": 8,
-      "19,53": 7,
+      "18,102": 11,
+      "19,53": 10,
       "19,54": 1,
       "19,55": 1,
       "19,56": 1,
@@ -3890,8 +3953,8 @@
       "19,99": 1,
       "19,100": 1,
       "19,101": 1,
-      "19,102": 8,
-      "20,53": 7,
+      "19,102": 11,
+      "20,53": 10,
       "20,54": 1,
       "20,55": 1,
       "20,56": 1,
@@ -3940,8 +4003,8 @@
       "20,99": 1,
       "20,100": 1,
       "20,101": 1,
-      "20,102": 8,
-      "21,53": 7,
+      "20,102": 11,
+      "21,53": 10,
       "21,54": 1,
       "21,55": 1,
       "21,56": 1,
@@ -3990,8 +4053,8 @@
       "21,99": 1,
       "21,100": 1,
       "21,101": 1,
-      "21,102": 8,
-      "22,53": 7,
+      "21,102": 11,
+      "22,53": 10,
       "22,54": 1,
       "22,55": 1,
       "22,56": 1,
@@ -4040,8 +4103,8 @@
       "22,99": 1,
       "22,100": 1,
       "22,101": 1,
-      "22,102": 8,
-      "23,53": 7,
+      "22,102": 11,
+      "23,53": 10,
       "23,54": 1,
       "23,55": 1,
       "23,56": 1,
@@ -4090,8 +4153,8 @@
       "23,99": 1,
       "23,100": 1,
       "23,101": 1,
-      "23,102": 8,
-      "24,53": 7,
+      "23,102": 11,
+      "24,53": 10,
       "24,54": 1,
       "24,55": 1,
       "24,56": 1,
@@ -4140,57 +4203,57 @@
       "24,99": 1,
       "24,100": 1,
       "24,101": 1,
-      "24,102": 8,
-      "25,53": 26,
-      "25,54": 27,
-      "25,55": 27,
-      "25,56": 27,
-      "25,57": 27,
-      "25,58": 27,
-      "25,59": 27,
-      "25,60": 27,
-      "25,61": 27,
-      "25,62": 27,
-      "25,63": 27,
-      "25,64": 27,
-      "25,65": 27,
-      "25,66": 27,
-      "25,67": 27,
-      "25,68": 27,
-      "25,69": 27,
-      "25,70": 27,
-      "25,71": 27,
-      "25,72": 27,
-      "25,73": 27,
-      "25,74": 27,
-      "25,75": 27,
-      "25,76": 27,
-      "25,77": 27,
-      "25,78": 27,
-      "25,79": 27,
-      "25,80": 27,
-      "25,81": 27,
-      "25,82": 27,
-      "25,83": 27,
-      "25,84": 27,
-      "25,85": 27,
-      "25,86": 27,
-      "25,87": 27,
-      "25,88": 27,
-      "25,89": 27,
-      "25,90": 27,
-      "25,91": 27,
-      "25,92": 27,
-      "25,93": 27,
-      "25,94": 27,
-      "25,95": 27,
-      "25,96": 27,
-      "25,97": 27,
-      "25,98": 27,
-      "25,99": 27,
-      "25,100": 27,
-      "25,101": 27,
-      "25,102": 28,
+      "24,102": 11,
+      "25,53": 28,
+      "25,54": 29,
+      "25,55": 29,
+      "25,56": 29,
+      "25,57": 29,
+      "25,58": 29,
+      "25,59": 29,
+      "25,60": 29,
+      "25,61": 29,
+      "25,62": 29,
+      "25,63": 29,
+      "25,64": 29,
+      "25,65": 29,
+      "25,66": 29,
+      "25,67": 29,
+      "25,68": 29,
+      "25,69": 29,
+      "25,70": 29,
+      "25,71": 29,
+      "25,72": 29,
+      "25,73": 29,
+      "25,74": 29,
+      "25,75": 29,
+      "25,76": 29,
+      "25,77": 29,
+      "25,78": 29,
+      "25,79": 29,
+      "25,80": 29,
+      "25,81": 29,
+      "25,82": 29,
+      "25,83": 29,
+      "25,84": 29,
+      "25,85": 29,
+      "25,86": 29,
+      "25,87": 29,
+      "25,88": 29,
+      "25,89": 29,
+      "25,90": 29,
+      "25,91": 29,
+      "25,92": 29,
+      "25,93": 29,
+      "25,94": 29,
+      "25,95": 29,
+      "25,96": 29,
+      "25,97": 29,
+      "25,98": 29,
+      "25,99": 29,
+      "25,100": 29,
+      "25,101": 29,
+      "25,102": 30,
       "27,1": 4,
       "27,2": 5,
       "27,3": 5,
@@ -4300,7 +4363,7 @@
       "27,109": 1,
       "27,110": 1,
       "27,111": 1,
-      "28,1": 7,
+      "28,1": 10,
       "28,2": 1,
       "28,3": 1,
       "28,4": 1,
@@ -4349,7 +4412,7 @@
       "28,47": 1,
       "28,48": 1,
       "28,49": 1,
-      "28,50": 8,
+      "28,50": 11,
       "28,53": 1,
       "28,54": 1,
       "28,55": 1,
@@ -4409,7 +4472,7 @@
       "28,109": 1,
       "28,110": 1,
       "28,111": 1,
-      "29,1": 7,
+      "29,1": 10,
       "29,2": 1,
       "29,3": 1,
       "29,4": 1,
@@ -4458,7 +4521,7 @@
       "29,47": 1,
       "29,48": 1,
       "29,49": 1,
-      "29,50": 8,
+      "29,50": 11,
       "29,53": 1,
       "29,54": 1,
       "29,55": 1,
@@ -4487,7 +4550,7 @@
       "29,78": 1,
       "29,79": 1,
       "29,80": 1,
-      "29,81": 29,
+      "29,81": 31,
       "29,82": 1,
       "29,83": 1,
       "29,84": 1,
@@ -4518,7 +4581,7 @@
       "29,109": 1,
       "29,110": 1,
       "29,111": 1,
-      "30,1": 7,
+      "30,1": 10,
       "30,2": 1,
       "30,3": 1,
       "30,4": 1,
@@ -4567,7 +4630,7 @@
       "30,47": 1,
       "30,48": 1,
       "30,49": 1,
-      "30,50": 8,
+      "30,50": 11,
       "30,53": 1,
       "30,54": 1,
       "30,55": 1,
@@ -4627,7 +4690,7 @@
       "30,109": 1,
       "30,110": 1,
       "30,111": 1,
-      "31,1": 7,
+      "31,1": 10,
       "31,2": 1,
       "31,3": 1,
       "31,4": 1,
@@ -4676,7 +4739,7 @@
       "31,47": 1,
       "31,48": 1,
       "31,49": 1,
-      "31,50": 8,
+      "31,50": 11,
       "31,53": 1,
       "31,54": 1,
       "31,55": 1,
@@ -4736,7 +4799,7 @@
       "31,109": 1,
       "31,110": 1,
       "31,111": 1,
-      "32,1": 7,
+      "32,1": 10,
       "32,2": 1,
       "32,3": 1,
       "32,4": 1,
@@ -4785,7 +4848,7 @@
       "32,47": 1,
       "32,48": 1,
       "32,49": 1,
-      "32,50": 8,
+      "32,50": 11,
       "32,53": 1,
       "32,54": 1,
       "32,55": 1,
@@ -4845,7 +4908,7 @@
       "32,109": 1,
       "32,110": 1,
       "32,111": 1,
-      "33,1": 7,
+      "33,1": 10,
       "33,2": 1,
       "33,3": 1,
       "33,4": 1,
@@ -4894,7 +4957,7 @@
       "33,47": 1,
       "33,48": 1,
       "33,49": 1,
-      "33,50": 8,
+      "33,50": 11,
       "33,53": 1,
       "33,54": 1,
       "33,55": 1,
@@ -4954,7 +5017,7 @@
       "33,109": 1,
       "33,110": 1,
       "33,111": 1,
-      "34,1": 7,
+      "34,1": 10,
       "34,2": 1,
       "34,3": 1,
       "34,4": 1,
@@ -5003,7 +5066,7 @@
       "34,47": 1,
       "34,48": 1,
       "34,49": 1,
-      "34,50": 8,
+      "34,50": 11,
       "34,53": 1,
       "34,54": 1,
       "34,55": 1,
@@ -5063,7 +5126,7 @@
       "34,109": 1,
       "34,110": 1,
       "34,111": 1,
-      "35,1": 7,
+      "35,1": 10,
       "35,2": 1,
       "35,3": 1,
       "35,4": 1,
@@ -5112,7 +5175,7 @@
       "35,47": 1,
       "35,48": 1,
       "35,49": 1,
-      "35,50": 8,
+      "35,50": 11,
       "35,53": 1,
       "35,54": 1,
       "35,55": 1,
@@ -5172,7 +5235,7 @@
       "35,109": 1,
       "35,110": 1,
       "35,111": 1,
-      "36,1": 7,
+      "36,1": 10,
       "36,2": 1,
       "36,3": 1,
       "36,4": 1,
@@ -5221,7 +5284,7 @@
       "36,47": 1,
       "36,48": 1,
       "36,49": 1,
-      "36,50": 8,
+      "36,50": 11,
       "36,53": 1,
       "36,54": 1,
       "36,55": 1,
@@ -5281,7 +5344,7 @@
       "36,109": 1,
       "36,110": 1,
       "36,111": 1,
-      "37,1": 7,
+      "37,1": 10,
       "37,2": 1,
       "37,3": 1,
       "37,4": 1,
@@ -5330,7 +5393,7 @@
       "37,47": 1,
       "37,48": 1,
       "37,49": 1,
-      "37,50": 8,
+      "37,50": 11,
       "37,53": 1,
       "37,54": 1,
       "37,55": 1,
@@ -5390,56 +5453,56 @@
       "37,109": 1,
       "37,110": 1,
       "37,111": 1,
-      "38,1": 26,
-      "38,2": 27,
-      "38,3": 27,
-      "38,4": 27,
-      "38,5": 27,
-      "38,6": 27,
-      "38,7": 27,
-      "38,8": 27,
-      "38,9": 27,
-      "38,10": 27,
-      "38,11": 27,
-      "38,12": 27,
-      "38,13": 27,
-      "38,14": 27,
-      "38,15": 27,
-      "38,16": 27,
-      "38,17": 27,
-      "38,18": 27,
-      "38,19": 27,
-      "38,20": 27,
-      "38,21": 27,
-      "38,22": 27,
-      "38,23": 27,
-      "38,24": 27,
-      "38,25": 27,
-      "38,26": 27,
-      "38,27": 27,
-      "38,28": 27,
-      "38,29": 27,
-      "38,30": 27,
-      "38,31": 27,
-      "38,32": 27,
-      "38,33": 27,
-      "38,34": 27,
-      "38,35": 27,
-      "38,36": 27,
-      "38,37": 27,
-      "38,38": 27,
-      "38,39": 27,
-      "38,40": 27,
-      "38,41": 27,
-      "38,42": 27,
-      "38,43": 27,
-      "38,44": 27,
-      "38,45": 27,
-      "38,46": 27,
-      "38,47": 27,
-      "38,48": 27,
-      "38,49": 27,
-      "38,50": 28,
+      "38,1": 28,
+      "38,2": 29,
+      "38,3": 29,
+      "38,4": 29,
+      "38,5": 29,
+      "38,6": 29,
+      "38,7": 29,
+      "38,8": 29,
+      "38,9": 29,
+      "38,10": 29,
+      "38,11": 29,
+      "38,12": 29,
+      "38,13": 29,
+      "38,14": 29,
+      "38,15": 29,
+      "38,16": 29,
+      "38,17": 29,
+      "38,18": 29,
+      "38,19": 29,
+      "38,20": 29,
+      "38,21": 29,
+      "38,22": 29,
+      "38,23": 29,
+      "38,24": 29,
+      "38,25": 29,
+      "38,26": 29,
+      "38,27": 29,
+      "38,28": 29,
+      "38,29": 29,
+      "38,30": 29,
+      "38,31": 29,
+      "38,32": 29,
+      "38,33": 29,
+      "38,34": 29,
+      "38,35": 29,
+      "38,36": 29,
+      "38,37": 29,
+      "38,38": 29,
+      "38,39": 29,
+      "38,40": 29,
+      "38,41": 29,
+      "38,42": 29,
+      "38,43": 29,
+      "38,44": 29,
+      "38,45": 29,
+      "38,46": 29,
+      "38,47": 29,
+      "38,48": 29,
+      "38,49": 29,
+      "38,50": 30,
       "38,53": 1,
       "38,54": 1,
       "38,55": 1,
@@ -5717,7 +5780,7 @@
       "40,109": 1,
       "40,110": 1,
       "40,111": 1,
-      "41,1": 7,
+      "41,1": 10,
       "41,2": 1,
       "41,3": 1,
       "41,4": 1,
@@ -5766,7 +5829,7 @@
       "41,47": 1,
       "41,48": 1,
       "41,49": 1,
-      "41,50": 8,
+      "41,50": 11,
       "41,53": 1,
       "41,54": 1,
       "41,55": 1,
@@ -5826,7 +5889,7 @@
       "41,109": 1,
       "41,110": 1,
       "41,111": 1,
-      "42,1": 7,
+      "42,1": 10,
       "42,2": 1,
       "42,3": 1,
       "42,4": 1,
@@ -5875,7 +5938,7 @@
       "42,47": 1,
       "42,48": 1,
       "42,49": 1,
-      "42,50": 8,
+      "42,50": 11,
       "42,53": 1,
       "42,54": 1,
       "42,55": 1,
@@ -5935,7 +5998,7 @@
       "42,109": 1,
       "42,110": 1,
       "42,111": 1,
-      "43,1": 7,
+      "43,1": 10,
       "43,2": 1,
       "43,3": 1,
       "43,4": 1,
@@ -5984,7 +6047,7 @@
       "43,47": 1,
       "43,48": 1,
       "43,49": 1,
-      "43,50": 8,
+      "43,50": 11,
       "43,53": 1,
       "43,54": 1,
       "43,55": 1,
@@ -6044,7 +6107,7 @@
       "43,109": 1,
       "43,110": 1,
       "43,111": 1,
-      "44,1": 7,
+      "44,1": 10,
       "44,2": 1,
       "44,3": 1,
       "44,4": 1,
@@ -6093,7 +6156,7 @@
       "44,47": 1,
       "44,48": 1,
       "44,49": 1,
-      "44,50": 8,
+      "44,50": 11,
       "44,53": 1,
       "44,54": 1,
       "44,55": 1,
@@ -6122,7 +6185,7 @@
       "44,78": 1,
       "44,79": 1,
       "44,80": 1,
-      "44,81": 29,
+      "44,81": 31,
       "44,82": 1,
       "44,83": 1,
       "44,84": 1,
@@ -6153,7 +6216,7 @@
       "44,109": 1,
       "44,110": 1,
       "44,111": 1,
-      "45,1": 7,
+      "45,1": 10,
       "45,2": 1,
       "45,3": 1,
       "45,4": 1,
@@ -6202,7 +6265,7 @@
       "45,47": 1,
       "45,48": 1,
       "45,49": 1,
-      "45,50": 8,
+      "45,50": 11,
       "45,53": 1,
       "45,54": 1,
       "45,55": 1,
@@ -6262,7 +6325,7 @@
       "45,109": 1,
       "45,110": 1,
       "45,111": 1,
-      "46,1": 7,
+      "46,1": 10,
       "46,2": 1,
       "46,3": 1,
       "46,4": 1,
@@ -6311,7 +6374,7 @@
       "46,47": 1,
       "46,48": 1,
       "46,49": 1,
-      "46,50": 8,
+      "46,50": 11,
       "46,53": 1,
       "46,54": 1,
       "46,55": 1,
@@ -6371,7 +6434,7 @@
       "46,109": 1,
       "46,110": 1,
       "46,111": 1,
-      "47,1": 7,
+      "47,1": 10,
       "47,2": 1,
       "47,3": 1,
       "47,4": 1,
@@ -6420,7 +6483,7 @@
       "47,47": 1,
       "47,48": 1,
       "47,49": 1,
-      "47,50": 8,
+      "47,50": 11,
       "47,53": 1,
       "47,54": 1,
       "47,55": 1,
@@ -6480,7 +6543,7 @@
       "47,109": 1,
       "47,110": 1,
       "47,111": 1,
-      "48,1": 7,
+      "48,1": 10,
       "48,2": 1,
       "48,3": 1,
       "48,4": 1,
@@ -6529,7 +6592,7 @@
       "48,47": 1,
       "48,48": 1,
       "48,49": 1,
-      "48,50": 8,
+      "48,50": 11,
       "48,53": 1,
       "48,54": 1,
       "48,55": 1,
@@ -6589,7 +6652,7 @@
       "48,109": 1,
       "48,110": 1,
       "48,111": 1,
-      "49,1": 7,
+      "49,1": 10,
       "49,2": 1,
       "49,3": 1,
       "49,4": 1,
@@ -6638,7 +6701,7 @@
       "49,47": 1,
       "49,48": 1,
       "49,49": 1,
-      "49,50": 8,
+      "49,50": 11,
       "49,53": 1,
       "49,54": 1,
       "49,55": 1,
@@ -6698,7 +6761,7 @@
       "49,109": 1,
       "49,110": 1,
       "49,111": 1,
-      "50,1": 7,
+      "50,1": 10,
       "50,2": 1,
       "50,3": 1,
       "50,4": 1,
@@ -6747,7 +6810,7 @@
       "50,47": 1,
       "50,48": 1,
       "50,49": 1,
-      "50,50": 8,
+      "50,50": 11,
       "50,53": 1,
       "50,54": 1,
       "50,55": 1,
@@ -6807,56 +6870,56 @@
       "50,109": 1,
       "50,110": 1,
       "50,111": 1,
-      "51,1": 26,
-      "51,2": 27,
-      "51,3": 27,
-      "51,4": 27,
-      "51,5": 27,
-      "51,6": 27,
-      "51,7": 27,
-      "51,8": 27,
-      "51,9": 27,
-      "51,10": 27,
-      "51,11": 27,
-      "51,12": 27,
-      "51,13": 27,
-      "51,14": 27,
-      "51,15": 27,
-      "51,16": 27,
-      "51,17": 27,
-      "51,18": 27,
-      "51,19": 27,
-      "51,20": 27,
-      "51,21": 27,
-      "51,22": 27,
-      "51,23": 27,
-      "51,24": 27,
-      "51,25": 27,
-      "51,26": 27,
-      "51,27": 27,
-      "51,28": 27,
-      "51,29": 27,
-      "51,30": 27,
-      "51,31": 27,
-      "51,32": 27,
-      "51,33": 27,
-      "51,34": 27,
-      "51,35": 27,
-      "51,36": 27,
-      "51,37": 27,
-      "51,38": 27,
-      "51,39": 27,
-      "51,40": 27,
-      "51,41": 27,
-      "51,42": 27,
-      "51,43": 27,
-      "51,44": 27,
-      "51,45": 27,
-      "51,46": 27,
-      "51,47": 27,
-      "51,48": 27,
-      "51,49": 27,
-      "51,50": 28,
+      "51,1": 28,
+      "51,2": 29,
+      "51,3": 29,
+      "51,4": 29,
+      "51,5": 29,
+      "51,6": 29,
+      "51,7": 29,
+      "51,8": 29,
+      "51,9": 29,
+      "51,10": 29,
+      "51,11": 29,
+      "51,12": 29,
+      "51,13": 29,
+      "51,14": 29,
+      "51,15": 29,
+      "51,16": 29,
+      "51,17": 29,
+      "51,18": 29,
+      "51,19": 29,
+      "51,20": 29,
+      "51,21": 29,
+      "51,22": 29,
+      "51,23": 29,
+      "51,24": 29,
+      "51,25": 29,
+      "51,26": 29,
+      "51,27": 29,
+      "51,28": 29,
+      "51,29": 29,
+      "51,30": 29,
+      "51,31": 29,
+      "51,32": 29,
+      "51,33": 29,
+      "51,34": 29,
+      "51,35": 29,
+      "51,36": 29,
+      "51,37": 29,
+      "51,38": 29,
+      "51,39": 29,
+      "51,40": 29,
+      "51,41": 29,
+      "51,42": 29,
+      "51,43": 29,
+      "51,44": 29,
+      "51,45": 29,
+      "51,46": 29,
+      "51,47": 29,
+      "51,48": 29,
+      "51,49": 29,
+      "51,50": 30,
       "51,53": 1,
       "51,54": 1,
       "51,55": 1,
@@ -7335,7 +7398,6 @@
     "4,45,1,6",
     "4,5,1,6",
     "4,15,1,26",
-    "3,45,1,6",
     "10,1,1,4",
     "10,5,1,8",
     "10,47,1,4",
@@ -7398,7 +7460,9 @@
     "44,103,1,5",
     "43,103,1,5",
     "44,108,1,4",
-    "43,108,1,4"
+    "43,108,1,4",
+    "1,104,1,7",
+    "3,45,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -7424,4 +7488,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//fJAesNDA0tC6g9WyftH5d6WjwSjH0FmFKCHIUyjSBsxC2Lb/E95Xb1DSdLYwV6iQuiwZdQi61SMrgT7V7QHVleuBhwR0ekkd1WsU9wDpEhyjRh49dsm3nEi3xcDVz4X7A+2ga+tH55jFqxf4RFciEam9EQmSVR67msLvv90bFdm8TZiRJU9mfYc/Be+6Clx74lkJ33hBdEwfBQYCf9qKYMoM0vM05fsWal4VjXFrxMpR7qzm12B6mW9UQgVMigKFplLu6CQGGgaSjLsDcZPYBqUoVg6f2QwIC2W+wdAoXBV7he3TNojN1+f1RLyAI1xuRdds/vyNJdZT0jSlluT/0auWwGDXLpRYU2PFC6YY2Yy1deoyCDzXazydMzqo76W+AgzWxeLuy1IrL5nXBImzsRhL9qcVRJsghG4UpVTtZ7PwQiuxk7tSJhDc/NyPT3ouAz1hzLj82nSgVcYbLfDfUaXjfJ6+T1/SP5gEIjj8X9MlHu0GltBAOfrshluvJqgfCz7StEHrq5FmIoK4JKWSTkvPNh7D5J5bGM6tOn2NbodCiMvULJplhDfiO4cFvnhn9qyXe3d7ko6QOuVELRS054GbBs5HrDV2IvZI2lKAi9FxaBBVVZj/+ubFYJo88p2NuKXlwkS1aUuhMZIcWop0VbnsvnEiOs/GrHtBLuBmCcZ/64qUbYEtQZCjh5g87BK+A7xBDBux92QJBLoX3bXRntkCtsoGMUdkn/EqeHYYPRx4m7Y5fIG0bSiVicJfDVndCqbZPWvCJ4XfODYXTh67IsHCukzV+oPxYaAyfkkZxVxDL0AubZMwMHTocmkFgMAm/1hp8TRN6XSFYHK5oeOScN4GjQ3+p3QdaATlm92gTtSJZApgqwbpmreSsFbkR+fdrIHdrQiazkyCdf0HbUHBcg==|920
+}//4Ry/eMa+mqySpnLnOgnhQENcg/DLARU+dvS45rmWBbiWRGvb4ikd3Bdyvv+Qu1vmCltE4h/VQwQ6WNIYduwK5IQdMOXdAERioaMC0XjkappLJ9Y9nJrnOU8WCH8DJtzJR6YUUBHf3P309HXik8ppvg4lEkbotP1dt3WaYb7H4pFtxdlSQDrfkMttpVf4pyFEhoRyDwClzx/85DVvJNXLaSdagWfAIMqShZe+maSgKY823FJHyGnKxxDYIRErslZP3+X+IvVOPXYwKvUuBQ4JgPgSdMVnbJMNj+LT2JWt4rxW+DupThhloMjY9gNn9mcuoyOU2aYtnPhxLBpILCwD/FmEWZhskakMeCEbNK8Jykwjs3nI112HUuKVEXFYXtZE3nIxzTFhk5MKmzOqSplYB4vwCsIpskwcaBrk5MKsFXcyVc/U+W+Ei8A8pDTjldp2U7n9uKE/Tu89AEGm1uZ/CRn/0JkQSPpkH2ZdIHpuDPZZUQqWRt33PyQWvfkmirKYd6gmDv8HytsslZDh1W9t7Y6Q9M2VZVXKRO0e5yUumhmjjPKW5ZSaMY3IHVpQTVpnLr2cjUqCBTMbb1Jh59EC9Ks/Rfna141tddV+ZWD+dSV1C1AiLCf8cgvHE37VBsRNY7vQRtE0svXxgOHLBClIGg80bHTJ8xYH4fria3ipRo8lFazRb9A5P5W0tiOt7+afZ4CaJKrRxob49cdhlFL/9QF9uXICQe8o/rwSguAa+aEm4rktSQGVqtUO/EPThB80nFydxSAnxRDUzejaoDcjOkIuz1GZvYXtwL/lQcWytkINBj5tAyYYOklM3dR1hQH26uFhYR0+6Et8QOpVbIggrBrTVo5xa03bepAD9djcHyJmCiDQJzHwRE1wtR+Cq6+ezoYhQAe+AcmpgZq/7pbfVA==|920

@@ -67,57 +67,70 @@
             ]
           },
           {
-            "Value": "生産実績入力",
-            "Text": "生産実績入力",
-            "IconPath": "Navigation/167_file_3.svg",
+            "Value": "実績入力",
+            "Text": "実績入力",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
             "IsOldMenuPath": false,
-            "CommandList": [
-              {
-                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "生産実績入力 ver2"
-              }
-            ],
             "CanVisitRoleList": [
               "FGC_Anonymous"
-            ]
-          },
-          {
-            "Value": "その他実績入力",
-            "Text": "その他実績入力",
-            "IconPath": "Mobile/419_share_1.svg",
-            "SelectedIconColor": "Background 1",
-            "SelectedIconColorUseItemColor": true,
-            "IconColorUseItemColor": true,
-            "IsOldMenuPath": false,
-            "CommandList": [
-              {
-                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "その他作業実績入力"
-              }
             ],
-            "CanVisitRoleList": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Value": "有償工事実績入力",
-            "Text": "有償工事実績入力",
-            "IconPath": "Navigation/183_table_2.svg",
-            "SelectedIconColor": "Background 1",
-            "SelectedIconColorUseItemColor": true,
-            "IconColorUseItemColor": true,
-            "IsOldMenuPath": false,
-            "CommandList": [
+            "SubItems": [
               {
-                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "その他有償工事"
+                "Value": "生産実績入力",
+                "Text": "生産実績入力",
+                "IconPath": "Navigation/167_file_3.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "生産実績入力 ver2"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "その他実績入力",
+                "Text": "その他実績入力",
+                "IconPath": "Mobile/419_share_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "その他作業実績入力 Ver2"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "有償工事実績入力",
+                "Text": "有償工事実績入力",
+                "IconPath": "Navigation/183_table_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "その他有償工事 Ver2"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
               }
-            ],
-            "CanVisitRoleList": [
-              "FGC_Anonymous"
             ]
           },
           {
@@ -130,7 +143,7 @@
             "CommandList": [
               {
                 "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-                "PageName": "海洋実績入力"
+                "PageName": "海洋実績入力　Ver2"
               }
             ],
             "CanVisitRoleList": [
@@ -351,4 +364,4 @@
       "Size": "1420,100"
     }
   ]
-}//XYAmosbUIJipalaEF0JAxPp0+ApkzSUB8O55sjnS4GAiYdSUD12sAPddNJunrrhjyOdQ2Gk1UuQPjZ7XKZC8UUzWynBP6l1RtmFWsabRP/gddPskf3QKXtT3d7mys78W/qWplNms7gD4ctzX6vAJb5Lo3BzvCd9s1+1pYqZtKeiABEZCX9EfyGz+6W0qCnolzSFAYTNEGytmcjByfehq7sLCCVStfU+6slpMY9RxLfXrsAdxfYP0l/wfIPS3YZBdtUdB1TcxocoX28hFvBfyU8R0JSR0p+ykdMCfDZLuF2OFGcLxqcAZBoKCqGMV2qnEik+Ly45lNIuDkQeXGEQxCK9KWOXLZGiJyajqFG1LxJTWs7jhkbVQjW+QlqmLvCF66g9xd7HuikaCjfm/Vp4oiDbl1oMCseiZuG09NjxdETJ7H0dPloT0pThn/JZph/htLXAnl75sXWi3A9m1DIXo6vqI3ysIa5xQvd3EYB3V+1VSlFBMYkjqPAlEe7mbgO1ItHj5q7mjLO389Pr2iEyb55dTS5XhmZhnUxoSS+ktrolrhAUBsZowle+aTd6J1vqPXBrXWChReJ25+rdglFO3it44N0RcjFSs9za19aRPXEv6FsVpQMPkBBlvwI6cOy3tdPqqdA/12OPViIKh51GpKAJF3XM/sl12R+Ucz1Iy141zl4z8H6AKVLxsEIJpZKHZ8W2oz1AHQ74ck3EyQP+Ae8LpjbtKYdnllZn6qgScVBiXEtpYwbCF9C7zHWEDTyYSRhkUI3dZpdjfXtySN0Z01PBWh0CSoQPyf4VFfYSUPc2bQyPAjrgDpxyhTNCSy3kMSeadhslR7aSXjKwJBRMBNCLWH8QkHcXBOw3u1A1PoZRfVYxLnFUj5ZbTHeMph6qNWaD0QgX3JjswwVbn7J/gwg==|920
+}//6VZtOvAnK5Jq8GWuBrupZyF2Rtud68trAi50DRfgV2wiloLu66QPeKflZd82skgLW0ZqJaNCISLQfiL7JuVnod3k0E6JKzK7/QmwsHnJ2sPCUYnaashzKyxK92g5th0IcuriXGtHkrTMwntVnKsrAOn7ZYqZ3F+dEL5KEIH8WF9j1onDNhLJFjXE4QticRmecpp51cFKvY15Tx5YiJckKcAqTMcQaOE8wqI/G9F3D9uM854o0YYcL7WHFf4aIB7pW88f28mddPABmkZ9xdO6DZE5b9vmmP/VLooQrxnfqUm+3TztT9cMQ6Ey78hOaYdF89pJErwiQ1z6mM/avEJzVOptcAiMyw1tmAHdo7prVMn03nIkwVe0Ep+m23Ts/IWN0//wupVm4cZzDEg+EI43vQ+YuwmJ7r9ENKsx/4qr3+cisxXcC6jG1tcuGIoQjmtdvMaHP6kQdScYGko8YxzdqhIbyAGK5J1m6oFTvR2coah3Vu/j5ds1u6zWtM62auvdF5H13gTkCJ6yACLoWnefdKmIVuVJNsVwNqQ5gB4oV0UlMWZJuPi9ekx0ryV/hmovlTpcGzVL5sSSE0lp/lrXE0BAHUb20/mOuysDfCfpAEo+YB6f9Qm/uB33ku5EyQid1IqFW3OREiUVdjqd3GB6HPVfdWwMTRIc4oejAUjRp1vxOVVuBZWqu7O4X0fOFfIgGr8PY0lRH3nlKiVX3G1gMkakVDW6pBdlDEJ6lokpvjaSQ8q+Bguv41SGgVE+ftAGIFeEmmuVuUNMcu4/jft6v7hToA8jYwo6I0bYxwsjam8s0RErQ+1sfeBmawSQG7boSUindwRS9aPqj3PX2wMI0OXYXKpz0tOtD0UL13OtClnqaFB72LAG17i8z3K/t2LPpHokLeP9Ljvj9SGzgZXAzA==|920

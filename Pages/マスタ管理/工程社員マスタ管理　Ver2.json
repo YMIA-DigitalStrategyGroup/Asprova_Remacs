@@ -13,8 +13,8 @@
     "Count": 24
   },
   "Values": {
-    "4,16": "係数",
-    "5,16": "表示",
+    "4,20": "係数",
+    "5,20": "表示",
     "31,1": "更新"
   },
   "AttachInfos": {
@@ -74,7 +74,7 @@
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain_new",
         "ColumnName": "社員コード",
-        "GUID": "84c2fec1-6b0b-4960-b7b1-c8aebae8e72f"
+        "GUID": "ea35514f-8b99-4b90-9bf4-a80cfd51e3bf"
       },
       "CellType": {
         "$type": "Forguncy.UserCellType, ServerDesignerCommon",
@@ -90,7 +90,7 @@
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain_new",
         "ColumnName": "工程コード",
-        "GUID": "993a6541-832f-42af-8ca5-6e85dc8967d8"
+        "GUID": "edb8affe-b9df-4ec4-80ee-e3826629d4c8"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -214,7 +214,7 @@
         "IgnoreBlank": false
       }
     },
-    "5,12": {
+    "5,16": {
       "NameUsedInJavaScript": "グループ",
       "BindingInfo": {
         "TableName": "ymia_m_seisan_kouteishain_new",
@@ -231,7 +231,7 @@
         "ReadOnly": true
       }
     },
-    "5,16": {
+    "5,20": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -277,7 +277,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "580e1c11-48fe-408d-b23d-fbc2b7e496b5"
+                "ID": "9a299989-eb8c-41e6-87d0-56897765415b"
               }
             ]
           }
@@ -310,7 +310,12 @@
         "FontFamily": 0
       },
       {
-        "Formatter": 3
+        "FontFamily": 0,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
@@ -374,13 +379,16 @@
       "4,17": 1,
       "4,18": 1,
       "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
       "5,1": 2,
       "5,7": 2,
-      "5,12": 3,
-      "5,16": 1,
+      "5,16": 3,
       "5,17": 1,
       "5,18": 1,
-      "5,19": 1
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -395,12 +403,12 @@
     "6,1,24,21",
     "5,1,1,6",
     "4,1,1,6",
-    "5,7,1,5",
-    "4,7,1,5",
     "5,16,1,4",
     "4,16,1,4",
-    "5,12,1,4",
-    "4,12,1,4"
+    "5,20,1,2",
+    "4,20,1,2",
+    "5,7,1,9",
+    "4,7,1,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -426,4 +434,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}///cOEoNb/hzEOiqW4uGy6nPyo6FoLIdXliPmzXwT5dX9HY8J0NvFUFdVX3+unMGWoAMSGvKKyD/aeDIT3Nt9YjFgZhPC+epQTUbpmgWyg530ONtI6YCNWliFn224dPl1dP0jv/UkXKASvzKTphNHlptRCEeZDH+RvN8nIkqP+fNcw2RWO0ZTlBRZo0SK14VWHd9lAZ9UxgQIgADJJbFn+KYILv2VwJe9EJOcIUrfcdycYpGXpQMJQCh0brzaoUsLR6PBH6CVTn0VbPBxJNhhped7/RNWs26DtcgBS9poBJab4jzsNQowvsUqkpmEMjok3uDH+2z8E4YbYXdo0MGlMm+5YrwG7KZUvNU3aOjV1SF3dnGorx1gtulr4+FTUZxf0vx5YIvxtPNkOs4D9x30fDW4aG0B2vT7Zr49X8EhnUr37bhFdmJQd4iStbhkWUqKnuzOYN6N0ckFLDCtmxAWNIk8NYpadPfqfDVywyOy3RTYVhgK8/yElfpUVWh9QUQPXQxzH9OyzBpsGL+JlXhfUh9nEZ3gSZUkKnu9sASNcG0w14FK7yUUmgfpHWNaavk1QPB+Tak2Rt6MteOmNGSYfOABetT9feRdStANHg5fNcvxJQrR0rUUcXhdC5PcOLsLW0UBgEVtHn/ooEU3qMDIzWv/ScSaKtcA8wgowb/CPN94mNGvL6X5NtQVXbi+no+tybzBMLTutcbcswXFXyFfljpSr5ZFXbwetr2NP2QlIgmViyqwYrOsgJvafc1w1a3Y9qpOfLr4EB1fy+UH3IeCUpP2wWZJO/j1tP8gERGQr0ehIwYi2n37h4nc9LoipyIPdPp+a1+byns+ezp24R2vfaHCWe3Sbw5Ez0aGjzYdmJoKKa8/ndMH0jkiP3x4nIMDdMRJ8MXYY8jXt/fjTgIk7TQ==|920
+}//YF6t+4TasVoz6bTDuGmGFVlXEuTNHLP9K7SxxJTSVIf/nZHgXh7VNF4lkqW/4RHmtD94zfVI/q7hUKKfFclMw6ma1IrNOwbRaOLZgW2fHKaZX01rSVz9rKs6KfOyOslGL3NbD0bCnCHx0vmAvHKLcwyPgK+2A/CEQD/cspVpZI1AdI1zv9ILFB4Cv5m0MuZUIGgOaf1+LbucTyTRyapR3a+ZAyr1zk0L+aPaftuIZ9Xv6Ae5D+pP9L77Xh22nVKtcMsiU54r2BEgJsPfaRcUYpc99CYE0d/L763zeSu/2mHdpI+uNQP6F/1VJLM4I0mUOWkR17bJN7kdMijyegwD7FMaxtvp5PWAcxvqavJl2XhbTmz0BEx17JPMRiTU5mijhTjtDGmx1mj55YSXxsLuqimasaAWKNKHkUUaUdeXPtlq67SsATUOz1kqRVL1GxqGQAn6O6L8mt0vqgr0A1y0YK2kKPtF8iAzoVzN25KuDJlWBvDpvul0kwHvj3vaks/3KX1EyjqdOtDU9clSgL9JPMWsw1WEtGPZrJPNnRRtHLr50pB4gUmdfqgMsEv3lnx8JcFpnL8C2NmP4FhzlKGcvZPnkygoua0Mil8zIftgWdO8kCvOH0vX2HP5hxpkPvPTJdWRRYqRLc1pGmGDRgXPmslp4A77TDB6hZLNDHjFzwF3xtaGsQGMaML2ub/Romd6uSUhDHV+YvKafSOHBjuV3Ye3zfOq+llmUypoqNES4d+rcsVZMkwZX9RG7NJGMQxCx6vYoAg+4tDinq4ErMNDsCUtcu2G0WOpT78lLw2DQJAy1o2mWewq8jKtRsLCDoq05VtBq5B2C/ccBeEs7gxu/XtXaxl6Pj40VqeVWPOkwlMUG18HTMoqF2mv31JxBJlsFNbid4zcq1IGEenFZEDMGQ==|920
