@@ -446,12 +446,12 @@
   },
   {
     "ModuleName": "TaskScheduler/5b9f3049-14ab-40bc-9bed-08048082a17f",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-23T10:47:46.4398622+09:00",
+    "LockDateTime": "2026-09-23T10:58:28.9954094+09:00",
     "ModuleType": 16,
     "ToRemoveFiles": [
       "SchedulerTasks\\生産実績連携\\5b9f3049-14ab-40bc-9bed-08048082a17f.json"
