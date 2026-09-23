@@ -25,12 +25,12 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-23T10:40:00.7419226+09:00",
+    "LockDateTime": "2026-09-23T10:47:46.4267322+09:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs.json"
@@ -421,7 +421,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-09-23T10:32:15.5195376+09:00",
+    "LockDateTime": "2026-09-23T10:47:46.4397097+09:00",
     "ModuleType": 16,
     "ToRemoveFiles": [
       "SchedulerTasks\\生産実績連携\\実績情報連携処理.json"
@@ -429,7 +429,16 @@
   },
   {
     "ModuleName": "TaskScheduler/c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T10:47:46.4398142+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\c8e3a7ff-2ac7-422e-9fc5-a0fd3227ede7.json"
+    ]
   },
   {
     "ModuleName": "TaskScheduler/生産計画連携処理",
@@ -437,7 +446,16 @@
   },
   {
     "ModuleName": "TaskScheduler/5b9f3049-14ab-40bc-9bed-08048082a17f",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T10:47:46.4398622+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\5b9f3049-14ab-40bc-9bed-08048082a17f.json"
+    ]
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -533,7 +551,17 @@
   },
   {
     "ModuleName": "PCPage/実績連携確認画面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T10:47:46.4376988+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\連携用\\実績連携確認画面.json",
+      "Pages\\連携用\\実績連携確認画面.rd"
+    ]
   },
   {
     "ModuleName": "ServerCommands/MySQL生産計画作成",
@@ -549,7 +577,16 @@
   },
   {
     "ModuleName": "TaskScheduler/実績情報連携処理_伝票番号1個",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-09-23T10:47:46.439906+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産実績連携\\実績情報連携処理_伝票番号1個.json"
+    ]
   },
   {
     "ModuleName": "PCPage/Remacs年間計画取得",
