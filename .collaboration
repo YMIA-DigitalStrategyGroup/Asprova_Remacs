@@ -753,16 +753,6 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "Table/ymia_t_asprova_2remacs1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-23T10:47:19.5111437+09:00",
-    "ModuleType": 7
-  },
-  {
     "ModuleName": "Table/ymia_t_asprova_2remacs2",
     "State": 3,
     "LockedBy": {
