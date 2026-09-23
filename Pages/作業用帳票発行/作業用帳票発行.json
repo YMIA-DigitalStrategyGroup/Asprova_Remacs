@@ -20,7 +20,15 @@
     "6,25": "工程CD",
     "6,30": "工程名",
     "6,36": "伝票番号",
-    "37,1": "帳票発行"
+    "6,43": "艇種",
+    "6,48": "艇番",
+    "37,1": "全工程-帳票発行",
+    "37,14": "選択工程-帳票発行"
+  },
+  "Formulas": {
+    "7,43": "IFERROR(TEXTBEFORE(TRIM(C8),\" \"),TRIM(C8))",
+    "7,48": "IFERROR(TEXTAFTER(TRIM(C8),\" \"),\"\")",
+    "43,29": "Z44&\",\"&B44&\",\"&F44&\",\"&R44"
   },
   "AttachInfos": {
     "3,5": {
@@ -182,7 +190,7 @@
                 }
               ]
             },
-            "ID": "6d60e14b99c44155b11815ff58e7a4b8"
+            "ID": "8540a461f36c4465b34604adbd62e909"
           }
         ],
         "Text": "検索",
@@ -195,8 +203,8 @@
         "TableName": "thatchum",
         "RowIndex": 6,
         "ColumnIndex": 1,
-        "RowCount": 30,
-        "ColumnCount": 43,
+        "RowCount": 29,
+        "ColumnCount": 52,
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -262,6 +270,34 @@
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=作業用帳票発行!O4"
+                      }
+                    ]
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "製番で絞られていない可能性があります"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "6e8e37e4-1944-413a-95a5-6ae2b01407d1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
                 "ConfirmDialogSettings": {
                   "Title": "確認",
                   "FormulaText": "帳票を発行しますか？",
@@ -282,7 +318,7 @@
                       {
                         "SourceCell": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=作業用帳票発行!C8"
+                          "SerializeProperty": "=作業用帳票発行!AW8"
                         },
                         "TargetCell": "艇番"
                       },
@@ -320,6 +356,119 @@
                           "SerializeProperty": "=作業用帳票発行!AK8"
                         },
                         "TargetCell": "伝票番号"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AR8"
+                        },
+                        "TargetCell": "艇種"
+                      }
+                    ],
+                    "Source": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=作業用帳票発行!B9"
+                    },
+                    "Target": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=作業用帳票発行!B45"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー2",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.OpenActiveReportCommand, ServerDesignerCommon",
+                    "SessionGuid": "68404937-6910-467c-8070-0acba81fa6a0",
+                    "OpenReportName": "作業用帳票",
+                    "SideBarPosition": 0
+                  }
+                ],
+                "ID": "b82fc18b-e600-43d2-921b-5bbc9594953c"
+              }
+            ]
+          }
+        ],
+        "Text": "全工程-帳票発行",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "37,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "帳票を発行しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "帳票用テーブルの削除",
+                    "RefreshAfterFinish": true,
+                    "CheckDataValidation": true
+                  },
+                  {
+                    "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+                    "PassRowMode": 1,
+                    "PassValueItems": [
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AW8"
+                        },
+                        "TargetCell": "艇番"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!K8"
+                        },
+                        "TargetCell": "品番"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!R8"
+                        },
+                        "TargetCell": "品名"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!Z8"
+                        },
+                        "TargetCell": "工程CD"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AE8"
+                        },
+                        "TargetCell": "工程名"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AK8"
+                        },
+                        "TargetCell": "伝票番号"
+                      },
+                      {
+                        "SourceCell": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=作業用帳票発行!AR8"
+                        },
+                        "TargetCell": "艇種"
                       }
                     ],
                     "Source": {
@@ -343,12 +492,12 @@
                     "SideBarPosition": 0
                   }
                 ],
-                "ID": "e410dd69-1733-473f-bc2f-de78bf668e82"
+                "ID": "3614a79f-cba0-43a6-9966-2f317f564ed2"
               }
             ]
           }
         ],
-        "Text": "帳票発行",
+        "Text": "選択工程-帳票発行",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
@@ -369,6 +518,14 @@
       }
     },
     "43,1": {
+      "NameUsedInJavaScript": "艇種",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "艇種",
+        "GUID": "10566a03-f224-47cb-8cd3-890753f60483"
+      }
+    },
+    "43,5": {
       "NameUsedInJavaScript": "艇番",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
@@ -376,7 +533,7 @@
         "GUID": "90961abc-c9e6-44d9-9528-7ed363983b23"
       }
     },
-    "43,5": {
+    "43,9": {
       "NameUsedInJavaScript": "品番",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
@@ -384,7 +541,7 @@
         "GUID": "151e2a63-d49d-4e7a-a750-a1c72203dbb2"
       }
     },
-    "43,9": {
+    "43,13": {
       "NameUsedInJavaScript": "品名",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
@@ -392,7 +549,7 @@
         "GUID": "8113efbc-128e-4041-8935-9d6d7d9164d8"
       }
     },
-    "43,13": {
+    "43,17": {
       "NameUsedInJavaScript": "工程CD",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
@@ -400,7 +557,7 @@
         "GUID": "ed23e4c0-84be-4870-9ca6-c8f9a6f2102d"
       }
     },
-    "43,17": {
+    "43,21": {
       "NameUsedInJavaScript": "工程名",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
@@ -408,12 +565,20 @@
         "GUID": "4d4b81b8-9982-4bd8-9dc9-d505a77b44f5"
       }
     },
-    "43,21": {
+    "43,25": {
       "NameUsedInJavaScript": "伝票番号",
       "BindingInfo": {
         "TableName": "ymia_t_asprova_qrdenpyo",
         "ColumnName": "伝票番号",
         "GUID": "c11d8f9e-dc5c-4a9f-8f0d-866f89d8fe39"
+      }
+    },
+    "43,29": {
+      "NameUsedInJavaScript": "QRコード",
+      "BindingInfo": {
+        "TableName": "ymia_t_asprova_qrdenpyo",
+        "ColumnName": "QRコード",
+        "GUID": "bb836fdf-902e-49ae-9dd5-7b3e89d46227"
       }
     }
   },
@@ -549,28 +714,28 @@
       "4,27": 1,
       "4,28": 1,
       "37,1": 7,
-      "37,2": 8,
-      "37,3": 8,
-      "37,4": 8,
-      "37,5": 8,
-      "37,6": 8,
-      "37,9": 8,
       "37,10": 8,
       "37,11": 8,
       "37,12": 8,
       "37,13": 8,
-      "37,14": 8,
+      "37,14": 7,
       "37,15": 8,
       "37,16": 8,
       "37,17": 8,
       "37,18": 8,
-      "38,1": 8,
-      "38,2": 8,
-      "38,3": 8,
-      "38,4": 8,
-      "38,5": 8,
-      "38,6": 8,
-      "38,9": 8,
+      "37,19": 8,
+      "37,20": 8,
+      "37,21": 8,
+      "37,22": 8,
+      "37,28": 7,
+      "37,29": 8,
+      "37,30": 8,
+      "37,31": 8,
+      "37,32": 8,
+      "37,33": 8,
+      "37,34": 8,
+      "37,35": 8,
+      "37,36": 8,
       "38,10": 8,
       "38,11": 8,
       "38,12": 8,
@@ -580,6 +745,19 @@
       "38,16": 8,
       "38,17": 8,
       "38,18": 8,
+      "38,19": 8,
+      "38,20": 8,
+      "38,21": 8,
+      "38,22": 8,
+      "38,28": 8,
+      "38,29": 8,
+      "38,30": 8,
+      "38,31": 8,
+      "38,32": 8,
+      "38,33": 8,
+      "38,34": 8,
+      "38,35": 8,
+      "38,36": 8,
       "39,9": 8,
       "39,10": 8,
       "39,11": 8,
@@ -590,7 +768,31 @@
       "39,16": 8,
       "39,17": 8,
       "39,18": 8,
-      "39,34": 8
+      "39,34": 8,
+      "43,5": 8,
+      "43,6": 8,
+      "43,7": 8,
+      "43,8": 8,
+      "43,9": 8,
+      "43,10": 8,
+      "43,11": 8,
+      "43,12": 8,
+      "43,13": 8,
+      "43,14": 8,
+      "43,15": 8,
+      "43,16": 8,
+      "43,17": 8,
+      "43,18": 8,
+      "43,19": 8,
+      "43,20": 8,
+      "43,21": 8,
+      "43,22": 8,
+      "43,23": 8,
+      "43,24": 8,
+      "43,25": 8,
+      "43,26": 8,
+      "43,27": 8,
+      "43,28": 8
     },
     "SheetStyle": {
       "FontFamily": 3
@@ -616,21 +818,30 @@
     "3,20,2,3",
     "3,23,2,6",
     "3,30,2,6",
-    "37,1,2,6",
-    "42,1,1,4",
+    "44,1,2,43",
+    "8,1,27,52",
+    "7,43,1,5",
+    "6,43,1,5",
+    "7,48,1,4",
+    "6,48,1,4",
+    "37,1,2,9",
+    "37,14,2,9",
     "43,1,1,4",
-    "42,5,1,4",
+    "42,1,1,4",
     "43,5,1,4",
-    "42,9,1,4",
+    "42,5,1,4",
     "43,9,1,4",
-    "42,13,1,4",
+    "42,9,1,4",
     "43,13,1,4",
-    "42,17,1,4",
+    "42,13,1,4",
     "43,17,1,4",
-    "42,21,1,4",
+    "42,17,1,4",
     "43,21,1,4",
-    "8,1,28,43",
-    "44,1,2,43"
+    "42,21,1,4",
+    "43,25,1,4",
+    "42,25,1,4",
+    "43,29,1,8",
+    "42,29,1,8"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -655,4 +866,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//rmYqv7Q/eqMF0Gp0IdReZftRNduSJvLGt1Z5aabYlqnKyIlT+pG7ER03aA/X/RAfvMzsqjinf0FeNBNYRLrceh0lVcpazEeUDryv77qtnCwGmRxLfAhOK+AXsCh+VoRamHdqR4THgxa+3SIDbtQnO9YhyGcnxMmxiNbezkoeuMsT7p84I1GYUELuKwyNEl8KnZxBc9MSngp4gQxoqTlVGrWokU77z24T0oh6P/mKJDxXe19GZA38fm9IBk4V6ZrLILex7oB/1EoRWZZD/QjfP1T3M+Cc+Y5hyzX02msiDsXq9RMNxx4MuHSi+TwR2Zg4hVJTZKhFMAPi0SUd3IfJhP3XO/KG1JfS3EkM+mtU9N/9lQ4B8IMtCzUloMJZ0C2gTXOCqLIRfWWEp527CP4sIGCi/Ul20V98EA0G32qsmiEPNGNn3Okh9jvmrUpn0ldNEGJ8IKVaUSMyZ292qS4o4aUYPqgYmucjZixYXMvdS+0csrIdhhNJbFoUqUkxBidzOqrkffe0TOJfHsxZ6JYZryFtcM9ZZ4ECQyStm0lqeMmNaLTIFR+d1eeRNqDrJrlhp2/fcR4cUlyq3W0edx3XZfjUeWXMaaD/W+2FC24mCBnRyZWTpCSL4fNAfSRQLOk7vV62b0Ti8nW/TfQ2smCLdCumjurLT66WJYqHap7SCT7JKkf9QDmT0dKV1eWd6UbsLVZ7cV25e5I8Yz/8Il9YIlYgc70jGOl1nylyWmQn+XSDzkfP8nF47rsZRtT/NFLlIqoZtTioWcD2jej4iDZFdK7FaL25GeUioK444dTmlCrR4BTB32jdZMLB9C6EK4ZOpj7KXo+ZgScQ3gZHFoZ9X9/IxUjhS1mTeaRVSu4SAqvdXlTp4wEIUC19ZOLYxWyJknVXfG1qWKy8iD/8pGf03Q==|920
+}//42LaXECPO+iWLa+IJF90c9k3wSnRX/AOkZYBZA5Bjp1XxiCeaYIBBKowlFC9n7xJFGPcpdVVCfH/hb/4UwTJOENvpgyBNuoAbSbwLvkl6jUquyX7ZpJzg7cMHYBr1SopSs0KMxbcrt7QEye8Ovf/uqnshYXwsQb+WJhfoYdFx8T0xWA6aOoz3USC1YYpj2YErDbCjY8mw1oPO0hxdy0sRvoeagj5RH8fbSlz6VU5EXDx5m1GGGRxFdqje/T29fquSqMuZpmFJ2dY0UcGrmuL34yo8b9E2PZLOshTaimg4XcN1TlASc27EkEuYPyIIQRKsYGi0BWBeAj7XciaWxJeZgebNGd95Ez9lS56tvzfL3l72XL4rCVHvK5ZQBWFUZFWVhvXiPdQ//AGYIHHo3BhuUAM2XxTa6FH4AZc+FZfj+9ltTlAtEqPCuhYH+hohSUy5zN3Hug5N99WIBJGBAdqICegkUlaR63y+fSKdriJ2SIrfj7Rd79oKPcg4CrXrF+cW4dndgmo/B5V9qRdoAUEiDV1Bq5qvqNmeUhNtsdJ+TQg/waCSj8yVrYP8+I160vy2pnaUSFNouK2YEcOU6FSlRE+RmyuLkrR+B7jkUMrO+SEqRhxvRnsaB6xSHYb2gFYB1seOyloIz1z0Xkea/LtNL2IJFtFldb7VTk9AjfQE2UFHqXV1ks135LmKPvh3CHfZ5bUdUEH42OEiWMetSei5x+69zcOjE/JmZIxIw3DMQ+yoA/NsCL5whItWjhcIvfejcsK/g1OGpFKo4DY61hbYEKBRWnh2N3lK32U/unWCWuJC9Nt/LbEb1U5LLWP8Hf8AI5n1nPf89tnvy5jnvHYNfLyANYyU7kCIDx1wYnmc9nmvJ3gnP0zZkNtF14FdbG3pJTbyiBReVXdh7ecUBdbng==|920

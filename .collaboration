@@ -670,16 +670,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_qrdenpyo",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-23T13:44:22.2819689+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業用帳票発行\\ymia_t_asprova_qrdenpyo.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Pages/作業用帳票発行",
@@ -687,31 +678,11 @@
   },
   {
     "ModuleName": "PCPage/作業用帳票発行",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-23T13:36:09.0319354+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\作業用帳票発行\\作業用帳票発行.json",
-      "Pages\\作業用帳票発行\\作業用帳票発行.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PageReport/作業用帳票",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-09-23T14:05:45.8196652+09:00",
-    "ModuleType": 17,
-    "ToRemoveFiles": [
-      "Reports\\作業用帳票.json",
-      "Reports\\作業用帳票.rdlx"
-    ]
+    "ModuleType": 17
   },
   {
     "ModuleName": "ServerCommands/作業用帳票発行",

@@ -8,7 +8,7 @@
         "TableName": "ymia_t_asprova_qrdenpyo",
         "BindingInfos": [
           {
-            "GUID": "bb9a03e6-81e3-4697-8ff5-880bd23f1c8f",
+            "GUID": "98f5d5db-fda7-43cf-8c38-e151a8d39c94",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "艇番",
@@ -17,7 +17,7 @@
             "ColumnName": "艇番"
           },
           {
-            "GUID": "5b9b52aa-d84f-4a51-ab8f-0a77496abeb4",
+            "GUID": "30a66132-7672-4eeb-80db-ea972d7bf5c4",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "品番",
@@ -26,7 +26,7 @@
             "ColumnName": "品番"
           },
           {
-            "GUID": "4ff690fd-39e0-442f-954d-92797e184fe8",
+            "GUID": "1cce24b2-23e6-4f92-9f87-d1c245131bee",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "品名",
@@ -35,7 +35,7 @@
             "ColumnName": "品名"
           },
           {
-            "GUID": "4761cf4d-e8bc-44bd-abeb-a3c993838948",
+            "GUID": "47ef9ee4-fa96-4989-8e71-f3a07f642a25",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "工程CD",
@@ -44,7 +44,7 @@
             "ColumnName": "工程CD"
           },
           {
-            "GUID": "bcb613a4-b3e1-4f08-8bc5-a7903be5ac77",
+            "GUID": "37cc0a01-8c66-4ff2-90ff-a88478dedde6",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "工程名",
@@ -53,7 +53,7 @@
             "ColumnName": "工程名"
           },
           {
-            "GUID": "fa80c7fd-ec70-427d-acbb-064555ce209b",
+            "GUID": "c68cbc6c-7de4-4284-a8bf-ba432a6b631b",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "伝票番号",
@@ -62,17 +62,27 @@
             "ColumnName": "伝票番号"
           },
           {
-            "GUID": "f40c8107-b9f1-49b6-8875-0adee5e34cb4",
+            "GUID": "4049346d-4b69-47c5-b68c-8fdc21214838",
             "BindingInfo": {
               "TableName": "ymia_t_asprova_qrdenpyo",
               "ColumnName": "QRコード",
               "GUID": "58ef02db-b8f0-483d-b7ce-40bfefd44a19"
             },
             "ColumnName": "QRコード"
+          },
+          {
+            "GUID": "860689d9-b35a-4fd3-8b32-141abd0230f1",
+            "BindingInfo": {
+              "TableName": "ymia_t_asprova_qrdenpyo",
+              "ColumnName": "艇種",
+              "GUID": "4f4a68d0-87c0-4047-a013-536f278e33c7"
+            },
+            "ColumnName": "艇種"
           }
         ]
       },
       "ColumnsType": [
+        "string",
         "string",
         "string",
         "string",

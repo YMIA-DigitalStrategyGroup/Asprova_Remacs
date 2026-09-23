@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
-	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report111</dd:Name>
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1111</dd:Name>
 	<Body>
 		<Height>29.7cm</Height>
 		<ReportItems>
@@ -164,7 +164,7 @@
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
 										<DataElementName>TextBox7</DataElementName>
-										<Value>=Fields!品番.Value</Value>
+										<Value>=Fields.Item("品番").Value</Value>
 									</Textbox>
 									<Textbox Name="TextBox16">
 										<Top>1.5in</Top>
@@ -193,7 +193,7 @@
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
 										<DataElementName>TextBox8</DataElementName>
-										<Value>=Fields!品名.Value</Value>
+										<Value>=Fields.Item("品名").Value</Value>
 									</Textbox>
 									<CustomReportItem Name="Barcode2">
 										<Type>Barcode</Type>
@@ -268,8 +268,8 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-										<DataElementName>TextBox7</DataElementName>
-										<Value>=Fields!艇番.Value</Value>
+										<DataElementName>TextBox2</DataElementName>
+										<Value>=Fields!艇種.Value &amp; "-" &amp; Fields!艇番.Value</Value>
 									</Textbox>
 									<Textbox Name="TextBox2">
 										<Top>0.5in</Top>
@@ -297,8 +297,8 @@
 	<StyleId>0b65e860-6c8c-4d79-9c06-69f939517ae6</StyleId>
 	<StyleName>Dark 1 Major</StyleName>
 </ReportStyle></Custom>
-										<DataElementName>TextBox7</DataElementName>
-										<Value>=Fields!工程CD.Value &amp; ":" &amp; Fields!工程名.Value</Value>
+										<DataElementName>TextBox4</DataElementName>
+										<Value>=Fields!工程CD.Value &amp; "/" &amp; Fields!工程名.Value</Value>
 									</Textbox>
 								</ReportItems>
 							</List>
@@ -344,7 +344,7 @@
 	<DataSources>
 		<DataSource Name="作業用帳票テーブル">
 			<ConnectionProperties>
-				<ConnectString>jsondoc=http://localhost:57336/Forguncy/ARDataSource/GetDataSource/d9f4b669-c5d5-447a-8351-bc86afd4d021;schemadata={"type":"array","items":{"type":"object","properties":{"艇番":{"type":"string"},"品番":{"type":"string"},"品名":{"type":"string"},"工程CD":{"type":"string"},"工程名":{"type":"string"},"伝票番号":{"type":"string"},"QRコード":{"type":"string"}}}}</ConnectString>
+				<ConnectString>jsondoc=http://localhost:57336/Forguncy/ARDataSource/GetDataSource/d9f4b669-c5d5-447a-8351-bc86afd4d021;schemadata={"type":"array","items":{"type":"object","properties":{"艇番":{"type":"string"},"品番":{"type":"string"},"品名":{"type":"string"},"工程CD":{"type":"string"},"工程名":{"type":"string"},"伝票番号":{"type":"string"},"QRコード":{"type":"string"},"艇種":{"type":"string"}}}}</ConnectString>
 				<DataProvider>JSON</DataProvider>
 			</ConnectionProperties>
 		</DataSource>
@@ -372,6 +372,9 @@
 				</Field>
 				<Field Name="QRコード">
 					<DataField>QRコード</DataField>
+				</Field>
+				<Field Name="艇種">
+					<DataField>艇種</DataField>
 				</Field>
 			</Fields>
 			<Query>
