@@ -762,7 +762,17 @@
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-09T09:32:46.9023634+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績.json",
+      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績.rd"
+    ]
   },
   {
     "ModuleName": "Tables/SQLServerテーブル/作業実績テーブル（生産部用）",
