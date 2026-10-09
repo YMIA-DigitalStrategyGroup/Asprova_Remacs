@@ -610,7 +610,17 @@
   },
   {
     "ModuleName": "PCPage/Remacs年間計画取得",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-09T12:09:49.7439068+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\連携用\\Remacs年間計画取得.json",
+      "Pages\\連携用\\Remacs年間計画取得.rd"
+    ]
   },
   {
     "ModuleName": "Table/mcalendarm",
