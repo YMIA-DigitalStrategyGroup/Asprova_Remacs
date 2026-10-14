@@ -247,8 +247,8 @@
             ]
           },
           {
-            "Value": "年間計画取得",
-            "Text": "年間計画取得",
+            "Value": "Asprova連携",
+            "Text": "Asprova連携",
             "SelectedIconColor": "Background 1",
             "SelectedIconColorUseItemColor": true,
             "IconColorUseItemColor": true,
@@ -257,6 +257,23 @@
               "FGC_Anonymous"
             ],
             "SubItems": [
+              {
+                "Value": "カレンダー・工程パターン・引合出力",
+                "Text": "カレンダー・工程パターン・引合出力",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "各種マスタ連動"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
               {
                 "Value": "Remacs年間計画出力",
                 "Text": "Remacs年間計画出力",
@@ -364,4 +381,4 @@
       "Size": "1420,100"
     }
   ]
-}//6VZtOvAnK5Jq8GWuBrupZyF2Rtud68trAi50DRfgV2wiloLu66QPeKflZd82skgLW0ZqJaNCISLQfiL7JuVnod3k0E6JKzK7/QmwsHnJ2sPCUYnaashzKyxK92g5th0IcuriXGtHkrTMwntVnKsrAOn7ZYqZ3F+dEL5KEIH8WF9j1onDNhLJFjXE4QticRmecpp51cFKvY15Tx5YiJckKcAqTMcQaOE8wqI/G9F3D9uM854o0YYcL7WHFf4aIB7pW88f28mddPABmkZ9xdO6DZE5b9vmmP/VLooQrxnfqUm+3TztT9cMQ6Ey78hOaYdF89pJErwiQ1z6mM/avEJzVOptcAiMyw1tmAHdo7prVMn03nIkwVe0Ep+m23Ts/IWN0//wupVm4cZzDEg+EI43vQ+YuwmJ7r9ENKsx/4qr3+cisxXcC6jG1tcuGIoQjmtdvMaHP6kQdScYGko8YxzdqhIbyAGK5J1m6oFTvR2coah3Vu/j5ds1u6zWtM62auvdF5H13gTkCJ6yACLoWnefdKmIVuVJNsVwNqQ5gB4oV0UlMWZJuPi9ekx0ryV/hmovlTpcGzVL5sSSE0lp/lrXE0BAHUb20/mOuysDfCfpAEo+YB6f9Qm/uB33ku5EyQid1IqFW3OREiUVdjqd3GB6HPVfdWwMTRIc4oejAUjRp1vxOVVuBZWqu7O4X0fOFfIgGr8PY0lRH3nlKiVX3G1gMkakVDW6pBdlDEJ6lokpvjaSQ8q+Bguv41SGgVE+ftAGIFeEmmuVuUNMcu4/jft6v7hToA8jYwo6I0bYxwsjam8s0RErQ+1sfeBmawSQG7boSUindwRS9aPqj3PX2wMI0OXYXKpz0tOtD0UL13OtClnqaFB72LAG17i8z3K/t2LPpHokLeP9Ljvj9SGzgZXAzA==|920
+}//GErpvgCnVjmPCCCTafCITTaoWzzsW36J/6YeBb4gdcZkjQblSWvGDQXHbH7eYr9ubzV487DqNeVs3iz9QEX5mcex1ERZB1FR0BowsYaBq9t2mm1t9MefIeeAB9fryCnulAWUtafk8Fi6z4pDBR+7PxNlEModptDJV8W0s8wndWi0XDMY/FvaZ9fRnx4+BPMHVlCt/SIF9dRQOGALOrL735bFRGVF3NGxbUiE55tJXr2YV/Lz2GPaHoLRvqwUPMYN2Sd5Szt7FtqScjdBdc2VE52rcs7WhVmtkR8hYEzbljkQuo2eNHbD5f9hmNmPq9FhFuKtt+0ysl5SNctTZTKnfzma9xnMDm+3EJ2OBzjL/lAhyyM8JaiNQzx7RnBUQjTnmLx8daPIK5o4KuqEG+Y5/BhW4gaRs5qCYjY1kkzZqlJJi3Z9kJ3coU73EG1++TJoF8jP3NBOTZ6DjVOYiYVvZS2DPgwG2g2nmfv1A+CYnX8h0bo+7MxhVY4IrFuAMthVTV5Jksa2996XN88erBOfTaOwxmsbHC96Wj8j0zS6vBcfCJ1CL9G7+R6+ZiRwJgAk/1dq/7JGPFBdCOGeJVRDzoDDnfBS6NxafGqWcFHMXapP/al/82EpYnxW2rInM33LWUAWSNqhck4GtdqKyoL24VG9NJMbG/xarZJh/r4I0fsq5mCUUbOkqRhXzoCJNyRyUdQ6HnlcNbnVNBhd8sC7n10v18HOlRfj1rTM/keE4vbB9mzyO/BLaEKBaKKSbeecINwmCH7GAEzKn8PdLyLDi/FZinj47FGjrtA0gXrflI/Vn2lXMNzvmX8Hw+SQKomIMmq6qVnlFHqvR7JziETsVTsKlCOjfcoIGakyZR4OSP1CWZlB+7tYaaPnaVd7nA0INKr20iw0ST1IQ7j+exCdMg==|920
