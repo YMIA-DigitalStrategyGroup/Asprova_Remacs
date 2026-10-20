@@ -3,9 +3,28 @@
     "Count": 44
   },
   "Cols": {
+    "InLogicalVisibleIndexes": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
     "Count": 60
   },
   "Values": {
+    "0,45": "積層投入日",
     "1,1": "引合情報連携",
     "4,2": "積層投入日",
     "4,21": "Asprovaに書出",
@@ -17,6 +36,9 @@
     "14,21": "Asprovaに書出",
     "19,1": "※ 2026-8-12 希望納期を投入計画の積層投入日に変更。サーバーサイドコマンドも修正済。",
     "20,1": "※ 投入計画取込時に仕様番号が無い場合があるので（通常ない）、本サーバーサイドコマンドで仕様コードを設定するように変更。"
+  },
+  "Formulas": {
+    "0,50": "TEXT(J5,\"yyyy/MM/dd\")"
   },
   "AttachInfos": {
     "4,9": {
@@ -50,7 +72,7 @@
                         "ParamName": "積層投入日",
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=各種マスタ連動!J5"
+                          "SerializeProperty": "=各種マスタ連動!AY1"
                         }
                       }
                     ],
@@ -62,7 +84,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "89fe9d15-3dca-4b69-a191-bdc91baae715"
+                "ID": "3c81bd15-44be-4c19-b152-571b496978a4"
               }
             ]
           }
@@ -98,7 +120,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "5c952691-5ff1-4c15-98c2-32343daa9d57"
+                "ID": "9981d68b-164d-4c6d-b9c3-555d8ee43701"
               }
             ]
           }
@@ -134,7 +156,7 @@
                     "MessageFormula": "実行が完了しました！！"
                   }
                 ],
-                "ID": "c9d0382f-b733-482d-b445-02c2428627d7"
+                "ID": "c0ef7c58-857a-44d2-8bf6-edc7be8e6cf2"
               }
             ]
           }
@@ -726,7 +748,8 @@
     "11,1,2,10",
     "11,20,2,10",
     "14,2,2,8",
-    "14,21,2,8"
+    "14,21,2,8",
+    "0,50,1,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -752,4 +775,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//AQXJIJmEkF+qjQECsMy2pmgm0Bcghs02EfvD0z6X8EQgMdN53hKvKzFKLJJe3GUjkYZgXeHs1rh9BPUiq+jsWM+xDCMaL5yqCxX/Pkt/7I9HJGyb8xRBGl3yVTxywn0aaGhHCKZNh/15p0ZV2qmmcQkAgNwRF/s/GhzGcNG4C24iBRcUAyL8uu3mD0OnpGeiU1t/J9y4gPYY3zfi2MlUyeHpC+F2TiNU07V1MX77Jgew2gtBmxhFMZ1v652azmopNeqwY96bKpu8uG7D0BBXNpHbxedRDhp54V9UBqVP00FXOj6rVJNVr2ZPIvhAE+tMdoFL6hzHJuPs9IVV5jj8MqLSCHUIBKqRVY9+y7rKbp8XJDdkEvLJe7JHBl/c4V1Lx7t6P0or/PWNVKiKCC9pz+vrOcz/PnjpNhE8Y/xU1TiydW3vRLW+HggjRgYQAjR7dEMFAJFDvXdJRIZLuIBcXXoqCnEyEvn3ZO9SbEOlkpt7qAo0guVAOpD1IiE3TM9QSMuwbWMNXsaaeNaMydfifL6rSfLQkc5klQ675DSN5x7d0u3Awtpk49SscEtHXD8gsh49+LmivhEmJduxW3JH76cmvtbMgzZ+WbmK2PFnRd1Ririy5XwQzw2D2QrrAkhezxjWh29JOw5uKiU5On+tmsJHP4BAwrMSxAMmZ9l7n5wx0ek07n6O2ytxBV6HQJ8PpTnXm+duE89EEm7pckwS4GNB3/DFmkVEyf5kuRTbs7krfpPPxRjG6MRXA0BBiMP1rYaYTS1ctJcVhyL0u7qtT9WHDCcxTmLWvfi3VCfWDdBIFYUXw9WvScwwdwZM/YWfRkBrjEq67E5Np7rEZAsnLX/mofqNCLsF7HnZYn2zEJcIKmpzhbAZsGcqN0n8tIzwMyy8kuUQKk+ag7JShyuy/A==|920
+}//LR0/ddHtKZyX7cco2M9qGhUmadTMZYvVmg6iEkdkcOnAXJt56ZjCgKa02Y1Qqi03zcCOkjwwiBa9Bf1ysrEGitX2rZ+4P45ddzt+js3h6oBDwHQOMR774//6TiuB9Zyv7zQLwILH627QMOUInfmZWxTz5gmm35oDFM6c8mvMkjxgG1P8PkF6gU8ibGc/JlhryaiGvc2EBkyg3wPk3akUYo5GlgFz6HE7MQFCLSO2/E6iPuHcb4Ckf1m+xLoo3torZqfCLzBDuVq1iuXiUf5S0vD/ECJsr/UP2hFSSoLSyjZlu+V95k/0aqw3y0PPErxxoOkCxf/ka/1D3DypjqIAfAvzggGoADavdAnLIYcj5AXGaSWDI2/8xKuQ00HpyW72XwrYC6ATq0PwvGz9XueTCRkAmLRwhueWLzxnw63QbbkLz2z8df/geQcUUOzuaL8npsotBpST85PIGJsdVrDWOYUnTpmbTMGq5XSgqPfCl8pBGaL9aeDS9P0PaBP9ZThl69fgABN/oaxbYM2UlBKjJapGC4GkkqLenBKdPkyczUKxx3owWsePmM/jqb1a2GNxxnxD17a+XCZoPgJRxPooG47fhIGpT7OVBBES5PSa/PjauqJzUssIJe4Edlwl1cnbGU6Y8RFk7cAYdNc79iyGRH4chlGVjiUzoPexFapfCAF+bYVqmgq7BfQn8wbWF7HIDJIwBpT7NlCTd8AXkfJuUBoqoKmINBpvhSzrAty2g2zipYQSGCk/zCL65E90Rd7E8ZZ+LGYYYM/YXxL8HPpvhuqUqipe0nSSoImw0W23M08SLL90Ni1fbb+MY1EJUMm4p/rBsVMRV6E+EflNcOsp330rjUYjmec4AMXIaz+nCM30PZMW3NmTldvgFzZ+81tV2dmGYYxKZlnFuFNdg2QiEg==|920
