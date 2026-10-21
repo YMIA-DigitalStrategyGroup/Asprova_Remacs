@@ -758,7 +758,17 @@
   },
   {
     "ModuleName": "PCPage/その他有償工事 Ver2",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-21T14:32:23.3149868+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\その他実績情報(有償工事)\\その他有償工事 Ver2.json",
+      "Pages\\その他実績情報(有償工事)\\その他有償工事 Ver2.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/その他有償工事 （バックアップ）",
