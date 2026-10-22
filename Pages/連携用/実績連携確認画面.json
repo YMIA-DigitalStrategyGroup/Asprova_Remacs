@@ -30,7 +30,17 @@
     "8,30": "ymia_t_asprova_jisseki_remacs",
     "24,2": "ymia_t_seisan_jissekidt",
     "27,54": "更新",
-    "41,2": "ymia_t_asprova_2remacs"
+    "41,2": "ymia_t_asprova_2remacs",
+    "42,2": "日付",
+    "42,6": "社員コード",
+    "42,10": "伝票番号",
+    "42,14": "棚番号",
+    "42,18": "良品数",
+    "42,22": "不良品数",
+    "42,26": "作業時間",
+    "42,30": "着手",
+    "42,34": "完了",
+    "42,38": "削除"
   },
   "AttachInfos": {
     "9,2": {
@@ -310,23 +320,11 @@
     "42,2": {
       "ListViewInfo": {
         "Name": "リストビュー3",
-        "TableName": "ymia_t_asprova_2remacs",
+        "TableName": "ymia_t_asprova_2remacs2",
         "RowIndex": 42,
         "ColumnIndex": 2,
         "RowCount": 16,
         "ColumnCount": 51,
-        "OrderByCondition": {
-          "OrderByColumns": [
-            {
-              "ColumnBindingInfo": {
-                "TableName": "ymia_t_asprova_2remacs",
-                "ColumnName": "日付",
-                "GUID": "8b14de79-a5e9-4fb1-9192-44c59310ef64"
-              },
-              "Order": 1
-            }
-          ]
-        },
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2",
         "ShowColumnHeaderInDesigner": true,
@@ -336,84 +334,34 @@
       }
     },
     "43,2": {
-      "NameUsedInJavaScript": "日付",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "日付",
-        "GUID": "0f5a2726-2357-4a87-bbf1-d94adba8d1ec"
-      }
+      "NameUsedInJavaScript": "日付"
     },
     "43,6": {
-      "NameUsedInJavaScript": "社員コード",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "社員コード",
-        "GUID": "5061341d-043b-46ef-bff7-638fd9b56e1f"
-      }
+      "NameUsedInJavaScript": "社員コード"
     },
     "43,10": {
-      "NameUsedInJavaScript": "伝票番号",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "伝票番号",
-        "GUID": "4ec928d8-365c-4b9f-afaa-473e2c5129a5"
-      }
+      "NameUsedInJavaScript": "伝票番号"
     },
     "43,14": {
-      "NameUsedInJavaScript": "棚番号",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "棚番号",
-        "GUID": "f7f2042b-e27e-4791-9a79-72067c17356d"
-      }
+      "NameUsedInJavaScript": "棚番号"
     },
     "43,18": {
-      "NameUsedInJavaScript": "良品数",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "良品数",
-        "GUID": "a07f2dbd-4d5b-4317-8e38-265c702f6d4e"
-      }
+      "NameUsedInJavaScript": "良品数"
     },
     "43,22": {
-      "NameUsedInJavaScript": "不良品数",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "不良品数",
-        "GUID": "602f731c-6a49-4b7b-bb87-1382da121d6c"
-      }
+      "NameUsedInJavaScript": "不良品数"
     },
     "43,26": {
-      "NameUsedInJavaScript": "作業時間",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "作業時間",
-        "GUID": "4c8e1fc0-3a68-4bbc-b9fe-0e1e0476b769"
-      }
+      "NameUsedInJavaScript": "作業時間"
     },
     "43,30": {
-      "NameUsedInJavaScript": "着手",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "着手",
-        "GUID": "af946add-4921-4165-ad7f-7c724b51b12c"
-      }
+      "NameUsedInJavaScript": "着手"
     },
     "43,34": {
-      "NameUsedInJavaScript": "完了",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "完了",
-        "GUID": "4fe55a77-c62a-4838-ae58-1813dc67fc62"
-      }
+      "NameUsedInJavaScript": "完了"
     },
     "43,38": {
-      "NameUsedInJavaScript": "削除",
-      "BindingInfo": {
-        "TableName": "ymia_t_asprova_2remacs",
-        "ColumnName": "削除",
-        "GUID": "d61e02d3-f049-42b1-aabf-c5bd3122673d"
-      }
+      "NameUsedInJavaScript": "削除"
     }
   },
   "StyleDatas": {
@@ -810,17 +758,6 @@
       "42,39": 13,
       "42,40": 13,
       "42,41": 13,
-      "42,42": 24,
-      "42,43": 24,
-      "42,44": 24,
-      "42,45": 24,
-      "42,46": 24,
-      "42,47": 24,
-      "42,48": 24,
-      "42,49": 24,
-      "42,50": 24,
-      "42,51": 24,
-      "42,52": 24,
       "43,2": 25,
       "43,3": 13,
       "43,4": 13,
@@ -861,17 +798,6 @@
       "43,39": 13,
       "43,40": 13,
       "43,41": 13,
-      "43,42": 24,
-      "43,43": 24,
-      "43,44": 24,
-      "43,45": 24,
-      "43,46": 24,
-      "43,47": 24,
-      "43,48": 24,
-      "43,49": 24,
-      "43,50": 24,
-      "43,51": 24,
-      "43,52": 24,
       "44,2": 13,
       "44,3": 13,
       "44,4": 13,
@@ -1631,26 +1557,6 @@
     "9,60,1,5",
     "10,65,1,3",
     "9,65,1,3",
-    "42,2,1,4",
-    "43,2,1,4",
-    "42,6,1,4",
-    "43,6,1,4",
-    "42,10,1,4",
-    "43,10,1,4",
-    "42,14,1,4",
-    "43,14,1,4",
-    "42,18,1,4",
-    "43,18,1,4",
-    "42,22,1,4",
-    "43,22,1,4",
-    "42,26,1,4",
-    "43,26,1,4",
-    "42,30,1,4",
-    "43,30,1,4",
-    "42,34,1,4",
-    "43,34,1,4",
-    "42,38,1,4",
-    "43,38,1,4",
     "26,8,1,4",
     "26,12,1,4",
     "26,16,1,4",
@@ -1674,7 +1580,27 @@
     "27,2,13,51",
     "44,2,14,51",
     "27,54,2,6",
-    "2,38,2,5"
+    "2,38,2,5",
+    "43,2,1,4",
+    "42,2,1,4",
+    "43,6,1,4",
+    "42,6,1,4",
+    "43,10,1,4",
+    "42,10,1,4",
+    "43,14,1,4",
+    "42,14,1,4",
+    "43,18,1,4",
+    "42,18,1,4",
+    "43,22,1,4",
+    "42,22,1,4",
+    "43,26,1,4",
+    "42,26,1,4",
+    "43,30,1,4",
+    "42,30,1,4",
+    "43,34,1,4",
+    "42,34,1,4",
+    "43,38,1,4",
+    "42,38,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1699,4 +1625,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//XPpBeFMqtNDsYTh5Ey1VVMjo/OL6Mr2zAKIAK/tBQIiph/sDflNx3ruDqwO5Qa9gYWxuyQctlMqwm5cP85hKG7v9TFV9V2//jRJonjGzpw6fFITl+7JxmDKMqbWkuKWF0MfGyPX4taOAABTvzKqTkOE1c4CBalE2GYoA7UPRpuTf70XF3273pAMESZ+dAFLktTDPJ0w0GCctDglwECdzR3iiB6A8eCGEybm9AqrdjGWG10jRM7GToqHa/EEEy+8fqj5Cy3naIQqzYDIu5sgq/MM5PBJhBaICrcGBiMOVSb7BpeyyR2uMU12HP5Yfe6zLmxYpueeNW7uREbC75Kzz5MW5KsMQoy7H/9bMZ6jHAjEoBIZ4fvqvbNPQx6IA9gdVO4efRzkp+NhsrCXGjn4kKtTiYHVHLAiZv7TDAvdhkjGSJ9JTyqBucl+3GXJ2cKPrywkA07wREnK/rxNeet/t1v8r2Wl8YxTZ9rmT+2QBbo2cxsNKha24icrJJrwkgWU0FJCiUh4e78AMBlxfpAuQ2+tkwOf7TnooWCZ5kA7WMI514fyHksO1ZK4WPK/4nlR7zjTm3X1DkylVHKxmAIC3FCXktaZMltZYra7FYQ5kT60zMD5JZ0qTHztqfqrNfXlDk3+hQLdEEVpzQkv9yLFDqnJyBy2nqENVP7kpaWRBCs9DRriHzjOhYF0+18sevaVVfnYDY79GC3MSDw/RMZXQ0zANjvCnNLVkGGJHXkwtskyy7Kx7jB9SHFiRhJk15kgLeG/Z9IHUr/sixkDVJBiEwvOr628ueO2vgTe4h0cyciQs1nKZ05UPpl7itzj4s8vwLnva8WUJgkbxvtqM3CkdXixsa7lmCJLlPPVbtuQo8UUEfjCOaaEZHgcvPB+yryB1bciP9Iv8H4WS8AmApsQbvA==|920
+}//ItJtJ2idG6Kl38YhLtvhC92J+59KhytjmPKUsfeL6wkOICpxdsYbZhYXSr0As31NXaoDABzaFjkXRe79mENjOjHmVbym4KE7Fscx9FNShpu2za2O5Q564qi8oNRSP3i4HqA0DMMWuRW37RVkMOR2Tw0UT6Yip99UGn3VP3n5qmiQ9p5aiNR04AQvjhDSs8TC9ofzIhe5WeaP3uD49Rpq0F+1RsN7vDXYSIjicsWBt9L4dh8jjc9qIXE8hQsedcFDNAXJYNcr8jEWbLdQm1ffn6bE7sx1tCfy3r3U59AvM6h4vGZFr98E4xp2cbVN1jt5DHR0zD9bl2+lQazRdG2buYbgp6qGtL1XF0ZkGM0DqbxFZ/SbinkzSfWh54KE4FajAYnRgqACQTpaGbAg5I5ePWhiCuMOzQUWfGyF0W6WJVxeEPgzdgWrh6t/A/FtoFSQ5FSV8HoBIRmpfzYa3fisu3QCJ3bmNCVUxMUP58375nufWkGzIJqkbRaR3ZV/gfhXRm4pQmtmLkxuP981bIBPBRSZXURmqdi9r2lVdaknryB7PQrcsUuQblzrKBU7MeCFduCpQIjZSg1kj09FqKkHBL03xuwcCwC+X411f6P5hryArOVQpCaTQcrW9P1cO5ZS3Tyja5DUfBtabB1nl+nn2XDYyZfgAb491ZLm0+2XhMAHnY/8FLRE5N7zaA/WuL8Wi0MjRcNgYJ9sgWSopAm7MApBmWvAfyleSSlFhLXHTvVBVgpsHPNdQi05WIDh+Iu/uHPFnXLo5kFw89KBAEVPbxlQ9FD/AWJ3G8zCXt/b1UJzd3T6ZulTL/T6umA4QV8KJyKuM9ESHKIgGmSRUSrClnODu7VRSFXEFUHfbcD495uvKTuY4P7Z2mLmk5SbHOAGrON2nqqJuwsoU7w+gZu2bQ==|920

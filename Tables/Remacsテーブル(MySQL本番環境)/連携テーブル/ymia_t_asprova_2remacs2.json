@@ -1,12 +1,12 @@
 {
-  "Name": "ymia_t_asprova_2remacs",
+  "Name": "ymia_t_asprova_2remacs2",
   "Columns": [
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DatabaseColumnType": "varchar",
-      "MaxLength": 10,
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
       "Name": "日付",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
@@ -31,7 +31,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0.0000,
+      "DefaultValue": 0.0,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "良品数",
@@ -39,7 +39,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0.0000,
+      "DefaultValue": 0.0,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
       "Name": "不良品数",

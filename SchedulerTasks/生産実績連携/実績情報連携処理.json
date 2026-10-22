@@ -52,22 +52,111 @@
       "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
       "CSVOperation": 1,
       "FilePath": "F:\\Remacs\\Data\\SEISAN_JISSEKI.csv",
+      "TableName": "ymia_t_asprova_2remacs2",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "日付",
+            "GUID": "3e931e0c-4fb2-464d-a636-1f04b4996938"
+          },
+          "CSVColumnNameOrIndex": "日付",
+          "Formatter": "yyyy/MM/dd"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "社員コード",
+            "GUID": "efeea7fa-b857-4f52-910a-87da70cf5379"
+          },
+          "CSVColumnNameOrIndex": "社員コード"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "伝票番号",
+            "GUID": "7b473af0-2c42-403a-b2a0-3d856f50ec66"
+          },
+          "CSVColumnNameOrIndex": "伝票No"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "棚番号",
+            "GUID": "d9894469-f589-45cd-b980-a79ac197b811"
+          },
+          "CSVColumnNameOrIndex": "棚番"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "良品数",
+            "GUID": "09272cd1-770a-442c-824b-c58c090d1c0a"
+          },
+          "CSVColumnNameOrIndex": "良品数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "不良品数",
+            "GUID": "8d9001a6-9a5d-4438-b803-1aedba5679bd"
+          },
+          "CSVColumnNameOrIndex": "不良品数"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "作業時間",
+            "GUID": "2063627a-7793-4445-86d7-b003c3cb6a0b"
+          },
+          "CSVColumnNameOrIndex": "作業時間"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "着手",
+            "GUID": "f6340930-ee51-4c70-b5ee-a4f3390eefe7"
+          },
+          "CSVColumnNameOrIndex": "着手"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "完了",
+            "GUID": "3d369dbe-86bc-4c6e-b208-2d81c68411e8"
+          },
+          "CSVColumnNameOrIndex": "完了"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "ymia_t_asprova_2remacs2",
+            "ColumnName": "削除",
+            "GUID": "6b1a50e1-f57f-4f94-bef3-88466fdcd01d"
+          },
+          "CSVColumnNameOrIndex": "削除"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "CSVOperation": 1,
+      "FilePath": "F:\\Remacs\\Data\\SEISAN_JISSEKI.csv",
       "TableName": "ymia_t_asprova_2remacs",
       "Columns": [
         {
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "日付",
-            "GUID": "2fdfbd90-34b1-4491-8d2b-ffe9631f81b4"
+            "GUID": "9b9d4810-8517-4254-b740-878195c0e0e7"
           },
           "CSVColumnNameOrIndex": "日付",
-          "Formatter": "yyyy/m/d"
+          "Formatter": "yyyy/mm/dd"
         },
         {
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "社員コード",
-            "GUID": "e55b1e3e-8705-4a99-be4a-18093fc3b3eb"
+            "GUID": "f9325618-d58e-4340-8378-8f306c37197b"
           },
           "CSVColumnNameOrIndex": "社員コード"
         },
@@ -75,7 +164,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "伝票番号",
-            "GUID": "f938273e-85df-413f-80c6-ef26b243526a"
+            "GUID": "0850b761-ea3c-4048-996d-8b1872034613"
           },
           "CSVColumnNameOrIndex": "伝票No"
         },
@@ -83,7 +172,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "棚番号",
-            "GUID": "f98e29c4-9f71-4a05-a576-1320dc617434"
+            "GUID": "3f2f2e6a-dc9a-4536-9e51-86b94ddf4841"
           },
           "CSVColumnNameOrIndex": "棚番"
         },
@@ -91,7 +180,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "良品数",
-            "GUID": "2cb9b035-42b8-4839-8e33-1f89074300aa"
+            "GUID": "1588f058-3461-4309-a63b-db69773f6802"
           },
           "CSVColumnNameOrIndex": "良品数"
         },
@@ -99,7 +188,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "不良品数",
-            "GUID": "b1b0879d-f6a7-4c63-8ed2-7b177f3cbf0b"
+            "GUID": "0bde5668-7b71-4172-b32b-f9185bd9fea5"
           },
           "CSVColumnNameOrIndex": "不良品数"
         },
@@ -107,7 +196,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "作業時間",
-            "GUID": "ecc18cb5-cf0b-4952-b05d-7edb82e04c62"
+            "GUID": "e8428d4a-3bdf-4261-a8f9-854ad5f0a02e"
           },
           "CSVColumnNameOrIndex": "作業時間"
         },
@@ -115,7 +204,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "着手",
-            "GUID": "8780379b-9e3f-4bb9-b1c6-0c992a595f15"
+            "GUID": "0e15f95b-38d4-41fc-b5af-dcf4a18c21b4"
           },
           "CSVColumnNameOrIndex": "着手"
         },
@@ -123,7 +212,7 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "完了",
-            "GUID": "837b3030-870f-45f1-b0ca-6a63bf2a495d"
+            "GUID": "9e46042b-abfb-47de-bb8f-67d3f6741922"
           },
           "CSVColumnNameOrIndex": "完了"
         },
@@ -131,11 +220,12 @@
           "BindingColumn": {
             "TableName": "ymia_t_asprova_2remacs",
             "ColumnName": "削除",
-            "GUID": "4ece660a-ac39-4784-a713-6abef16b84a8"
+            "GUID": "6b9f5020-be25-4836-814a-b4ebb31029b7"
           },
           "CSVColumnNameOrIndex": "削除"
         }
-      ]
+      ],
+      "Disabled": true
     },
     {
       "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
@@ -158,7 +248,8 @@
       "Path": "cmd.exe",
       "Arguments": "/c F:\\Remacs\\App\\SeisanJissekiCopy.bat",
       "WorkingDirectory": "F:\\Remacs\\App",
-      "Comments": "AWSで対応する"
+      "Comments": "AWSで対応する※9月23日の打合せで無効化にした",
+      "Disabled": true
     }
   ]
 }
