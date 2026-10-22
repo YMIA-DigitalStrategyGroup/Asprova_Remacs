@@ -491,7 +491,16 @@
   },
   {
     "ModuleName": "TaskScheduler/生産計画_生産実績ファイルをRemacsサーバーへコピー",
-    "ModuleType": 16
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-22T14:40:31.7832508+09:00",
+    "ModuleType": 16,
+    "ToRemoveFiles": [
+      "SchedulerTasks\\生産計画_生産実績ファイルをRemacsサーバーへコピー.json"
+    ]
   },
   {
     "ModuleName": "PCPage/島添：間違い防止用ページ",
