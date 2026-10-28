@@ -1,6 +1,6 @@
 {
   "Name": "生産計画_生産実績ファイルをRemacsサーバーへコピー",
-  "Enabled": true,
+  "Enabled": false,
   "Triggers": [
     {
       "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
