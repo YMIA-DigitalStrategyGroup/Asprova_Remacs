@@ -349,7 +349,17 @@
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（有償工事実績）",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-05T16:28:54.2787579+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\その他実績情報(有償工事)\\作業実績エクスポート（有償工事実績）.json",
+      "Pages\\その他実績情報(有償工事)\\作業実績エクスポート（有償工事実績）.rd"
+    ]
   },
   {
     "ModuleName": "Pages/投入計画取込(舟艇_海洋)",
