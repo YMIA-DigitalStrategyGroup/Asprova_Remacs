@@ -764,6 +764,26 @@
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績 (2)",
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-06T11:47:00.7123314+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績 (2).json",
+      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績 (2).rd"
+    ]
+  },
+  {
+    "ModuleName": "MobilePage/モバイル_生産実績 (使わない削除対象)",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-06T11:47:00.7124435+09:00",
     "ModuleType": 2
   }
 ]
