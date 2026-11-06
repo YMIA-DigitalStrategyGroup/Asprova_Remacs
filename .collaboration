@@ -659,7 +659,17 @@
   },
   {
     "ModuleName": "MobilePage/モバイル_その他作業",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-06T12:02:16.5848324+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\モバイル_その他作業.json",
+      "Pages\\モバイル版実績入力ページ\\モバイル_その他作業.rd"
+    ]
   },
   {
     "ModuleName": "MobilePage/実績入力_モバイル",
