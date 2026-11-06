@@ -82,7 +82,6 @@
     "Count": 114
   },
   "Values": {
-    "0,53": "「-」も含んでしまうピボットだけど、まだけさないで⇩（リストビュー名：特殊工事実績一覧表）",
     "1,1": "特殊工事実績入力画面",
     "1,12": "更新",
     "3,1": "工事区分",
@@ -96,7 +95,6 @@
     "4,41": "作業時間",
     "6,1": "追加",
     "8,1": "※\"リストビューで直接変更”を行った場合は必ず更新ボタンで情報の更新を行ってください※",
-    "13,53": "「-」も含んでしまうピボットだけど、まだけさないで⇩（リストビュー名：特殊工事実績一覧表）",
     "27,53": "V_艇種集計用",
     "42,53": "V_工事集計用",
     "53,1": "戻る",
@@ -130,7 +128,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "915ae2c1-b6a9-48e9-96ba-bdf1bb9b7058"
+                "ID": "fc5c30e3-38d6-45c7-b4c5-5bcc966da5dd"
               }
             ]
           }
@@ -143,177 +141,6 @@
           "Color": "Background 1",
           "UseCellTypeForeColor": true
         }
-      }
-    },
-    "1,53": {
-      "CellType": {
-        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
-        "PivotTableSetting": {
-          "SelectedListViewName": "特殊工事実績一覧表",
-          "Rows": [
-            {
-              "DatabaseColumnName": "艇種",
-              "DisplayName": "艇種",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
-              }
-            }
-          ],
-          "Cols": [
-            {
-              "DatabaseColumnName": "KOTEI_NAME",
-              "DisplayName": "KOTEI_NAME",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AZ11"
-              }
-            }
-          ],
-          "Values": [
-            {
-              "DatabaseColumnName": "作業時間",
-              "DisplayName": "作業時間",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
-              },
-              "Format": "#,##0",
-              "Aggregator": 0,
-              "TotalAggregator": 0
-            }
-          ],
-          "DatabaseColumns": [
-            {
-              "DatabaseColumnName": "工事区分",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!B11"
-              }
-            },
-            {
-              "DatabaseColumnName": "工事番号",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
-              }
-            },
-            {
-              "DatabaseColumnName": "艇種",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
-              }
-            },
-            {
-              "DatabaseColumnName": "工程コード",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
-              }
-            },
-            {
-              "DatabaseColumnName": "社員コード",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
-              }
-            },
-            {
-              "DatabaseColumnName": "日付",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
-              }
-            },
-            {
-              "DatabaseColumnName": "作業内容",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
-              }
-            },
-            {
-              "DatabaseColumnName": "作業時間",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
-              }
-            },
-            {
-              "DatabaseColumnName": "KOTEI_NAME",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AZ11"
-              }
-            }
-          ],
-          "ForceFrozenRowHeader": true
-        },
-        "PivotTableConditionalFormatSetting": {
-          "Conditions": [
-            {
-              "Label": "作業時間",
-              "DataConditionFormatRulesCollection": {
-                "Rules": [
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 7,
-                    "Value1": "=801",
-                    "Priority": 2,
-                    "GUID": "76f9b1ba-539c-4584-befc-514b5916f485",
-                    "StyleInfo": {
-                      "BorderLeft": "black|1",
-                      "BorderTop": "black|1",
-                      "BorderRight": "black|1",
-                      "BorderBottom": "black|1",
-                      "Background": "#FFFF0000",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 1,
-                    "Value1": "=401",
-                    "Value2": "=800",
-                    "Priority": 1,
-                    "GUID": "2fe5e1f9-5277-4d99-8a11-3d96272163d7",
-                    "StyleInfo": {
-                      "Background": "#FFFFFF00",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 1,
-                    "Value1": "=1",
-                    "Value2": "=400",
-                    "GUID": "c2d433fb-cb45-4d8b-b774-5778f9a2e2be",
-                    "StyleInfo": {
-                      "BorderLeft": "black|1",
-                      "BorderTop": "black|1",
-                      "BorderRight": "black|1",
-                      "BorderBottom": "black|1",
-                      "Background": "Accent 1 40",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "PivotTableStyle": {
-          "IsDataColumnAutoFitWidth": true,
-          "IsRowHeaderAutoFitWidth": true,
-          "UseSimpleBar": true
-        },
-        "ShowBandedRows": true,
-        "PivotTableID": "cd634fa3-0777-45bb-9924-e37c6ab0a38a",
-        "TemplateKey": "Accent_5_3"
       }
     },
     "3,5": {
@@ -884,7 +711,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!B11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -894,7 +721,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -904,7 +731,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -914,7 +741,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -924,7 +751,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -934,7 +761,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -944,7 +771,7 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -959,7 +786,7 @@
                     "UpdateType": 3
                   }
                 ],
-                "ID": "9ef9720e-26f7-4a3e-b210-bd0ff0578e79"
+                "ID": "fd46612e-1c5d-4029-9237-004de9c062e3"
               },
               {
                 "CommandList": [
@@ -968,7 +795,7 @@
                     "MessageFormula": "未入力項目があります！"
                   }
                 ],
-                "ID": "1aad4714-8403-412f-b4a6-50e520b31cae"
+                "ID": "6a5cfe33-e007-4954-af0b-ffc328f7f5b7"
               }
             ]
           }
@@ -1037,13 +864,6 @@
       }
     },
     "10,1": {
-      "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekikouji",
-        "ColumnName": "工事区分",
-        "GUID": "155a8ce7-8750-4cc8-aec5-3c9f269dafd3"
-      }
-    },
-    "10,5": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -1051,7 +871,7 @@
         "GUID": "973f094e-55ac-469f-aeaa-76ddf2680fde"
       }
     },
-    "10,13": {
+    "10,5": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -1059,12 +879,12 @@
         "GUID": "e6ea2328-06a2-446d-9ff5-92d7dd11a7c9"
       }
     },
-    "10,17": {
+    "10,13": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工程コード",
-        "GUID": "03fe746d-9499-44e0-8b52-53ebe39f2d6f"
+        "GUID": "d9d96bd8-dad6-4757-9334-5de01355b331"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1106,12 +926,12 @@
         "IgnoreBlank": false
       }
     },
-    "10,23": {
+    "10,17": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "社員コード",
-        "GUID": "c997ba2f-d0e5-4275-8431-c2cf9b636c3c"
+        "GUID": "420dea63-a216-4d17-a9d5-dbd9bfc4164c"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1143,7 +963,7 @@
           },
           "Value": {
             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-            "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
+            "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
           }
         },
         "ItemsSort": {
@@ -1206,7 +1026,7 @@
         "IgnoreBlank": false
       }
     },
-    "10,29": {
+    "10,23": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -1214,7 +1034,7 @@
         "GUID": "af6ee4f2-8ec6-4df3-b284-205dad746132"
       }
     },
-    "10,33": {
+    "10,29": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -1222,7 +1042,7 @@
         "GUID": "d2ee52d6-4aff-4b05-ac56-783707691660"
       }
     },
-    "10,47": {
+    "10,33": {
       "TotalRowSetting": {
         "FormulaType": 5,
         "StyleInfo": {
@@ -1235,7 +1055,7 @@
         "GUID": "73d05ce9-cb9e-4cf4-aab1-23dd48abe00b"
       }
     },
-    "10,51": {
+    "10,47": {
       "TotalRowSetting": {},
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -1246,198 +1066,6 @@
           "RelatedColumn": "KOTEI_CODE",
           "DisplayColumn": "KOTEI_NAME"
         }
-      }
-    },
-    "14,53": {
-      "CellType": {
-        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
-        "PivotTableSetting": {
-          "SelectedListViewName": "特殊工事実績一覧表",
-          "Rows": [
-            {
-              "DatabaseColumnName": "工事区分",
-              "DisplayName": "工事区分",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!B11"
-              },
-              "BackgroundValue": {}
-            }
-          ],
-          "Cols": [
-            {
-              "DatabaseColumnName": "KOTEI_NAME",
-              "DisplayName": "KOTEI_NAME",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AZ11"
-              },
-              "BackgroundValue": {}
-            }
-          ],
-          "Values": [
-            {
-              "DatabaseColumnName": "作業時間",
-              "DisplayName": "作業時間",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
-              },
-              "Format": "#,##0",
-              "Aggregator": 0,
-              "TotalAggregator": 0,
-              "BackgroundValue": {}
-            }
-          ],
-          "DatabaseColumns": [
-            {
-              "DatabaseColumnName": "工事区分",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!B11"
-              }
-            },
-            {
-              "DatabaseColumnName": "工事番号",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
-              }
-            },
-            {
-              "DatabaseColumnName": "艇種",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
-              }
-            },
-            {
-              "DatabaseColumnName": "工程コード",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
-              }
-            },
-            {
-              "DatabaseColumnName": "社員コード",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
-              }
-            },
-            {
-              "DatabaseColumnName": "日付",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
-              }
-            },
-            {
-              "DatabaseColumnName": "作業内容",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
-              }
-            },
-            {
-              "DatabaseColumnName": "作業時間",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
-              }
-            },
-            {
-              "DatabaseColumnName": "KOTEI_NAME",
-              "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                "SerializeProperty": "='その他有償工事 （バックアップ）'!AZ11"
-              }
-            }
-          ],
-          "ForceFrozenRowHeader": true
-        },
-        "PivotTableConditionalFormatSetting": {
-          "Conditions": [
-            {
-              "Label": "作業時間",
-              "DataConditionFormatRulesCollection": {
-                "Rules": [
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 1,
-                    "Value1": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=1"
-                    },
-                    "Value2": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=400"
-                    },
-                    "Priority": 1,
-                    "GUID": "380b0c8b-481c-4836-8a10-375e1030d658",
-                    "StyleInfo": {
-                      "BorderLeft": "black|1",
-                      "BorderTop": "black|1",
-                      "BorderRight": "black|1",
-                      "BorderBottom": "black|1",
-                      "Background": "#FF00B0F0",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 1,
-                    "Value1": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=401"
-                    },
-                    "Value2": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=800"
-                    },
-                    "GUID": "01473f99-1d29-466d-a0c9-b8b9f50089dd",
-                    "StyleInfo": {
-                      "BorderLeft": "black|1",
-                      "BorderTop": "black|1",
-                      "BorderRight": "black|1",
-                      "BorderBottom": "black|1",
-                      "Background": "#FFFFFF00",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  },
-                  {
-                    "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
-                    "Operator": 7,
-                    "Value1": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=801"
-                    },
-                    "GUID": "00cd2562-518e-4c8f-ad91-e6938b5eeb93",
-                    "StyleInfo": {
-                      "BorderLeft": "black|1",
-                      "BorderTop": "black|1",
-                      "BorderRight": "black|1",
-                      "BorderBottom": "black|1",
-                      "Background": "#FFFF0000",
-                      "Underline": null,
-                      "Strikethrough": null
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "PivotTableStyle": {
-          "IsDataColumnAutoFitWidth": true,
-          "IsRowHeaderAutoFitWidth": true,
-          "UseSimpleBar": true
-        },
-        "ShowBandedRows": true,
-        "PivotTableID": "e3174a9b-ccd7-4444-bf5c-f0106f406b79",
-        "TemplateKey": "Accent_5_3"
       }
     },
     "27,1": {
@@ -1676,7 +1304,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "社員コード",
-        "GUID": "2f934dd8-28b5-4c0e-8368-6db2ac98dceb"
+        "GUID": "700f6418-e73b-4e29-8069-6a4f8718ecac"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1776,7 +1404,7 @@
       "BindingInfo": {
         "TableName": "v_艇種集計用",
         "ColumnName": "工程コード",
-        "GUID": "d640687f-8f6e-41c7-80f5-95ccc5d28c95"
+        "GUID": "0cc60640-43e7-4ca1-b82c-58601cfd3b0b"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -2098,7 +1726,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "社員コード",
-        "GUID": "1bfd5209-acb1-4dc7-b2e9-ea555e1f333d"
+        "GUID": "22c130dd-6270-4c0e-acbe-2a64ba0a839a"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -2198,7 +1826,7 @@
       "BindingInfo": {
         "TableName": "v_工事集計用",
         "ColumnName": "工程コード",
-        "GUID": "8461cbab-d8d4-4652-a227-cdbed22f8726"
+        "GUID": "daa5c1de-2984-4ca0-8e9a-42ffd57bc1a4"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -2293,7 +1921,7 @@
                     "PageName": "目次"
                   }
                 ],
-                "ID": "3947683b-4525-4bf0-afe3-8ee633ac98a8"
+                "ID": "488e6eb0-b2b8-42ae-8ec7-3012b0c0f5b4"
               },
               {
                 "CommandList": [
@@ -2301,7 +1929,7 @@
                     "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
                   }
                 ],
-                "ID": "6e8b99f2-fe5d-45d1-8bcc-16abdb8c4543"
+                "ID": "2d961c8e-ff7c-4fa2-bfaf-3ed15b33958b"
               }
             ]
           }
@@ -2348,56 +1976,56 @@
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!B11"
                         },
                         "ColumnName": "工事番号"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!F11"
                         },
                         "ColumnName": "艇種"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!N11"
                         },
                         "ColumnName": "工程コード"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!R11"
                         },
                         "ColumnName": "社員コード"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!X11"
                         },
                         "ColumnName": "日付"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AD11"
                         },
                         "ColumnName": "作業内容"
                       },
                       {
                         "Column": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AV11"
+                          "SerializeProperty": "='その他有償工事 （バックアップ）'!AH11"
                         },
                         "ColumnName": "作業時間"
                       }
                     ]
                   }
                 ],
-                "ID": "5579b5eb-beb7-4d01-a051-9dcc909217ae"
+                "ID": "02a8183e-b0e7-4a3b-a0ed-0195ddc6997c"
               }
             ]
           }
@@ -2449,28 +2077,6 @@
       },
       {
         "Background": 2
-      },
-      {
-        "FontFamily": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderTop": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderTop": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderLeft": 0
-      },
-      {
-        "FontFamily": 0,
-        "BorderRight": 0
       },
       {
         "Background": 2,
@@ -2554,9 +2160,6 @@
         "Formatter": 10
       },
       {
-        "HorizontalAlignment": 11
-      },
-      {
         "FontFamily": 0,
         "HorizontalAlignment": 11
       },
@@ -2573,6 +2176,32 @@
       },
       {
         "FontFamily": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 14
+      },
+      {
+        "FontFamily": 0,
         "BorderBottom": 0,
         "BorderLeft": 0
       },
@@ -2584,10 +2213,6 @@
         "FontFamily": 0,
         "BorderBottom": 0,
         "BorderRight": 0
-      },
-      {
-        "FontFamily": 0,
-        "Formatter": 14
       }
     ],
     "Types": {
@@ -2677,57 +2302,57 @@
       "1,10": 3,
       "1,12": 1,
       "1,17": 1,
-      "1,53": 4,
-      "1,54": 5,
-      "1,55": 5,
-      "1,56": 5,
-      "1,57": 5,
-      "1,58": 5,
-      "1,59": 5,
-      "1,60": 5,
-      "1,61": 5,
-      "1,62": 5,
-      "1,63": 5,
-      "1,64": 5,
-      "1,65": 5,
-      "1,66": 5,
-      "1,67": 5,
-      "1,68": 5,
-      "1,69": 5,
-      "1,70": 5,
-      "1,71": 5,
-      "1,72": 5,
-      "1,73": 5,
-      "1,74": 5,
-      "1,75": 5,
-      "1,76": 5,
-      "1,77": 5,
-      "1,78": 5,
-      "1,79": 5,
-      "1,80": 5,
-      "1,81": 5,
-      "1,82": 5,
-      "1,83": 5,
-      "1,84": 5,
-      "1,85": 5,
-      "1,86": 5,
-      "1,87": 5,
-      "1,88": 5,
-      "1,89": 5,
-      "1,90": 5,
-      "1,91": 5,
-      "1,92": 5,
-      "1,93": 5,
-      "1,94": 5,
-      "1,95": 5,
-      "1,96": 5,
-      "1,97": 5,
-      "1,98": 5,
-      "1,99": 5,
-      "1,100": 5,
-      "1,101": 5,
-      "1,102": 6,
-      "2,53": 7,
+      "1,53": 0,
+      "1,54": 1,
+      "1,55": 1,
+      "1,56": 1,
+      "1,57": 1,
+      "1,58": 1,
+      "1,59": 1,
+      "1,60": 1,
+      "1,61": 1,
+      "1,62": 1,
+      "1,63": 1,
+      "1,64": 1,
+      "1,65": 1,
+      "1,66": 1,
+      "1,67": 1,
+      "1,68": 1,
+      "1,69": 1,
+      "1,70": 1,
+      "1,71": 1,
+      "1,72": 1,
+      "1,73": 1,
+      "1,74": 1,
+      "1,75": 1,
+      "1,76": 1,
+      "1,77": 1,
+      "1,78": 1,
+      "1,79": 1,
+      "1,80": 1,
+      "1,81": 1,
+      "1,82": 1,
+      "1,83": 1,
+      "1,84": 1,
+      "1,85": 1,
+      "1,86": 1,
+      "1,87": 1,
+      "1,88": 1,
+      "1,89": 1,
+      "1,90": 1,
+      "1,91": 1,
+      "1,92": 1,
+      "1,93": 1,
+      "1,94": 1,
+      "1,95": 1,
+      "1,96": 1,
+      "1,97": 1,
+      "1,98": 1,
+      "1,99": 1,
+      "1,100": 1,
+      "1,101": 1,
+      "1,102": 1,
+      "2,53": 0,
       "2,54": 1,
       "2,55": 1,
       "2,56": 1,
@@ -2776,58 +2401,58 @@
       "2,99": 1,
       "2,100": 1,
       "2,101": 1,
-      "2,102": 8,
-      "3,1": 9,
-      "3,2": 10,
-      "3,3": 10,
-      "3,4": 10,
-      "3,5": 11,
-      "3,6": 12,
-      "3,7": 12,
-      "3,8": 12,
-      "3,9": 12,
-      "3,10": 13,
-      "3,11": 9,
-      "3,12": 10,
-      "3,13": 10,
-      "3,14": 10,
-      "3,15": 14,
-      "3,16": 12,
-      "3,17": 12,
-      "3,18": 12,
-      "3,19": 12,
-      "3,20": 13,
-      "3,21": 9,
-      "3,22": 10,
-      "3,23": 10,
-      "3,24": 10,
-      "3,25": 11,
-      "3,26": 12,
-      "3,27": 12,
-      "3,28": 12,
-      "3,29": 12,
-      "3,30": 13,
-      "3,31": 9,
-      "3,32": 10,
-      "3,33": 10,
-      "3,34": 10,
-      "3,35": 15,
-      "3,36": 16,
-      "3,37": 16,
-      "3,38": 16,
-      "3,39": 16,
-      "3,40": 17,
-      "3,41": 9,
-      "3,42": 10,
-      "3,43": 10,
-      "3,44": 10,
-      "3,45": 15,
-      "3,46": 12,
-      "3,47": 12,
-      "3,48": 12,
-      "3,49": 12,
-      "3,50": 13,
-      "3,53": 7,
+      "2,102": 1,
+      "3,1": 4,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 6,
+      "3,6": 7,
+      "3,7": 7,
+      "3,8": 7,
+      "3,9": 7,
+      "3,10": 8,
+      "3,11": 4,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 9,
+      "3,16": 7,
+      "3,17": 7,
+      "3,18": 7,
+      "3,19": 7,
+      "3,20": 8,
+      "3,21": 4,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 6,
+      "3,26": 7,
+      "3,27": 7,
+      "3,28": 7,
+      "3,29": 7,
+      "3,30": 8,
+      "3,31": 4,
+      "3,32": 5,
+      "3,33": 5,
+      "3,34": 5,
+      "3,35": 10,
+      "3,36": 11,
+      "3,37": 11,
+      "3,38": 11,
+      "3,39": 11,
+      "3,40": 12,
+      "3,41": 4,
+      "3,42": 5,
+      "3,43": 5,
+      "3,44": 5,
+      "3,45": 10,
+      "3,46": 7,
+      "3,47": 7,
+      "3,48": 7,
+      "3,49": 7,
+      "3,50": 8,
+      "3,53": 0,
       "3,54": 1,
       "3,55": 1,
       "3,56": 1,
@@ -2876,58 +2501,58 @@
       "3,99": 1,
       "3,100": 1,
       "3,101": 1,
-      "3,102": 8,
-      "4,1": 9,
-      "4,2": 10,
-      "4,3": 10,
-      "4,4": 10,
-      "4,5": 15,
-      "4,6": 16,
-      "4,7": 16,
-      "4,8": 16,
-      "4,9": 16,
-      "4,10": 17,
-      "4,11": 9,
-      "4,12": 10,
-      "4,13": 10,
-      "4,14": 10,
-      "4,15": 18,
-      "4,16": 12,
-      "4,17": 12,
-      "4,18": 12,
-      "4,19": 12,
-      "4,20": 12,
-      "4,21": 12,
-      "4,22": 12,
-      "4,23": 12,
-      "4,24": 12,
-      "4,25": 12,
-      "4,26": 12,
-      "4,27": 12,
-      "4,28": 12,
-      "4,29": 12,
-      "4,30": 12,
-      "4,31": 12,
-      "4,32": 12,
-      "4,33": 12,
-      "4,34": 12,
-      "4,35": 12,
-      "4,36": 12,
-      "4,37": 12,
-      "4,38": 12,
-      "4,39": 12,
-      "4,40": 13,
-      "4,41": 9,
-      "4,42": 10,
-      "4,43": 10,
-      "4,44": 10,
-      "4,45": 19,
-      "4,46": 20,
-      "4,47": 20,
-      "4,48": 20,
-      "4,49": 20,
-      "4,50": 20,
-      "4,53": 7,
+      "3,102": 1,
+      "4,1": 4,
+      "4,2": 5,
+      "4,3": 5,
+      "4,4": 5,
+      "4,5": 10,
+      "4,6": 11,
+      "4,7": 11,
+      "4,8": 11,
+      "4,9": 11,
+      "4,10": 12,
+      "4,11": 4,
+      "4,12": 5,
+      "4,13": 5,
+      "4,14": 5,
+      "4,15": 13,
+      "4,16": 7,
+      "4,17": 7,
+      "4,18": 7,
+      "4,19": 7,
+      "4,20": 7,
+      "4,21": 7,
+      "4,22": 7,
+      "4,23": 7,
+      "4,24": 7,
+      "4,25": 7,
+      "4,26": 7,
+      "4,27": 7,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 7,
+      "4,31": 7,
+      "4,32": 7,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,36": 7,
+      "4,37": 7,
+      "4,38": 7,
+      "4,39": 7,
+      "4,40": 8,
+      "4,41": 4,
+      "4,42": 5,
+      "4,43": 5,
+      "4,44": 5,
+      "4,45": 14,
+      "4,46": 15,
+      "4,47": 15,
+      "4,48": 15,
+      "4,49": 15,
+      "4,50": 15,
+      "4,53": 0,
       "4,54": 1,
       "4,55": 1,
       "4,56": 1,
@@ -2976,8 +2601,8 @@
       "4,99": 1,
       "4,100": 1,
       "4,101": 1,
-      "4,102": 8,
-      "5,53": 7,
+      "4,102": 1,
+      "5,53": 0,
       "5,54": 1,
       "5,55": 1,
       "5,56": 1,
@@ -3026,8 +2651,8 @@
       "5,99": 1,
       "5,100": 1,
       "5,101": 1,
-      "5,102": 8,
-      "6,53": 7,
+      "5,102": 1,
+      "6,53": 0,
       "6,54": 1,
       "6,55": 1,
       "6,56": 1,
@@ -3076,8 +2701,8 @@
       "6,99": 1,
       "6,100": 1,
       "6,101": 1,
-      "6,102": 8,
-      "7,53": 7,
+      "6,102": 1,
+      "7,53": 0,
       "7,54": 1,
       "7,55": 1,
       "7,56": 1,
@@ -3126,9 +2751,9 @@
       "7,99": 1,
       "7,100": 1,
       "7,101": 1,
-      "7,102": 8,
-      "8,1": 21,
-      "8,53": 7,
+      "7,102": 1,
+      "8,1": 16,
+      "8,53": 0,
       "8,54": 1,
       "8,55": 1,
       "8,56": 1,
@@ -3177,8 +2802,12 @@
       "8,99": 1,
       "8,100": 1,
       "8,101": 1,
-      "8,102": 8,
+      "8,102": 1,
+      "9,1": 1,
+      "9,5": 1,
+      "9,13": 1,
       "9,16": 1,
+      "9,17": 1,
       "9,19": 1,
       "9,20": 1,
       "9,21": 1,
@@ -3193,7 +2822,7 @@
       "9,48": 1,
       "9,49": 1,
       "9,50": 1,
-      "9,53": 7,
+      "9,53": 0,
       "9,54": 1,
       "9,55": 1,
       "9,56": 1,
@@ -3242,30 +2871,30 @@
       "9,99": 1,
       "9,100": 1,
       "9,101": 1,
-      "9,102": 8,
-      "10,1": 22,
-      "10,5": 23,
-      "10,13": 23,
+      "9,102": 1,
+      "10,1": 17,
+      "10,5": 17,
+      "10,13": 17,
       "10,14": 1,
       "10,15": 1,
       "10,16": 1,
-      "10,17": 23,
+      "10,17": 17,
       "10,18": 1,
       "10,19": 1,
       "10,20": 1,
       "10,21": 1,
       "10,22": 1,
-      "10,23": 23,
-      "10,29": 24,
+      "10,23": 18,
+      "10,29": 17,
       "10,30": 1,
       "10,31": 1,
       "10,32": 1,
-      "10,33": 23,
-      "10,47": 25,
+      "10,33": 19,
+      "10,47": 1,
       "10,48": 1,
       "10,49": 1,
       "10,50": 1,
-      "10,53": 7,
+      "10,53": 0,
       "10,54": 1,
       "10,55": 1,
       "10,56": 1,
@@ -3314,8 +2943,8 @@
       "10,99": 1,
       "10,100": 1,
       "10,101": 1,
-      "10,102": 8,
-      "11,53": 7,
+      "10,102": 1,
+      "11,53": 0,
       "11,54": 1,
       "11,55": 1,
       "11,56": 1,
@@ -3364,7 +2993,7 @@
       "11,99": 1,
       "11,100": 1,
       "11,101": 1,
-      "11,102": 8,
+      "11,102": 1,
       "12,30": 1,
       "12,31": 1,
       "12,32": 1,
@@ -3386,56 +3015,56 @@
       "12,48": 1,
       "12,49": 1,
       "12,50": 1,
-      "12,53": 26,
-      "12,54": 27,
-      "12,55": 27,
-      "12,56": 27,
-      "12,57": 27,
-      "12,58": 27,
-      "12,59": 27,
-      "12,60": 27,
-      "12,61": 27,
-      "12,62": 27,
-      "12,63": 27,
-      "12,64": 27,
-      "12,65": 27,
-      "12,66": 27,
-      "12,67": 27,
-      "12,68": 27,
-      "12,69": 27,
-      "12,70": 27,
-      "12,71": 27,
-      "12,72": 27,
-      "12,73": 27,
-      "12,74": 27,
-      "12,75": 27,
-      "12,76": 27,
-      "12,77": 27,
-      "12,78": 27,
-      "12,79": 27,
-      "12,80": 27,
-      "12,81": 27,
-      "12,82": 27,
-      "12,83": 27,
-      "12,84": 27,
-      "12,85": 27,
-      "12,86": 27,
-      "12,87": 27,
-      "12,88": 27,
-      "12,89": 27,
-      "12,90": 27,
-      "12,91": 27,
-      "12,92": 27,
-      "12,93": 27,
-      "12,94": 27,
-      "12,95": 27,
-      "12,96": 27,
-      "12,97": 27,
-      "12,98": 27,
-      "12,99": 27,
-      "12,100": 27,
-      "12,101": 27,
-      "12,102": 28,
+      "12,53": 0,
+      "12,54": 1,
+      "12,55": 1,
+      "12,56": 1,
+      "12,57": 1,
+      "12,58": 1,
+      "12,59": 1,
+      "12,60": 1,
+      "12,61": 1,
+      "12,62": 1,
+      "12,63": 1,
+      "12,64": 1,
+      "12,65": 1,
+      "12,66": 1,
+      "12,67": 1,
+      "12,68": 1,
+      "12,69": 1,
+      "12,70": 1,
+      "12,71": 1,
+      "12,72": 1,
+      "12,73": 1,
+      "12,74": 1,
+      "12,75": 1,
+      "12,76": 1,
+      "12,77": 1,
+      "12,78": 1,
+      "12,79": 1,
+      "12,80": 1,
+      "12,81": 1,
+      "12,82": 1,
+      "12,83": 1,
+      "12,84": 1,
+      "12,85": 1,
+      "12,86": 1,
+      "12,87": 1,
+      "12,88": 1,
+      "12,89": 1,
+      "12,90": 1,
+      "12,91": 1,
+      "12,92": 1,
+      "12,93": 1,
+      "12,94": 1,
+      "12,95": 1,
+      "12,96": 1,
+      "12,97": 1,
+      "12,98": 1,
+      "12,99": 1,
+      "12,100": 1,
+      "12,101": 1,
+      "12,102": 1,
       "13,30": 1,
       "13,31": 1,
       "13,32": 1,
@@ -3528,56 +3157,56 @@
       "14,48": 1,
       "14,49": 1,
       "14,50": 1,
-      "14,53": 4,
-      "14,54": 5,
-      "14,55": 5,
-      "14,56": 5,
-      "14,57": 5,
-      "14,58": 5,
-      "14,59": 5,
-      "14,60": 5,
-      "14,61": 5,
-      "14,62": 5,
-      "14,63": 5,
-      "14,64": 5,
-      "14,65": 5,
-      "14,66": 5,
-      "14,67": 5,
-      "14,68": 5,
-      "14,69": 5,
-      "14,70": 5,
-      "14,71": 5,
-      "14,72": 5,
-      "14,73": 5,
-      "14,74": 5,
-      "14,75": 5,
-      "14,76": 5,
-      "14,77": 5,
-      "14,78": 5,
-      "14,79": 5,
-      "14,80": 5,
-      "14,81": 5,
-      "14,82": 5,
-      "14,83": 5,
-      "14,84": 5,
-      "14,85": 5,
-      "14,86": 5,
-      "14,87": 5,
-      "14,88": 5,
-      "14,89": 5,
-      "14,90": 5,
-      "14,91": 5,
-      "14,92": 5,
-      "14,93": 5,
-      "14,94": 5,
-      "14,95": 5,
-      "14,96": 5,
-      "14,97": 5,
-      "14,98": 5,
-      "14,99": 5,
-      "14,100": 5,
-      "14,101": 5,
-      "14,102": 6,
+      "14,53": 0,
+      "14,54": 1,
+      "14,55": 1,
+      "14,56": 1,
+      "14,57": 1,
+      "14,58": 1,
+      "14,59": 1,
+      "14,60": 1,
+      "14,61": 1,
+      "14,62": 1,
+      "14,63": 1,
+      "14,64": 1,
+      "14,65": 1,
+      "14,66": 1,
+      "14,67": 1,
+      "14,68": 1,
+      "14,69": 1,
+      "14,70": 1,
+      "14,71": 1,
+      "14,72": 1,
+      "14,73": 1,
+      "14,74": 1,
+      "14,75": 1,
+      "14,76": 1,
+      "14,77": 1,
+      "14,78": 1,
+      "14,79": 1,
+      "14,80": 1,
+      "14,81": 1,
+      "14,82": 1,
+      "14,83": 1,
+      "14,84": 1,
+      "14,85": 1,
+      "14,86": 1,
+      "14,87": 1,
+      "14,88": 1,
+      "14,89": 1,
+      "14,90": 1,
+      "14,91": 1,
+      "14,92": 1,
+      "14,93": 1,
+      "14,94": 1,
+      "14,95": 1,
+      "14,96": 1,
+      "14,97": 1,
+      "14,98": 1,
+      "14,99": 1,
+      "14,100": 1,
+      "14,101": 1,
+      "14,102": 1,
       "15,30": 1,
       "15,31": 1,
       "15,32": 1,
@@ -3599,7 +3228,7 @@
       "15,48": 1,
       "15,49": 1,
       "15,50": 1,
-      "15,53": 7,
+      "15,53": 0,
       "15,54": 1,
       "15,55": 1,
       "15,56": 1,
@@ -3648,7 +3277,7 @@
       "15,99": 1,
       "15,100": 1,
       "15,101": 1,
-      "15,102": 8,
+      "15,102": 1,
       "16,30": 1,
       "16,31": 1,
       "16,32": 1,
@@ -3670,7 +3299,7 @@
       "16,48": 1,
       "16,49": 1,
       "16,50": 1,
-      "16,53": 7,
+      "16,53": 0,
       "16,54": 1,
       "16,55": 1,
       "16,56": 1,
@@ -3719,7 +3348,7 @@
       "16,99": 1,
       "16,100": 1,
       "16,101": 1,
-      "16,102": 8,
+      "16,102": 1,
       "17,30": 1,
       "17,31": 1,
       "17,32": 1,
@@ -3741,7 +3370,7 @@
       "17,48": 1,
       "17,49": 1,
       "17,50": 1,
-      "17,53": 7,
+      "17,53": 0,
       "17,54": 1,
       "17,55": 1,
       "17,56": 1,
@@ -3790,8 +3419,8 @@
       "17,99": 1,
       "17,100": 1,
       "17,101": 1,
-      "17,102": 8,
-      "18,53": 7,
+      "17,102": 1,
+      "18,53": 0,
       "18,54": 1,
       "18,55": 1,
       "18,56": 1,
@@ -3840,8 +3469,8 @@
       "18,99": 1,
       "18,100": 1,
       "18,101": 1,
-      "18,102": 8,
-      "19,53": 7,
+      "18,102": 1,
+      "19,53": 0,
       "19,54": 1,
       "19,55": 1,
       "19,56": 1,
@@ -3890,8 +3519,8 @@
       "19,99": 1,
       "19,100": 1,
       "19,101": 1,
-      "19,102": 8,
-      "20,53": 7,
+      "19,102": 1,
+      "20,53": 0,
       "20,54": 1,
       "20,55": 1,
       "20,56": 1,
@@ -3940,8 +3569,8 @@
       "20,99": 1,
       "20,100": 1,
       "20,101": 1,
-      "20,102": 8,
-      "21,53": 7,
+      "20,102": 1,
+      "21,53": 0,
       "21,54": 1,
       "21,55": 1,
       "21,56": 1,
@@ -3990,8 +3619,8 @@
       "21,99": 1,
       "21,100": 1,
       "21,101": 1,
-      "21,102": 8,
-      "22,53": 7,
+      "21,102": 1,
+      "22,53": 0,
       "22,54": 1,
       "22,55": 1,
       "22,56": 1,
@@ -4040,8 +3669,8 @@
       "22,99": 1,
       "22,100": 1,
       "22,101": 1,
-      "22,102": 8,
-      "23,53": 7,
+      "22,102": 1,
+      "23,53": 0,
       "23,54": 1,
       "23,55": 1,
       "23,56": 1,
@@ -4090,8 +3719,8 @@
       "23,99": 1,
       "23,100": 1,
       "23,101": 1,
-      "23,102": 8,
-      "24,53": 7,
+      "23,102": 1,
+      "24,53": 0,
       "24,54": 1,
       "24,55": 1,
       "24,56": 1,
@@ -4140,107 +3769,107 @@
       "24,99": 1,
       "24,100": 1,
       "24,101": 1,
-      "24,102": 8,
-      "25,53": 26,
-      "25,54": 27,
-      "25,55": 27,
-      "25,56": 27,
-      "25,57": 27,
-      "25,58": 27,
-      "25,59": 27,
-      "25,60": 27,
-      "25,61": 27,
-      "25,62": 27,
-      "25,63": 27,
-      "25,64": 27,
-      "25,65": 27,
-      "25,66": 27,
-      "25,67": 27,
-      "25,68": 27,
-      "25,69": 27,
-      "25,70": 27,
-      "25,71": 27,
-      "25,72": 27,
-      "25,73": 27,
-      "25,74": 27,
-      "25,75": 27,
-      "25,76": 27,
-      "25,77": 27,
-      "25,78": 27,
-      "25,79": 27,
-      "25,80": 27,
-      "25,81": 27,
-      "25,82": 27,
-      "25,83": 27,
-      "25,84": 27,
-      "25,85": 27,
-      "25,86": 27,
-      "25,87": 27,
-      "25,88": 27,
-      "25,89": 27,
-      "25,90": 27,
-      "25,91": 27,
-      "25,92": 27,
-      "25,93": 27,
-      "25,94": 27,
-      "25,95": 27,
-      "25,96": 27,
-      "25,97": 27,
-      "25,98": 27,
-      "25,99": 27,
-      "25,100": 27,
-      "25,101": 27,
-      "25,102": 28,
-      "27,1": 4,
-      "27,2": 5,
-      "27,3": 5,
-      "27,4": 5,
-      "27,5": 5,
-      "27,6": 5,
-      "27,7": 5,
-      "27,8": 5,
-      "27,9": 5,
-      "27,10": 5,
-      "27,11": 5,
-      "27,12": 5,
-      "27,13": 5,
-      "27,14": 5,
-      "27,15": 5,
-      "27,16": 5,
-      "27,17": 5,
-      "27,18": 5,
-      "27,19": 5,
-      "27,20": 5,
-      "27,21": 5,
-      "27,22": 5,
-      "27,23": 5,
-      "27,24": 5,
-      "27,25": 5,
-      "27,26": 5,
-      "27,27": 5,
-      "27,28": 5,
-      "27,29": 5,
-      "27,30": 5,
-      "27,31": 5,
-      "27,32": 5,
-      "27,33": 5,
-      "27,34": 5,
-      "27,35": 5,
-      "27,36": 5,
-      "27,37": 5,
-      "27,38": 5,
-      "27,39": 5,
-      "27,40": 5,
-      "27,41": 5,
-      "27,42": 5,
-      "27,43": 5,
-      "27,44": 5,
-      "27,45": 5,
-      "27,46": 5,
-      "27,47": 5,
-      "27,48": 5,
-      "27,49": 5,
-      "27,50": 6,
+      "24,102": 1,
+      "25,53": 0,
+      "25,54": 1,
+      "25,55": 1,
+      "25,56": 1,
+      "25,57": 1,
+      "25,58": 1,
+      "25,59": 1,
+      "25,60": 1,
+      "25,61": 1,
+      "25,62": 1,
+      "25,63": 1,
+      "25,64": 1,
+      "25,65": 1,
+      "25,66": 1,
+      "25,67": 1,
+      "25,68": 1,
+      "25,69": 1,
+      "25,70": 1,
+      "25,71": 1,
+      "25,72": 1,
+      "25,73": 1,
+      "25,74": 1,
+      "25,75": 1,
+      "25,76": 1,
+      "25,77": 1,
+      "25,78": 1,
+      "25,79": 1,
+      "25,80": 1,
+      "25,81": 1,
+      "25,82": 1,
+      "25,83": 1,
+      "25,84": 1,
+      "25,85": 1,
+      "25,86": 1,
+      "25,87": 1,
+      "25,88": 1,
+      "25,89": 1,
+      "25,90": 1,
+      "25,91": 1,
+      "25,92": 1,
+      "25,93": 1,
+      "25,94": 1,
+      "25,95": 1,
+      "25,96": 1,
+      "25,97": 1,
+      "25,98": 1,
+      "25,99": 1,
+      "25,100": 1,
+      "25,101": 1,
+      "25,102": 1,
+      "27,1": 20,
+      "27,2": 21,
+      "27,3": 21,
+      "27,4": 21,
+      "27,5": 21,
+      "27,6": 21,
+      "27,7": 21,
+      "27,8": 21,
+      "27,9": 21,
+      "27,10": 21,
+      "27,11": 21,
+      "27,12": 21,
+      "27,13": 21,
+      "27,14": 21,
+      "27,15": 21,
+      "27,16": 21,
+      "27,17": 21,
+      "27,18": 21,
+      "27,19": 21,
+      "27,20": 21,
+      "27,21": 21,
+      "27,22": 21,
+      "27,23": 21,
+      "27,24": 21,
+      "27,25": 21,
+      "27,26": 21,
+      "27,27": 21,
+      "27,28": 21,
+      "27,29": 21,
+      "27,30": 21,
+      "27,31": 21,
+      "27,32": 21,
+      "27,33": 21,
+      "27,34": 21,
+      "27,35": 21,
+      "27,36": 21,
+      "27,37": 21,
+      "27,38": 21,
+      "27,39": 21,
+      "27,40": 21,
+      "27,41": 21,
+      "27,42": 21,
+      "27,43": 21,
+      "27,44": 21,
+      "27,45": 21,
+      "27,46": 21,
+      "27,47": 21,
+      "27,48": 21,
+      "27,49": 21,
+      "27,50": 22,
       "27,53": 1,
       "27,54": 1,
       "27,55": 1,
@@ -4300,7 +3929,7 @@
       "27,109": 1,
       "27,110": 1,
       "27,111": 1,
-      "28,1": 7,
+      "28,1": 23,
       "28,2": 1,
       "28,3": 1,
       "28,4": 1,
@@ -4349,7 +3978,7 @@
       "28,47": 1,
       "28,48": 1,
       "28,49": 1,
-      "28,50": 8,
+      "28,50": 24,
       "28,53": 1,
       "28,54": 1,
       "28,55": 1,
@@ -4409,7 +4038,7 @@
       "28,109": 1,
       "28,110": 1,
       "28,111": 1,
-      "29,1": 7,
+      "29,1": 23,
       "29,2": 1,
       "29,3": 1,
       "29,4": 1,
@@ -4458,7 +4087,7 @@
       "29,47": 1,
       "29,48": 1,
       "29,49": 1,
-      "29,50": 8,
+      "29,50": 24,
       "29,53": 1,
       "29,54": 1,
       "29,55": 1,
@@ -4487,7 +4116,7 @@
       "29,78": 1,
       "29,79": 1,
       "29,80": 1,
-      "29,81": 29,
+      "29,81": 25,
       "29,82": 1,
       "29,83": 1,
       "29,84": 1,
@@ -4518,7 +4147,7 @@
       "29,109": 1,
       "29,110": 1,
       "29,111": 1,
-      "30,1": 7,
+      "30,1": 23,
       "30,2": 1,
       "30,3": 1,
       "30,4": 1,
@@ -4567,7 +4196,7 @@
       "30,47": 1,
       "30,48": 1,
       "30,49": 1,
-      "30,50": 8,
+      "30,50": 24,
       "30,53": 1,
       "30,54": 1,
       "30,55": 1,
@@ -4627,7 +4256,7 @@
       "30,109": 1,
       "30,110": 1,
       "30,111": 1,
-      "31,1": 7,
+      "31,1": 23,
       "31,2": 1,
       "31,3": 1,
       "31,4": 1,
@@ -4676,7 +4305,7 @@
       "31,47": 1,
       "31,48": 1,
       "31,49": 1,
-      "31,50": 8,
+      "31,50": 24,
       "31,53": 1,
       "31,54": 1,
       "31,55": 1,
@@ -4736,7 +4365,7 @@
       "31,109": 1,
       "31,110": 1,
       "31,111": 1,
-      "32,1": 7,
+      "32,1": 23,
       "32,2": 1,
       "32,3": 1,
       "32,4": 1,
@@ -4785,7 +4414,7 @@
       "32,47": 1,
       "32,48": 1,
       "32,49": 1,
-      "32,50": 8,
+      "32,50": 24,
       "32,53": 1,
       "32,54": 1,
       "32,55": 1,
@@ -4845,7 +4474,7 @@
       "32,109": 1,
       "32,110": 1,
       "32,111": 1,
-      "33,1": 7,
+      "33,1": 23,
       "33,2": 1,
       "33,3": 1,
       "33,4": 1,
@@ -4894,7 +4523,7 @@
       "33,47": 1,
       "33,48": 1,
       "33,49": 1,
-      "33,50": 8,
+      "33,50": 24,
       "33,53": 1,
       "33,54": 1,
       "33,55": 1,
@@ -4954,7 +4583,7 @@
       "33,109": 1,
       "33,110": 1,
       "33,111": 1,
-      "34,1": 7,
+      "34,1": 23,
       "34,2": 1,
       "34,3": 1,
       "34,4": 1,
@@ -5003,7 +4632,7 @@
       "34,47": 1,
       "34,48": 1,
       "34,49": 1,
-      "34,50": 8,
+      "34,50": 24,
       "34,53": 1,
       "34,54": 1,
       "34,55": 1,
@@ -5063,7 +4692,7 @@
       "34,109": 1,
       "34,110": 1,
       "34,111": 1,
-      "35,1": 7,
+      "35,1": 23,
       "35,2": 1,
       "35,3": 1,
       "35,4": 1,
@@ -5112,7 +4741,7 @@
       "35,47": 1,
       "35,48": 1,
       "35,49": 1,
-      "35,50": 8,
+      "35,50": 24,
       "35,53": 1,
       "35,54": 1,
       "35,55": 1,
@@ -5172,7 +4801,7 @@
       "35,109": 1,
       "35,110": 1,
       "35,111": 1,
-      "36,1": 7,
+      "36,1": 23,
       "36,2": 1,
       "36,3": 1,
       "36,4": 1,
@@ -5221,7 +4850,7 @@
       "36,47": 1,
       "36,48": 1,
       "36,49": 1,
-      "36,50": 8,
+      "36,50": 24,
       "36,53": 1,
       "36,54": 1,
       "36,55": 1,
@@ -5281,7 +4910,7 @@
       "36,109": 1,
       "36,110": 1,
       "36,111": 1,
-      "37,1": 7,
+      "37,1": 23,
       "37,2": 1,
       "37,3": 1,
       "37,4": 1,
@@ -5330,7 +4959,7 @@
       "37,47": 1,
       "37,48": 1,
       "37,49": 1,
-      "37,50": 8,
+      "37,50": 24,
       "37,53": 1,
       "37,54": 1,
       "37,55": 1,
@@ -5608,56 +5237,56 @@
       "39,109": 1,
       "39,110": 1,
       "39,111": 1,
-      "40,1": 4,
-      "40,2": 5,
-      "40,3": 5,
-      "40,4": 5,
-      "40,5": 5,
-      "40,6": 5,
-      "40,7": 5,
-      "40,8": 5,
-      "40,9": 5,
-      "40,10": 5,
-      "40,11": 5,
-      "40,12": 5,
-      "40,13": 5,
-      "40,14": 5,
-      "40,15": 5,
-      "40,16": 5,
-      "40,17": 5,
-      "40,18": 5,
-      "40,19": 5,
-      "40,20": 5,
-      "40,21": 5,
-      "40,22": 5,
-      "40,23": 5,
-      "40,24": 5,
-      "40,25": 5,
-      "40,26": 5,
-      "40,27": 5,
-      "40,28": 5,
-      "40,29": 5,
-      "40,30": 5,
-      "40,31": 5,
-      "40,32": 5,
-      "40,33": 5,
-      "40,34": 5,
-      "40,35": 5,
-      "40,36": 5,
-      "40,37": 5,
-      "40,38": 5,
-      "40,39": 5,
-      "40,40": 5,
-      "40,41": 5,
-      "40,42": 5,
-      "40,43": 5,
-      "40,44": 5,
-      "40,45": 5,
-      "40,46": 5,
-      "40,47": 5,
-      "40,48": 5,
-      "40,49": 5,
-      "40,50": 6,
+      "40,1": 20,
+      "40,2": 21,
+      "40,3": 21,
+      "40,4": 21,
+      "40,5": 21,
+      "40,6": 21,
+      "40,7": 21,
+      "40,8": 21,
+      "40,9": 21,
+      "40,10": 21,
+      "40,11": 21,
+      "40,12": 21,
+      "40,13": 21,
+      "40,14": 21,
+      "40,15": 21,
+      "40,16": 21,
+      "40,17": 21,
+      "40,18": 21,
+      "40,19": 21,
+      "40,20": 21,
+      "40,21": 21,
+      "40,22": 21,
+      "40,23": 21,
+      "40,24": 21,
+      "40,25": 21,
+      "40,26": 21,
+      "40,27": 21,
+      "40,28": 21,
+      "40,29": 21,
+      "40,30": 21,
+      "40,31": 21,
+      "40,32": 21,
+      "40,33": 21,
+      "40,34": 21,
+      "40,35": 21,
+      "40,36": 21,
+      "40,37": 21,
+      "40,38": 21,
+      "40,39": 21,
+      "40,40": 21,
+      "40,41": 21,
+      "40,42": 21,
+      "40,43": 21,
+      "40,44": 21,
+      "40,45": 21,
+      "40,46": 21,
+      "40,47": 21,
+      "40,48": 21,
+      "40,49": 21,
+      "40,50": 22,
       "40,53": 1,
       "40,54": 1,
       "40,55": 1,
@@ -5717,7 +5346,7 @@
       "40,109": 1,
       "40,110": 1,
       "40,111": 1,
-      "41,1": 7,
+      "41,1": 23,
       "41,2": 1,
       "41,3": 1,
       "41,4": 1,
@@ -5766,7 +5395,7 @@
       "41,47": 1,
       "41,48": 1,
       "41,49": 1,
-      "41,50": 8,
+      "41,50": 24,
       "41,53": 1,
       "41,54": 1,
       "41,55": 1,
@@ -5826,7 +5455,7 @@
       "41,109": 1,
       "41,110": 1,
       "41,111": 1,
-      "42,1": 7,
+      "42,1": 23,
       "42,2": 1,
       "42,3": 1,
       "42,4": 1,
@@ -5875,7 +5504,7 @@
       "42,47": 1,
       "42,48": 1,
       "42,49": 1,
-      "42,50": 8,
+      "42,50": 24,
       "42,53": 1,
       "42,54": 1,
       "42,55": 1,
@@ -5935,7 +5564,7 @@
       "42,109": 1,
       "42,110": 1,
       "42,111": 1,
-      "43,1": 7,
+      "43,1": 23,
       "43,2": 1,
       "43,3": 1,
       "43,4": 1,
@@ -5984,7 +5613,7 @@
       "43,47": 1,
       "43,48": 1,
       "43,49": 1,
-      "43,50": 8,
+      "43,50": 24,
       "43,53": 1,
       "43,54": 1,
       "43,55": 1,
@@ -6044,7 +5673,7 @@
       "43,109": 1,
       "43,110": 1,
       "43,111": 1,
-      "44,1": 7,
+      "44,1": 23,
       "44,2": 1,
       "44,3": 1,
       "44,4": 1,
@@ -6093,7 +5722,7 @@
       "44,47": 1,
       "44,48": 1,
       "44,49": 1,
-      "44,50": 8,
+      "44,50": 24,
       "44,53": 1,
       "44,54": 1,
       "44,55": 1,
@@ -6122,7 +5751,7 @@
       "44,78": 1,
       "44,79": 1,
       "44,80": 1,
-      "44,81": 29,
+      "44,81": 25,
       "44,82": 1,
       "44,83": 1,
       "44,84": 1,
@@ -6153,7 +5782,7 @@
       "44,109": 1,
       "44,110": 1,
       "44,111": 1,
-      "45,1": 7,
+      "45,1": 23,
       "45,2": 1,
       "45,3": 1,
       "45,4": 1,
@@ -6202,7 +5831,7 @@
       "45,47": 1,
       "45,48": 1,
       "45,49": 1,
-      "45,50": 8,
+      "45,50": 24,
       "45,53": 1,
       "45,54": 1,
       "45,55": 1,
@@ -6262,7 +5891,7 @@
       "45,109": 1,
       "45,110": 1,
       "45,111": 1,
-      "46,1": 7,
+      "46,1": 23,
       "46,2": 1,
       "46,3": 1,
       "46,4": 1,
@@ -6311,7 +5940,7 @@
       "46,47": 1,
       "46,48": 1,
       "46,49": 1,
-      "46,50": 8,
+      "46,50": 24,
       "46,53": 1,
       "46,54": 1,
       "46,55": 1,
@@ -6371,7 +6000,7 @@
       "46,109": 1,
       "46,110": 1,
       "46,111": 1,
-      "47,1": 7,
+      "47,1": 23,
       "47,2": 1,
       "47,3": 1,
       "47,4": 1,
@@ -6420,7 +6049,7 @@
       "47,47": 1,
       "47,48": 1,
       "47,49": 1,
-      "47,50": 8,
+      "47,50": 24,
       "47,53": 1,
       "47,54": 1,
       "47,55": 1,
@@ -6480,7 +6109,7 @@
       "47,109": 1,
       "47,110": 1,
       "47,111": 1,
-      "48,1": 7,
+      "48,1": 23,
       "48,2": 1,
       "48,3": 1,
       "48,4": 1,
@@ -6529,7 +6158,7 @@
       "48,47": 1,
       "48,48": 1,
       "48,49": 1,
-      "48,50": 8,
+      "48,50": 24,
       "48,53": 1,
       "48,54": 1,
       "48,55": 1,
@@ -6589,7 +6218,7 @@
       "48,109": 1,
       "48,110": 1,
       "48,111": 1,
-      "49,1": 7,
+      "49,1": 23,
       "49,2": 1,
       "49,3": 1,
       "49,4": 1,
@@ -6638,7 +6267,7 @@
       "49,47": 1,
       "49,48": 1,
       "49,49": 1,
-      "49,50": 8,
+      "49,50": 24,
       "49,53": 1,
       "49,54": 1,
       "49,55": 1,
@@ -6698,7 +6327,7 @@
       "49,109": 1,
       "49,110": 1,
       "49,111": 1,
-      "50,1": 7,
+      "50,1": 23,
       "50,2": 1,
       "50,3": 1,
       "50,4": 1,
@@ -6747,7 +6376,7 @@
       "50,47": 1,
       "50,48": 1,
       "50,49": 1,
-      "50,50": 8,
+      "50,50": 24,
       "50,53": 1,
       "50,54": 1,
       "50,55": 1,
@@ -7336,33 +6965,15 @@
     "4,5,1,6",
     "4,15,1,26",
     "3,45,1,6",
-    "10,1,1,4",
-    "10,5,1,8",
-    "10,47,1,4",
-    "10,13,1,4",
-    "10,17,1,6",
-    "10,29,1,4",
-    "10,33,1,14",
     "53,38,2,6",
     "1,12,1,5",
     "53,1,2,6",
-    "10,23,1,6",
     "11,1,15,51",
     "40,1,12,50",
     "30,53,12,59",
     "45,53,12,59",
-    "1,53,12,50",
-    "14,53,12,50",
     "27,1,12,50",
     "53,45,2,6",
-    "9,1,1,4",
-    "9,5,1,8",
-    "9,13,1,4",
-    "9,17,1,6",
-    "9,23,1,6",
-    "9,29,1,4",
-    "9,33,1,14",
-    "9,47,1,4",
     "29,53,1,4",
     "28,53,1,4",
     "29,57,1,8",
@@ -7398,7 +7009,23 @@
     "44,103,1,5",
     "43,103,1,5",
     "44,108,1,4",
-    "43,108,1,4"
+    "43,108,1,4",
+    "10,1,1,4",
+    "9,1,1,4",
+    "10,5,1,8",
+    "9,5,1,8",
+    "10,13,1,4",
+    "9,13,1,4",
+    "10,17,1,6",
+    "9,17,1,6",
+    "10,23,1,6",
+    "9,23,1,6",
+    "10,29,1,4",
+    "9,29,1,4",
+    "10,33,1,14",
+    "9,33,1,14",
+    "10,47,1,4",
+    "9,47,1,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -7424,4 +7051,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//lwfM1iGTn8UcpjuwY4Zex0hlz+IadljfnU/XyEdm4qSzepnTQByY+lfTY0FOV3jBPkgL004KL/MrNNBtIh7vE7AHp+LL2iyFiMbrs4EWJDnnbgIfUQM1YCDfNx438H6oACg7hTKicHO251ez1CpEAUcS6hXP3WZDukJeSsPgftr4BoFu+64i1mcv5bYZgzpRKz/h2CyWd5zOn74ScOk13lsyyabzq/U+FLDI7kHZGBUio+c+gfqaUNbPV7CNxtLnfbG4VOl8dnq8+LieyuyNgCV2PE0/hTSopGzm3/W/zmIkcQDXVpUV1FpOwN+YprkAs5Bxc+PnXAS0aQGm97zk22ccHHtz6T5l6pKg9JlPiDOovrREgGiaooa4m+o6ta9Vd8V1mm4VRCaEAXkqRMhvMzUOIeLYAeBym7oc+fL/lWLjQZ9mE6m66ESXw3YrMp3NOWfGlMJtcxJXhK0LkKgueCL1LxqnWZ5s6Z8vRW7u8fI2J4BoRHjOrZykSAR4/FHuYl8WrCDtrT5ooTMoiMLlkO9AEbn4zPFRRp5DLslDCERhn+yi1bSgv+1rrjUQ4Y4qywT7vE57KOc5vEOy5udd4yNOeNBlM+B/g6rzmnhP8aRa4O4AZ/7jhl0jHyP+G7sAL+WPPi+NcH2Ksn8nzcBMzLV3CZ/51Fc/UjzjrvpTcoDm3yfMv13/WBabK93RjuHVryh0GqIMUSpRzxyR+hzOCjIbeNdiq4cOU1Y+wDo1HwJVp+3+z4jB09BRNpnifIrlUu6fqAKc6uvuAHk9NP11pTRrr3J1kplZ0LofdGdmXjnTzzGqSC7+QxKAMORxS3WVaXiP/v8t/1mPRNBVHuaQIhxeqOLpVgNk6aOXUWfVl8oDIdy4/1tsy1U/foWsqJR0J1OJhUmUhaJbv0QUjhXVFQ==|920
+}//lhuvrQI8HAaedv5YsBo7voOEShFL42ghQ2UOD4cerWXqj8QLSlBZjwr0bN1c9b04i20/pGiEXzOMu6aJb4vrj398MfdgSMGQbxg4zwBWrWkUVgWNiyf2zdDr7JQth9LW/R/jftAylNjrUKRPgv6ocr3jO6IIBJfNPI4rupLFDMQ1608eqGL2POnBNu6WJCcSHmpk3bfKvkf4K6fNQYGdlC8ZhoNy6F/5SVtNugvumHgcfM4DM1+nbh6H3dHfC+5VW8VA4yOJ7w1iUrhHQFU6ioCeoeGzrLL14XBJSVOCpW4BuIH6c9Fe/YE9sPx52O1Y/SDKZv4JK5RM8pDqRMVzB+46MImJ0sd5ZKl8JQV5zOzFu5XuWNWt8Dqxy4q0CPWyMdS7VJpTbaxTZyZna8kJdLH+VaJQeCo/y41vIdmk+ZbqqN7SdQ4ciwqDgba5Xr0UwKY751BTp5QovPVHSAx7rpOfyrVQbqDE2VSnl0Dpu9Rhz7o+x0tiISYqeDgQioBDwmWxsrIt8NwskFHuqLnuVpVv0vLKobYLZQSRSS6UerKMF9i/M67qWnNNDhBXQNB0QXr3Lfyt7IhBVZRUB40OcF1Ur7iPy69W/K/S+m7Byzc0Td4oJHOgRnihG7CCvM/01I6FoVXQBZJ6DkBmMPfVNOJNQXxQ1C3up1pG8qJmBTtHbAnc8ylB3j7jg1gWLDUlZOt1NT12IjLGH+JUZrtSE0R9p09CkSJRnoo/eHiPSoqtSnPpG+Zn0BkyLGRmotj1oigw6+eDXa25RitjsN6SO/sstI3RpNjN6OYZT7ym9FRYWz6AcdCmmf0naoODjqteCvpeCqPWWg0f5UGkrbWUH5YjsqaCKqBLBZD7JIORpndg4onlqMpB7TQQT5zsosDOsE9e6BLIhNXjflJYB3v+WQ==|920

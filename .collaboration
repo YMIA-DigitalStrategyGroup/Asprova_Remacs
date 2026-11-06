@@ -45,16 +45,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikouji",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T16:20:27.0747139+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル（Remacs用）\\ymia_t_seisan_jissekikouji.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Tables/Remacsテーブル(MySQL本番環境)/バックアップ用テーブル",
@@ -62,16 +53,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikouji_bk",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T16:20:27.0747766+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\バックアップ用テーブル\\ymia_t_seisan_jissekikouji_bk.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikaiyo_bk",
@@ -159,32 +141,12 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T09:27:48.464249+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
     "ModuleName": "Table/T_担当工程マスタ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T09:27:48.4642632+09:00",
     "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\T_担当工程マスタ.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -349,17 +311,7 @@
   },
   {
     "ModuleName": "PCPage/作業実績エクスポート（有償工事実績）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T16:28:54.2787579+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\その他実績情報(有償工事)\\作業実績エクスポート（有償工事実績）.json",
-      "Pages\\その他実績情報(有償工事)\\作業実績エクスポート（有償工事実績）.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/投入計画取込(舟艇_海洋)",
@@ -687,31 +639,11 @@
   },
   {
     "ModuleName": "PCPage/その他有償工事 Ver2",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-03T14:03:24.300913+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\その他実績情報(有償工事)\\その他有償工事 Ver2.json",
-      "Pages\\その他実績情報(有償工事)\\その他有償工事 Ver2.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/その他有償工事 （バックアップ）",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T16:21:43.3370538+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\その他実績情報(有償工事)\\その他有償工事 （バックアップ）.json",
-      "Pages\\その他実績情報(有償工事)\\その他有償工事 （バックアップ）.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/海洋実績入力 (バックアップ)",
@@ -726,36 +658,12 @@
     "ModuleType": 6
   },
   {
-    "ModuleName": "MobilePage/モバイル_特殊工事",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-06T11:47:58.9201154+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.json",
-      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.rd"
-    ]
-  },
-  {
     "ModuleName": "MobilePage/モバイル_その他作業",
     "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/実績入力_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-06T11:47:58.9204396+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\モバイル版実績入力ページ\\実績入力_モバイル.json",
-      "Pages\\モバイル版実績入力ページ\\実績入力_モバイル.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績",
@@ -771,49 +679,14 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs2",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-05T09:27:48.4640869+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs2.json"
-    ]
-  },
-  {
-    "ModuleName": "MobilePage/モバイル_生産実績 (2)",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-06T11:47:00.7123314+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績 (2).json",
-      "Pages\\モバイル版実績入力ページ\\モバイル_生産実績 (2).rd"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績 (使わない削除対象)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-06T11:47:00.7124435+09:00",
     "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/モバイル_特殊工事_",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\ME023221",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-06T11:47:33.7147577+09:00",
     "ModuleType": 2
   }
 ]

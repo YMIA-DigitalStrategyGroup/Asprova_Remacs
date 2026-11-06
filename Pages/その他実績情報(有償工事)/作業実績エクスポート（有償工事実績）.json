@@ -68,7 +68,7 @@
                   }
                 ],
                 "Comments": "=\"FROMとTOで指定した（\"&TEXT(O5,\"yyyy/mm/dd\")&\"～\"&TEXT(AE5,\"yyyy/mm/dd\")&\"）までデータを出力して宜しいですか？\"",
-                "ID": "5d333857-2d7f-4646-a039-78584653902a"
+                "ID": "f036a69b-3067-4481-bfa9-6325d3e28553"
               }
             ]
           }
@@ -149,14 +149,6 @@
       }
     },
     "11,1": {
-      "NameUsedInJavaScript": "工事区分",
-      "BindingInfo": {
-        "TableName": "ymia_t_seisan_jissekikouji",
-        "ColumnName": "工事区分",
-        "GUID": "ecb97436-2272-4509-bdb0-1b7c9b91a6b4"
-      }
-    },
-    "11,5": {
       "NameUsedInJavaScript": "工事番号",
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
@@ -164,12 +156,20 @@
         "GUID": "127196ba-f791-482d-8eb5-378aae76e958"
       }
     },
-    "11,13": {
+    "11,5": {
       "NameUsedInJavaScript": "艇種",
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "艇種",
         "GUID": "fcab48f1-6475-48a7-bdf9-753f0cd65a46"
+      }
+    },
+    "11,13": {
+      "NameUsedInJavaScript": "艇番",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "艇番",
+        "GUID": "7076cd01-0b71-4c02-b91e-efd1f5280092"
       }
     },
     "11,17": {
@@ -199,11 +199,16 @@
       }
     },
     "11,29": {
-      "NameUsedInJavaScript": "社員コード",
+      "NameUsedInJavaScript": "氏名",
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "社員コード",
-        "GUID": "9573fa1c-3030-4899-95ad-10ed0a859573"
+        "GUID": "d4bc36a1-8044-4c24-b608-4dee380c17de",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー情報ビュー",
+          "RelatedColumn": "氏名",
+          "DisplayColumn": "氏名"
+        }
       }
     },
     "11,35": {
@@ -267,8 +272,12 @@
         "Foreground": 6
       },
       {
+        "Background": 7,
+        "Foreground": 8
+      },
+      {
         "FontFamily": 1,
-        "Formatter": 7
+        "Formatter": 9
       }
     ],
     "Types": {
@@ -280,6 +289,8 @@
         "Center",
         "Right",
         "black",
+        "#FFE28585",
+        "Text 1 0",
         "yyyy/MM/dd"
       ]
     },
@@ -518,7 +529,7 @@
       "8,43": 1,
       "10,1": 6,
       "10,5": 6,
-      "10,13": 6,
+      "10,13": 7,
       "10,14": 1,
       "10,15": 1,
       "10,16": 1,
@@ -551,7 +562,6 @@
       "10,57": 1,
       "11,1": 1,
       "11,5": 1,
-      "11,13": 1,
       "11,14": 1,
       "11,15": 1,
       "11,16": 1,
@@ -563,7 +573,7 @@
       "11,22": 1,
       "11,23": 1,
       "11,29": 1,
-      "11,35": 7,
+      "11,35": 8,
       "11,40": 1,
       "11,41": 1,
       "11,42": 1,
@@ -1932,15 +1942,6 @@
     }
   },
   "Spans": [
-    "11,1,1,4",
-    "11,5,1,8",
-    "11,13,1,4",
-    "11,17,1,6",
-    "11,23,1,6",
-    "11,29,1,6",
-    "11,40,1,14",
-    "11,54,1,4",
-    "11,35,1,5",
     "12,1,32,57",
     "4,15,2,3",
     "4,18,2,10",
@@ -1950,14 +1951,23 @@
     "7,36,2,6",
     "7,20,2,6",
     "1,15,2,29",
+    "11,1,1,4",
     "10,1,1,4",
+    "11,5,1,8",
     "10,5,1,8",
+    "11,13,1,4",
     "10,13,1,4",
+    "11,17,1,6",
     "10,17,1,6",
+    "11,23,1,6",
     "10,23,1,6",
+    "11,29,1,6",
     "10,29,1,6",
+    "11,35,1,5",
     "10,35,1,5",
+    "11,40,1,14",
     "10,40,1,14",
+    "11,54,1,4",
     "10,54,1,4"
   ],
   "PageInfo": {
@@ -1983,4 +1993,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//0HJfHiNhkWzAp8l8MVVz3aO7fnYEDqzcQMdS09RXSkffJ8TTDq+pF1qnJfsSgqA2r4mU/Ig5Tz+ZzK5fsZk6YQvs7C2KXF4k+1/gtqg6kzLa/vOTaWsfRrvFmqYg888qsUKNc4dGQsviw24ACifp/BdHmU24ZfkabWqLvSdG0+eDFRnv/dzA3otsUUY8G3VNmnoz60wvRviYdoLdeHkbv9m3CEkDjm0vdolMaHR8c6g3YGgFYEMdZ6QvOyJZsT2KseQZEwKEjGwh0dUEq2i/iLQmVVoP6pXK205Uh0gZpFHtczc/8+S8VGZX+dFh/ea9hG4PQ30sbU4br4CBJcIn7P1KgtzaQPlqBayJqbFtD8JeOGBAvJp4fnXwl1EZZaO7js+PmRiqVrKXvUUQFOUQnynZSD5L/1yOYbnls8LSElI8JQmeZYUjd2tq8dlV3zdA3y/aaJu7DcGLIPRVSh6mVKKOA7Mxnbm15Ij1eME5dH1GMSlhE9PxY/DB+IHmpGjufkQWcbF61WgSp1QZ1HuzUnWylZcnzN7wWrTHLz2M6fJ7jmxV3zOsLpMR7LmePv4+s069PoAhm5WVnag/wRDA3qimgcEan2IEwOQhFzCg2ODchd7g1kltqEaVdn68QnbhjPTplSO0WWGOQVetLd6SeX7XDRyWlmg8O6ZYtdbjZo82tY1yzoZEdIlHaaVCdbbdIsEx6e0jvYPqZG5SC3KctM58Zy/V1mmwzse+qHL4PLTpWzPN5upkYkNfo2wFPtRaX8+E2pxJVYYsSOdXI9PNr5M+pxCONOT0pLwEa4pjs1mM6f++hmunGFGTUTqy99Y8cUls1EY2TIq97GmtK1Vl2e8ibBXRRFTpZ8qzVxldd7IG+no5Cn7Rg9L5MwYp/qwwl/V5t5kfF7eJjabKLMbkZA==|920
+}//J/qrWSzxQc+jkbEH11ogCRSVGcJHF3WmwhR/qkRGOkIWmL8Z1uGOXo/VtfxMBrP6o3CVm+2FpEfdm6HcEzL4ONZFQToR2cWZZB9m7RwyblnfL+olWcbJaz9bMLhUigJ7EmaWh4XLVgnHEepX+wcc8YKOffKHpUExZMm+8fmGL4mYEOAe/+NH0zk2lvdxt0z8Zb0aV2MY0z9snaLVnQ+e8tcZti0sG3r4cqcCKtct7pdn02Y7pzvz1UfgGYz9eoz0mO5F2iKmxfFY1aEyqfJbm59VAFFaY/iZ6OY7cKlYblM/nC1unyDH5YWRQw4JufZOIIpCO8DPTqJE783SjGuFV//EU7OXjgd6tGFV5bW2wHO1Cb5LyZGCU2+GDlTlWUlJVNS48v1IYWz4EKoMfUaCvwEeq0TQz1ItiAXBBvAzWcXycZFEW+svi14vS3NC4SsuPyM0FQik9cf4ZTYLKcuHNID9ALstoDBClJc/ly5BQYH/NH1TYr+Es7QhYj8rOJ0DkDEZErOEyqI9r+25Y/7/6h4roWcwxssOQG7QqnQGWGxxTGSrZg45zAOzKcSntisq4Ba6rdM2pA2pFkHpSj+lHqu6b0Wuz3juhOdvfs0E+9hp9BviNbfcu6YP4RE1ITX8abgFntqdWt/XmBRLLB/ULMzvaGesWeEHqoItUexCt2VaDm05Eup0kJqqZCJuT1wSNGwvJg5VYREedWmRcCgt1jzhYKWenc4JDnSaydy/ghBPaU5hs1H042fzYm6ICd4niBx65HhI67r1kSrpdSbY7I42NOb7ZAZgzEwb/uavvKfG6YQ446C66Lylc/IDJWvA7HvH63IS1Z5DnoKmXmUdtKFsUwtWMrUrsxGdmfKs6aBTv91pkxrL72opLKX4MVXDe2kLwlSt8svfxAS7MLHALQ==|920

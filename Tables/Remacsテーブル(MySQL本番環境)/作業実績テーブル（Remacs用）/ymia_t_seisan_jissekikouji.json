@@ -5,13 +5,6 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "Required": true,
       "DatabaseColumnType": "varchar",
-      "MaxLength": 20,
-      "Name": "工事区分",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DatabaseColumnType": "varchar",
       "MaxLength": 60,
       "Name": "工事番号",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
@@ -78,6 +71,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": 10,
       "Name": "工程コード_Remacs用",
@@ -85,6 +79,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "bigint",
       "MaxLength": -1,
       "Name": "伝票番号",
@@ -98,11 +93,12 @@
     "SourceTableSchema": ""
   },
   "PrimaryKey": [
-    "工事区分",
-    "艇種",
+    "工事番号",
     "社員コード",
     "工程コード",
-    "日付"
+    "工程コード_Remacs用",
+    "日付",
+    "伝票番号"
   ],
   "Relations": [
     {
@@ -110,6 +106,13 @@
       "PrimaryColumn": "KOTEI_CODE",
       "ForeignTable": "ymia_t_seisan_jissekikouji",
       "ForeignColumn": "工程コード",
+      "IsDetailTableRelation": false
+    },
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "氏名",
+      "ForeignTable": "ymia_t_seisan_jissekikouji",
+      "ForeignColumn": "社員コード",
       "IsDetailTableRelation": false
     }
   ],
