@@ -727,7 +727,17 @@
   },
   {
     "ModuleName": "MobilePage/モバイル_特殊工事",
-    "ModuleType": 2
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-06T11:47:58.9201154+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.json",
+      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.rd"
+    ]
   },
   {
     "ModuleName": "MobilePage/モバイル_その他作業",
@@ -735,7 +745,17 @@
   },
   {
     "ModuleName": "MobilePage/実績入力_モバイル",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-06T11:47:58.9204396+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\実績入力_モバイル.json",
+      "Pages\\モバイル版実績入力ページ\\実績入力_モバイル.rd"
+    ]
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績",
