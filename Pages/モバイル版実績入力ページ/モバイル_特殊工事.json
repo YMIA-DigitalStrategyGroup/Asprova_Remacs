@@ -1,0 +1,2639 @@
+{
+  "Rows": {
+    "Count": 37
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "Count": 71
+  },
+  "Values": {
+    "0,0": "工事番号",
+    "0,5": "-",
+    "0,27": "QRデータ",
+    "1,0": "艇種",
+    "1,5": "-",
+    "1,35": "⇦⇦⇦⇦⇦⇦ カンマが3つあるかどうかで判定していて、なければでたらめな文字という判定。",
+    "2,0": "艇番",
+    "2,5": "-",
+    "2,27": "工程コード（Remacs）",
+    "2,39": "　「あいうえ」は通らないけど、「あ,い,う,え」は通る。問題ないとは思うが、",
+    "3,0": "作業内容",
+    "3,39": "　QRの中は2026025702,EX38A,5513,A0100の形にしないといけない",
+    "4,27": "2026025702,EX38A,5513,A0100",
+    "5,0": "作業時間",
+    "5,27": "1つ目カンマ",
+    "6,0": "Remacs情報",
+    "6,27": "2つ目カンマ",
+    "7,27": "3つ目カンマ",
+    "8,0": "QR読取",
+    "8,6": "追加",
+    "8,27": "伝票番号",
+    "9,27": "工事番号/艇種",
+    "10,27": "艇番",
+    "11,5": "※↓の実績一覧からデータを削除した場合",
+    "11,27": "工程コード",
+    "12,1": "更新",
+    "12,5": "　[更新]ボタンを押さなければ削除が反映されません",
+    "12,27": "QRの形",
+    "13,24": "Remacs",
+    "15,27": "探した伝票番号",
+    "16,27": "探した製番",
+    "17,27": "探した部品",
+    "18,27": "削除フラグ",
+    "19,27": "伝票番号の判定",
+    "20,27": "削除の判定"
+  },
+  "Formulas": {
+    "11,31": "IF(AF8>0,TRIM(MID(AB2,AF8+1,20)),\"\")",
+    "6,31": "IF(AF6=0,0,IFERROR(FIND(\",\",AB2,AF6+1),0))",
+    "7,31": "IF(AF7=0,0,IFERROR(FIND(\",\",AB2,AF7+1),0))",
+    "20,31": "IF(OR(F7=\"\",F7=AF9),\"\",IFERROR(IF(OR(UPPER(AF19&\"\")=\"TRUE\",AF19&\"\"=\"1\"),\"削除あり\",\"\"),\"\"))",
+    "19,31": "IF(OR(F7=\"\",F7=AF9),\"\",IF(IFERROR(AF16,\"\")=\"\",\"見つからない\",IF(TRIM(AF17)=\"\",\"製番なし\",IF(ISNUMBER(FIND(\" \",TRIM(AF17))),\"生産実績\",\"特殊工事\"))))",
+    "9,31": "IF(AF7>0,TRIM(MID(AB2,AF6+1,AF7-AF6-1)),\"\")",
+    "12,31": "IF(AB2=\"\",\"\",IF(OR(AF8=0,IFERROR(FIND(\",\",AB2,AF8+1),0)>0),\"形式エラー\",IF(AND(AF10<>\"\",AF11<>\"\"),\"生産実績\",IF(AND(AF10<>\"\",AF11=\"\"),\"特殊工事\",IF(AND(AF10=\"\",AF11=\"\"),\"製番なし\",\"形式エラー\")))))",
+    "5,31": "IFERROR(FIND(\",\",AB2),0)",
+    "10,31": "IF(AF8>0,TRIM(MID(AB2,AF7+1,AF8-AF7-1)),\"\")",
+    "8,31": "IF(AF6>0,TRIM(LEFT(AB2,AF6-1)),\"\")"
+  },
+  "AttachInfos": {
+    "0,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "-",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "-",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_特殊工事!AF13"
+                      }
+                    ]
+                  },
+                  "value": "特殊工事"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F1"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF10"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F2"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F3"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF9"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF12"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "20ebcb7a-4e1d-43c0-b2c9-bd674e113076"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_特殊工事!AF13"
+                      }
+                    ]
+                  },
+                  "value": "製番なし"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F1"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F2"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F3"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF9"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF12"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "このQRには製番がありません。"
+                  }
+                ],
+                "ID": "f9df64a7-938e-4fc5-acf7-0ba1ace5ac19"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_特殊工事!AF13"
+                      }
+                    ]
+                  },
+                  "value": "生産実績"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "入力するページを間違えていませんか？"
+                  }
+                ],
+                "ID": "96ade815-c09b-467e-9e1a-349d3b9c5063"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_特殊工事!AF13"
+                      }
+                    ]
+                  },
+                  "value": "形式エラー"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "QRコードを正しく読み取れませんでした。\r\nQRラベルの中身に誤りがある可能性が高い為、読み取って表示されるQRデータを確認してください。\r\n※分からない場合は職制に確認してください※"
+                  }
+                ],
+                "ID": "01a49ba0-479f-4989-9f72-c2a7d0c11f2a"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "-",
+            "DisplayValue": "-"
+          },
+          {
+            "Value": "DA51",
+            "DisplayValue": "DA51"
+          },
+          {
+            "Value": "DA51V2",
+            "DisplayValue": "DA51V2"
+          },
+          {
+            "Value": "DA55V2",
+            "DisplayValue": "DA55V2"
+          },
+          {
+            "Value": "DC43CF",
+            "DisplayValue": "DC43CF"
+          },
+          {
+            "Value": "DC48A",
+            "DisplayValue": "DC48A"
+          },
+          {
+            "Value": "DC48A2",
+            "DisplayValue": "DC48A2"
+          },
+          {
+            "Value": "DE31D",
+            "DisplayValue": "DE31D"
+          },
+          {
+            "Value": "DE34BF",
+            "DisplayValue": "DE34BF"
+          },
+          {
+            "Value": "DE37BF",
+            "DisplayValue": "DE37BF"
+          },
+          {
+            "Value": "DE40F",
+            "DisplayValue": "DE40F"
+          },
+          {
+            "Value": "DE43CF",
+            "DisplayValue": "DE43CF"
+          },
+          {
+            "Value": "DE46F",
+            "DisplayValue": "DE46F"
+          },
+          {
+            "Value": "EF17A",
+            "DisplayValue": "EF17A"
+          },
+          {
+            "Value": "EF23B",
+            "DisplayValue": "EF23B"
+          },
+          {
+            "Value": "EF23B-B",
+            "DisplayValue": "EF23B-B"
+          },
+          {
+            "Value": "EF23C",
+            "DisplayValue": "EF23C"
+          },
+          {
+            "Value": "EX28C",
+            "DisplayValue": "EX28C"
+          },
+          {
+            "Value": "EX29",
+            "DisplayValue": "EX29"
+          },
+          {
+            "Value": "EX30B",
+            "DisplayValue": "EX30B"
+          },
+          {
+            "Value": "EX31A",
+            "DisplayValue": "EX31A"
+          },
+          {
+            "Value": "EX34A",
+            "DisplayValue": "EX34A"
+          },
+          {
+            "Value": "EX35.2",
+            "DisplayValue": "EX35.2"
+          },
+          {
+            "Value": "EX38A",
+            "DisplayValue": "EX38A"
+          },
+          {
+            "Value": "EX40A2",
+            "DisplayValue": "EX40A2"
+          },
+          {
+            "Value": "EX46",
+            "DisplayValue": "EX46"
+          },
+          {
+            "Value": "EX47A",
+            "DisplayValue": "EX47A"
+          },
+          {
+            "Value": "FM28B",
+            "DisplayValue": "FM28B"
+          },
+          {
+            "Value": "FRT",
+            "DisplayValue": "FRT"
+          },
+          {
+            "Value": "FST",
+            "DisplayValue": "FST"
+          },
+          {
+            "Value": "FX24C.CS",
+            "DisplayValue": "FX24C.CS"
+          },
+          {
+            "Value": "FX24C.HT",
+            "DisplayValue": "FX24C.HT"
+          },
+          {
+            "Value": "FX24EZ",
+            "DisplayValue": "FX24EZ"
+          },
+          {
+            "Value": "FX27Z",
+            "DisplayValue": "FX27Z"
+          },
+          {
+            "Value": "LF26CZ",
+            "DisplayValue": "LF26CZ"
+          },
+          {
+            "Value": "LF26CZ2",
+            "DisplayValue": "LF26CZ2"
+          },
+          {
+            "Value": "LF28Z",
+            "DisplayValue": "LF28Z"
+          },
+          {
+            "Value": "ZD22B2",
+            "DisplayValue": "ZD22B2"
+          },
+          {
+            "Value": "ZD24F2",
+            "DisplayValue": "ZD24F2"
+          },
+          {
+            "Value": "ZD26G2",
+            "DisplayValue": "ZD26G2"
+          },
+          {
+            "Value": "ZD28K2",
+            "DisplayValue": "ZD28K2"
+          },
+          {
+            "Value": "ZD30M2",
+            "DisplayValue": "ZD30M2"
+          },
+          {
+            "Value": "ZD30N2",
+            "DisplayValue": "ZD30N2"
+          },
+          {
+            "Value": "ZD32F2",
+            "DisplayValue": "ZD32F2"
+          },
+          {
+            "Value": "ZD32G6",
+            "DisplayValue": "ZD32G6"
+          },
+          {
+            "Value": "ZD34F2",
+            "DisplayValue": "ZD34F2"
+          },
+          {
+            "Value": "ZD40H2",
+            "DisplayValue": "ZD40H2"
+          }
+        ],
+        "CellDefaultValue": "-"
+      }
+    },
+    "3,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,27": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F7"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F7"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=モバイル_特殊工事!AF9"
+                      },
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した伝票番号",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "e875f5da-06e6-4a83-8087-6d7f6826b21f",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "DENPYO_NBR",
+                            "GUID": "7bdb6c76-7eeb-44c3-b994-95ef07438fa0"
+                          },
+                          "ColumnName": "DENPYO_NBR"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "5c1370d6-0bd5-4d3a-a207-067b99c4003e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "187125a23edc42b091d9c5b241f7fbcd"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した製番",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "36582ced-ef1e-4f8d-bcdc-ba3831015dcd",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "SEIBAN",
+                            "GUID": "193ee406-2bb1-4ede-ba27-a768edabfb61"
+                          },
+                          "ColumnName": "SEIBAN"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "2df9602b-458b-4831-9ccd-a7b8e71372af"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "20c6c3f38fa04d0c995332fa5f4eb53a"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した部品",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "eae9e663-d77a-40d4-9f39-a713e6968d6b",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "KOTEI_CODE",
+                            "GUID": "2344aea6-af15-4e1a-8a30-f6b795500712"
+                          },
+                          "ColumnName": "KOTEI_CODE"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "1b9bbc0c-2c04-4489-a770-551cb6e28053"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "a50acba0b4d3448ea39b3eb3eadc3b40"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "削除フラグ",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "7e7381d6-762a-47a4-8b2a-1a01b5f9146d",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "DELETE_FLG",
+                            "GUID": "4224d312-7a79-49b5-8847-21d60ece1cda"
+                          },
+                          "ColumnName": "DELETE_FLG"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "0064afc4-bcb1-4e61-bd8f-cb299eacc798"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "9e2c5ef7d9194de9ba8e32a48126fb4b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF16"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!探した伝票番号"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF17"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!探した製番"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!探した部品"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!AF19"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!削除フラグ"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=モバイル_特殊工事!AF21"
+                              }
+                            ]
+                          },
+                          "value": "削除あり"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "削除フラグが1のデータです。\r\nこのデータ自体取り消されている可能性が高い為、職制へ確認してください。"
+                          }
+                        ],
+                        "ID": "b1092685-11c9-4eae-aa99-d60db02af46b"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_特殊工事!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "特殊工事"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F1"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=TRIM(モバイル_特殊工事!AF17)"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F2"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F3"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!AF18"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "dd725efe-7500-4461-9ae8-7463b0b0c69e"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_特殊工事!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "製番なし"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F1"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F2"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!F3"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_特殊工事!AF18"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "この伝票番号には製番がありません。"
+                                  }
+                                ],
+                                "ID": "4afc9cc0-15a3-4500-b284-58b5c3add302"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_特殊工事!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "生産実績"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "入力するページを間違えていませんか？"
+                                  }
+                                ],
+                                "ID": "9d53cbff-32ab-4960-8d76-35e994084706"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_特殊工事!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "見つからない"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "この伝票番号は見つかりませんでした。入力した伝票番号に誤りがないか確認してください。\r\n※分からない場合は職制に確認してください※"
+                                  }
+                                ],
+                                "ID": "142eade8-f014-4697-be81-ca872185fbb4"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "19916132-da58-4d42-9c87-e81cf2607ca2"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "1334a68b-8ff4-42b1-998e-79dbbd34de34"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "8,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!QRデータ_特殊"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F1"
+                },
+                "Value": "-"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F2"
+                },
+                "Value": "-"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F3"
+                },
+                "Value": "-"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F4"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F6"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!F7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=モバイル_特殊工事!QRデータ_特殊"
+            }
+          }
+        ],
+        "Text": "QR読取",
+        "TemplateKey": "戻る"
+      }
+    },
+    "8,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F1"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F4"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F6"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_特殊工事!F7"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "特殊工事実績一覧表_モバイル",
+                    "UpdateType": 1,
+                    "UpdateValues": [
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!B15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F1"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F2"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!J15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F3"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!M15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F4"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!Q15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F6"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!S15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!F7"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!V15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=実績入力_モバイル!工程"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!W15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=実績入力_モバイル!作業者"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!X15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=実績入力_モバイル!日付"
+                        }
+                      },
+                      {
+                        "Column": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!Y15"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_特殊工事!工程コード_特殊"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "特殊工事実績一覧表_モバイル",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "特殊工事実績一覧表_モバイル",
+                    "UpdateType": 6,
+                    "UpdateListviewCommandRunTimeMethodSetting": {
+                      "MethodName": "Reload",
+                      "ParameterValues": {
+                        "clearFilter": false,
+                        "clearSort": false,
+                        "clearRuntimeQueryConditions": false
+                      }
+                    }
+                  }
+                ],
+                "ID": "c3c2df1e-e927-4c15-a181-0bd56eeb2eea"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "未入力項目があります！工事番号・作業内容・作業時間・Remacs情報を入力してください。"
+                  }
+                ],
+                "ID": "c93a699a-377e-43ec-bc4b-4b9139e5d67b"
+              }
+            ]
+          }
+        ],
+        "Text": "追加",
+        "TemplateKey": "戻る"
+      }
+    },
+    "12,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "削除・更新した内容は更新すると元に戻せません。本当に更新してもよろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "特殊工事実績一覧表_モバイル",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "特殊工事実績一覧表_モバイル",
+                    "UpdateType": 6,
+                    "UpdateListviewCommandRunTimeMethodSetting": {
+                      "MethodName": "Reload",
+                      "ParameterValues": {
+                        "clearFilter": false,
+                        "clearSort": false,
+                        "clearRuntimeQueryConditions": false
+                      }
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "データを更新しました！！"
+                  }
+                ],
+                "ID": "f5140c98-3cf2-486f-b131-7f3a0d52a7b6"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "更新"
+      }
+    },
+    "13,1": {
+      "ListViewInfo": {
+        "Name": "特殊工事実績一覧表_モバイル",
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "RowIndex": 13,
+        "ColumnIndex": 1,
+        "RowCount": 10,
+        "ColumnCount": 24,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_seisan_jissekikouji",
+                "ColumnName": "社員コード",
+                "GUID": "6ff1f278-e7d9-4a84-a812-5898643b5c7f"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=実績入力_モバイル!作業者"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_seisan_jissekikouji",
+                "ColumnName": "日付",
+                "GUID": "02afb7d3-df10-498a-b580-da833027342b"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=実績入力_モバイル!日付"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ShowDeleteButton": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "14,1": {
+      "NameUsedInJavaScript": "工事番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "工事番号",
+        "GUID": "66b38008-f4fb-4557-bc0e-9e9d75fae17a"
+      }
+    },
+    "14,5": {
+      "NameUsedInJavaScript": "艇種",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "艇種",
+        "GUID": "5b43f087-3823-4548-83fc-90601b368ef5"
+      }
+    },
+    "14,9": {
+      "NameUsedInJavaScript": "艇番",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "艇番",
+        "GUID": "bd25d7f8-3246-408c-acec-82e937c3d171"
+      }
+    },
+    "14,12": {
+      "NameUsedInJavaScript": "作業内容",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "作業内容",
+        "GUID": "0e44b9c8-d466-45a1-9b18-43c9211e4555"
+      }
+    },
+    "14,16": {
+      "NameUsedInJavaScript": "作業時間",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "作業時間",
+        "GUID": "b97e7128-e911-494a-9eb4-4ad7490a6f25"
+      }
+    },
+    "14,18": {
+      "NameUsedInJavaScript": "伝票番号",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "伝票番号",
+        "GUID": "893e680c-9bd0-4bbe-9047-8e488f3c9c7a"
+      }
+    },
+    "14,21": {
+      "NameUsedInJavaScript": "工程コード",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "工程コード",
+        "GUID": "16c4b8a3-77d1-4e42-adb5-dfb9511bc9f0"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "mkoteiname",
+        "ValueColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_CODE",
+          "GUID": "138f8416-c36d-49bf-a4a6-2934f248c175"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mkoteiname",
+          "ColumnName": "KOTEI_NAME",
+          "GUID": "2c2e7a64-29ce-40eb-8428-744d29d4914e"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "14,22": {
+      "NameUsedInJavaScript": "社員コード",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "社員コード",
+        "GUID": "8d105d90-220f-4302-a2ac-acda5375c440"
+      }
+    },
+    "14,23": {
+      "NameUsedInJavaScript": "日付",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "日付",
+        "GUID": "76a05ec0-3be9-4945-a779-a4bc61855885"
+      }
+    },
+    "14,24": {
+      "NameUsedInJavaScript": "Remacs",
+      "BindingInfo": {
+        "TableName": "ymia_t_seisan_jissekikouji",
+        "ColumnName": "工程コード_Remacs用",
+        "GUID": "8f759477-f32b-4de5-86c0-eeac9807f8cf"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5,
+        "Formatter": 1,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "WordWrap": true
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Foreground": 5,
+        "Formatter": 1
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 8.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 8.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 8.0,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "@",
+        "black",
+        "Center",
+        "#FFFF0000",
+        "Left",
+        "yyyy/m/d"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        },
+        {
+          "Style": 3,
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 2,
+      "0,6": 3,
+      "0,7": 3,
+      "0,8": 3,
+      "0,9": 3,
+      "0,10": 3,
+      "0,11": 3,
+      "0,12": 3,
+      "0,13": 3,
+      "0,27": 4,
+      "0,28": 5,
+      "0,29": 5,
+      "0,30": 5,
+      "0,31": 5,
+      "0,32": 5,
+      "0,33": 5,
+      "0,34": 6,
+      "0,35": 7,
+      "0,36": 7,
+      "0,37": 7,
+      "0,38": 7,
+      "0,39": 7,
+      "0,40": 7,
+      "0,41": 7,
+      "0,42": 7,
+      "0,43": 7,
+      "0,44": 7,
+      "0,45": 7,
+      "0,46": 7,
+      "0,47": 7,
+      "0,48": 7,
+      "0,49": 7,
+      "0,50": 7,
+      "0,51": 7,
+      "0,52": 7,
+      "0,53": 7,
+      "0,54": 7,
+      "0,55": 7,
+      "0,56": 7,
+      "0,57": 7,
+      "0,58": 7,
+      "0,59": 7,
+      "0,60": 7,
+      "1,0": 1,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 2,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,27": 8,
+      "1,28": 9,
+      "1,29": 9,
+      "1,30": 9,
+      "1,31": 9,
+      "1,32": 9,
+      "1,33": 9,
+      "1,34": 10,
+      "1,35": 11,
+      "1,36": 11,
+      "1,37": 12,
+      "1,38": 12,
+      "1,39": 12,
+      "1,40": 12,
+      "1,41": 12,
+      "1,42": 12,
+      "1,43": 12,
+      "1,44": 12,
+      "1,45": 12,
+      "1,46": 12,
+      "1,47": 12,
+      "1,48": 12,
+      "1,49": 12,
+      "1,50": 12,
+      "1,51": 12,
+      "1,52": 12,
+      "1,53": 12,
+      "1,54": 12,
+      "1,55": 12,
+      "1,56": 12,
+      "1,57": 12,
+      "1,58": 12,
+      "1,59": 12,
+      "1,60": 12,
+      "2,0": 1,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 3,
+      "2,6": 13,
+      "2,7": 13,
+      "2,8": 13,
+      "2,9": 13,
+      "2,10": 13,
+      "2,11": 13,
+      "2,12": 13,
+      "2,13": 13,
+      "2,27": 14,
+      "2,28": 15,
+      "2,29": 15,
+      "2,30": 15,
+      "2,31": 15,
+      "2,32": 15,
+      "2,33": 15,
+      "2,34": 16,
+      "2,35": 7,
+      "2,36": 1,
+      "2,37": 7,
+      "2,38": 7,
+      "2,39": 17,
+      "2,40": 7,
+      "2,41": 7,
+      "2,42": 7,
+      "2,43": 7,
+      "2,44": 7,
+      "2,45": 7,
+      "2,46": 7,
+      "2,47": 7,
+      "2,48": 7,
+      "2,49": 7,
+      "2,50": 7,
+      "2,51": 7,
+      "2,52": 7,
+      "2,53": 7,
+      "2,54": 7,
+      "2,55": 7,
+      "2,56": 7,
+      "2,57": 7,
+      "2,58": 7,
+      "2,59": 7,
+      "2,60": 7,
+      "3,0": 0,
+      "3,5": 18,
+      "3,27": 8,
+      "3,28": 9,
+      "3,29": 9,
+      "3,30": 9,
+      "3,31": 9,
+      "3,32": 9,
+      "3,33": 9,
+      "3,34": 10,
+      "3,35": 12,
+      "3,36": 1,
+      "3,37": 12,
+      "3,38": 12,
+      "3,39": 11,
+      "3,40": 12,
+      "3,41": 12,
+      "3,42": 12,
+      "3,43": 12,
+      "3,44": 12,
+      "3,45": 12,
+      "3,46": 12,
+      "3,47": 12,
+      "3,48": 12,
+      "3,49": 12,
+      "3,50": 12,
+      "3,51": 12,
+      "3,52": 12,
+      "3,53": 12,
+      "3,54": 12,
+      "3,55": 12,
+      "3,56": 12,
+      "3,57": 12,
+      "3,58": 12,
+      "3,59": 12,
+      "3,60": 12,
+      "3,61": 7,
+      "3,62": 19,
+      "3,63": 19,
+      "3,64": 19,
+      "3,65": 19,
+      "3,66": 19,
+      "3,67": 19,
+      "3,68": 19,
+      "3,69": 19,
+      "4,5": 13,
+      "4,6": 13,
+      "4,7": 13,
+      "4,8": 13,
+      "4,9": 13,
+      "4,10": 13,
+      "4,11": 13,
+      "4,12": 13,
+      "4,13": 13,
+      "4,27": 20,
+      "4,28": 1,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "4,35": 1,
+      "4,36": 1,
+      "4,37": 1,
+      "4,38": 1,
+      "4,39": 1,
+      "4,40": 1,
+      "4,41": 1,
+      "4,42": 1,
+      "4,43": 1,
+      "4,44": 1,
+      "4,45": 1,
+      "4,46": 1,
+      "4,47": 1,
+      "4,48": 1,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "4,52": 1,
+      "4,53": 1,
+      "4,54": 1,
+      "4,55": 1,
+      "4,56": 1,
+      "4,57": 1,
+      "4,58": 1,
+      "4,59": 1,
+      "4,60": 1,
+      "4,61": 12,
+      "4,62": 12,
+      "4,63": 12,
+      "4,64": 12,
+      "4,65": 12,
+      "4,66": 12,
+      "4,67": 12,
+      "4,68": 12,
+      "4,69": 12,
+      "5,0": 1,
+      "5,5": 2,
+      "5,6": 13,
+      "5,7": 13,
+      "5,8": 13,
+      "5,9": 13,
+      "5,10": 13,
+      "5,11": 13,
+      "5,12": 13,
+      "5,13": 13,
+      "5,27": 21,
+      "5,28": 22,
+      "5,29": 22,
+      "5,30": 22,
+      "5,31": 23,
+      "5,32": 1,
+      "5,33": 1,
+      "5,34": 1,
+      "5,35": 1,
+      "5,36": 1,
+      "5,37": 1,
+      "5,38": 1,
+      "5,39": 1,
+      "5,40": 1,
+      "5,41": 1,
+      "5,42": 1,
+      "5,43": 1,
+      "5,44": 1,
+      "5,45": 1,
+      "5,46": 1,
+      "5,47": 1,
+      "5,48": 1,
+      "5,49": 1,
+      "5,50": 1,
+      "5,51": 1,
+      "5,52": 1,
+      "5,53": 1,
+      "5,54": 1,
+      "5,55": 1,
+      "5,56": 1,
+      "5,57": 1,
+      "5,58": 1,
+      "5,59": 1,
+      "5,60": 1,
+      "5,61": 7,
+      "5,62": 7,
+      "5,63": 7,
+      "5,64": 7,
+      "5,65": 7,
+      "5,66": 7,
+      "5,67": 7,
+      "5,68": 7,
+      "5,69": 7,
+      "6,0": 1,
+      "6,5": 2,
+      "6,6": 13,
+      "6,7": 13,
+      "6,8": 13,
+      "6,9": 13,
+      "6,10": 13,
+      "6,11": 13,
+      "6,12": 13,
+      "6,13": 13,
+      "6,27": 21,
+      "6,28": 22,
+      "6,29": 22,
+      "6,30": 22,
+      "6,31": 23,
+      "6,32": 1,
+      "6,33": 1,
+      "6,34": 1,
+      "6,35": 1,
+      "6,36": 1,
+      "6,37": 1,
+      "6,38": 1,
+      "6,39": 1,
+      "6,40": 1,
+      "6,41": 1,
+      "6,42": 1,
+      "6,43": 1,
+      "6,44": 1,
+      "6,45": 1,
+      "6,46": 1,
+      "6,47": 1,
+      "6,48": 1,
+      "6,49": 1,
+      "6,50": 1,
+      "6,51": 1,
+      "6,52": 1,
+      "6,53": 1,
+      "6,54": 1,
+      "6,55": 1,
+      "6,56": 1,
+      "6,57": 1,
+      "6,58": 1,
+      "6,59": 1,
+      "6,60": 1,
+      "6,61": 12,
+      "6,62": 12,
+      "6,63": 12,
+      "6,64": 12,
+      "6,65": 12,
+      "6,66": 12,
+      "6,67": 12,
+      "6,68": 12,
+      "6,69": 12,
+      "7,27": 21,
+      "7,28": 22,
+      "7,29": 22,
+      "7,30": 22,
+      "7,31": 23,
+      "7,32": 1,
+      "7,33": 1,
+      "7,34": 1,
+      "7,35": 1,
+      "7,36": 1,
+      "7,37": 1,
+      "7,38": 1,
+      "7,39": 1,
+      "7,40": 1,
+      "7,41": 1,
+      "7,42": 1,
+      "7,43": 1,
+      "7,44": 1,
+      "7,45": 1,
+      "7,46": 1,
+      "7,47": 1,
+      "7,48": 1,
+      "7,49": 1,
+      "7,50": 1,
+      "7,51": 1,
+      "7,52": 1,
+      "7,53": 1,
+      "7,54": 1,
+      "7,55": 1,
+      "7,56": 1,
+      "7,57": 1,
+      "7,58": 1,
+      "7,59": 1,
+      "7,60": 1,
+      "7,61": 1,
+      "8,27": 21,
+      "8,28": 22,
+      "8,29": 22,
+      "8,30": 22,
+      "8,31": 23,
+      "8,32": 1,
+      "8,33": 1,
+      "8,34": 1,
+      "8,35": 1,
+      "8,36": 1,
+      "8,37": 1,
+      "8,38": 1,
+      "8,39": 1,
+      "8,40": 1,
+      "8,41": 1,
+      "8,42": 1,
+      "8,43": 1,
+      "8,44": 1,
+      "8,45": 1,
+      "8,46": 1,
+      "8,47": 1,
+      "8,48": 1,
+      "8,49": 1,
+      "8,50": 1,
+      "8,51": 1,
+      "8,52": 1,
+      "8,53": 1,
+      "8,54": 1,
+      "8,55": 1,
+      "8,56": 1,
+      "8,57": 1,
+      "8,58": 1,
+      "8,59": 1,
+      "8,60": 1,
+      "8,61": 1,
+      "9,27": 21,
+      "9,28": 22,
+      "9,29": 22,
+      "9,30": 22,
+      "9,31": 23,
+      "9,32": 1,
+      "9,33": 1,
+      "9,34": 1,
+      "9,35": 1,
+      "9,36": 1,
+      "9,37": 1,
+      "9,38": 1,
+      "9,39": 1,
+      "9,40": 1,
+      "9,41": 1,
+      "9,42": 1,
+      "9,43": 1,
+      "9,44": 1,
+      "9,45": 1,
+      "9,46": 1,
+      "9,47": 1,
+      "9,48": 1,
+      "9,49": 1,
+      "9,50": 1,
+      "9,51": 1,
+      "9,52": 1,
+      "9,53": 1,
+      "9,54": 1,
+      "9,55": 1,
+      "9,56": 1,
+      "9,57": 1,
+      "9,58": 1,
+      "9,59": 1,
+      "9,60": 1,
+      "9,61": 1,
+      "10,27": 21,
+      "10,28": 22,
+      "10,29": 22,
+      "10,30": 22,
+      "10,31": 23,
+      "10,32": 1,
+      "10,33": 1,
+      "10,34": 1,
+      "10,35": 1,
+      "10,36": 1,
+      "10,37": 1,
+      "10,38": 1,
+      "10,39": 1,
+      "10,40": 1,
+      "10,41": 1,
+      "10,42": 1,
+      "10,43": 1,
+      "10,44": 1,
+      "10,45": 1,
+      "10,46": 1,
+      "10,47": 1,
+      "10,48": 1,
+      "10,49": 1,
+      "10,50": 1,
+      "10,51": 1,
+      "10,52": 1,
+      "10,53": 1,
+      "10,54": 1,
+      "10,55": 1,
+      "10,56": 1,
+      "10,57": 1,
+      "10,58": 1,
+      "10,59": 1,
+      "10,60": 1,
+      "10,61": 1,
+      "11,5": 24,
+      "11,27": 21,
+      "11,28": 22,
+      "11,29": 22,
+      "11,30": 22,
+      "11,31": 23,
+      "11,32": 1,
+      "11,33": 1,
+      "11,34": 1,
+      "11,35": 1,
+      "11,36": 1,
+      "11,37": 1,
+      "11,38": 1,
+      "11,39": 1,
+      "11,40": 1,
+      "11,41": 1,
+      "11,42": 1,
+      "11,43": 1,
+      "11,44": 1,
+      "11,45": 1,
+      "11,46": 1,
+      "11,47": 1,
+      "11,48": 1,
+      "11,49": 1,
+      "11,50": 1,
+      "11,51": 1,
+      "11,52": 1,
+      "11,53": 1,
+      "11,54": 1,
+      "11,55": 1,
+      "11,56": 1,
+      "11,57": 1,
+      "11,58": 1,
+      "11,59": 1,
+      "11,60": 1,
+      "11,61": 1,
+      "12,1": 1,
+      "12,4": 25,
+      "12,5": 24,
+      "12,27": 21,
+      "12,28": 22,
+      "12,29": 22,
+      "12,30": 22,
+      "12,31": 23,
+      "12,32": 1,
+      "12,33": 1,
+      "12,34": 1,
+      "12,35": 1,
+      "12,36": 1,
+      "12,37": 1,
+      "12,38": 1,
+      "12,39": 1,
+      "12,40": 1,
+      "12,41": 1,
+      "12,42": 1,
+      "12,43": 1,
+      "12,44": 1,
+      "12,45": 1,
+      "12,46": 1,
+      "12,47": 1,
+      "12,48": 1,
+      "12,49": 1,
+      "12,50": 1,
+      "12,51": 1,
+      "12,52": 1,
+      "12,53": 1,
+      "12,54": 1,
+      "12,55": 1,
+      "12,56": 1,
+      "12,57": 1,
+      "12,58": 1,
+      "12,59": 1,
+      "12,60": 1,
+      "12,61": 1,
+      "13,1": 26,
+      "13,5": 27,
+      "13,9": 27,
+      "13,12": 27,
+      "13,16": 27,
+      "13,17": 1,
+      "13,18": 27,
+      "13,21": 27,
+      "13,22": 27,
+      "13,23": 27,
+      "13,24": 27,
+      "13,27": 1,
+      "13,28": 1,
+      "13,29": 1,
+      "13,30": 1,
+      "13,31": 1,
+      "13,32": 1,
+      "13,33": 1,
+      "13,34": 1,
+      "13,35": 1,
+      "13,36": 1,
+      "13,37": 1,
+      "13,38": 1,
+      "13,39": 1,
+      "13,40": 1,
+      "13,41": 1,
+      "13,42": 1,
+      "13,43": 1,
+      "13,44": 1,
+      "13,45": 1,
+      "13,46": 1,
+      "13,47": 1,
+      "13,48": 1,
+      "13,49": 1,
+      "13,50": 1,
+      "13,51": 1,
+      "13,52": 1,
+      "13,53": 1,
+      "13,54": 1,
+      "13,55": 1,
+      "13,56": 1,
+      "13,57": 1,
+      "13,58": 1,
+      "13,59": 1,
+      "13,60": 1,
+      "13,61": 1,
+      "14,1": 26,
+      "14,5": 27,
+      "14,9": 27,
+      "14,12": 27,
+      "14,16": 27,
+      "14,17": 1,
+      "14,18": 27,
+      "14,21": 27,
+      "14,22": 27,
+      "14,23": 28,
+      "14,24": 27,
+      "14,61": 1,
+      "15,1": 1,
+      "15,2": 1,
+      "15,3": 1,
+      "15,4": 1,
+      "15,5": 1,
+      "15,6": 1,
+      "15,7": 1,
+      "15,8": 1,
+      "15,9": 1,
+      "15,10": 1,
+      "15,11": 1,
+      "15,12": 1,
+      "15,13": 1,
+      "15,14": 1,
+      "15,15": 1,
+      "15,16": 1,
+      "15,17": 1,
+      "15,18": 1,
+      "15,19": 1,
+      "15,20": 1,
+      "15,21": 1,
+      "15,22": 1,
+      "15,23": 1,
+      "15,27": 29,
+      "15,28": 30,
+      "15,29": 30,
+      "15,30": 31,
+      "15,31": 1,
+      "15,32": 1,
+      "15,33": 1,
+      "15,34": 1,
+      "15,35": 1,
+      "15,36": 1,
+      "15,37": 1,
+      "15,38": 1,
+      "15,61": 1,
+      "16,1": 1,
+      "16,2": 1,
+      "16,3": 1,
+      "16,4": 1,
+      "16,5": 1,
+      "16,6": 1,
+      "16,7": 1,
+      "16,8": 1,
+      "16,9": 1,
+      "16,10": 1,
+      "16,11": 1,
+      "16,12": 1,
+      "16,13": 1,
+      "16,14": 1,
+      "16,15": 1,
+      "16,16": 1,
+      "16,17": 1,
+      "16,18": 1,
+      "16,19": 1,
+      "16,20": 1,
+      "16,21": 1,
+      "16,22": 1,
+      "16,23": 1,
+      "16,27": 29,
+      "16,28": 30,
+      "16,29": 30,
+      "16,30": 31,
+      "16,31": 1,
+      "16,32": 1,
+      "16,33": 1,
+      "16,34": 1,
+      "16,35": 1,
+      "16,36": 1,
+      "16,37": 1,
+      "16,38": 1,
+      "16,61": 1,
+      "17,1": 1,
+      "17,2": 1,
+      "17,3": 1,
+      "17,4": 1,
+      "17,5": 1,
+      "17,6": 1,
+      "17,7": 1,
+      "17,8": 1,
+      "17,9": 1,
+      "17,10": 1,
+      "17,11": 1,
+      "17,12": 1,
+      "17,13": 1,
+      "17,14": 1,
+      "17,15": 1,
+      "17,16": 1,
+      "17,17": 1,
+      "17,18": 1,
+      "17,19": 1,
+      "17,20": 1,
+      "17,21": 1,
+      "17,22": 1,
+      "17,23": 1,
+      "17,27": 29,
+      "17,28": 30,
+      "17,29": 30,
+      "17,30": 31,
+      "17,31": 1,
+      "17,32": 1,
+      "17,33": 1,
+      "17,34": 1,
+      "17,35": 1,
+      "17,36": 1,
+      "17,37": 1,
+      "17,38": 1,
+      "18,1": 1,
+      "18,2": 1,
+      "18,3": 1,
+      "18,4": 1,
+      "18,5": 1,
+      "18,6": 1,
+      "18,7": 1,
+      "18,8": 1,
+      "18,9": 1,
+      "18,10": 1,
+      "18,11": 1,
+      "18,12": 1,
+      "18,13": 1,
+      "18,14": 1,
+      "18,15": 1,
+      "18,16": 1,
+      "18,17": 1,
+      "18,18": 1,
+      "18,19": 1,
+      "18,20": 1,
+      "18,21": 1,
+      "18,22": 1,
+      "18,23": 1,
+      "18,27": 29,
+      "18,28": 30,
+      "18,29": 30,
+      "18,30": 31,
+      "18,31": 1,
+      "18,32": 1,
+      "18,33": 1,
+      "18,34": 1,
+      "18,35": 1,
+      "18,36": 1,
+      "18,37": 1,
+      "18,38": 1,
+      "19,1": 1,
+      "19,2": 1,
+      "19,3": 1,
+      "19,4": 1,
+      "19,5": 1,
+      "19,6": 1,
+      "19,7": 1,
+      "19,8": 1,
+      "19,9": 1,
+      "19,10": 1,
+      "19,11": 1,
+      "19,12": 1,
+      "19,13": 1,
+      "19,14": 1,
+      "19,15": 1,
+      "19,16": 1,
+      "19,17": 1,
+      "19,18": 1,
+      "19,19": 1,
+      "19,20": 1,
+      "19,21": 1,
+      "19,22": 1,
+      "19,23": 1,
+      "19,27": 29,
+      "19,28": 30,
+      "19,29": 30,
+      "19,30": 31,
+      "19,31": 1,
+      "19,32": 1,
+      "19,33": 1,
+      "19,34": 1,
+      "19,35": 1,
+      "19,36": 1,
+      "19,37": 1,
+      "19,38": 1,
+      "20,1": 1,
+      "20,2": 1,
+      "20,3": 1,
+      "20,4": 1,
+      "20,5": 1,
+      "20,6": 1,
+      "20,7": 1,
+      "20,8": 1,
+      "20,9": 1,
+      "20,10": 1,
+      "20,11": 1,
+      "20,12": 1,
+      "20,13": 1,
+      "20,14": 1,
+      "20,15": 1,
+      "20,16": 1,
+      "20,17": 1,
+      "20,18": 1,
+      "20,19": 1,
+      "20,20": 1,
+      "20,21": 1,
+      "20,22": 1,
+      "20,23": 1,
+      "20,27": 32,
+      "20,28": 33,
+      "20,29": 33,
+      "20,30": 34,
+      "20,31": 1,
+      "20,32": 1,
+      "20,33": 1,
+      "20,34": 1,
+      "20,35": 1,
+      "20,36": 1,
+      "20,37": 1,
+      "20,38": 1,
+      "21,1": 1,
+      "21,2": 1,
+      "21,3": 1,
+      "21,4": 1,
+      "21,5": 1,
+      "21,6": 1,
+      "21,7": 1,
+      "21,8": 1,
+      "21,9": 1,
+      "21,10": 1,
+      "21,11": 1,
+      "21,12": 1,
+      "21,13": 1,
+      "21,14": 1,
+      "21,15": 1,
+      "21,16": 1,
+      "21,17": 1,
+      "21,18": 1,
+      "21,19": 1,
+      "21,20": 1,
+      "21,21": 1,
+      "21,22": 1,
+      "21,23": 1,
+      "22,1": 1,
+      "22,2": 1,
+      "22,3": 1,
+      "22,4": 1,
+      "22,5": 1,
+      "22,6": 1,
+      "22,7": 1,
+      "22,8": 1,
+      "22,9": 1,
+      "22,10": 1,
+      "22,11": 1,
+      "22,12": 1,
+      "22,13": 1,
+      "22,14": 1,
+      "22,15": 1,
+      "22,16": 1,
+      "22,17": 1,
+      "22,18": 1,
+      "22,19": 1,
+      "22,20": 1,
+      "22,21": 1,
+      "22,22": 1,
+      "22,23": 1,
+      "23,1": 1,
+      "23,2": 1,
+      "23,3": 1,
+      "23,4": 1,
+      "23,5": 1,
+      "23,6": 1,
+      "23,7": 1,
+      "23,8": 1,
+      "23,9": 1,
+      "23,10": 1,
+      "23,11": 1,
+      "23,12": 1,
+      "23,13": 1,
+      "23,14": 1,
+      "23,15": 1,
+      "23,16": 1,
+      "23,17": 1,
+      "23,18": 1,
+      "23,19": 1,
+      "23,20": 1,
+      "23,21": 1,
+      "23,22": 1,
+      "23,23": 1,
+      "23,24": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "6,0,1,5",
+    "6,5,1,9",
+    "8,0,2,5",
+    "8,6,2,8",
+    "12,1,1,3",
+    "5,0,1,5",
+    "5,5,1,9",
+    "1,0,1,5",
+    "1,5,1,9",
+    "2,0,1,5",
+    "0,0,1,5",
+    "0,5,1,9",
+    "3,0,2,5",
+    "3,5,2,9",
+    "0,27,1,8",
+    "1,27,1,8",
+    "2,27,1,8",
+    "3,27,1,8",
+    "5,27,1,4",
+    "5,31,1,8",
+    "6,27,1,4",
+    "6,31,1,8",
+    "7,27,1,4",
+    "7,31,1,8",
+    "8,27,1,4",
+    "8,31,1,8",
+    "9,27,1,4",
+    "9,31,1,8",
+    "10,27,1,4",
+    "10,31,1,8",
+    "11,27,1,4",
+    "11,31,1,8",
+    "12,27,1,4",
+    "12,31,1,8",
+    "15,27,1,4",
+    "16,27,1,4",
+    "17,27,1,4",
+    "18,27,1,4",
+    "19,27,1,4",
+    "20,27,1,4",
+    "15,31,1,8",
+    "16,31,1,8",
+    "17,31,1,8",
+    "18,31,1,8",
+    "19,31,1,8",
+    "20,31,1,8",
+    "2,5,1,9",
+    "13,1,1,4",
+    "14,1,1,4",
+    "13,9,1,3",
+    "14,9,1,3",
+    "13,5,1,4",
+    "14,5,1,4",
+    "13,16,1,2",
+    "14,16,1,2",
+    "13,18,1,3",
+    "14,18,1,3",
+    "13,12,1,4",
+    "14,12,1,4",
+    "15,1,8,24"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "特殊工事",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "QRデータ_特殊",
+      "Formula": "モバイル_特殊工事!$AB$2"
+    },
+    {
+      "Name": "工程コード_特殊",
+      "Formula": "モバイル_特殊工事!$AB$4"
+    }
+  ]
+}//I8w86c6M8ua5+aYABdMCg6llFnVQCm7L5LR6U0DiK8DEZVnVngzQpSSmjR+i4zrWWJU9gQxAbRUkKdNtFT/0P+2f2Dqyui309M/TZ2AQpsM2tZ5XWcwD9faysQRozq8Ucb445bCfeROq1TsQWclkesxF1kkgdMIDnt9ZmIIlTWTLH6YTBzdl07krOfC2ydsmhBGl23YIdzOk2JsjuDpAMyia5pKCjAObBl54cdo6pnMQcOH2iOlMbRTfS0R/QQpNqqyQvXt6763EDsLm8OGF5pvkgWS7kYJF5wzsi81/+la92pgEqoUMAYpaT/301YMPJj1t19hebu/rEYqJgOOo5ZSUL257fuEUPNO5X1RRt2peurZpQ7X/bD8Rtl0C7p+eWIajoOinGxtsLhs1VzFuAoCUneoktbzZ53c9M1RN1ixtIoEeUgRppuSyqir2pvwgbuKKYaMpojxEwqI/HDvvLiXYu+9P6VpkYj/aOXJ2pnUCD6OdW74hNdfiBfNGfXFvcoWXJmiWjgQ/9voyjiB/sQ80BGuG6veZJaiUg5eK2MkzoJ6P0qOASU2S0onqUyHiVaLohYHXcqNwD3bbbZJwfajJF9PPEhUzqQ/yAJAnpAE4Ct0KnNiWx0D8f7ruQMge4jZFtfW29F6U9EBZgJx7kZZk4631a+Vx+Iyj6DWPJZdigmdYEwKV4BonYJNkSuxEo72A1q9xUSOnZKEpPixMpTLaMJEIg2JLFT9HfKnbG5S61mM+tW4D/Pvl9ADPSC016rZW12p8nlMPEdtDOjw4/tbH5BNt3muTHDoB53PNaimBsQ+01b/9imAy5vT40H1Gm3dTNI5QLci/A9Sz/lfCfyQW4fBrBNmPfd/Hy1QAkaz1hy5XTy/hiqVUA7sFMretUafIQkmb9DAb5+a4nIT5Yg==|920
