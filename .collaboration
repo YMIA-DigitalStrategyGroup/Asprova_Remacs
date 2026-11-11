@@ -697,6 +697,16 @@
   },
   {
     "ModuleName": "MobilePage/モバイル_特殊工事",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-11T09:32:04.0471299+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.json",
+      "Pages\\モバイル版実績入力ページ\\モバイル_特殊工事.rd"
+    ]
   }
 ]
