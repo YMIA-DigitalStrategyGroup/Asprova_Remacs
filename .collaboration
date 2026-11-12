@@ -33,7 +33,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekidt",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-12T14:57:56.0040179+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\作業実績テーブル（Remacs用）\\ymia_t_seisan_jissekidt.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_seisan_jissekikaiyo",
@@ -689,7 +698,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_asprova_2remacs2",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-12T14:57:56.0038913+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacsテーブル(MySQL本番環境)\\連携テーブル\\ymia_t_asprova_2remacs2.json"
+    ]
   },
   {
     "ModuleName": "MobilePage/モバイル_生産実績 (使わない削除対象)",
