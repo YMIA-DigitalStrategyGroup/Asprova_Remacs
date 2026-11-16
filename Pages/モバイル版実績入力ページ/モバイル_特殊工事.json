@@ -194,7 +194,7 @@
                     ]
                   }
                 ],
-                "ID": "20ebcb7a-4e1d-43c0-b2c9-bd674e113076"
+                "ID": "10b7a0c9-58ec-495b-aa83-f00d2b6ce11b"
               },
               {
                 "Condition": {
@@ -261,7 +261,7 @@
                     "MessageFormula": "このQRには製番がありません。"
                   }
                 ],
-                "ID": "f9df64a7-938e-4fc5-acf7-0ba1ace5ac19"
+                "ID": "07fccb7f-feba-45e8-a2ea-2eccefb26b2c"
               },
               {
                 "Condition": {
@@ -282,7 +282,7 @@
                     "MessageFormula": "入力するページを間違えていませんか？"
                   }
                 ],
-                "ID": "96ade815-c09b-467e-9e1a-349d3b9c5063"
+                "ID": "f4b12e27-ebce-4634-b219-75a1ee407536"
               },
               {
                 "Condition": {
@@ -303,7 +303,7 @@
                     "MessageFormula": "QRコードを正しく読み取れませんでした。\r\nQRラベルの中身に誤りがある可能性が高い為、読み取って表示されるQRデータを確認してください。\r\n※分からない場合は職制に確認してください※"
                   }
                 ],
-                "ID": "01a49ba0-479f-4989-9f72-c2a7d0c11f2a"
+                "ID": "2acefd5b-6dbb-4caa-9f44-30d5f154fb37"
               }
             ]
           }
@@ -791,7 +791,7 @@
                             "MessageFormula": "削除フラグが1のデータです。\r\nこのデータ自体取り消されている可能性が高い為、職制へ確認してください。"
                           }
                         ],
-                        "ID": "b1092685-11c9-4eae-aa99-d60db02af46b"
+                        "ID": "871c2f96-9c68-45e4-98fe-f8630a49402f"
                       },
                       {
                         "CommandList": [
@@ -852,7 +852,7 @@
                                     ]
                                   }
                                 ],
-                                "ID": "dd725efe-7500-4461-9ae8-7463b0b0c69e"
+                                "ID": "94a0d1a3-17b3-4cb0-8f9c-4e49bb599a43"
                               },
                               {
                                 "Condition": {
@@ -909,7 +909,7 @@
                                     "MessageFormula": "この伝票番号には製番がありません。"
                                   }
                                 ],
-                                "ID": "4afc9cc0-15a3-4500-b284-58b5c3add302"
+                                "ID": "c86db8db-526b-40df-9d45-30b79356973f"
                               },
                               {
                                 "Condition": {
@@ -930,7 +930,7 @@
                                     "MessageFormula": "入力するページを間違えていませんか？"
                                   }
                                 ],
-                                "ID": "9d53cbff-32ab-4960-8d76-35e994084706"
+                                "ID": "db6be805-e751-43ee-bb69-483cc4720932"
                               },
                               {
                                 "Condition": {
@@ -951,17 +951,17 @@
                                     "MessageFormula": "この伝票番号は見つかりませんでした。入力した伝票番号に誤りがないか確認してください。\r\n※分からない場合は職制に確認してください※"
                                   }
                                 ],
-                                "ID": "142eade8-f014-4697-be81-ca872185fbb4"
+                                "ID": "a318d982-ff99-4219-ba16-00aca49b35a5"
                               }
                             ]
                           }
                         ],
-                        "ID": "19916132-da58-4d42-9c87-e81cf2607ca2"
+                        "ID": "cd78a1ec-c8e8-421e-b853-20be29bf0855"
                       }
                     ]
                   }
                 ],
-                "ID": "1334a68b-8ff4-42b1-998e-79dbbd34de34"
+                "ID": "baa92aed-0fca-4f93-ac5a-ed7378e90c88"
               }
             ]
           }
@@ -1228,7 +1228,7 @@
                     }
                   }
                 ],
-                "ID": "c3c2df1e-e927-4c15-a181-0bd56eeb2eea"
+                "ID": "a96ee206-a8fd-490d-afb5-0e5a6c71104b"
               },
               {
                 "CommandList": [
@@ -1237,7 +1237,7 @@
                     "MessageFormula": "未入力項目があります！工事番号・作業内容・作業時間・Remacs情報を入力してください。"
                   }
                 ],
-                "ID": "c93a699a-377e-43ec-bc4b-4b9139e5d67b"
+                "ID": "63fd630c-720c-4fc5-84e9-4ef4b8743fa5"
               }
             ]
           }
@@ -1285,7 +1285,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "f5140c98-3cf2-486f-b131-7f3a0d52a7b6"
+                "ID": "a0b06aca-b201-4d6d-888b-21827cd3d32c"
               }
             ]
           }
@@ -1394,7 +1394,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekikouji",
         "ColumnName": "工程コード",
-        "GUID": "16c4b8a3-77d1-4e42-adb5-dfb9511bc9f0"
+        "GUID": "c3547dc0-6be1-4d64-bb2d-3466243be1ed"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1533,6 +1533,7 @@
       },
       {
         "FontFamily": 0,
+        "FontSize": 12.0,
         "Formatter": 2,
         "WordWrap": true
       },
@@ -2636,4 +2637,4 @@
       "Formula": "モバイル_特殊工事!$AB$4"
     }
   ]
-}//I8w86c6M8ua5+aYABdMCg6llFnVQCm7L5LR6U0DiK8DEZVnVngzQpSSmjR+i4zrWWJU9gQxAbRUkKdNtFT/0P+2f2Dqyui309M/TZ2AQpsM2tZ5XWcwD9faysQRozq8Ucb445bCfeROq1TsQWclkesxF1kkgdMIDnt9ZmIIlTWTLH6YTBzdl07krOfC2ydsmhBGl23YIdzOk2JsjuDpAMyia5pKCjAObBl54cdo6pnMQcOH2iOlMbRTfS0R/QQpNqqyQvXt6763EDsLm8OGF5pvkgWS7kYJF5wzsi81/+la92pgEqoUMAYpaT/301YMPJj1t19hebu/rEYqJgOOo5ZSUL257fuEUPNO5X1RRt2peurZpQ7X/bD8Rtl0C7p+eWIajoOinGxtsLhs1VzFuAoCUneoktbzZ53c9M1RN1ixtIoEeUgRppuSyqir2pvwgbuKKYaMpojxEwqI/HDvvLiXYu+9P6VpkYj/aOXJ2pnUCD6OdW74hNdfiBfNGfXFvcoWXJmiWjgQ/9voyjiB/sQ80BGuG6veZJaiUg5eK2MkzoJ6P0qOASU2S0onqUyHiVaLohYHXcqNwD3bbbZJwfajJF9PPEhUzqQ/yAJAnpAE4Ct0KnNiWx0D8f7ruQMge4jZFtfW29F6U9EBZgJx7kZZk4631a+Vx+Iyj6DWPJZdigmdYEwKV4BonYJNkSuxEo72A1q9xUSOnZKEpPixMpTLaMJEIg2JLFT9HfKnbG5S61mM+tW4D/Pvl9ADPSC016rZW12p8nlMPEdtDOjw4/tbH5BNt3muTHDoB53PNaimBsQ+01b/9imAy5vT40H1Gm3dTNI5QLci/A9Sz/lfCfyQW4fBrBNmPfd/Hy1QAkaz1hy5XTy/hiqVUA7sFMretUafIQkmb9DAb5+a4nIT5Yg==|920
+}//3Gj50qJFqKXs6KK/L0o0hSPsPNpz6ZtYBfEkhEgYRELb5LIq85ZQ1Dz9bUKqPytwTMsEwl6ATgEdqkRUmfjwMfTG4zuyKjWpmrmrw8KKhHI+WH92ppP2fC2ELW1wW6I4x8NlxC5WyyP/mrOKKpXYEz3FjRtFq//I3/GxrOS3ynT7/IApva0FiPIkb/poqpCE6rfFA1lorgXgZiCX3EB9WJUdTON3GM8WW5WGIMBZ9ToT8CTo0o5AFwk9qV3LKlKQom7zikfKABcLr6N23cHsAX+fK+oJNKqrOdzuKpI/nWO1pCtRly86ky56O1gYdep4hEzqrgE+LhSMq98HWJbtNJqV9nzUJZ80cZbq3DtHqlSPZC2rrbR4RnvhWBeur9IZcVJ5GEk17Jic6XPD4LJgFx6kcQSa/UVktn/3kyo9J/3wcLPJg46NcMhDxcCBPkjIQ+6XSoBufZlCNvynBxmg/DmIaR4SQ1wF2YSCm1EVWhUWtBC2YzuY+4jlJLE6IePzAca+g055b3G/U22KbiWibFjS5sVp1UswFUXwus8ue2XUdDOypEIz30dxxWJQSmYVLQFzv6gnbuhfuSPNygbU70AevHgHHLqjYCmEZJY7IbMsAkGw6YvjnE60jNpDUzwYEdAi8xIdvISCN+h2RFJF1RYcTAAB9RkiC53w2HhebnTQdjw1Aqed9PlWin+NowX8OBN0HOzTKOKe5eQSOMDRmDnt0M6zaI7pYg7WDGeFbcaj45rOPSRh8HXmSfGZ096iskKpMTo9+1NdAjKn8yqO6VrF79noL9MB2e0twvhGmF7vN8HCvEzdAN4QOOrjV3mqub94oKUxF5Q6VUJx9yGm5/cYJYlgq3jAhg6H4wkiZg11zV/ywMQIpWtqhkuHH1rKK0LnJ+sag/DGQOdTG3Nsnw==|920

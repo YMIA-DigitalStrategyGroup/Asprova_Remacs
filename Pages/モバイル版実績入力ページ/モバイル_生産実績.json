@@ -65,7 +65,16 @@
     "10,22": "Remacs",
     "10,27": "艇番",
     "11,27": "工程コード",
-    "13,27": "調整後時間"
+    "12,27": "QRの形",
+    "13,27": "調整後時間",
+    "15,27": "探した伝票番号",
+    "16,27": "探した製番",
+    "17,27": "探した部品",
+    "18,27": "削除フラグ",
+    "19,27": "伝票番号の判定",
+    "20,27": "削除の判定",
+    "21,27": "製番から艇種",
+    "22,27": "製番から艇番"
   },
   "Formulas": {
     "13,31": "IF(LEN(F3)=0,\"\",F3*係数)",
@@ -74,8 +83,13 @@
     "11,31": "IF(AF8>0,MID(QRデータ_生産,AF8+1,20),\"\")",
     "9,31": "IF(AF7>0,MID(QRデータ_生産,AF6+1,AF7-AF6-1),\"\")",
     "8,31": "IF(AF6>0,LEFT(QRデータ_生産,AF6-1),\"\")",
-    "6,31": "IFERROR(FIND(\",\",QRデータ_生産,AF6+1),0)",
-    "7,31": "IFERROR(FIND(\",\",QRデータ_生産,AF7+1),0)"
+    "6,31": "IF(AF6=0,0,IFERROR(FIND(\",\",QRデータ_生産,AF6+1),0))",
+    "7,31": "IF(AF7=0,0,IFERROR(FIND(\",\",QRデータ_生産,AF7+1),0))",
+    "12,31": "IF(QRデータ_生産=\"\",\"\",IF(OR(AF8=0,IFERROR(FIND(\",\",QRデータ_生産,AF8+1),0)>0),\"形式エラー\",IF(AND(TRIM(AF10)<>\"\",TRIM(AF11)<>\"\"),\"生産実績\",IF(AND(TRIM(AF10)<>\"\",TRIM(AF11)=\"\"),\"特殊工事\",IF(AND(TRIM(AF10)=\"\",TRIM(AF11)=\"\"),\"製番なし\",\"形式エラー\")))))",
+    "19,31": "IF(OR(F4=\"\",F4=AF9),\"\",IF(IFERROR(AF16,\"\")=\"\",\"見つからない\",IF(TRIM(AF17)=\"\",\"製番なし\",IF(ISNUMBER(FIND(\" \",TRIM(AF17))),\"生産実績\",\"特殊工事\"))))",
+    "20,31": "IF(OR(F4=\"\",F4=AF9),\"\",IFERROR(IF(OR(UPPER(AF19&\"\")=\"TRUE\",AF19&\"\"=\"1\"),\"削除あり\",\"\"),\"\"))",
+    "21,31": "IF(AF20=\"生産実績\",TRIM(LEFT(TRIM(AF17),FIND(\" \",TRIM(AF17))-1)),\"\")",
+    "22,31": "IF(AF20=\"生産実績\",TRIM(MID(TRIM(AF17),FIND(\" \",TRIM(AF17))+1,20)),\"\")"
   },
   "AttachInfos": {
     "0,5": {
@@ -120,11 +134,11 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=モバイル_生産実績!AF12"
+                        "SerializeProperty": "=モバイル_生産実績!AF13"
                       }
                     ]
                   },
-                  "compareType": 1
+                  "value": "生産実績"
                 },
                 "CommandList": [
                   {
@@ -173,7 +187,7 @@
                     ]
                   }
                 ],
-                "ID": "8254ef52-bd3e-4cf1-bd7e-0cfb1ddb4196"
+                "ID": "b90cb091-d421-4424-97cb-ab4a0dfab9fc"
               },
               {
                 "Condition": {
@@ -182,19 +196,100 @@
                     "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
                     "cellLocations": [
                       {
-                        "SerializeProperty": "=モバイル_生産実績!QRデータ_生産"
+                        "SerializeProperty": "=モバイル_生産実績!AF13"
                       }
                     ]
                   },
-                  "compareType": 1
+                  "value": "製番なし"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F1"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F2"
+                        },
+                        "Value": "-"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F4"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF9"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF12"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "このQRには製番がありません。"
+                  }
+                ],
+                "ID": "625d4564-c3d0-4560-b9c7-3840f4dea67a"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_生産実績!AF13"
+                      }
+                    ]
+                  },
+                  "value": "特殊工事"
                 },
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "QRコードを正しく読み取れませんでした"
+                    "MessageFormula": "入力するページを間違えていませんか？"
                   }
                 ],
-                "ID": "b804bce0-8dcc-4553-bd94-f5c52569bcef"
+                "ID": "25e8b6ef-73d5-45c3-b2bb-f380c7241527"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=モバイル_生産実績!AF13"
+                      }
+                    ]
+                  },
+                  "value": "形式エラー"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "QRコードを正しく読み取れませんでした。\r\nQRラベルの中身に誤りがある可能性が高い為、読み取って表示されるQRデータを確認してください。\r\n※分からない場合は職制に確認してください※"
+                  }
+                ],
+                "ID": "ad380142-59f0-402a-abc2-a8d5f33f331c"
               }
             ]
           }
@@ -220,7 +315,494 @@
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_生産実績!F4"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_生産実績!F4"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=モバイル_生産実績!AF9"
+                      },
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した伝票番号",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "5aaed716-22bb-4a34-a5cf-ad227601ecad",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "DENPYO_NBR",
+                            "GUID": "9edf6439-f56b-4688-b3b0-5dc43b56df2f"
+                          },
+                          "ColumnName": "DENPYO_NBR"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "f2e9f3f5-e66a-4f6a-bc49-f3e595c84fbd"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F4"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "28f2328ebd7440979b1dde413ebafc0e"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した製番",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "487f47f7-415a-4c19-8052-aeefbec74d34",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "SEIBAN",
+                            "GUID": "6ae92a10-0d4a-4fc4-b281-248c6c9abe5e"
+                          },
+                          "ColumnName": "SEIBAN"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "baca93f9-58fc-46df-b0c8-1171b6e655e0"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F4"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "3fdb4bfdebcc4008b046cdf045d2015b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "探した部品",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "42676dcc-1063-42f8-83a9-5a100cd14144",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "KOTEI_CODE",
+                            "GUID": "40e1001a-70ec-461c-8c55-0c03555419aa"
+                          },
+                          "ColumnName": "KOTEI_CODE"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "2f893d03-f7cc-4df2-8d35-0be2a0bcff4b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F4"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "6232c5f84b664e9d8af2a7d96076981e"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "削除フラグ",
+                    "TableValue": {
+                      "TableName": "thatchum",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "GUID": "ed9897a2-9b86-464d-811f-52a0c7a3c39b",
+                          "BindingInfo": {
+                            "TableName": "thatchum",
+                            "ColumnName": "DELETE_FLG",
+                            "GUID": "86e67adf-121e-4c10-aa24-9b8fe4a10882"
+                          },
+                          "ColumnName": "DELETE_FLG"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "thatchum",
+                          "ColumnName": "DENPYO_NBR",
+                          "GUID": "9ad8a4a6-bbfa-4269-81a4-be31faca945e"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!F4"
+                        }
+                      },
+                      "NullFormulaValueQueryPolicy": 0
+                    },
+                    "ID": "268a4ef9ec18401ba55931966cc78a2b"
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF16"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!探した伝票番号"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF17"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!探した製番"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF18"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!探した部品"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!AF19"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=モバイル_生産実績!削除フラグ"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=モバイル_生産実績!AF21"
+                              }
+                            ]
+                          },
+                          "value": "削除あり"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "削除フラグが1のデータです。\r\nこのデータ自体取り消されている可能性が高い為、職制へ確認してください。"
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=モバイル_生産実績!F1"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=モバイル_生産実績!F2"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "f704f870-6b35-4672-bbcf-451ae0da82b1"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_生産実績!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "生産実績"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F1"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!AF22"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F2"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!AF23"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!AF18"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "91114a7a-3752-41fe-bf20-05341e28bccf"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_生産実績!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "製番なし"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F1"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F2"
+                                        },
+                                        "Value": "-"
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!AF18"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "この伝票番号には製番がありません。"
+                                  }
+                                ],
+                                "ID": "f176495f-4b85-4441-9e61-d083440a05c1"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_生産実績!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "特殊工事"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "入力するページを間違えていませんか？"
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F1"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F2"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F4"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "41a4787f-7b37-41cd-b0ff-c25a3938cd4c"
+                              },
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=モバイル_生産実績!AF20"
+                                      }
+                                    ]
+                                  },
+                                  "value": "見つからない"
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": "この伝票番号は見つかりませんでした。入力した伝票番号に誤りがないか確認してください。\r\n※分からない場合は職制に確認してください※"
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F1"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F2"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                                        }
+                                      },
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=モバイル_生産実績!F4"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "d054023d-4028-4fad-a692-21a989021a0a"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "65e4de3e-179f-4abe-bdb8-f3886060c068"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "860ba83c-3d1b-46eb-99f3-c1979461dea2"
+              }
+            ]
+          }
+        ]
       }
     },
     "3,27": {
@@ -333,6 +915,30 @@
                         "cellLocations": [
                           {
                             "SerializeProperty": "=モバイル_生産実績!工程コード_生産"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_生産実績!F3"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=モバイル_生産実績!F4"
                           }
                         ]
                       },
@@ -565,16 +1171,16 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "8c262051-d1e6-4fc1-a12d-921031cae331"
+                "ID": "1411cefd-db9a-4e2b-9ab2-892e3dc0945c"
               },
               {
                 "CommandList": [
                   {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "未入力項目があります！QRコードを読み取ってから追加してください。"
+                    "MessageFormula": "未入力項目があります！\r\n艇種・艇番・作業時間・Remacs情報を入力してください。"
                   }
                 ],
-                "ID": "5530b85b-e47f-4363-ba0f-4b97260edaf8"
+                "ID": "a3eb1a31-04d1-46a2-b001-d29d65ddd01f"
               }
             ]
           }
@@ -622,7 +1228,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "7ddad011-aea6-48ea-8edf-f6eceac9df19"
+                "ID": "56ff0266-1752-4e6e-ad66-395b77c8eadf"
               }
             ]
           }
@@ -647,7 +1253,7 @@
               "ColumnBindingInfo": {
                 "TableName": "ymia_t_seisan_jissekidt",
                 "ColumnName": "社員コード",
-                "GUID": "7ef2056d-3782-4c9c-b587-96cfb187f4cf"
+                "GUID": "77030919-921e-4096-a1c2-d0d9d9b3a553"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -659,7 +1265,7 @@
               "ColumnBindingInfo": {
                 "TableName": "ymia_t_seisan_jissekidt",
                 "ColumnName": "日付",
-                "GUID": "9aedb361-97d5-4a20-bf8f-fc4fb08135bf"
+                "GUID": "e586dc42-9e27-489f-9cba-0c7e7e4111c2"
               },
               "Value": {
                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -699,7 +1305,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_seisan_jissekidt",
         "ColumnName": "工程コード",
-        "GUID": "59907824-c707-48e8-af6d-def01698609b"
+        "GUID": "939a7798-5074-4833-820d-9ea179a846e2"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -907,6 +1513,19 @@
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 10.666666666666666,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
       }
     ],
     "Types": {
@@ -1489,11 +2108,11 @@
       "12,21": 7,
       "12,22": 7,
       "12,23": 7,
-      "12,27": 7,
-      "12,28": 7,
-      "12,29": 7,
-      "12,30": 7,
-      "12,31": 7,
+      "12,27": 19,
+      "12,28": 19,
+      "12,29": 19,
+      "12,30": 19,
+      "12,31": 20,
       "12,32": 7,
       "12,33": 7,
       "12,34": 7,
@@ -1628,6 +2247,16 @@
       "15,21": 7,
       "15,22": 7,
       "15,23": 7,
+      "15,27": 28,
+      "15,28": 26,
+      "15,29": 26,
+      "15,30": 26,
+      "15,31": 29,
+      "15,32": 26,
+      "15,33": 26,
+      "15,34": 26,
+      "15,35": 26,
+      "15,36": 27,
       "16,1": 7,
       "16,2": 7,
       "16,3": 7,
@@ -1651,6 +2280,16 @@
       "16,21": 7,
       "16,22": 7,
       "16,23": 7,
+      "16,27": 28,
+      "16,28": 26,
+      "16,29": 26,
+      "16,30": 26,
+      "16,31": 29,
+      "16,32": 26,
+      "16,33": 26,
+      "16,34": 26,
+      "16,35": 26,
+      "16,36": 27,
       "17,1": 7,
       "17,2": 7,
       "17,3": 7,
@@ -1674,6 +2313,16 @@
       "17,21": 7,
       "17,22": 7,
       "17,23": 7,
+      "17,27": 28,
+      "17,28": 26,
+      "17,29": 26,
+      "17,30": 26,
+      "17,31": 29,
+      "17,32": 26,
+      "17,33": 26,
+      "17,34": 26,
+      "17,35": 26,
+      "17,36": 27,
       "18,1": 7,
       "18,2": 7,
       "18,3": 7,
@@ -1697,6 +2346,16 @@
       "18,21": 7,
       "18,22": 7,
       "18,23": 7,
+      "18,27": 28,
+      "18,28": 26,
+      "18,29": 26,
+      "18,30": 26,
+      "18,31": 29,
+      "18,32": 26,
+      "18,33": 26,
+      "18,34": 26,
+      "18,35": 26,
+      "18,36": 27,
       "19,1": 7,
       "19,2": 7,
       "19,3": 7,
@@ -1720,6 +2379,16 @@
       "19,21": 7,
       "19,22": 7,
       "19,23": 7,
+      "19,27": 28,
+      "19,28": 26,
+      "19,29": 26,
+      "19,30": 26,
+      "19,31": 29,
+      "19,32": 26,
+      "19,33": 26,
+      "19,34": 26,
+      "19,35": 26,
+      "19,36": 27,
       "20,1": 7,
       "20,2": 7,
       "20,3": 7,
@@ -1743,7 +2412,37 @@
       "20,21": 7,
       "20,22": 7,
       "20,23": 7,
-      "20,24": 7
+      "20,24": 7,
+      "20,27": 28,
+      "20,28": 26,
+      "20,29": 26,
+      "20,30": 26,
+      "20,31": 29,
+      "20,32": 26,
+      "20,33": 26,
+      "20,34": 26,
+      "20,35": 26,
+      "20,36": 27,
+      "21,27": 28,
+      "21,28": 26,
+      "21,29": 26,
+      "21,30": 26,
+      "21,31": 29,
+      "21,32": 26,
+      "21,33": 26,
+      "21,34": 26,
+      "21,35": 26,
+      "21,36": 27,
+      "22,27": 28,
+      "22,28": 26,
+      "22,29": 26,
+      "22,30": 26,
+      "22,31": 29,
+      "22,32": 26,
+      "22,33": 26,
+      "22,34": 26,
+      "22,35": 26,
+      "22,36": 27
     },
     "SheetStyle": {
       "FontFamily": 2
@@ -1795,7 +2494,25 @@
     "10,14,1,4",
     "11,18,1,4",
     "10,18,1,4",
-    "12,1,8,23"
+    "12,1,8,23",
+    "12,27,1,4",
+    "12,31,1,8",
+    "15,27,1,4",
+    "15,31,1,6",
+    "16,27,1,4",
+    "16,31,1,6",
+    "17,27,1,4",
+    "17,31,1,6",
+    "18,27,1,4",
+    "18,31,1,6",
+    "19,27,1,4",
+    "19,31,1,6",
+    "20,27,1,4",
+    "20,31,1,6",
+    "21,27,1,4",
+    "21,31,1,6",
+    "22,27,1,4",
+    "22,31,1,6"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1836,4 +2553,4 @@
       "Formula": "モバイル_生産実績!$AF$14"
     }
   ]
-}//fTYX4OgPriyv2/4DA61CL62X4RUBpZPJkjstNyMD+nXlxpHpMg+ypBAv0HW8E7VhBGgGowirpMAvK0xwLGLlors2tZd+HcAfN7lkU3OtIbd32SNjDQEOiQ7pt+wDrkzRmFH9DzPhJOV4rQdcA5abkt4NaKH+GBuDNSWzURBgnXXGoMqJw+MAMiqnlqn+4DPMIWuJhf8L/MuwFUcAaqUWq/3zJrBHS5VvVJiDzu6z1yWrG75VDEDNqnlwPXFkx3Gj2ZKL4dd/ku20rVez3OSKdxSlhuj4ejlIzZirXxSPmFebDN7J6qZtax5+HXMrC/4+Vr+7UyfsRKwdfBqZWNH2iNRH5OmOrs5Td2nrFYTMIXjhVl9ErxPe4MeVrB4rhEwlHbGtLD8FchejJFe04MV5h8itFO+ZyG2HshaKXI21rprjQI/StfJ9nvWa0Ig5vyvViIHrBseMb0ZzuxweARm3vX+G1hIYy2J+X3R5mkqE8+RZtIdVZADFV0DsQQyuVLADKzcUYF990TTQ7kijkONz8mXmAvmfD0e3d/MTol5mKkfOq6F8iwKh+5fj0yihNrDQFeMp/kCI3gg5BfcQIp2du27ykvvn0dk89ozKyfXcCkrBOiMBHj7n1vQZ5icgVVvO0sBDhzKvbVoIcgtM5jzBcfCPtRLYz8Q+Y99yroP3Sq9wnsEPjjrLtUI+IuE+XBFPhWX5CObXMl8rrHSY7AZ8AZWI3xDqTl/gSLiDA2zc4LWEph0zGxyAhZJydLFO7UBASw/CQ1h9+u+r/BAiiTY4tlJZI8rxu1hE7gEOyRT2utWqjHJnMKOpKrTz+wnuKUTYKzF+yjeraZ55AAe4jU5uYgtLcqavU5pwEeQaSLTRj9/OwU4z7lCTtPoPDRLLAIac8HZsjd+a8NZwLRFiUL478w==|920
+}//aBeu8Xtt8EcCETFSINPqajbVihjzdXWAnls+3NR3QyErAPjwKIRsvxuxPqKcgSeYM6cnvFw4WEMNnEEBTSOPTLJiwP/wUGC+ZcS3PIRUSe2f7ZJpp060kBtkS5h4RUQoFeaGNQbAAApJIvGEO+m+dAWeQr2AfOJ1pHiqlqr1l1EZn0PCeGR9blRSpiktmuQBfieopsAoWM21D5s8j8YmG+L29NuotV5R3rpyRaLEQVYZ0ScZRhiq0CRgff5P/YjTgk76RbA2svKn4upBUrH0gNeFvH4nozW//VMpdqAgc6A4B4zpBdW82HE5kEywdt4dTMLbKsJlTO98A/yjovPBkklO3UdLhQxOUNHQQphEMVHaL9MhhpuR23NaRZygH5vt9Yn2U2k/GKOaiILdNegJoAuFNztTLe7a9yh8n1RlqB4VxVioCyt4grdqbdSz2hmR5rcpV9okynszh14VslziAi8cDMYvZJmyjBl82wNIY1XL8Z1S+rma7D7VqvzspciuOPDeUWDDq79yjby+4S50JEPM2mXhMGMg/geXpj3EjE8uvnoJKW8EOc0PDSSCEMPErIluuwUrKKR/cv1aytX//hBbgBJT+QwuUiHHwUAgmP/jyVx6SGQoGKuizsOH8jHjrK4CmbQcwOJCvChIPvgNJ4ZlQ46TB0APrs85I3edMbu5td3zFceEt4Z3WlvANC8hlaIqWDPxk8EItpIZOuI74Ht2OG8UUPmlS9Vi7JoEddJRI4UUOmzIX0VSwMXFuGUBN3lvaCwB2aWKbbu7ijLzMjylnnnnMUO+IRyFyObulmv6XUoQAtHCjuQmgmmaYSUEAwd/RoU/yT92cu5HLPHj6w8slFO2GhwGpIp9xIRI9Aoc40jL8A1ogzlucdsBqUTEmgHcQ7a2w1c0XWwP9lwhfQ==|920

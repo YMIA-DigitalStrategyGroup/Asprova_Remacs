@@ -66,6 +66,7 @@
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DefaultValue": 0,
+      "Required": true,
       "DatabaseColumnType": "bigint",
       "MaxLength": -1,
       "Name": "伝票番号",
@@ -73,6 +74,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
       "DatabaseColumnType": "varchar",
       "MaxLength": 10,
       "Name": "工程コード_Remacs用",
@@ -90,7 +92,9 @@
     "艇番",
     "社員コード",
     "工程コード",
-    "日付"
+    "工程コード_Remacs用",
+    "日付",
+    "伝票番号"
   ],
   "Relations": [
     {
