@@ -719,13 +719,13 @@
     "ModuleType": 2
   },
   {
-    "ModuleName": "PCPage/qr帳票発行",
+    "ModuleName": "PCPage/QR帳票発行",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-17T15:34:43.7351818+09:00",
+    "LockDateTime": "2026-11-17T15:34:59.0042499+09:00",
     "ModuleType": 1
   }
 ]
