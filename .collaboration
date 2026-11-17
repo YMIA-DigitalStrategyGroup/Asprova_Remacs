@@ -597,7 +597,17 @@
   },
   {
     "ModuleName": "PCPage/作業用帳票発行",
-    "ModuleType": 1
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-17T15:34:43.735155+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\作業用帳票発行\\作業用帳票発行.json",
+      "Pages\\作業用帳票発行\\作業用帳票発行.rd"
+    ]
   },
   {
     "ModuleName": "PageReport/作業用帳票",
@@ -707,5 +717,15 @@
   {
     "ModuleName": "MobilePage/モバイル_特殊工事",
     "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/qr帳票発行",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-17T15:34:43.7351818+09:00",
+    "ModuleType": 1
   }
 ]
