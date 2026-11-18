@@ -615,11 +615,29 @@
   },
   {
     "ModuleName": "ServerCommands/作業用帳票発行",
-    "ModuleType": 20
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-18T11:41:58.7203057+09:00",
+    "ModuleType": 20,
+    "ToRemoveFiles": [
+      "ServerCommands\\作業用帳票発行"
+    ]
   },
   {
     "ModuleName": "ServerCommand/帳票用テーブルの削除",
-    "ModuleType": 15
+    "State": 4,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-18T11:41:58.7224813+09:00",
+    "ModuleType": 15,
+    "ToRemoveFiles": [
+      "ServerCommands\\作業用帳票発行\\帳票用テーブルの削除.json"
+    ]
   },
   {
     "ModuleName": "PCPage/生産実績入力 ver2 (バックアップ用)",
@@ -727,5 +745,15 @@
     },
     "LockDateTime": "2026-11-17T15:34:59.0042499+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "ServerCommands/qr帳票発行",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-18T11:41:58.7203509+09:00",
+    "ModuleType": 20
   }
 ]
