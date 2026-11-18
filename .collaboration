@@ -611,7 +611,17 @@
   },
   {
     "ModuleName": "PageReport/作業用帳票",
-    "ModuleType": 17
+    "State": 2,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-18T12:15:49.5369717+09:00",
+    "ModuleType": 17,
+    "ToRemoveFiles": [
+      "Reports\\作業用帳票.json",
+      "Reports\\作業用帳票.rdlx"
+    ]
   },
   {
     "ModuleName": "ServerCommands/作業用帳票発行",
@@ -743,7 +753,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-17T15:34:59.0042499+09:00",
+    "LockDateTime": "2026-11-18T12:15:49.5377233+09:00",
     "ModuleType": 1
   },
   {
@@ -755,5 +765,15 @@
     },
     "LockDateTime": "2026-11-18T11:42:10.2728741+09:00",
     "ModuleType": 20
+  },
+  {
+    "ModuleName": "PageReport/QR帳票発行",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\ME023221",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-18T12:15:49.5370226+09:00",
+    "ModuleType": 17
   }
 ]
