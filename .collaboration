@@ -633,7 +633,7 @@
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-18T11:41:58.7224813+09:00",
+    "LockDateTime": "2026-11-18T11:42:10.2729341+09:00",
     "ModuleType": 15,
     "ToRemoveFiles": [
       "ServerCommands\\作業用帳票発行\\帳票用テーブルの削除.json"
@@ -747,13 +747,13 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "ServerCommands/qr帳票発行",
+    "ModuleName": "ServerCommands/QR帳票発行",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\ME023221",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-18T11:41:58.7203509+09:00",
+    "LockDateTime": "2026-11-18T11:42:10.2728741+09:00",
     "ModuleType": 20
   }
 ]
