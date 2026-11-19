@@ -805,5 +805,15 @@
     },
     "LockDateTime": "2026-11-18T12:15:49.5370226+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "ServerCommand/引合情報連携_全件",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-19T18:07:25.9118033+09:00",
+    "ModuleType": 15
   }
 ]
